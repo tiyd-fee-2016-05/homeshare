@@ -1,0 +1,17 @@
+@import "../../../bower_components/susy/sass/susy";
+
+
+$susy: (
+columns: 12,
+container:90%
+);
+.container{
+@include container;
+background-image: url(images/misc/house.png);
+box-sizing: border-box;
+}
+
+
+
+
+// @include span(3 of 12);

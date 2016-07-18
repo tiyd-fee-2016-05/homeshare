@@ -1,0 +1,20 @@
+{
+  "name": "homeshare",
+  "homepage": "https://github.com/TyThompson/homeshare",
+  "authors": [
+    "Travis Johnson <trav.johnson919@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}
