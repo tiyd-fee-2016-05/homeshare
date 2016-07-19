@@ -344,9 +344,11 @@
       margin: 0 1em 0 -.5em; }
     .profile-edit-main fieldset .venmo {
       width: 5.5em;
-      margin: .75em 0 1em 1.5em; }
+      margin: .75em 0 1em 1.5em;
+      cursor: pointer; }
     .profile-edit-main fieldset .android-pay {
       width: 3.5em;
-      margin: 0 0 1em 2em; }
+      margin: 0 0 1em 2em;
+      cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
