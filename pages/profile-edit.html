@@ -1,0 +1,29 @@
+<main class="profile-edit-main" ng-controller="ChoresController">
+  <section class="section-main">
+    <!-- will be left side of a 3 column centered grid...will display #of chores done? -->
+    <span class="left-chores fa fa-arrow-left" aria-hidden="true" ng-click="previousIcon()"></span>
+    <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
+    <span class="center-avatar">
+      <img class="user-avatar" src={{currentAvatar}} alt="user-avatar">
+    </span>
+    <!-- will be right side of a 3 column centered grid...will display level? -->
+    <span class="right-level fa fa-arrow-right" aria-hidden="true" ng-click="nextIcon()"></span>
+    <!-- edit user name and location of group -->
+    <fieldset>
+      <!-- <legend>Edit Profile</legend> -->
+      <label class="edit-name">
+        <h2 class="name-heading">Name</h2>
+        <input type="text" name="user-name" placeholder="username">
+      </label>
+      <label class="edit-location">
+        <h2 class="location-heading">Group Location</h2>
+        <input type="text" name="group-location" placeholder="location">
+      </label>
+      <label class="payments">
+        <h2 class="payment-options">Payment Options</h2>
+        <img class="venmo" src="../assets/images/venmo.png" alt="venmo icon">
+        <img class="android-pay" src="../assets/images/android-pay-logo.png" alt="android pay icon">
+      </label>
+    </fieldset>
+  </section>
+</main>

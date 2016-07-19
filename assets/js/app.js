@@ -1,4 +1,4 @@
-var mainApp = angular.module( "mainApp", ["ngRoute"] );
+var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"] );
 
 mainApp.config( function($routeProvider) {
 
@@ -47,6 +47,6 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/calendar.html"
   })
   .otherwise({
-    redirectTo: "/landing"
+    redirectTo: "/main"
   });
 }); // end mainApp.config

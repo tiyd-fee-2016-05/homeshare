@@ -1,0 +1,54 @@
+<main class="personal-profile-main" ng-controller="ChoresController">
+  <section class="section-main">
+    <!-- will be left side of a 3 column centered grid...will display #of chores done? -->
+    <span class="left-chores" ng-click="showChores = !showChores">
+      <h3>155</h3>
+      <h2>Chores</h2>
+    </span>
+    <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
+    <span class="center-avatar">
+      <img class="user-avatar" src="assets/images/avatar1.png" alt="user-avatar">
+    </span>
+    <!-- will be right side of a 3 column centered grid...will display level? -->
+    <span class="right-level">
+      <h3>2</h3>
+      <h2>Level</h2>
+    </span>
+    <!-- user name and location of group -->
+    <h1 class="user-name">Travis Johnson</h1>
+    <h2 class="group-location">Durham, NC</h2>
+    <h2 class="user-age">
+      Age:
+      <span>33</span>
+    </h2>
+    <h2 class="group-members-num">
+      Team Members:
+      <span>4</span>
+    </h2>
+  </section>
+
+  <!-- section to display chores for user -->
+  <div class="chores-bg-color" ng-show="showChores">
+    <span class="fa fa-sort-asc" aria-hidden="true" ng-click="showChores = !showChores"></span>
+    <section class="section-chores">
+      <div class="chore">
+        <img class="chore-icon" src="assets/images/garbage.png" alt="Picture of garbage can">
+        <h2>Vacuum</h2>
+        <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+      </div>
+    </section>
+  </div>
+
+  <!-- section to display user stats -->
+  <section class="section-secondary">
+    <!-- <h2 class="user-rating">{{Insert Progress Bar}}</h2> -->
+    <h2 class="fav-chore">
+      Favorite Chore:
+      <span>Vacuuming</span>
+    </h2>
+    <h2 class="years-experience">
+      Years of Experience:
+      <span>5</span>
+    </h2>
+  </section>
+</main>
