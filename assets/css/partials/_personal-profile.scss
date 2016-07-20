@@ -123,6 +123,7 @@
 
   .chores-bg-color {
     @include span( 12 of 12 );
+    display: none;
     background-color: #EFE9F4;
     overflow: hidden;
   }

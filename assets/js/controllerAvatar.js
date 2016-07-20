@@ -66,4 +66,19 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
 
    console.log( "Click: " + avatarClick );
   }; // end nextIcon()
+
+  /****************************************************************************************
+    jQuery functions
+  ****************************************************************************************/
+
+  $( ".left-chores" ).click( function() {
+    console.log( "Houston, we have liftoff!" );
+    $( ".chores-bg-color" ).slideToggle();
+  }); // end .left-chores click event
+
+  $( ".fa-sort-asc" ).click( function() {
+    $( ".chores-bg-color" ).slideUp();
+  }); // end .fa-sort-asc click event
+
+
 }]); // end ControllerAvatar

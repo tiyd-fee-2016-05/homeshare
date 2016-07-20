@@ -104,6 +104,7 @@ html {
     float: left;
     margin-left: 0;
     margin-right: 0;
+    display: none;
     background-color: #EFE9F4;
     overflow: hidden; }
   .personal-profile-main .go-to-chore-list .fa-list {
@@ -246,6 +247,7 @@ html {
       float: left;
       margin-left: 0;
       margin-right: 0;
+      display: none;
       width: 100%;
       margin: 0 0 1.5em -1.15em; }
       .group-profile-main .section-members .member-stats .member-level1,
