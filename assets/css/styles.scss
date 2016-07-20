@@ -4,6 +4,11 @@ $list-item: #3B4051;
 // $glow: rgba(8,178,227,0.15);
 
 
+html{
+  background-color: #2e86ab;
+
+}
+
 @import "partials/landing";
 @import "partials/main";
-@import "partials/chore-admin"
+@import "partials/chore-admin";

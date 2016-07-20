@@ -1,4 +1,6 @@
-var mainApp = angular.module( "mainApp", ["ngRoute"] );
+var mainApp = angular.module("mainApp",["ngRoute"]);
+
+
 
 mainApp.config( function($routeProvider) {
 
@@ -35,7 +37,8 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/chore-admin.html"
   })
   .when( "/chore-user", {
-    templateUrl: "pages/chore-user.html"
+    templateUrl: "pages/chore-user.html",
+    controller: "choreAdminController"
   })
   .when( "/bill-admin", {
     templateUrl: "pages/bill-admin.html"

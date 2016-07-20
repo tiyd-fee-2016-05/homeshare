@@ -1,0 +1,18 @@
+@import "../../../bower_components/susy/sass/susy";
+
+
+$susy: (
+columns: 12,
+container: 100%,
+);
+
+#ca-wrapper{
+@include container;
+@include span(12);
+}
+
+
+.fa-form{
+position:relative;
+display: block;
+}
