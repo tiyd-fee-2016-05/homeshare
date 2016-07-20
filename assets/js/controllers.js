@@ -1,7 +1,4 @@
-
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
-  // $scope.choreName = item.item1;
-  // $scope.choreDesc = item2;
   var data = {};
   $scope.submitForm = function() {
           // console.log($scope.choreName);
