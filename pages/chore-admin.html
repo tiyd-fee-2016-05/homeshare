@@ -1,9 +1,13 @@
 <div ng-app="mainApp" ng-controller="choreAdminController"  id="ca-wrapper">
   <form class="ca-form" ng-submit="submitForm()">
-    Type: <input name="name" ng-model="item.item1" type="text"></input>
-    Area: <input name="desc" ng-model="item2" type="text"></input>
-    Points: <input ng-model="form.points" type="text"></input>
+    Type: <input name="name" ng-model="choreName" type="text"></input>
+    Area: <input name="desc" ng-model="choreDesc" type="text"></input>
+    Points: <input ng-model="choreValue" type="text"></input>
     <!-- Notes: <input type="text"></input> -->
     <button type="submit">Submit</button>
+
+    <ul ng-repeat="chores in totalChores">
+      <li>{{chores.all_chores[7].name}} {{chores.all_chores[7].description}}</li>
+    </ul>
   </form>
 </div>

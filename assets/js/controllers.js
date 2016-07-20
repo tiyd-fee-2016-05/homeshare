@@ -1,22 +1,32 @@
-
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
-  // $scope.choreName = item.item1;
-  // $scope.choreDesc = item2;
-  var data = {};
+$scope.data;
+
   $scope.submitForm = function() {
           // console.log($scope.choreName);
-          formData = $scope.form;
-          // console.log(formData);
+          $scope.form = {
+            "name": $scope.choreName,
+            "description": $scope.choreDesc,
+            "value": $scope.choreValue
+          };
+          console.log($scope.form);
     $http({
-      url: 'http://d6c901d4.ngrok.io/homes/1/chores/new/?name= ' + "sweep" + '&description=' + "house" + '&value=50',
+      url: 'http://d6c901d4.ngrok.io/homes/1/chores/new.json?name= ' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.choreValue ,
       method: 'GET',
       data: 'formData'
     }).success(function(data){
       $scope.data = data.data;
       console.log($scope.data);
-      // console.log(data.data);
+
     });
 };
+$http({
+  url: 'http://d6c901d4.ngrok.io/homes/1/chores.json',
+  method: 'GET'
+}).success(function(data){
+  $scope.totalChores = data;
+  console.log($scope.totalChores);
+
+});
     }]);
 
 
