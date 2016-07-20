@@ -1,0 +1,64 @@
+mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
+$scope.data;
+
+  $scope.submitForm = function() {
+          // console.log($scope.choreName);
+          $scope.form = {
+            "name": $scope.choreName,
+            "description": $scope.choreDesc,
+            "value": $scope.choreValue
+          };
+          console.log($scope.form);
+    $http({
+      url: 'http://d6c901d4.ngrok.io/homes/1/chores/new.json?name= ' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.choreValue ,
+      method: 'GET',
+      data: 'formData'
+    }).success(function(data){
+      $scope.data = data.data;
+      console.log($scope.data);
+
+    });
+};
+$http({
+  url: 'http://d6c901d4.ngrok.io/homes/1/chores.json',
+  method: 'GET'
+}).success(function(data){
+  $scope.totalChores = data;
+  console.log($scope.totalChores);
+
+});
+    }]);
+
+
+//     mainApp.controller('admin',function($scope, $http){
+//       $http({
+//         method: 'GET',
+//         url: 'http://a48f6bd3.ngrok.io/homes/1/chores/1.json',
+//       }).success(function(data){
+//         $scope.data = data.data;
+//         console.log($scope.data);
+//         // console.log(data.data);
+//       });
+// });
+// });
+
+
+
+
+  // // gentooApp.controller('ProfileCtrl', function ($scope, $http) {
+  //          $scope.addProfile = function() {
+  //          console.log("posting data....");
+  //         //  profileData = $scope.profile;
+  //         //  console.log(profileData);
+  //          $scope.message="message";
+  //          $http({
+  //           url: 'http://a48f6bd3.ngrok.io/homes/1/chores/',
+  //           method: "POST",
+  //           // data: profileData,
+  //           // headers: {'Authorization': 'sinovia'}
+  //       }).success(function (data, status, headers, config) {
+  //               $scope.chores = data;
+  //           }).error(function (data, status, headers, config) {
+  //               $scope.status = status;
+  //           });
+  //      };

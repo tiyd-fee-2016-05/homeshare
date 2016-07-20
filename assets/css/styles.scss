@@ -4,6 +4,9 @@ $color-user-text: #f0f0f5;
 $color-user-highlights1: #549fbb;
 $color-user-highlights2: #3B4051;
 $color-dull-white: #F2F2F6;
+$background: #EFE9F4;
+$list-item: #3B4051;
+// $glow: rgba(8,178,227,0.15);
 
 html {
   background-color: $color-user-profile;
@@ -15,3 +18,6 @@ html {
 @import "partials/profile-edit";
 @import "partials/chore-user";
 @import "partials/shop-user";
+@import "partials/landing";
+@import "partials/main";
+@import "partials/chore-admin";
