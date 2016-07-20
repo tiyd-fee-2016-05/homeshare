@@ -2,7 +2,7 @@
 
   $susy: (
     columns: 12,
-    container: 90%
+    container: 100%
   );
 
 .personal-profile-main {
@@ -88,7 +88,8 @@
   .section-chores {
 
     @include span( 10 of 12 );
-    margin: 2em 0 0 8%;
+    margin: 1em 0 2.5em 8%;
+    overflow: hidden;
 
     .chore-icon,
     h2,
@@ -98,20 +99,20 @@
     }
 
     .chore-icon {
-      width: 2.15em;
+      width: 2.5em;
     }
 
     h2 {
       text-align: center;
-      font-size: 1.15em;
+      font-size: 1.75em;
       font-weight: 400;
-      margin: .75em 0 0 20%;
+      margin: 0.45em 0 0 14%;
     }
 
     span {
       text-align: center;
-      font-size: 2.1em;
-      margin: .15em 0 0 15%;
+      font-size: 2.25em;
+      margin: .15em 0 0 17%;
       cursor: pointer;
     }
 
@@ -123,6 +124,20 @@
   .chores-bg-color {
     @include span( 12 of 12 );
     background-color: #EFE9F4;
+    overflow: hidden;
+  }
+
+  .go-to-chore-list {
+
+    .fa-list {
+      font-size: 1.5em;
+      color: $color-user-profile;
+      position: relative;
+      bottom: 1em;
+      right: .25em;
+      cursor: pointer;
+    }
+
   }
 
   .section-secondary {
@@ -143,6 +158,10 @@
       text-transform: uppercase;
       color: $color-user-highlights1;
       margin: 1.5em auto 1.5em;
+    }
+
+    .fav-chore {
+      margin-top: 1.5em;
     }
 
     .fav-chore,

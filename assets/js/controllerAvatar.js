@@ -1,4 +1,4 @@
-mainApp.controller( "ChoresController", [ "$scope", function( $scope ) {
+mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
 
   // used to aid in drop down of chore list on profile-edit.html.  Initially set to false so list will not display on load.
   $scope.showChores = false;
@@ -66,4 +66,4 @@ mainApp.controller( "ChoresController", [ "$scope", function( $scope ) {
 
    console.log( "Click: " + avatarClick );
   }; // end nextIcon()
-}]); // end ChoresController
+}]); // end ControllerAvatar

@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+html {
+  background-color: #2E86AB; }
+
 .personal-profile-main {
-  max-width: 90%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -73,7 +76,8 @@
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%;
-    margin: 2em 0 0 8%; }
+    margin: 1em 0 2.5em 8%;
+    overflow: hidden; }
     .personal-profile-main .section-chores .chore-icon,
     .personal-profile-main .section-chores h2,
     .personal-profile-main .section-chores span {
@@ -82,16 +86,16 @@
       margin-right: 1.69492%;
       color: #3B4051; }
     .personal-profile-main .section-chores .chore-icon {
-      width: 2.15em; }
+      width: 2.5em; }
     .personal-profile-main .section-chores h2 {
       text-align: center;
-      font-size: 1.15em;
+      font-size: 1.75em;
       font-weight: 400;
-      margin: .75em 0 0 20%; }
+      margin: 0.45em 0 0 14%; }
     .personal-profile-main .section-chores span {
       text-align: center;
-      font-size: 2.1em;
-      margin: .15em 0 0 15%;
+      font-size: 2.25em;
+      margin: .15em 0 0 17%;
       cursor: pointer; }
     .personal-profile-main .section-chores .chore {
       margin-bottom: 3.5em; }
@@ -100,7 +104,15 @@
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #EFE9F4; }
+    background-color: #EFE9F4;
+    overflow: hidden; }
+  .personal-profile-main .go-to-chore-list .fa-list {
+    font-size: 1.5em;
+    color: #2E86AB;
+    position: relative;
+    bottom: 1em;
+    right: .25em;
+    cursor: pointer; }
   .personal-profile-main .section-secondary {
     width: 100%;
     float: left;
@@ -122,6 +134,8 @@
       text-transform: uppercase;
       color: #549fbb;
       margin: 1.5em auto 1.5em; }
+    .personal-profile-main .section-secondary .fav-chore {
+      margin-top: 1.5em; }
     .personal-profile-main .section-secondary .fav-chore,
     .personal-profile-main .section-secondary .years-experience {
       font-size: .95em;
@@ -130,7 +144,7 @@
       margin-bottom: 1.5em; }
 
 .group-profile-main {
-  max-width: 90%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -195,14 +209,14 @@
     .group-profile-main .section-main .group-members-num {
       font-size: .95em;
       margin: .5em auto 1.5em; }
-  .group-profile-main .section-secondary {
+  .group-profile-main .section-members {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
     background-color: #22637F;
     color: #f0f0f5; }
-    .group-profile-main .section-secondary .group-members-heading {
+    .group-profile-main .section-members .group-members-heading {
       width: 100%;
       float: left;
       margin-left: 0;
@@ -213,34 +227,46 @@
       text-transform: uppercase;
       color: #549fbb;
       margin: 1.5em auto 1.5em; }
-    .group-profile-main .section-secondary .group-member {
+    .group-profile-main .section-members .group-member {
       width: 19.49153%;
       float: left;
       margin-right: 1.69492%;
       margin: 0 0 0 4.45%;
-      text-align: center; }
-    .group-profile-main .section-secondary .user-avatar {
+      text-align: center;
+      cursor: pointer; }
+    .group-profile-main .section-members .user-avatar {
       width: 3em;
       border-radius: 50%; }
-    .group-profile-main .section-secondary .member-name {
+    .group-profile-main .section-members .member-name {
       font-size: 1.15em;
       color: #fff;
-      margin-top: 1em; }
-    .group-profile-main .section-secondary .member-level,
-    .group-profile-main .section-secondary .member-points,
-    .group-profile-main .section-secondary .member-expertise {
-      font-size: .95em;
-      color: #f0f0f5;
-      margin-top: 1.5em; }
-    .group-profile-main .section-secondary .line-two {
-      font-size: .85em;
-      color: #549fbb;
-      margin-top: .65em; }
-    .group-profile-main .section-secondary .member-expertise {
-      margin-bottom: 1.5em; }
+      margin: 1em 0 1em 0; }
+    .group-profile-main .section-members .member-stats {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      margin: 0 0 1.5em -1.15em; }
+      .group-profile-main .section-members .member-stats .member-level1,
+      .group-profile-main .section-members .member-stats .member-points1,
+      .group-profile-main .section-members .member-stats .member-expertise1 {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%;
+        text-align: center;
+        font-size: .95em;
+        color: #f0f0f5;
+        margin: 1.5em 0 0 1.75em; }
+      .group-profile-main .section-members .member-stats .line-two {
+        font-size: .85em;
+        color: #549fbb;
+        margin-top: .65em; }
+      .group-profile-main .section-members .member-stats .member-expertise {
+        margin-bottom: 2em; }
 
 .profile-edit-main {
-  max-width: 90%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -350,5 +376,160 @@
       width: 3.5em;
       margin: 0 0 1em 2em;
       cursor: pointer; }
+
+.chore-user-main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+  .chore-user-main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .chore-user-main .section-main {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #2E86AB;
+    color: #f0f0f5; }
+    .chore-user-main .section-main .center-avatar {
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%;
+      margin: 0 0 1em 32%; }
+      .chore-user-main .section-main .center-avatar .user-avatar {
+        width: 6.5em;
+        margin: 2em 0 0 0;
+        border-radius: 50%; }
+  .chore-user-main .section-chores {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #22637F;
+    overflow: auto; }
+    .chore-user-main .section-chores .username {
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: 400;
+      margin: 1.25em 0 1.5em 0;
+      color: #2E86AB; }
+    .chore-user-main .section-chores .chore-list {
+      color: #F2F2F6; }
+      .chore-user-main .section-chores .chore-list li {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 1em 0 1.25em 9.5%; }
+      .chore-user-main .section-chores .chore-list h2,
+      .chore-user-main .section-chores .chore-list span,
+      .chore-user-main .section-chores .chore-list .chore-icon {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%; }
+      .chore-user-main .section-chores .chore-list .chore-icon {
+        width: 40.67797%;
+        float: left;
+        margin-right: 1.69492%;
+        width: 2em; }
+      .chore-user-main .section-chores .chore-list h2 {
+        font-size: 1em;
+        width: 7em;
+        margin: .45em 10% 0 10%; }
+      .chore-user-main .section-chores .chore-list .fa-check-circle-o {
+        font-size: 2em;
+        cursor: pointer; }
+
+.shop-user-main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+  .shop-user-main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .shop-user-main .section-main {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #2E86AB;
+    color: #f0f0f5; }
+    .shop-user-main .section-main .center-avatar {
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%;
+      margin: 0 0 1em 32%; }
+      .shop-user-main .section-main .center-avatar .user-avatar {
+        width: 6.5em;
+        margin: 2em 0 0 0;
+        border-radius: 50%; }
+  .shop-user-main .section-shopping-list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #22637F;
+    overflow: auto; }
+    .shop-user-main .section-shopping-list .username {
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: 400;
+      margin: 1.25em 0 1.5em 0;
+      color: #2E86AB; }
+    .shop-user-main .section-shopping-list .shopping-headings {
+      color: #F2F2F6;
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: 400; }
+      .shop-user-main .section-shopping-list .shopping-headings li {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%;
+        text-align: center;
+        margin: 1em 0 1em 0; }
+      .shop-user-main .section-shopping-list .shopping-headings .qty-heading {
+        margin-left: 15%; }
+      .shop-user-main .section-shopping-list .shopping-headings .item-heading {
+        width: 40.67797%;
+        float: left;
+        margin-right: 1.69492%;
+        width: 8em;
+        margin-left: 7%; }
+      .shop-user-main .section-shopping-list .shopping-headings .checkbox-heading {
+        margin-left: 90%; }
+    .shop-user-main .section-shopping-list .shopping-list {
+      color: #F2F2F6; }
+      .shop-user-main .section-shopping-list .shopping-list li {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 3em; }
+      .shop-user-main .section-shopping-list .shopping-list .qty,
+      .shop-user-main .section-shopping-list .shopping-list .shopping-item,
+      .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%; }
+      .shop-user-main .section-shopping-list .shopping-list h2 {
+        font-size: 1em; }
+      .shop-user-main .section-shopping-list .shopping-list .qty {
+        margin: .45em 2em 0 10.35%; }
+      .shop-user-main .section-shopping-list .shopping-list .shopping-item {
+        width: 8em;
+        margin: .45em 1.5em 0 -3.75em; }
+      .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
+        width: 5em;
+        margin: .95em 0 0 1.5em; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,7 @@
 
   $susy: (
     columns: 12,
-    container: 90%
+    container: 100%
   );
 
 .group-profile-main {
@@ -80,7 +80,8 @@
     }
   } // end .section-main
 
-  .section-secondary {
+  .section-members {
+
     @include span( 12 of 12 );
     background-color: $color-user-profile2;
     color: $color-user-text;
@@ -99,6 +100,7 @@
       @include span( 2.5 of 12 );
       margin: 0 0 0 4.45%;
       text-align: center;
+      cursor: pointer;
       // background-color: red;
     }
 
@@ -110,25 +112,34 @@
     .member-name {
       font-size: 1.15em;
       color: #fff;
-      margin-top: 1em;
+      margin: 1em 0 1em 0;
     }
 
-    .member-level,
-    .member-points,
-    .member-expertise {
-      font-size: .95em;
-      color: $color-user-text;
-      margin-top: 1.5em;
-    }
+    .member-stats {
 
-    .line-two {
-      font-size: .85em;
-      color: $color-user-highlights1;
-      margin-top: .65em;
-    }
+      @include span( 12 of 12 );
+      width: 100%;
+      margin: 0 0 1.5em -1.15em;
 
-    .member-expertise {
-      margin-bottom: 1.5em;
+      .member-level1,
+      .member-points1,
+      .member-expertise1 {
+        @include span( 3 of 12 );
+        text-align: center;
+        font-size: .95em;
+        color: $color-user-text;
+        margin: 1.5em 0 0 1.75em;
+      }
+
+      .line-two {
+        font-size: .85em;
+        color: $color-user-highlights1;
+        margin-top: .65em;
+      }
+
+      .member-expertise {
+        margin-bottom: 2em;
+      }
     }
   } // end .section-secondary
 } // end .personal-profile-main
