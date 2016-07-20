@@ -18,7 +18,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     });
 };
     }]);
-
+ 
 
 //     mainApp.controller('admin',function($scope, $http){
 //       $http({
