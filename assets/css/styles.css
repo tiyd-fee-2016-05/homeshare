@@ -97,8 +97,8 @@ html {
   .main-wrapper .profile {
     position: absolute;
     display: inline-block;
-    margin-top: 15%;
-    margin-left: 27%; }
+    margin-top: 13.3em;
+    margin-left: 24em; }
     .main-wrapper .profile:hover {
       text-decoration: underline; }
     .main-wrapper .profile img {
@@ -113,8 +113,8 @@ html {
   .main-wrapper .chores {
     position: absolute;
     display: inline-block;
-    margin-left: 57%;
-    margin-top: 15%; }
+    margin-left: 50em;
+    margin-top: 13em; }
     .main-wrapper .chores:hover {
       text-decoration: underline; }
     .main-wrapper .chores img {
@@ -129,8 +129,8 @@ html {
   .main-wrapper .shopping-list {
     position: absolute;
     display: inline-block;
-    margin-top: 40%;
-    margin-left: 26%; }
+    margin-top: 35.6em;
+    margin-left: 22.8em; }
     .main-wrapper .shopping-list:hover {
       text-decoration: underline; }
     .main-wrapper .shopping-list img {
@@ -145,8 +145,8 @@ html {
   .main-wrapper .bills {
     position: absolute;
     display: inline-block;
-    margin-top: 40%;
-    margin-left: 56%; }
+    margin-top: 35.6em;
+    margin-left: 50em; }
     .main-wrapper .bills:hover {
       text-decoration: underline; }
     .main-wrapper .bills img {
