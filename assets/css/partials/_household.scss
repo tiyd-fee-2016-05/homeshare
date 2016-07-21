@@ -6,29 +6,22 @@ columns: 12,
 container: 100%,
 );
 
-#ca-wrapper{
-@include container;
-@include span(12);
-}
-
-
-#ca-wrapper{
-.ca-header{
+#hhwrapper{
+.hh-header{
   font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 4em;
   color: $background;
   text-align: center;
 }
-.bg{
+.background{
   display: block;
   position: absolute;
   z-index: -9999;
-  margin-left: 29em;
-  margin-top: 6em;
-  height: 30em;
+  margin-left: 27em;
+  margin-top: 5em;
   opacity: .35;
 }
-.ca-form{
+.hh-form{
   font-family: 'Baumans', cursive;
   font-size: 28px;
   display: block;
