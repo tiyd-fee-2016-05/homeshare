@@ -29,6 +29,27 @@ $http({
 });
     }]);
 
+    mainApp.controller("hhController", ['$scope', '$http', function($scope, $http){
+      $scope.submitForm = function() {
+              // console.log($scope.choreName);
+              $scope.form = {
+                "name": $scope.hhName,
+                "description": $scope.hhDesc,
+                "value": $scope.hhRent
+              };
+              console.log($scope.form);
+        $http({
+          url: 'http://d6c901d4.ngrok.io/homes/new.json?name= ' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          method: 'GET',
+          data: 'formData',
+          headers: {'Authorization': 'ty@example.com'}
+        }).success(function(data){
+          $scope.data = data.data;
+          console.log($scope.data);
+
+        });
+      };
+  }]);
 
 //     mainApp.controller('admin',function($scope, $http){
 //       $http({
