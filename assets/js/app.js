@@ -12,8 +12,9 @@ mainApp.config( function($routeProvider) {
   .when( "/login", {
     templateUrl: "pages/login.html"
   })
-  .when( "/setup", {
-    templateUrl: "pages/setup.html"
+  .when( "/signup", {
+    templateUrl: "pages/signup.html",
+    controller: "signupController"
   })
   .when( "/profile-edit", {
     templateUrl: "pages/profile-edit.html"

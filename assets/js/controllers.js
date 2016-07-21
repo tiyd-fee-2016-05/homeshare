@@ -1,3 +1,5 @@
+//CHORE ADMIN CONTROLLER
+
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 $scope.data;
 
@@ -10,8 +12,8 @@ $scope.data;
           };
           console.log($scope.form);
     $http({
-      url: 'http://d6c901d4.ngrok.io/homes/1/chores/new.json?name= ' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.choreValue ,
-      method: 'GET',
+      url: 'http://d6c901d4.ngrok.io/homes/1/chores.json?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.choreValue ,
+      method: 'POST',
       data: 'formData'
     }).success(function(data){
       $scope.data = data.data;
@@ -29,6 +31,8 @@ $http({
 });
     }]);
 
+    //HOUSEHOLD SETUP CONTROLLER
+
     mainApp.controller("hhController", ['$scope', '$http', function($scope, $http){
       $scope.submitForm = function() {
               // console.log($scope.choreName);
@@ -39,31 +43,39 @@ $http({
               };
               console.log($scope.form);
         $http({
-          url: 'http://d6c901d4.ngrok.io/homes/new.json?name= ' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
-          method: 'GET',
+          url: 'http://d6c901d4.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          method: 'POST',
           data: 'formData',
-          headers: {'Authorization': 'ty@example.com'}
+          // headers: {'Authorization': 'ty@example.com'}
         }).success(function(data){
           $scope.data = data.data;
           console.log($scope.data);
 
         });
       };
+
+
   }]);
 
-//     mainApp.controller('admin',function($scope, $http){
-//       $http({
-//         method: 'GET',
-//         url: 'http://a48f6bd3.ngrok.io/homes/1/chores/1.json',
-//       }).success(function(data){
-//         $scope.data = data.data;
-//         console.log($scope.data);
-//         // console.log(data.data);
-//       });
-// });
-// });
+  //SIGNUP CONTROLLER
+  mainApp.controller('signupController', ['$scope', '$http', function($scope, $http){
+    // var user = {"user":{"email":"maria@example.com","password":"password"}};
 
+    $scope.submitForm = function(){
+      $scope.form = {
+        "email": $scope.suEmail,
+        "password": $scope.suPassword
+      };
+      console.log($scope.form);
+      $http({
+        url: 'http://d6c901d4.ngrok.io/users',
+        method: 'POST',
 
+      }).success(function(data){
+        alert("WELCOME HOME!");
+        $scope.data = data.data;
+        console.log($scope.data);
+      });
+    };
 
-
-  
+}]);
