@@ -1,0 +1,148 @@
+@import "../../../bower_components/susy/sass/susy";
+
+  $susy: (
+    columns: 12,
+    container: 100%
+  );
+
+.group-profile-main {
+
+  overflow: scroll;
+
+  @include container;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+
+  .section-main {
+    @include span( 12 of 12 );
+    background-color: $color-user-profile;
+    color: $color-user-text;
+
+    h3 {
+      color: $color-user-highlights2;
+    }
+
+    .left-chores {
+      @include span( 4 of 12 );
+      // background: blue;
+      margin: 4em 0 0 0;
+      text-align: center;
+    }
+
+    .center-avatar {
+      @include span( 4 of 12 );
+      // background: orange;
+      text-align: center;
+      position: relative;
+      right: .1%;
+
+      .group-avatar {
+        width: 6.3em;
+        margin-top: 2em;
+        border-radius: 50%;
+      }
+    }
+
+    .right-level {
+      @include span( 4 of 12 );
+      // background: green;
+      margin: 4em 0 0 0;
+      text-align: center;
+    }
+
+    .group-name,
+    .group-location,
+    .user-age,
+    .group-members-num {
+      @include span( 12 of 12 );
+      text-align: center;
+      color: $color-user-text;
+    }
+
+    .group-name {
+      font-size: 2em;
+      margin-top: 1em;
+    }
+
+    .group-location {
+      font-size: 1.15em;
+      margin-top: 2em;
+    }
+
+    .user-age {
+      font-size: .95em;
+      margin-top: 1.75em;
+    }
+
+    .group-members-num {
+      font-size: .95em;
+      margin: .5em auto 1.5em;
+    }
+  } // end .section-main
+
+  .section-members {
+
+    @include span( 12 of 12 );
+    background-color: $color-user-profile2;
+    color: $color-user-text;
+
+    .group-members-heading {
+      @include span( 12 of 12 );
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $color-user-highlights1;
+      margin: 1.5em auto 1.5em;
+    }
+
+    .group-member {
+      @include span( 2.5 of 12 );
+      margin: 0 0 0 4.45%;
+      text-align: center;
+      cursor: pointer;
+      // background-color: red;
+    }
+
+    .user-avatar {
+      width: 3em;
+      border-radius: 50%;
+    }
+
+    .member-name {
+      font-size: 1.15em;
+      color: #fff;
+      margin: 1em 0 1em 0;
+    }
+
+    .member-stats {
+
+      @include span( 12 of 12 );
+      display: none;
+      width: 100%;
+      margin: 0 0 1.5em -1.15em;
+
+      .member-level1,
+      .member-points1,
+      .member-expertise1 {
+        @include span( 3 of 12 );
+        text-align: center;
+        font-size: .95em;
+        color: $color-user-text;
+        margin: 1.5em 0 0 1.75em;
+      }
+
+      .line-two {
+        font-size: .85em;
+        color: $color-user-highlights1;
+        margin-top: .65em;
+      }
+
+      .member-expertise {
+        margin-bottom: 2em;
+      }
+    }
+  } // end .section-secondary
+} // end .personal-profile-main

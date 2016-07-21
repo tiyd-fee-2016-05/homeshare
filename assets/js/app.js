@@ -1,6 +1,4 @@
-var mainApp = angular.module("mainApp",["ngRoute"]);
-
-
+var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"] );
 
 mainApp.config( function($routeProvider) {
 
@@ -41,7 +39,6 @@ mainApp.config( function($routeProvider) {
   .when( "/chore-user", {
     templateUrl: "pages/chore-user.html",
     controller: "choreAdminController",
-    controller: "hhController"
   })
   .when( "/bill-admin", {
     templateUrl: "pages/bill-admin.html"
@@ -53,6 +50,6 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/calendar.html"
   })
   .otherwise({
-    redirectTo: "/landing"
+    redirectTo: "/main"
   });
 }); // end mainApp.config

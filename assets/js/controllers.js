@@ -1,7 +1,8 @@
+
 //CHORE ADMIN CONTROLLER
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
-$scope.data;
+
 
   $scope.submitForm = function() {
           // console.log($scope.choreName);
