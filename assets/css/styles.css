@@ -63,7 +63,7 @@ html {
     border: 12px solid #DCDCDD;
     border-radius: 100%; }
   .landing-wrapper .register button {
-    margin-left: 41.4em;
+    margin-left: 42.2em;
     margin-top: 1em;
     height: 3em;
     width: 11em;
@@ -273,41 +273,5 @@ html {
     -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
-
-#su-wrapper {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-  #su-wrapper:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  #su-wrapper .su-form {
-    font-family: 'Baumans', cursive;
-    font-size: 28px;
-    display: block;
-    position: absolute;
-    margin-top: 11em;
-    margin-left: 19em;
-    width: 6em; }
-    #su-wrapper .su-form input {
-      width: 18em; }
-    #su-wrapper .su-form button {
-      margin-left: 5.2em;
-      margin-top: 1em;
-      height: 3em;
-      width: 11em;
-      font-family: Baumans;
-      font-size: 17px;
-      border: none;
-      border-radius: 3%;
-      background: #C43F33;
-      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
 
 /*# sourceMappingURL=styles.css.map */
