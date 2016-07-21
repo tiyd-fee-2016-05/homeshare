@@ -9,10 +9,12 @@
   <!-- chore section of page...will include user name and chores unordered list -->
   <section class="section-chores">
     <h1 class="username">Username Chores</h1>
-    <ul class="chore-list" ng-repeat="chore in chores">
+    <ul class="chore-list" ng-repeat="chore in totalChores">
       <li>
-        <img class="chore-icon" src={{chore.ChoreIcon}} alt="Picture of bathtub">
-        <h2>{{chore.ChoreName}}</h2>
+        <img class="chore-icon" src={{chores[totalChores.indexOf(chore)].ChoreIcon}} alt="Picture of chore">
+        <h2>{{chore.name}}</h2>
+        <h2 class="chore-value">{{chore.value}}</h2>
+        <h2>{{chore.description}}</h2>
         <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>
       </li>
     </ul>

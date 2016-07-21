@@ -74,6 +74,10 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
   $( ".left-chores" ).click( function() {
     console.log( "Houston, we have liftoff!" );
     $( ".chores-bg-color" ).slideToggle();
+
+    // thank you http://www.electrictoolbox.com/jquery-scroll-bottom/ for your help
+    $( "html, body" ).animate( { scrollTop: $(document).height() }, 'slow' );
+    return false;
   }); // end .left-chores click event
 
   $( ".fa-sort-asc" ).click( function() {

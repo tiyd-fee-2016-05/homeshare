@@ -2,6 +2,9 @@
 html {
   background-color: #2E86AB; }
 
+.fa-bars {
+  cursor: pointer; }
+
 .personal-profile-main {
   max-width: 100%;
   margin-left: auto;
@@ -145,6 +148,7 @@ html {
       margin-bottom: 1.5em; }
 
 .group-profile-main {
+  overflow: scroll;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -429,19 +433,22 @@ html {
         margin: 1em 0 1.25em 9.5%; }
       .chore-user-main .section-chores .chore-list h2,
       .chore-user-main .section-chores .chore-list span,
-      .chore-user-main .section-chores .chore-list .chore-icon {
+      .chore-user-main .section-chores .chore-list .chore-value {
         width: 23.72881%;
         float: left;
         margin-right: 1.69492%; }
+      .chore-user-main .section-chores .chore-list .chore-value {
+        display: inline-block;
+        background: orange; }
       .chore-user-main .section-chores .chore-list .chore-icon {
-        width: 40.67797%;
+        width: 23.72881%;
         float: left;
         margin-right: 1.69492%;
         width: 2em; }
       .chore-user-main .section-chores .chore-list h2 {
         font-size: 1em;
         width: 7em;
-        margin: .45em 10% 0 10%; }
+        margin: .20em 10% 0 10%; }
       .chore-user-main .section-chores .chore-list .fa-check-circle-o {
         font-size: 2em;
         cursor: pointer; }
@@ -533,5 +540,92 @@ html {
       .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
         width: 5em;
         margin: .95em 0 0 1.5em; }
+
+#ca-wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  #ca-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+@media screen and (min-width: 23.5em) and (max-width: 35.5em) {
+  #ca-wrapper .ca-header {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 2.75em;
+    color: #EFE9F4;
+    text-align: center; }
+  #ca-wrapper .bg {
+    display: block;
+    position: absolute;
+    z-index: -9999;
+    margin-left: 29em;
+    margin-top: 6em;
+    height: 30em;
+    opacity: .35; }
+  #ca-wrapper .ca-form {
+    font-family: 'Baumans', cursive;
+    font-size: 28px;
+    display: block;
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 18em;
+    width: 6em; }
+    #ca-wrapper .ca-form input {
+      width: 18em; }
+    #ca-wrapper .ca-form button {
+      margin-left: 5.2em;
+      margin-top: 1em;
+      height: 3em;
+      width: 11em;
+      font-family: Baumans;
+      font-size: 17px;
+      border: none;
+      border-radius: 3%;
+      background: #C43F33;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); } }
+#ca-wrapper .ca-header {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 4em;
+  color: #EFE9F4;
+  text-align: center; }
+#ca-wrapper .bg {
+  display: block;
+  position: absolute;
+  z-index: -9999;
+  margin-left: 29em;
+  margin-top: 6em;
+  height: 30em;
+  opacity: .35; }
+#ca-wrapper .ca-form {
+  font-family: 'Baumans', cursive;
+  font-size: 28px;
+  display: block;
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 18em;
+  width: 6em; }
+  #ca-wrapper .ca-form input {
+    width: 18em; }
+  #ca-wrapper .ca-form button {
+    margin-left: 5.2em;
+    margin-top: 1em;
+    height: 3em;
+    width: 11em;
+    font-family: Baumans;
+    font-size: 17px;
+    border: none;
+    border-radius: 3%;
+    background: #C43F33;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
 
 /*# sourceMappingURL=styles.css.map */
