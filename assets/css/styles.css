@@ -71,7 +71,6 @@ html {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  border: solid 2px black;
   min-height: 100%;
   position: absolute; }
   .main-wrapper:after {
@@ -165,5 +164,41 @@ html {
 .fa-form {
   position: relative;
   display: block; }
+
+#hhwrapper .hh-header {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 4em;
+  color: #EFE9F4;
+  text-align: center; }
+#hhwrapper .background {
+  display: block;
+  position: absolute;
+  z-index: -9999;
+  margin-left: 27em;
+  margin-top: 5em;
+  opacity: .35; }
+#hhwrapper .hh-form {
+  font-family: 'Baumans', cursive;
+  font-size: 28px;
+  display: block;
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 18em;
+  width: 6em; }
+  #hhwrapper .hh-form input {
+    width: 18em; }
+  #hhwrapper .hh-form button {
+    margin-left: 5.2em;
+    margin-top: 1em;
+    height: 3em;
+    width: 11em;
+    font-family: Baumans;
+    font-size: 17px;
+    border: none;
+    border-radius: 3%;
+    background: #C43F33;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
 
 /*# sourceMappingURL=styles.css.map */
