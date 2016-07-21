@@ -18,7 +18,7 @@ container: 100%,
 .landing-wrapper{
 @include container;
 // border: solid 2px black;
-@include span(12);
+@include span(12 of 12);
 margin-bottom: 0;
 
 
@@ -29,6 +29,8 @@ margin-bottom: 0;
 
 
 .header{
+  @include span(12 of 12);
+
   font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 4em;
   color: $background;
@@ -48,6 +50,8 @@ margin-bottom: 0;
 }
 
 .login{
+  @include span(12 of 12);
+
   font-family: 'Baumans', cursive;
   font-size: 1.2em;
   position: relative;
@@ -76,6 +80,8 @@ margin-bottom: 0;
   }
 }
 .register{
+  @include span(12 of 12);
+
   h2{
   font-family: 'Baumans', cursive;
   font-size: 1.6em;
@@ -88,19 +94,21 @@ margin-bottom: 0;
     border: 12px solid #DCDCDD;
     border-radius: 100%;
         }
-        button{
-          margin-left: 42.2em;
-          margin-top: 1em;
-          height: 3em;
-          width: 11em;
-          font-family: Baumans;
-          font-size: 17px;
-          border: none;
-          border-radius: 3%;
-          background: #C43F33;
-          -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-          -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-          box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-        }
+  button{
+    @include span(12 of 12);
+    // margin-left: 42.2em;
+    display: inline-block;
+    margin-top: 1em;
+    height: 3em;
+    width: 11em;
+    font-family: Baumans;
+    font-size: 17px;
+    border: none;
+    border-radius: 3%;
+    background: #C43F33;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  }
 }
 }
