@@ -14,7 +14,7 @@ $scope.data;
     $http({
       url: 'http://d6c901d4.ngrok.io/homes/1/chores.json?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.choreValue ,
       method: 'POST',
-      // data: 'formData'
+      data: 'formData'
     }).success(function(data){
       $scope.data = data.data;
       console.log($scope.data);
@@ -45,7 +45,7 @@ $http({
         $http({
           url: 'http://d6c901d4.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
-          // data: 'formData',
+          data: 'formData',
           // headers: {'Authorization': 'ty@example.com'}
         }).success(function(data){
           $scope.data = data.data;
