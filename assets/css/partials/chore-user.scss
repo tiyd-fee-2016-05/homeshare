@@ -1,0 +1,87 @@
+@import "../../../bower_components/susy/sass/susy";
+
+  $susy: (
+    columns: 12,
+    container: 100%
+  );
+
+.chore-user-main {
+
+  @include container;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+  .section-main {
+    @include span( 12 of 12 );
+    background-color: $color-user-profile;
+    color: $color-user-text;
+
+    .center-avatar {
+      @include span( 4 of 12 );
+      // background: orange;
+      // position: fixed;
+      margin: 0 0 1em 32%;
+
+      .user-avatar {
+        width: 6.5em;
+        margin: 2em 0 0 0;
+        border-radius: 50%;
+      }
+    } // end .center-avatar
+  } // end .section-main
+
+  .section-chores {
+
+    @include span( 12 of 12 );
+    background-color: $color-user-profile2;
+    overflow: auto;
+
+    .username {
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: 400;
+      margin: 1.25em 0 1.5em 0;
+      color: $color-user-profile;
+    }
+
+    .chore-list {
+
+      color: $color-dull-white;
+
+      li {
+        @include span( 12 of 12 );
+        margin: 1em 0 1.25em 9.5%;
+      }
+
+      h2,
+      span,
+      .chore-value {
+        @include span( 3 of 12 );
+      }
+
+      .chore-value {
+        display: inline-block;
+        background: orange;
+      }
+
+      .chore-icon {
+        @include span( 3 of 12 );
+        width: 2em;
+      }
+
+      h2 {
+        font-size: 1em;
+        width: 7em;
+        margin: .20em 10% 0 10%;
+      }
+
+      .fa-check-circle-o {
+        font-size: 2em;
+        cursor: pointer;
+      }
+    }
+  } // end .section-chores
+
+
+} // end .chore-user-main
