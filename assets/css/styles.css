@@ -1,7 +1,7 @@
 html {
   background-color: #2e86ab; }
 
-.wrapper {
+.landing-wrapper {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -10,18 +10,18 @@ html {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0; }
-  .wrapper:after {
+  .landing-wrapper:after {
     content: " ";
     display: block;
     clear: both; }
-  .wrapper * {
+  .landing-wrapper * {
     box-sizing: border-box; }
-  .wrapper .header {
+  .landing-wrapper .header {
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 4em;
     color: #EFE9F4;
     text-align: center; }
-  .wrapper .icon img {
+  .landing-wrapper .icon img {
     height: 250px;
     margin-left: 43%;
     margin-top: 3%;
@@ -29,7 +29,7 @@ html {
     opacity: 0.75;
     position: relative;
     display: block; }
-  .wrapper .login {
+  .landing-wrapper .login {
     font-family: 'Baumans', cursive;
     font-size: 1.2em;
     position: relative;
@@ -37,12 +37,12 @@ html {
     text-align: center;
     margin-left: 42%;
     line-height: 1.7; }
-    .wrapper .login input {
+    .landing-wrapper .login input {
       height: 34px;
       width: 210px;
       border: none;
       border-radius: 4%; }
-    .wrapper .login button {
+    .landing-wrapper .login button {
       font-family: 'Baumans', cursive;
       font-size: 1.1em;
       height: 30px;
@@ -52,12 +52,12 @@ html {
       margin-top: 10px;
       border: none;
       background: #DCDCDD; }
-  .wrapper .gmail h2 {
+  .landing-wrapper .gmail h2 {
     font-family: 'Baumans', cursive;
     font-size: 1.6em;
     position: relative;
     margin: 3% 0 0 42.4%; }
-  .wrapper .gmail img {
+  .landing-wrapper .gmail img {
     position: relative;
     margin: 1.8% 0 0 47.5%;
     border: 12px solid #DCDCDD;
@@ -71,83 +71,109 @@ html {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  border: solid 2px black;
   min-height: 100%;
   position: absolute; }
   .main-wrapper:after {
     content: " ";
     display: block;
     clear: both; }
-
-* {
-  box-sizing: border-box; }
-
-.header-main {
-  font-family: 'Baumans', cursive;
-  font-size: 4em;
-  text-align: center;
-  margin-top: 4%;
-  margin-left: 13%;
-  display: block;
-  margin-bottom: -8%; }
-
-.profile {
-  position: absolute;
-  display: inline-block;
-  margin-top: 15%;
-  margin-left: 34%; }
-  .profile:hover {
-    text-decoration: underline; }
-  .profile img {
-    height: 135px;
-    background: #dcdcdd;
-    border-radius: 19%; }
-  .profile h2 {
+  .main-wrapper .colorbar {
+    width: 100%;
+    height: 38em;
+    background: #094660;
+    z-index: -9999;
+    margin-top: 10em;
+    position: absolute; }
+  .main-wrapper * {
+    box-sizing: border-box; }
+  .main-wrapper .header-main {
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center; }
-
-.chores {
-  position: absolute;
-  display: inline-block;
-  margin-left: 63%;
-  margin-top: 15%; }
-  .chores img {
-    height: 135px;
-    background: #dcdcdd;
-    border-radius: 19%; }
-  .chores h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center; }
-
-.shopping-list {
-  position: absolute;
-  display: inline-block;
-  margin-top: 40%;
-  margin-left: 33%; }
-  .shopping-list img {
-    height: 135px;
-    background: #dcdcdd;
-    border-radius: 19%; }
-  .shopping-list h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center; }
-
-.bills {
-  position: absolute;
-  display: inline-block;
-  margin-top: 40%;
-  margin-left: 63%; }
-  .bills img {
-    height: 135px;
-    background: #dcdcdd;
-    border-radius: 19%; }
-  .bills h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center; }
+    font-size: 4em;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 13%;
+    display: block;
+    margin-bottom: -8%; }
+  .main-wrapper .profile {
+    position: absolute;
+    display: inline-block;
+    margin-top: 15%;
+    margin-left: 27%; }
+    .main-wrapper .profile:hover {
+      text-decoration: underline; }
+    .main-wrapper .profile img {
+      height: 135px;
+      background: #dcdcdd;
+      border-radius: 19%; }
+    .main-wrapper .profile h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 1.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .main-wrapper .chores {
+    position: absolute;
+    display: inline-block;
+    margin-left: 57%;
+    margin-top: 15%; }
+    .main-wrapper .chores:hover {
+      text-decoration: underline; }
+    .main-wrapper .chores img {
+      height: 135px;
+      background: #dcdcdd;
+      border-radius: 19%; }
+    .main-wrapper .chores h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 1.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .main-wrapper .shopping-list {
+    position: absolute;
+    display: inline-block;
+    margin-top: 40%;
+    margin-left: 26%; }
+    .main-wrapper .shopping-list:hover {
+      text-decoration: underline; }
+    .main-wrapper .shopping-list img {
+      height: 135px;
+      background: #dcdcdd;
+      border-radius: 19%; }
+    .main-wrapper .shopping-list h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 1.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .main-wrapper .bills {
+    position: absolute;
+    display: inline-block;
+    margin-top: 40%;
+    margin-left: 56%; }
+    .main-wrapper .bills:hover {
+      text-decoration: underline; }
+    .main-wrapper .bills img {
+      height: 135px;
+      background: #dcdcdd;
+      border-radius: 19%; }
+    .main-wrapper .bills h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 1.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .main-wrapper .household {
+    position: absolute;
+    display: inline-block;
+    margin-top: 24em;
+    margin-left: 36em; }
+    .main-wrapper .household:hover {
+      text-decoration: underline; }
+    .main-wrapper .household img {
+      height: 135px;
+      background: #dcdcdd;
+      border-radius: 19%; }
+    .main-wrapper .household h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 1.5em;
+      text-align: center;
+      color: #dcdcdd; }
 
 #ca-wrapper {
   max-width: 100%;

@@ -15,7 +15,7 @@ container: 100%,
 
 
 
-.wrapper{
+.landing-wrapper{
 @include container;
 // border: solid 2px black;
 @include span(12);

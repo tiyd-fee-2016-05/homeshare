@@ -18,8 +18,9 @@ mainApp.config( function($routeProvider) {
   .when( "/profile-edit", {
     templateUrl: "pages/profile-edit.html"
   })
-  .when( "/group", {
-    templateUrl: "pages/group.html"
+  .when( "/household", {
+    templateUrl: "pages/household.html",
+    controller: "hhController"
   })
   .when( "/main", {
     templateUrl: "pages/main.html"
