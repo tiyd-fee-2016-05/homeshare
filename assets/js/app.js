@@ -4,6 +4,10 @@ mainApp.config( function($routeProvider) {
 
   $routeProvider
 
+    .when( "/group", {
+      templateUrl: "pages/group.html"
+    })
+
   .when( "/landing", {
     templateUrl: "pages/landing.html"
   })
