@@ -1,2 +1,12 @@
 
 *.scssc
+
+.DS_Store
+
+assets/.DS_Store
+
+*.map
+
+assets/images/.DS_Store
+
+pages/.DS_Store
