@@ -1,7 +1,24 @@
+$color-user-profile: #2E86AB;
+$color-user-profile2: #22637F;
+$color-user-text: #f0f0f5;
+$color-user-highlights1: #549fbb;
+$color-user-highlights2: #3B4051;
+$color-dull-white: #F2F2F6;
+$background: #EFE9F4;
 
-$background: #3B4051;
-$list-item: #EFE9F4;
-// $glow: rgba(8,178,227,0.15);
 
+html {
+  background-color: $color-user-profile;
+}
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import "partials/header";
+@import "partials/personal-profile";
+@import "partials/group-profile";
+@import "partials/profile-edit";
+@import "partials/chore-user";
+@import "partials/shop-user";
+@import "partials/chore-admin";
 @import "partials/landing";
+@import "partials/household";
+@import "partials/main";

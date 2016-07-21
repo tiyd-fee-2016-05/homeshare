@@ -1,8 +1,12 @@
-var mainApp = angular.module( "mainApp", ["ngRoute"] );
+var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"] );
 
 mainApp.config( function($routeProvider) {
 
   $routeProvider
+
+    .when( "/group", {
+      templateUrl: "pages/group.html"
+    })
 
   .when( "/landing", {
     templateUrl: "pages/landing.html"
@@ -10,14 +14,16 @@ mainApp.config( function($routeProvider) {
   .when( "/login", {
     templateUrl: "pages/login.html"
   })
-  .when( "/setup", {
-    templateUrl: "pages/setup.html"
+  .when( "/signup", {
+    templateUrl: "pages/signup.html",
+    controller: "signupController"
   })
   .when( "/profile-edit", {
     templateUrl: "pages/profile-edit.html"
   })
-  .when( "/group", {
-    templateUrl: "pages/group.html"
+  .when( "/household", {
+    templateUrl: "pages/household.html",
+    controller: "hhController"
   })
   .when( "/main", {
     templateUrl: "pages/main.html"
@@ -35,7 +41,8 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/chore-admin.html"
   })
   .when( "/chore-user", {
-    templateUrl: "pages/chore-user.html"
+    templateUrl: "pages/chore-user.html",
+    controller: "choreAdminController",
   })
   .when( "/bill-admin", {
     templateUrl: "pages/bill-admin.html"
@@ -47,6 +54,6 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/calendar.html"
   })
   .otherwise({
-    redirectTo: "/landing"
+    redirectTo: "/main"
   });
 }); // end mainApp.config

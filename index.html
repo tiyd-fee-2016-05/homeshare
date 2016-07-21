@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <link href="https://fonts.googleapis.com/css?family=Baumans|Montserrat+Subrayada:400,700|Righteous" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <meta charset="utf-8">
-    <title>HomeShare</title>
+    <title>homeshare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baumans|Montserrat+Subrayada:400,700|Righteous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <!-- CSS Animate CDN Here -->
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body ng-app="mainApp">
-    <div>
-          <ng-view></ng-view>
-        </div>
+    <header>
+      <span class="fa fa-bars" aria-hidden="true"></span>
+      <nav>
+        <ul>
+          <li><a href="#/home">home</a></li>
+          <li><a href="#/group">group profile</a></li>
+          <li><a href="#/user">user profile</a></li>
+          <li><a href="#/profile-edit">edit profile</a></li>
+          <li><a href="#/chore-user">user chores</a></li>
+          <li><a href="#/shop-user">user shopping list</a></li>
+          <li><a href="#/chore-admin">admin chores</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
-        <script src="assets/js/app.js"></script>
+
+    <div>
+      <ng-view></ng-view>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/controllerAvatar.js"></script>
+    <script src="assets/js/controllerChores.js"></script>
+    <script src="assets/js/controllerGroup.js"></script>
+    <script src="assets/js/controllers.js"></script>
   </body>
 </html>

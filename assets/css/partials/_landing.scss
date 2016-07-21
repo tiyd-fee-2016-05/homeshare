@@ -3,15 +3,112 @@
 
 $susy: (
 columns: 12,
-container:90%
+container: 100%,
 );
-.container{
+
+// body{
+//
+//   background-color: #EE6352;
+// }
+
+
+
+
+
+.landing-wrapper{
 @include container;
-background-image: url(images/misc/house.png);
-box-sizing: border-box;
+// border: solid 2px black;
+@include span(12 of 12);
+margin-bottom: 0;
+
+
+* {
+    box-sizing: border-box;
 }
 
 
 
+.header{
+  @include span(12 of 12);
 
-// @include span(3 of 12);
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 4em;
+  color: $background;
+  text-align: center;
+}
+
+.icon{
+  img{
+    height: 250px;
+    margin-left: 43%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    opacity: 0.75;
+    position: relative;
+    display: block;
+  }
+}
+
+.login{
+  @include span(12 of 12);
+
+  font-family: 'Baumans', cursive;
+  font-size: 1.2em;
+  position: relative;
+  width: 17%;
+  text-align: center;
+  margin-left: 42%;
+  line-height: 1.7;
+
+  input{
+    height: 34px;
+    width: 210px;
+    border: none;
+    border-radius: 4%;
+  }
+  button{
+    font-family: 'Baumans', cursive;
+    font-size: 1.1em;
+    height: 30px;
+    width: 150px;
+    position: relative;
+    margin-left: 7px;
+    margin-top: 10px;
+    border: none;
+    background: #DCDCDD;
+
+  }
+}
+.register{
+  @include span(12 of 12);
+
+  h2{
+  font-family: 'Baumans', cursive;
+  font-size: 1.6em;
+  position: relative;
+  margin: 3% 0 0 42.4%;
+}
+  img{
+    position: relative;
+    margin: 1.8% 0 0 47.5%;
+    border: 12px solid #DCDCDD;
+    border-radius: 100%;
+        }
+  button{
+    @include span(12 of 12);
+    // margin-left: 42.2em;
+    display: inline-block;
+    margin-top: 1em;
+    height: 3em;
+    width: 11em;
+    font-family: Baumans;
+    font-size: 17px;
+    border: none;
+    border-radius: 3%;
+    background: #C43F33;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  }
+}
+}

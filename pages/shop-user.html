@@ -1,0 +1,25 @@
+<main class="shop-user-main" ng-controller="ControllerChores">
+  <section class="section-main">
+    <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
+    <div class="center-avatar">
+      <img class="user-avatar" src="../assets/images/santa-claus.png" alt="user-avatar">
+    </div>
+  </section><!-- end .section-main -->
+
+  <!-- chore section of page...will include user name and chores unordered list -->
+  <section class="section-shopping-list">
+    <h1 class="username">Username Shopping List</h1>
+    <ul class="shopping-headings">
+      <li><h2 class="qty-heading">Qty</h2></li>
+      <li><h2 class="item-heading">Item Name</h2></li>
+      <li><h2 class="checkbox-heading">Complete</h2></li>
+    </ul>
+    <ul class="shopping-list">
+      <li>
+        <h2 class="qty">10</h2>
+        <h2 class="shopping-item">Yoplait Raspberry</h2>
+        <input class="item-checkbox" type="checkbox" ng-model="checkboxModel.value2" ng-true-value="'YES'" ng-false-value="'NO'">
+      </li>
+    </ul>
+  </section><!-- end .section-chores -->
+</main>

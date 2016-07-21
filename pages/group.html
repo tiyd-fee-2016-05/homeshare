@@ -1,0 +1,72 @@
+<main ng-controller="ControllerGroup" class="group-profile-main">
+  <section class="section-main">
+    <!-- will be left side of a 3 column centered grid...will display #of chores done? -->
+    <span class="left-chores">
+      <h3>1</h3>
+      <h2>Highest Level</h2>
+    </span>
+    <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
+    <span class="center-avatar">
+      <img class="group-avatar" src="assets/images/boy-1.png" alt="group-avatar">
+    </span>
+    <!-- will be right side of a 3 column centered grid...will display level? -->
+    <span class="right-level">
+      <h3>1</h3>
+      <h2>Average Level</h2>
+    </span>
+    <!-- user name and location of group -->
+    <h1 class="group-name">Team Homeshare</h1>
+    <h2 class="group-location">Durham, NC</h2>
+    <h2 class="group-members-num">
+      Team Members:
+      <span>4</span>
+    </h2>
+  </section>
+  <section class="section-members">
+    <h2 class="group-members-heading">Team Members</h2>
+    <!-- begin list of members that will be populated with ng-repeat -->
+    <ul class="list-members">
+      <!-- begin individual member -->
+      <li class="group-member">
+        <img class="user-avatar" src="assets/images/boy-1.png" alt="user-avatar"></img>
+        <h2 class="member-name">Travis</h2>
+      </li>
+      <li class="group-member">
+        <img class="user-avatar" src="assets/images/boy-1.png" alt="user-avatar"></img>
+        <h2 class="member-name">Travis</h2>
+      </li>
+      <li class="group-member">
+        <img class="user-avatar" src="assets/images/boy-1.png" alt="user-avatar"></img>
+        <h2 class="member-name">Travis</h2>
+      </li>
+      <li class="group-member">
+        <img class="user-avatar" src="assets/images/boy-1.png" alt="user-avatar"></img>
+        <h2 class="member-name">Travis</h2>
+      </li>
+      <!-- end individual member -->
+    </ul>
+    <!-- only above part will be visible on load.  Click avatar to see individual stats below -->
+    <ul class="member-stats">
+      <li>
+        <h2 class="member-level1">
+          Level
+          <div class="line-two">1</div>
+        </h2>
+      </li>
+      <li>
+        <h2 class="member-points1">
+          Points
+          <div class="line-two">1</div>
+        </h2>
+      </li>
+      <li>
+        <h2 class="member-expertise1">
+          Expertise
+          <div class="line-two">Front-end</div>
+        </h2>
+      </li>
+    </ul>
+    <!-- end collapsed part -->
+  </section>
+  <!-- end .section-members -->
+</main>

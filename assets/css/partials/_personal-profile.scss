@@ -1,0 +1,178 @@
+@import "../../../bower_components/susy/sass/susy";
+
+  $susy: (
+    columns: 12,
+    container: 100%
+  );
+
+.personal-profile-main {
+
+  @include container;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+  .section-main {
+    @include span( 12 of 12 );
+    background-color: $color-user-profile;
+    color: $color-user-text;
+
+    h3 {
+      color: $color-user-highlights2;
+    }
+
+    .left-chores {
+      @include span( 4 of 12 );
+      margin: 4em 0 0 0;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .center-avatar {
+      @include span( 4 of 12 );
+      // background: orange;
+      text-align: center;
+      position: relative;
+      right: .1%;
+
+      .user-avatar {
+        width: 6.5em;
+        margin-top: 2em;
+        border-radius: 50%;
+      }
+    }
+
+    .right-level {
+      @include span( 4 of 12 );
+      // background: green;
+      margin: 4em 0 0 0;
+      text-align: center;
+    }
+
+    .user-name,
+    .group-location,
+    .user-age,
+    .group-members-num {
+      @include span( 12 of 12 );
+      text-align: center;
+      color: $color-user-text;
+    }
+
+    .user-name {
+      font-size: 2em;
+      margin-top: 1em;
+    }
+
+    .group-location {
+      font-size: 1.15em;
+      margin-top: 2em;
+    }
+
+    .user-age {
+      font-size: .95em;
+      margin-top: 1.75em;
+    }
+
+    .group-members-num {
+      font-size: .95em;
+      margin: .5em auto 1.5em;
+    }
+  } // end .section-main
+
+  .fa-sort-asc {
+    margin: 0 0 0 47%;
+    font-size: 2.5em;
+    cursor: pointer;
+  }
+
+  .section-chores {
+
+    @include span( 10 of 12 );
+    margin: 1em 0 2.5em 8%;
+    overflow: hidden;
+
+    .chore-icon,
+    h2,
+    span {
+      @include span( 3 of 12 );
+      color: $color-user-highlights2;
+    }
+
+    .chore-icon {
+      width: 2.5em;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.75em;
+      font-weight: 400;
+      margin: 0.45em 0 0 14%;
+    }
+
+    span {
+      text-align: center;
+      font-size: 2.25em;
+      margin: .15em 0 0 17%;
+      cursor: pointer;
+    }
+
+    .chore {
+      margin-bottom: 3.5em;
+    }
+  } // end .section-chores
+
+  .chores-bg-color {
+    @include span( 12 of 12 );
+    display: none;
+    background-color: #EFE9F4;
+    overflow: hidden;
+  }
+
+  .go-to-chore-list {
+
+    .fa-list {
+      font-size: 1.5em;
+      color: $color-user-profile;
+      position: relative;
+      bottom: 1em;
+      right: .25em;
+      cursor: pointer;
+    }
+
+  }
+
+  .section-secondary {
+    @include span( 12 of 12 );
+    background-color: $color-user-profile2;
+    color: $color-user-text;
+
+    .user-rating,
+    .fav-chore,
+    .years-experience {
+      @include span( 12 of 12 );
+      text-align: center;
+    }
+
+    .user-rating {
+      font-size: 1.15em;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $color-user-highlights1;
+      margin: 1.5em auto 1.5em;
+    }
+
+    .fav-chore {
+      margin-top: 1.5em;
+    }
+
+    .fav-chore,
+    .years-experience {
+      font-size: .95em;
+      line-height: 1.75em;
+    }
+
+    .years-experience {
+      margin-bottom: 1.5em;
+    }
+  } // end .section-secondary
+} // end .personal-profile-main
