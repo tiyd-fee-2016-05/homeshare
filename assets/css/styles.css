@@ -431,20 +431,27 @@ html {
         margin-left: 0;
         margin-right: 0;
         margin: 1em 0 1.25em 9.5%; }
-      .chore-user-main .section-chores .chore-list h2,
-      .chore-user-main .section-chores .chore-list span,
-      .chore-user-main .section-chores .chore-list .chore-value {
+      .chore-user-main .section-chores .chore-list h2 {
         width: 23.72881%;
         float: left;
         margin-right: 1.69492%; }
+      .chore-user-main .section-chores .chore-list span {
+        width: 15.25424%;
+        float: left;
+        margin-right: 1.69492%;
+        margin: -.72em 0 0 .5em; }
       .chore-user-main .section-chores .chore-list .chore-value {
+        width: 15.25424%;
+        float: left;
+        margin-right: 1.69492%;
         display: inline-block;
-        background: orange; }
+        margin-left: -10%; }
       .chore-user-main .section-chores .chore-list .chore-icon {
         width: 23.72881%;
         float: left;
         margin-right: 1.69492%;
-        width: 2em; }
+        width: 2em;
+        margin-right: .75em; }
       .chore-user-main .section-chores .chore-list h2 {
         font-size: 1em;
         width: 7em;

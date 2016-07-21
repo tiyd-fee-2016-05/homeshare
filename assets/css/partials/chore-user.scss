@@ -54,20 +54,26 @@
         margin: 1em 0 1.25em 9.5%;
       }
 
-      h2,
-      span,
-      .chore-value {
+      h2 {
         @include span( 3 of 12 );
       }
 
+      span {
+        @include span( 2 of 12 );
+        margin: -.72em 0 0 .5em;
+      }
+
       .chore-value {
+        @include span( 2 of 12 );
         display: inline-block;
-        background: orange;
+        margin-left: -10%;
+        // background: orange;
       }
 
       .chore-icon {
         @include span( 3 of 12 );
         width: 2em;
+        margin-right: .75em;
       }
 
       h2 {
