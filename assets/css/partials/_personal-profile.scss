@@ -16,6 +16,7 @@
     @include span( 12 of 12 );
     background-color: $color-user-profile;
     color: $color-user-text;
+    margin-top: 2em;
 
     h3 {
       color: $color-user-highlights2;
@@ -76,7 +77,7 @@
 
     .group-members-num {
       font-size: 4em;
-      margin: .5em auto 3em;
+      margin: .5em auto 1.5em;
     }
   } // end .section-main
 
