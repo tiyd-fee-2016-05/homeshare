@@ -7,8 +7,6 @@
 
 .group-profile-main {
 
-  overflow: scroll;
-
   @include container;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -19,6 +17,7 @@
     @include span( 12 of 12 );
     background-color: $color-user-profile;
     color: $color-user-text;
+    margin-top: 2em;
 
     h3 {
       color: $color-user-highlights2;

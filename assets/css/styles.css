@@ -155,7 +155,6 @@ body {
     margin-bottom: 1.5em; }
 
 .group-profile-main {
-  overflow: scroll;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -173,7 +172,8 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: #2E86AB;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 2em; }
     .group-profile-main .section-main h3 {
       color: #3B4051; }
     .group-profile-main .section-main .left-chores {
