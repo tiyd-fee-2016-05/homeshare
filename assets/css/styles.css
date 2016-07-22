@@ -144,13 +144,13 @@ html {
       color: #549fbb;
       margin: 1.5em auto 1.5em; }
     .personal-profile-main .section-secondary .fav-chore {
-      margin-top: 1.5em; }
+      margin-top: 1.25em; }
     .personal-profile-main .section-secondary .fav-chore,
     .personal-profile-main .section-secondary .years-experience {
       font-size: 3em;
       line-height: 1.75em; }
     .personal-profile-main .section-secondary .years-experience {
-      margin-bottom: 1.5em; }
+      margin-bottom: 1.25em; }
 
 .group-profile-main {
   overflow: scroll;
