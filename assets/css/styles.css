@@ -208,13 +208,10 @@ body {
       font-size: 5.5em;
       margin-top: 1em; }
     .group-profile-main .section-main .group-location {
-      font-size: 1.15em;
+      font-size: 2.75em;
       margin-top: 2em; }
-    .group-profile-main .section-main .user-age {
-      font-size: .95em;
-      margin-top: 1.75em; }
     .group-profile-main .section-main .group-members-num {
-      font-size: .95em;
+      font-size: 2.75em;
       margin: .5em auto 1.5em; }
   .group-profile-main .section-members {
     width: 100%;
@@ -229,7 +226,7 @@ body {
       margin-left: 0;
       margin-right: 0;
       text-align: center;
-      font-size: 1.15em;
+      font-size: 2.5em;
       font-weight: 400;
       text-transform: uppercase;
       color: #549fbb;
@@ -242,10 +239,10 @@ body {
       text-align: center;
       cursor: pointer; }
     .group-profile-main .section-members .user-avatar {
-      width: 7em;
+      width: 10em;
       border-radius: 50%; }
     .group-profile-main .section-members .member-name {
-      font-size: 1.15em;
+      font-size: 2.15em;
       color: #fff;
       margin: 1em 0 1em 0; }
     .group-profile-main .section-members .member-stats {

@@ -67,17 +67,12 @@
     }
 
     .group-location {
-      font-size: 1.15em;
+      font-size: 2.75em;
       margin-top: 2em;
     }
 
-    .user-age {
-      font-size: .95em;
-      margin-top: 1.75em;
-    }
-
     .group-members-num {
-      font-size: .95em;
+      font-size: 2.75em;
       margin: .5em auto 1.5em;
     }
   } // end .section-main
@@ -91,7 +86,7 @@
     .group-members-heading {
       @include span( 12 of 12 );
       text-align: center;
-      font-size: 1.15em;
+      font-size: 2.5em;
       font-weight: 400;
       text-transform: uppercase;
       color: $color-user-highlights1;
@@ -107,12 +102,12 @@
     }
 
     .user-avatar {
-      width: 7em;
+      width: 10em;
       border-radius: 50%;
     }
 
     .member-name {
-      font-size: 1.15em;
+      font-size: 2.15em;
       color: #fff;
       margin: 1em 0 1em 0;
     }
