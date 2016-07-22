@@ -1,4 +1,4 @@
-var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"] );
+var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"  ] );
 
 mainApp.config( function($routeProvider) {
 
@@ -26,7 +26,8 @@ mainApp.config( function($routeProvider) {
     controller: "hhController"
   })
   .when( "/main", {
-    templateUrl: "pages/main.html"
+    templateUrl: "pages/main.html",
+    controller: "ControllerChores"
   })
   .when( "/user", {
     templateUrl: "pages/user.html"
@@ -38,11 +39,11 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/shop-user.html"
   })
   .when( "/chore-admin", {
-    templateUrl: "pages/chore-admin.html"
+    templateUrl: "pages/chore-admin.html",
   })
   .when( "/chore-user", {
     templateUrl: "pages/chore-user.html",
-    controller: "ControllerChores",
+    controller: "ControllerChores"
   })
   .when( "/bill-admin", {
     templateUrl: "pages/bill-admin.html"

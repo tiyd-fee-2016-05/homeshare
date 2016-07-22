@@ -23,8 +23,9 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     });
 };
 $http({
-  url: 'http://d6c901d4.ngrok.io/homes/1/chores.json',
-  method: 'GET'
+  url: 'http://d6c901d4.ngrok.io/homes/1/chores',
+  method: 'GET',
+  headers: 'authorization: maria@example.com'
 }).success(function(data){
   $scope.totalChores = data;
   console.log($scope.totalChores);
@@ -69,7 +70,7 @@ $http({
       };
       console.log($scope.form);
       $http({
-        url: 'http://d6c901d4.ngrok.io/users',
+        url: 'http://d6c901d4.ngrok.io/home/1/users',
         method: 'POST',
 
       }).success(function(data){
