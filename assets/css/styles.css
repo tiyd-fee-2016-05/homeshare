@@ -83,7 +83,7 @@ body {
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%;
-    margin: 1em 0 3.5em 8%; }
+    margin: 1em 0 3.25em 8%; }
     .personal-profile-main .section-chores .chore-icon,
     .personal-profile-main .section-chores h2,
     .personal-profile-main .section-chores span {
@@ -92,7 +92,8 @@ body {
       margin-right: 1.69492%;
       color: #3B4051; }
     .personal-profile-main .section-chores .chore-icon {
-      width: 4.5em; }
+      width: 4.5em;
+      margin-top: .35em; }
     .personal-profile-main .section-chores h2 {
       text-align: center;
       font-size: 3.75em;
