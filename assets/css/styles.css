@@ -44,7 +44,7 @@ body {
       margin: -4em 6.5% 0 0; }
       .personal-profile-main .section-main .center-avatar .user-avatar {
         width: 22em;
-        margin-left: -5%;
+        margin-left: -6%;
         border-radius: 50%; }
     .personal-profile-main .section-main .right-level {
       width: 23.72881%;
@@ -190,7 +190,7 @@ body {
       margin: -4em 6.5% 0 0; }
       .group-profile-main .section-main .center-avatar .group-avatar {
         width: 22em;
-        margin-left: -5%;
+        margin-left: -6%;
         border-radius: 50%; }
     .group-profile-main .section-main .right-level {
       width: 23.72881%;
@@ -210,7 +210,7 @@ body {
       text-align: center;
       color: #f0f0f5; }
     .group-profile-main .section-main .group-name {
-      font-size: 2em;
+      font-size: 5.5em;
       margin-top: 1em; }
     .group-profile-main .section-main .group-location {
       font-size: 1.15em;
@@ -247,7 +247,7 @@ body {
       text-align: center;
       cursor: pointer; }
     .group-profile-main .section-members .user-avatar {
-      width: 3em;
+      width: 7em;
       border-radius: 50%; }
     .group-profile-main .section-members .member-name {
       font-size: 1.15em;
