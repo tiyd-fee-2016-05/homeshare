@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
-html {
+html,
+body {
   background-color: #2E86AB;
   height: 100%;
   overflow: auto; }
