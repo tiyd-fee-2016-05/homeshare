@@ -149,7 +149,7 @@
     @include span( 12 of 12 );
     background-color: $color-user-profile2;
     color: $color-user-text;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 
     .user-rating,

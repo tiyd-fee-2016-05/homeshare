@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
 html {
   background-color: #2E86AB;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 .fa-bars {
   cursor: pointer; }
