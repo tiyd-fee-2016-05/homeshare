@@ -12,6 +12,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   min-height: 100%;
+  overflow: hidden;
 
   .section-main {
     @include span( 12 of 12 );
