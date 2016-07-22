@@ -25,7 +25,8 @@ html {
     margin-right: 0;
     background-color: #2E86AB;
     color: #f0f0f5;
-    margin-top: 2em; }
+    margin-top: 2em;
+    overflow: hidden; }
     .personal-profile-main .section-main h3 {
       color: #3B4051; }
     .personal-profile-main .section-main .left-chores {
@@ -120,37 +121,38 @@ html {
     bottom: 1em;
     right: .25em;
     cursor: pointer; }
-  .personal-profile-main .section-secondary {
+
+.section-secondary {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #22637F;
+  color: #f0f0f5;
+  position: fixed;
+  bottom: 0; }
+  .section-secondary .user-rating,
+  .section-secondary .fav-chore,
+  .section-secondary .years-experience {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #22637F;
-    color: #f0f0f5;
-    position: fixed;
-    bottom: 0; }
-    .personal-profile-main .section-secondary .user-rating,
-    .personal-profile-main .section-secondary .fav-chore,
-    .personal-profile-main .section-secondary .years-experience {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center; }
-    .personal-profile-main .section-secondary .user-rating {
-      font-size: 1.15em;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: #549fbb;
-      margin: 1.5em auto 1.5em; }
-    .personal-profile-main .section-secondary .fav-chore {
-      margin-top: 1.25em; }
-    .personal-profile-main .section-secondary .fav-chore,
-    .personal-profile-main .section-secondary .years-experience {
-      font-size: 3em;
-      line-height: 1.75em; }
-    .personal-profile-main .section-secondary .years-experience {
-      margin-bottom: 1.25em; }
+    text-align: center; }
+  .section-secondary .user-rating {
+    font-size: 1.15em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #549fbb;
+    margin: 1.5em auto 1.5em; }
+  .section-secondary .fav-chore {
+    margin-top: 1.25em; }
+  .section-secondary .fav-chore,
+  .section-secondary .years-experience {
+    font-size: 3em;
+    line-height: 1.75em; }
+  .section-secondary .years-experience {
+    margin-bottom: 1.25em; }
 
 .group-profile-main {
   overflow: scroll;

@@ -17,6 +17,7 @@
     background-color: $color-user-profile;
     color: $color-user-text;
     margin-top: 2em;
+    overflow: hidden;
 
     h3 {
       color: $color-user-highlights2;
@@ -143,40 +144,77 @@
 
   }
 
-  .section-secondary {
-    @include span( 12 of 12 );
-    background-color: $color-user-profile2;
-    color: $color-user-text;
-    position: fixed;
-    bottom: 0;
-
-    .user-rating,
-    .fav-chore,
-    .years-experience {
-      @include span( 12 of 12 );
-      text-align: center;
-    }
-
-    .user-rating {
-      font-size: 1.15em;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: $color-user-highlights1;
-      margin: 1.5em auto 1.5em;
-    }
-
-    .fav-chore {
-      margin-top: 1.25em;
-    }
-
-    .fav-chore,
-    .years-experience {
-      font-size: 3em;
-      line-height: 1.75em;
-    }
-
-    .years-experience {
-      margin-bottom: 1.25em;
-    }
-  } // end .section-secondary
+  // .section-secondary {
+  //   @include span( 12 of 12 );
+  //   background-color: $color-user-profile2;
+  //   color: $color-user-text;
+  //   position: fixed;
+  //   bottom: 0;
+  //
+  //   .user-rating,
+  //   .fav-chore,
+  //   .years-experience {
+  //     @include span( 12 of 12 );
+  //     text-align: center;
+  //   }
+  //
+  //   .user-rating {
+  //     font-size: 1.15em;
+  //     font-weight: 400;
+  //     text-transform: uppercase;
+  //     color: $color-user-highlights1;
+  //     margin: 1.5em auto 1.5em;
+  //   }
+  //
+  //   .fav-chore {
+  //     margin-top: 1.25em;
+  //   }
+  //
+  //   .fav-chore,
+  //   .years-experience {
+  //     font-size: 3em;
+  //     line-height: 1.75em;
+  //   }
+  //
+  //   .years-experience {
+  //     margin-bottom: 1.25em;
+  //   }
+  // } // end .section-secondary
 } // end .personal-profile-main
+
+.section-secondary {
+  @include span( 12 of 12 );
+  background-color: $color-user-profile2;
+  color: $color-user-text;
+  position: fixed;
+  bottom: 0;
+
+  .user-rating,
+  .fav-chore,
+  .years-experience {
+    @include span( 12 of 12 );
+    text-align: center;
+  }
+
+  .user-rating {
+    font-size: 1.15em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-user-highlights1;
+    margin: 1.5em auto 1.5em;
+  }
+
+  .fav-chore {
+    margin-top: 1.25em;
+  }
+
+  .fav-chore,
+  .years-experience {
+    font-size: 3em;
+    line-height: 1.75em;
+  }
+
+  .years-experience {
+    margin-bottom: 1.25em;
+  }
+} // end .section-secondary
