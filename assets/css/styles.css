@@ -26,6 +26,7 @@ html {
     background-color: #2E86AB;
     color: #f0f0f5;
     margin-top: 2em;
+    height: 100%;
     overflow: hidden; }
     .personal-profile-main .section-main h3 {
       color: #3B4051; }
