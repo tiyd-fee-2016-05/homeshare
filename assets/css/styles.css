@@ -12,9 +12,7 @@ html {
   margin-right: auto;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  height: 100%;
-  overflow: auto; }
+  font-weight: 300; }
   .personal-profile-main:after {
     content: " ";
     display: block;
@@ -74,7 +72,7 @@ html {
       margin-top: 2em; }
     .personal-profile-main .section-main .group-members-num {
       font-size: 4em;
-      margin: .5em auto 1.5em; }
+      margin: .5em auto .75em; }
   .personal-profile-main .fa-sort-asc {
     margin: 0 0 0 47%;
     font-size: 5em;
