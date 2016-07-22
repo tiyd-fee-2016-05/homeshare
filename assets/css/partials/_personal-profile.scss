@@ -22,29 +22,31 @@
     }
 
     .left-chores {
-      @include span( 2 of 12 );
+      @include span( 3 of 12 );
+      background: red;
+      font-size: 3em;
       margin: 4em 0 0 0;
       text-align: center;
       cursor: pointer;
     }
 
     .center-avatar {
-      @include span( 8 of 12 );
-      // background: orange;
+      @include span( 6 of 12 );
+      background: orange;
       text-align: center;
       position: relative;
       right: .1%;
 
       .user-avatar {
-        width: 20.5em;
-        margin-top: 2em;
+        width: 18.5em;
         border-radius: 50%;
       }
     }
 
     .right-level {
-      @include span( 2 of 12 );
-      // background: green;
+      @include span( 3 of 12 );
+      font-size: 2.25em;
+      background: green;
       margin: 4em 0 0 0;
       text-align: center;
     }

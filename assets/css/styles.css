@@ -26,27 +26,31 @@ html {
     .personal-profile-main .section-main h3 {
       color: #3B4051; }
     .personal-profile-main .section-main .left-chores {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
+      background: red;
+      font-size: 3em;
       margin: 4em 0 0 0;
       text-align: center;
       cursor: pointer; }
     .personal-profile-main .section-main .center-avatar {
-      width: 32.20339%;
+      width: 49.15254%;
       float: left;
       margin-right: 1.69492%;
+      background: orange;
       text-align: center;
       position: relative;
       right: .1%; }
       .personal-profile-main .section-main .center-avatar .user-avatar {
-        width: 6.5em;
-        margin-top: 2em;
+        width: 18.5em;
         border-radius: 50%; }
     .personal-profile-main .section-main .right-level {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
+      font-size: 2.25em;
+      background: green;
       margin: 4em 0 0 0;
       text-align: center; }
     .personal-profile-main .section-main .user-name,
