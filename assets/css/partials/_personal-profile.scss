@@ -129,7 +129,7 @@
     @include span( 12 of 12 );
     display: none;
     background-color: #EFE9F4;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   .go-to-chore-list {
@@ -185,10 +185,8 @@
 
 .section-secondary {
   @include span( 12 of 12 );
-  background-color: $color-user-profile2;
+  // background-color: $color-user-profile2;
   color: $color-user-text;
-  position: fixed;
-  bottom: 0;
 
   .user-rating,
   .fav-chore,

@@ -1,0 +1,20 @@
+{
+  "name": "homeshare",
+  "homepage": "https://github.com/tiyd-fee-2016-05/homeshare",
+  "authors": [
+    "Erik Petersen <contacterikpetersen@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ng-token-auth": "^0.0.29"
+  }
+}

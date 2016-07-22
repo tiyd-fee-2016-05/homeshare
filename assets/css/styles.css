@@ -2,8 +2,7 @@
 html,
 body {
   background-color: #2E86AB;
-  height: 100%;
-  overflow: auto; }
+  height: 100%; }
 
 .fa-bars {
   cursor: pointer; }
@@ -112,8 +111,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     display: none;
-    background-color: #EFE9F4;
-    overflow: hidden; }
+    background-color: #EFE9F4; }
   .personal-profile-main .go-to-chore-list .fa-list {
     font-size: 4.25em;
     color: #2E86AB;
@@ -127,10 +125,7 @@ body {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  background-color: #22637F;
-  color: #f0f0f5;
-  position: fixed;
-  bottom: 0; }
+  color: #f0f0f5; }
   .section-secondary .user-rating,
   .section-secondary .fav-chore,
   .section-secondary .years-experience {
