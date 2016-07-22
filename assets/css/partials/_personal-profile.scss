@@ -22,28 +22,28 @@
     }
 
     .left-chores {
-      @include span( 4 of 12 );
+      @include span( 3 of 12 );
       margin: 4em 0 0 0;
       text-align: center;
       cursor: pointer;
     }
 
     .center-avatar {
-      @include span( 4 of 12 );
+      @include span( 6 of 12 );
       // background: orange;
       text-align: center;
       position: relative;
       right: .1%;
 
       .user-avatar {
-        width: 6.5em;
+        width: 10.5em;
         margin-top: 2em;
         border-radius: 50%;
       }
     }
 
     .right-level {
-      @include span( 4 of 12 );
+      @include span( 3 of 12 );
       // background: green;
       margin: 4em 0 0 0;
       text-align: center;
