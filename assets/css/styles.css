@@ -29,29 +29,25 @@ html {
       width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      background: red;
       font-size: 3em;
-      margin: 4em 0 0 0;
+      margin: 1.15em 0 0 14.25%;
       text-align: center;
       cursor: pointer; }
     .personal-profile-main .section-main .center-avatar {
-      width: 49.15254%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      background: orange;
-      text-align: center;
-      position: relative;
-      right: .1%; }
+      margin: -4em 0 0 0; }
       .personal-profile-main .section-main .center-avatar .user-avatar {
         width: 18.5em;
+        margin-left: 8%;
         border-radius: 50%; }
     .personal-profile-main .section-main .right-level {
       width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      font-size: 2.25em;
-      background: green;
-      margin: 4em 0 0 0;
+      font-size: 3em;
+      margin: 1.15em 0 0 0;
       text-align: center; }
     .personal-profile-main .section-main .user-name,
     .personal-profile-main .section-main .group-location,
