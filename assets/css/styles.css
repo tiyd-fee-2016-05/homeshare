@@ -124,7 +124,9 @@ html {
     margin-left: 0;
     margin-right: 0;
     background-color: #22637F;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    position: absolute;
+    bottom: 0; }
     .personal-profile-main .section-secondary .user-rating,
     .personal-profile-main .section-secondary .fav-chore,
     .personal-profile-main .section-secondary .years-experience {
