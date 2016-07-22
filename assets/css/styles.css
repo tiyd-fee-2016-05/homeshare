@@ -63,14 +63,14 @@ html {
       font-size: 5.5em;
       margin-top: 1em; }
     .personal-profile-main .section-main .group-location {
-      font-size: 3.5em;
+      font-size: 4em;
       margin-top: 2em; }
     .personal-profile-main .section-main .user-age {
-      font-size: 2.95em;
+      font-size: 3.25em;
       margin-top: 2.25em; }
     .personal-profile-main .section-main .group-members-num {
-      font-size: 3.5em;
-      margin: .5em auto 1.5em; }
+      font-size: 4em;
+      margin: .5em auto 3em; }
   .personal-profile-main .fa-sort-asc {
     margin: 0 0 0 47%;
     font-size: 5em;
@@ -97,7 +97,7 @@ html {
       margin: 0.45em 0 0 25.5%; }
     .personal-profile-main .section-chores span {
       text-align: center;
-      font-size: 4.25em;
+      font-size: 5em;
       margin: .35em 0 0 14%;
       cursor: pointer; }
     .personal-profile-main .section-chores .chore {
@@ -111,7 +111,7 @@ html {
     background-color: #EFE9F4;
     overflow: hidden; }
   .personal-profile-main .go-to-chore-list .fa-list {
-    font-size: 3.75em;
+    font-size: 4.25em;
     color: #2E86AB;
     position: relative;
     bottom: 1em;
@@ -142,7 +142,7 @@ html {
       margin-top: 1.5em; }
     .personal-profile-main .section-secondary .fav-chore,
     .personal-profile-main .section-secondary .years-experience {
-      font-size: 2.5em;
+      font-size: 3em;
       line-height: 1.75em; }
     .personal-profile-main .section-secondary .years-experience {
       margin-bottom: 1.5em; }
