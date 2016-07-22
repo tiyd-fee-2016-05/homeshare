@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
 html {
-  background-color: #2E86AB; }
+  background-color: #FCFCFC; }
 
 .fa-bars {
   cursor: pointer; }
@@ -21,7 +21,7 @@ html {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5; }
     .personal-profile-main .section-main h3 {
       color: #3B4051; }
@@ -112,7 +112,7 @@ html {
     overflow: hidden; }
   .personal-profile-main .go-to-chore-list .fa-list {
     font-size: 1.5em;
-    color: #2E86AB;
+    color: #FCFCFC;
     position: relative;
     bottom: 1em;
     right: .25em;
@@ -165,7 +165,7 @@ html {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5; }
     .group-profile-main .section-main h3 {
       color: #3B4051; }
@@ -287,7 +287,7 @@ html {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5; }
     .profile-edit-main .section-main h3 {
       color: #3B4051; }
@@ -399,7 +399,7 @@ html {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5; }
     .chore-user-main .section-main .center-avatar {
       width: 32.20339%;
@@ -422,7 +422,7 @@ html {
       font-size: 1.15em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
-      color: #2E86AB; }
+      color: #FCFCFC; }
     .chore-user-main .section-chores .chore-list {
       color: #F2F2F6; }
       .chore-user-main .section-chores .chore-list li {
@@ -476,7 +476,7 @@ html {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5; }
     .shop-user-main .section-main .center-avatar {
       width: 32.20339%;
@@ -499,7 +499,7 @@ html {
       font-size: 1.15em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
-      color: #2E86AB; }
+      color: #FCFCFC; }
     .shop-user-main .section-shopping-list .shopping-headings {
       color: #F2F2F6;
       width: 100%;
@@ -569,7 +569,7 @@ html {
     margin-right: auto;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 4em;
-    color: #EFE9F4; }
+    color: #1985A1; }
   #ca-wrapper .bg {
     display: block;
     position: absolute;
@@ -628,42 +628,51 @@ html {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 4em;
-    color: #EFE9F4;
-    text-align: center; }
-  .landing-wrapper .icon img {
-    height: 250px;
-    margin-left: 43%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    opacity: 0.75;
-    position: relative;
-    display: block; }
+    font-size: 3em;
+    color: #1985A1;
+    margin-left: auto;
+    margin-right: auto; }
+  .landing-wrapper .landing-bg {
+    display: block;
+    position: absolute;
+    z-index: -9999;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14.2em;
+    height: 36em;
+    opacity: .35;
+    padding-left: 7.2em;
+    padding-top: 1em; }
   .landing-wrapper .login {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    font-family: 'Baumans', cursive;
+    font-family: 'Andale Mono', cursive;
     font-size: 1.2em;
     position: relative;
-    width: 17%;
+    width: 66%;
     text-align: center;
-    margin-left: 42%;
-    line-height: 1.7; }
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5em;
+    line-height: 1.7;
+    z-index: 9999;
+    padding-left: 10.4em; }
     .landing-wrapper .login input {
       height: 34px;
       width: 210px;
       border: none;
-      border-radius: 4%; }
+      border-radius: 4%;
+      background: #A7B8D3; }
     .landing-wrapper .login button {
-      font-family: 'Baumans', cursive;
+      font-family: 'Andale Mono', cursive;
       font-size: 1.1em;
-      height: 30px;
-      width: 150px;
+      height: 1.5em;
+      width: 10em;
       position: relative;
-      margin-left: 7px;
-      margin-top: 10px;
+      margin-left: auto;
+      margin-top: 1em;
       border: none;
       background: #DCDCDD; }
   .landing-wrapper .register {
@@ -672,29 +681,29 @@ html {
     margin-left: 0;
     margin-right: 0; }
     .landing-wrapper .register h2 {
-      font-family: 'Baumans', cursive;
-      font-size: 1.6em;
+      font-family: 'Andale Mono', cursive;
+      font-size: 1.2em;
       position: relative;
-      margin: 3% 0 0 42.4%; }
+      margin-left: auto;
+      margin-right: auto; }
     .landing-wrapper .register img {
-      position: relative;
-      margin: 1.8% 0 0 47.5%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
       border: 12px solid #DCDCDD;
       border-radius: 100%; }
     .landing-wrapper .register button {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
       display: inline-block;
       margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
       height: 3em;
       width: 11em;
-      font-family: Baumans;
+      font-family: Andale Mono;
       font-size: 17px;
       border: none;
       border-radius: 3%;
-      background: #C43F33;
+      background: #1985A1;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
@@ -756,22 +765,21 @@ html {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0;
-  min-height: 100%;
-  position: absolute; }
+  margin-right: 0; }
   .main-wrapper:after {
     content: " ";
     display: block;
     clear: both; }
-  .main-wrapper .colorbar {
-    width: 100%;
-    height: 38em;
-    background: #094660;
-    z-index: -9999;
-    margin-top: 10em;
-    position: absolute; }
   .main-wrapper * {
     box-sizing: border-box; }
+  .main-wrapper .btn-menu {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    position: relative;
+    background: rgba(50, 50, 50, 0.14); }
   .main-wrapper .header-main {
     width: 100%;
     float: left;
@@ -780,7 +788,6 @@ html {
     font-family: 'Baumans', cursive;
     font-size: 4em;
     text-align: center;
-    margin-top: 2em;
     margin-left: auto;
     display: block;
     margin-bottom: -8%; }
@@ -791,13 +798,9 @@ html {
     margin-right: 0;
     position: relative;
     display: inline-block;
-    margin-top: 3.3em;
     margin-left: auto; }
-    .main-wrapper .profile:hover {
-      text-decoration: underline; }
     .main-wrapper .profile img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 10em;
       border-radius: 19%; }
     .main-wrapper .profile h2 {
       font-family: 'Baumans', cursive;
@@ -811,13 +814,9 @@ html {
     margin-right: 0;
     position: relative;
     display: inline-block;
-    margin-left: auto;
-    margin-top: 3em; }
-    .main-wrapper .chores:hover {
-      text-decoration: underline; }
+    margin-left: auto; }
     .main-wrapper .chores img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 10em;
       border-radius: 19%; }
     .main-wrapper .chores h2 {
       font-family: 'Baumans', cursive;
@@ -831,13 +830,9 @@ html {
     margin-right: 0;
     position: relative;
     display: inline-block;
-    margin-top: 5.6em;
     margin-left: auto; }
-    .main-wrapper .shopping-list:hover {
-      text-decoration: underline; }
     .main-wrapper .shopping-list img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 10em;
       border-radius: 19%; }
     .main-wrapper .shopping-list h2 {
       font-family: 'Baumans', cursive;
@@ -851,13 +846,9 @@ html {
     margin-right: 0;
     position: relative;
     display: inline-block;
-    margin-top: 5.6em;
     margin-left: auto; }
-    .main-wrapper .bills:hover {
-      text-decoration: underline; }
     .main-wrapper .bills img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 10em;
       border-radius: 19%; }
     .main-wrapper .bills h2 {
       font-family: 'Baumans', cursive;
@@ -870,19 +861,65 @@ html {
     margin-left: 0;
     margin-right: 0;
     position: relative;
-    display: inline-block;
-    margin-top: 24em;
-    margin-left: auto; }
-    .main-wrapper .household:hover {
-      text-decoration: underline; }
+    display: inline-block; }
     .main-wrapper .household img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 10em;
       border-radius: 19%; }
     .main-wrapper .household h2 {
       font-family: 'Baumans', cursive;
       font-size: 1.5em;
       text-align: center;
       color: #dcdcdd; }
+  .main-wrapper .main-section-chores {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .main-wrapper .main-section-chores .main-username {
+      text-align: center;
+      font-family: 'Andale Mono';
+      font-size: 3.15em;
+      font-weight: 400;
+      margin: 1.25em 0 1.5em 0;
+      color: #1985A1; }
+    .main-wrapper .main-section-chores .main-chore-list {
+      color: #1985A1; }
+      .main-wrapper .main-section-chores .main-chore-list li {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 1em 0 1.25em 9.5%; }
+      .main-wrapper .main-section-chores .main-chore-list h2 {
+        width: 3.2em;
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%; }
+      .main-wrapper .main-section-chores .main-chore-list span {
+        width: 15.25424%;
+        float: left;
+        margin-right: 1.69492%;
+        margin: -.72em 0 0 .5em; }
+      .main-wrapper .main-section-chores .main-chore-list .main-chore-value {
+        width: 15.25424%;
+        float: left;
+        margin-right: 1.69492%;
+        display: inline-block;
+        margin-left: -10%; }
+      .main-wrapper .main-section-chores .main-chore-list .main-chore-icon {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%;
+        height: 3em;
+        width: 3em;
+        margin-right: .75em; }
+      .main-wrapper .main-section-chores .main-chore-list h2 {
+        font-family: 'Andale Mono';
+        font-size: 2em;
+        width: 3.5em;
+        margin: .20em 10% 0 10%; }
+      .main-wrapper .main-section-chores .main-chore-list .fa-check-circle-o {
+        font-size: 4.5em;
+        cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

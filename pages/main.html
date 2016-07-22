@@ -1,31 +1,44 @@
 <div class="main-wrapper">
-  <div class="colorbar"></div>
+  <!-- <div class="colorbar"></div> -->
+  <section ng-controller="ControllerChores"  class="main-section-chores">
+    <h1 class="main-username">Username Chores</h1>
+  <ul class="main-chore-list" ng-repeat="chore in totalChores">
+    <li>
+      <img class="main-chore-icon" src={{chores[totalChores.indexOf(chore)].ChoreIcon}} alt="Picture of chore">
+      <h2>{{chore.name}}</h2>
+      <h2 class="main-chore-value">{{chore.value}}</h2>
+      <h2>{{chore.description}}</h2>
+      <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>
+    </li>
+  </ul>
+</section>
 
+<div class="btn-menu">
 <div class="profile">
   <img src="assets/images/avatars/robocop.png">
-  <h2>Profile</h2>
+  <!-- <h2>Profile</h2> -->
 </div>
 
 <div class="chores">
-  <a href="/#chore-admin"><img src="assets/images/household/liquid-soap.png"></a>
-  <h2>Chores</h2>
+  <a href="/#chore-admin"><img src="assets/images/chores/liquid-soap.png"></a>
+  <!-- <h2>Chores</h2> -->
 </div>
 
 <div class="shopping-list">
   <img src="assets/images/misc/cart.png">
-  <h2>Shopping List</h2>
+  <!-- <h2>Shopping List</h2> -->
 </div>
 
 <div class="bills">
   <img src="assets/images/misc/payment.png">
-  <h2>Bills</h2>
+  <!-- <h2>Bills</h2> -->
 </div>
 
 
 <div class="household">
   <a href="/#household"><img src="assets/images/misc/house.png"></a>
-  <h2>Household</h2>
+  <!-- <h2>Household</h2> -->
 </div>
-
+</div>
 
 </div>
