@@ -196,7 +196,8 @@ body {
       width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 4em 0 0 0;
+      font-size: 4em;
+      margin: 1em 0 0 0;
       text-align: center; }
     .group-profile-main .section-main .group-name,
     .group-profile-main .section-main .group-location,
