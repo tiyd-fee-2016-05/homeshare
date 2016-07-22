@@ -11,7 +11,8 @@ html {
   margin-right: auto;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  min-height: 100%; }
   .personal-profile-main:after {
     content: " ";
     display: block;
