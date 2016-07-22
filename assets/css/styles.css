@@ -13,8 +13,7 @@ html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  min-height: 100%;
-  overflow: hidden; }
+  min-height: 100%; }
   .personal-profile-main:after {
     content: " ";
     display: block;
@@ -128,7 +127,7 @@ html {
     margin-right: 0;
     background-color: #22637F;
     color: #f0f0f5;
-    position: absolute;
+    position: fixed;
     bottom: 0; }
     .personal-profile-main .section-secondary .user-rating,
     .personal-profile-main .section-secondary .fav-chore,

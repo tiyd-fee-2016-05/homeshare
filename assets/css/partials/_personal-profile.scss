@@ -11,8 +11,8 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  min-height: 100%;
-  overflow: hidden;
+  height: 100%;
+  overflow: auto;
 
   .section-main {
     @include span( 12 of 12 );
