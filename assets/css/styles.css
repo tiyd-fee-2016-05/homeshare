@@ -289,100 +289,88 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: #2E86AB;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 2em; }
     .profile-edit-main .section-main h3 {
       color: #3B4051; }
     .profile-edit-main .section-main .left-chores {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 1.5em 0 0 0;
-      text-align: center; }
-    .profile-edit-main .section-main .center-avatar {
-      width: 32.20339%;
-      float: left;
-      margin-right: 1.69492%;
+      font-size: 4em;
+      margin: 1em 0 0 10%;
       text-align: center;
-      position: relative;
-      right: .1%; }
+      cursor: pointer; }
+    .profile-edit-main .section-main .center-avatar {
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%;
+      margin: -4em 6.5% 0 0; }
       .profile-edit-main .section-main .center-avatar .user-avatar {
-        width: 6.5em;
-        margin-top: 2em;
+        width: 22em;
+        margin-left: -6%;
         border-radius: 50%; }
     .profile-edit-main .section-main .right-level {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 1.5em 0 0 0;
+      font-size: 4em;
+      margin: 1em 0 0 0;
       text-align: center; }
     .profile-edit-main .section-main .fa-arrow-left,
     .profile-edit-main .section-main .fa-arrow-right {
-      font-size: 2.5em;
+      font-size: 6em;
       cursor: pointer; }
-    .profile-edit-main .section-main .user-name,
-    .profile-edit-main .section-main .group-location,
-    .profile-edit-main .section-main .user-age,
-    .profile-edit-main .section-main .group-members-num {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center;
-      color: #f0f0f5; }
-    .profile-edit-main .section-main .user-name {
-      font-size: 2em;
-      margin-top: 1em; }
-    .profile-edit-main .section-main .group-location {
-      font-size: 1.15em;
-      margin-top: 2em; }
-    .profile-edit-main .section-main .user-age {
-      font-size: .95em;
-      margin-top: 1.75em; }
-    .profile-edit-main .section-main .group-members-num {
-      font-size: .95em;
-      margin: .5em auto 1.5em; }
   .profile-edit-main fieldset {
-    margin: 2em 0 0 11.5%; }
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin: 4em 0 0 11.5%; }
     .profile-edit-main fieldset .edit-name,
-    .profile-edit-main fieldset .edit-location {
-      width: 83.05085%;
-      float: left;
-      margin-right: 1.69492%; }
-    .profile-edit-main fieldset .edit-name {
-      margin: 1.5em 0 1em -.75em; }
-    .profile-edit-main fieldset .edit-location {
-      margin: 1em 0 3.5em -.75em; }
-    .profile-edit-main fieldset .name-heading,
-    .profile-edit-main fieldset .location-heading {
-      display: block;
-      font-size: 1.5em;
-      margin: 1em 0 .75em 0; }
-    .profile-edit-main fieldset input {
-      width: 12em;
-      font-size: 1.25em; }
-    .profile-edit-main fieldset .payments {
+    .profile-edit-main fieldset .edit-location,
+    .profile-edit-main fieldset .venmo-account {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0; }
-    .profile-edit-main fieldset .payment-options {
-      font-size: 1.45em;
-      margin: 0 1em .5em -.5em; }
-    .profile-edit-main fieldset .venmo,
-    .profile-edit-main fieldset .android-pay {
-      width: 49.15254%;
-      float: left;
-      margin-right: 1.69492%;
-      display: inline-block;
-      margin: 0 1em 0 -.5em; }
-    .profile-edit-main fieldset .venmo {
-      width: 5.5em;
-      margin: .75em 0 1em 1.5em;
-      cursor: pointer; }
-    .profile-edit-main fieldset .android-pay {
-      width: 3.5em;
-      margin: 0 0 1em 2em;
-      cursor: pointer; }
+    .profile-edit-main fieldset .edit-name {
+      margin: 1.5em 0 1em -.75em; }
+    .profile-edit-main fieldset .edit-location {
+      margin: 1em 0 1.75em -.75em; }
+    .profile-edit-main fieldset .venmo-account {
+      margin: 1em 0 1.5em -.75em; }
+    .profile-edit-main fieldset .name-heading,
+    .profile-edit-main fieldset .location-heading,
+    .profile-edit-main fieldset .venmo-username {
+      display: block;
+      font-size: 3.25em;
+      margin: 1em 0 .75em 0; }
+    .profile-edit-main fieldset input {
+      width: 14.75em;
+      font-size: 3.25em; }
+  .profile-edit-main .payments {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 3.25em 0 .5em 10%; }
+  .profile-edit-main .payment-options {
+    font-size: 3.25em; }
+  .profile-edit-main .venmo,
+  .profile-edit-main .android-pay {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline-block;
+    margin: 0 1em 0 4.5em; }
+  .profile-edit-main .venmo {
+    width: 17em;
+    margin: 3.75em 0 1em 5.5em;
+    cursor: pointer; }
+  .profile-edit-main .android-pay {
+    width: 9.5em;
+    margin: 1.5em 0 1em 11.5em;
+    cursor: pointer; }
 
 .chore-user-main {
   max-width: 100%;
