@@ -26,7 +26,7 @@
       @include span( 3 of 12 );
       // background: red;
       font-size: 4em;
-      margin: 1em 0 0 10%;
+      margin: 1em 0 0 9.5%;
       text-align: center;
       cursor: pointer;
     }
@@ -61,7 +61,7 @@
   fieldset {
 
     @include span( 10 of 12 );
-    margin: 2.75em 0 0 11.5%;
+    margin: 1.5em 0 0 11.35%;
 
     .edit-name,
     .edit-location,
@@ -70,15 +70,15 @@
     }
 
     .edit-name {
-      margin: 1.5em 0 1em -.75em;
+      margin: 1em 0 1em -.75em;
     }
 
     .edit-location {
-      margin: 1em 0 1.75em -.75em;
+      margin: .75em 0 1.75em -.75em;
     }
 
     .venmo-account {
-      margin: 1em 0 1.5em -.75em;
+      margin: .75em 0 1.5em -.75em;
     }
 
     .name-heading,
