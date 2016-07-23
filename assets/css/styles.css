@@ -208,10 +208,10 @@ body {
       font-size: 5.5em;
       margin-top: 1em; }
     .group-profile-main .section-main .group-location {
-      font-size: 2.75em;
+      font-size: 4em;
       margin-top: 2em; }
     .group-profile-main .section-main .group-members-num {
-      font-size: 2.75em;
+      font-size: 3.25em;
       margin: .5em auto 1.5em; }
   .group-profile-main .section-members {
     width: 100%;
@@ -219,14 +219,15 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: #22637F;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 1.5em; }
     .group-profile-main .section-members .group-members-heading {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
       text-align: center;
-      font-size: 2.5em;
+      font-size: 3em;
       font-weight: 400;
       text-transform: uppercase;
       color: #549fbb;
@@ -239,10 +240,10 @@ body {
       text-align: center;
       cursor: pointer; }
     .group-profile-main .section-members .user-avatar {
-      width: 10em;
+      width: 11em;
       border-radius: 50%; }
     .group-profile-main .section-members .member-name {
-      font-size: 2.15em;
+      font-size: 3.25em;
       color: #fff;
       margin: 1em 0 1em 0; }
     .group-profile-main .section-members .member-stats {
@@ -252,7 +253,8 @@ body {
       margin-right: 0;
       display: none;
       width: 100%;
-      margin: 0 0 1.5em -1.15em; }
+      margin: 0 0 1.5em -1.15em;
+      padding-bottom: .5em; }
       .group-profile-main .section-members .member-stats .member-level1,
       .group-profile-main .section-members .member-stats .member-points1,
       .group-profile-main .section-members .member-stats .member-expertise1 {
@@ -260,9 +262,9 @@ body {
         float: left;
         margin-right: 1.69492%;
         text-align: center;
-        font-size: .95em;
+        font-size: 3em;
         color: #f0f0f5;
-        margin: 1.5em 0 0 1.75em; }
+        margin: 1.5em 0 0 1.4em; }
       .group-profile-main .section-members .member-stats .line-two {
         font-size: .85em;
         color: #549fbb;
