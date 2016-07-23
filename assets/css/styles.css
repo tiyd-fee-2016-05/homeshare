@@ -389,15 +389,15 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: #2E86AB;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 2em; }
     .chore-user-main .section-main .center-avatar {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 0 0 1em 32%; }
+      margin: -4em 6.5% 0 32.35%; }
       .chore-user-main .section-main .center-avatar .user-avatar {
-        width: 6.5em;
-        margin: 2em 0 0 0;
+        width: 22em;
         border-radius: 50%; }
   .chore-user-main .section-chores {
     width: 100%;
@@ -408,7 +408,7 @@ body {
     overflow: auto; }
     .chore-user-main .section-chores .username {
       text-align: center;
-      font-size: 1.15em;
+      font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
       color: #2E86AB; }
