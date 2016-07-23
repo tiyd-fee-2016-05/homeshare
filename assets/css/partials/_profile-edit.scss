@@ -26,7 +26,7 @@
       @include span( 3 of 12 );
       // background: red;
       font-size: 4em;
-      margin: 1em 0 0 10%;
+      margin: 1em 0 0 12%;
       text-align: center;
       cursor: pointer;
     }
@@ -37,8 +37,8 @@
       margin: -4em 6.5% 0 0;
 
       .user-avatar {
-        width: 22em;
-        margin-left: -6%;
+        width: 23.5em;
+        margin-left: -3%;
         border-radius: 50%;
       }
     }
@@ -53,7 +53,7 @@
 
     .fa-arrow-left,
     .fa-arrow-right {
-      font-size: 6em;
+      font-size: 7.5em;
       cursor: pointer;
     }
   } // end .section-main
@@ -85,13 +85,13 @@
     .location-heading,
     .venmo-username {
       display: block;
-      font-size: 4.75em;
+      font-size: 5.75em;
       margin: 1em 0 .75em 0;
     }
 
     input {
-      width: 14.75em;
-      font-size: 4.25em;
+      width: 11.75em;
+      font-size: 5.5em;
     }
   } // end fieldset
 

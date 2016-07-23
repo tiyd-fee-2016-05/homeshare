@@ -298,7 +298,7 @@ body {
       float: left;
       margin-right: 1.69492%;
       font-size: 4em;
-      margin: 1em 0 0 10%;
+      margin: 1em 0 0 12%;
       text-align: center;
       cursor: pointer; }
     .profile-edit-main .section-main .center-avatar {
@@ -307,8 +307,8 @@ body {
       margin-right: 1.69492%;
       margin: -4em 6.5% 0 0; }
       .profile-edit-main .section-main .center-avatar .user-avatar {
-        width: 22em;
-        margin-left: -6%;
+        width: 23.5em;
+        margin-left: -3%;
         border-radius: 50%; }
     .profile-edit-main .section-main .right-level {
       width: 23.72881%;
@@ -319,7 +319,7 @@ body {
       text-align: center; }
     .profile-edit-main .section-main .fa-arrow-left,
     .profile-edit-main .section-main .fa-arrow-right {
-      font-size: 6em;
+      font-size: 7.5em;
       cursor: pointer; }
   .profile-edit-main fieldset {
     width: 83.05085%;
@@ -343,11 +343,11 @@ body {
     .profile-edit-main fieldset .location-heading,
     .profile-edit-main fieldset .venmo-username {
       display: block;
-      font-size: 4.75em;
+      font-size: 5.75em;
       margin: 1em 0 .75em 0; }
     .profile-edit-main fieldset input {
-      width: 14.75em;
-      font-size: 4.25em; }
+      width: 11.75em;
+      font-size: 5.5em; }
   .profile-edit-main .payments {
     width: 100%;
     float: left;
