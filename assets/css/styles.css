@@ -1,9 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
 html {
-  background-color: #FCFCFC; }
+  background-color: #EDEFF7; }
 
 .fa-bars {
   cursor: pointer; }
+
+.options {
+  font-family: 'Andale Mono';
+  text-decoration-style: none; }
 
 .personal-profile-main {
   max-width: 100%;
@@ -568,37 +572,37 @@ html {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     color: #1985A1; }
   #ca-wrapper .bg {
     display: block;
     position: absolute;
     z-index: -9999;
     margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
-    height: 30em;
+    height: 23em;
     opacity: .35; }
   #ca-wrapper .ca-form {
-    width: 100%;
+    width: 32.20339%;
     float: left;
-    margin-left: 0;
-    margin-right: 0;
-    font-family: 'Baumans', cursive;
+    margin-right: 1.69492%;
+    font-family: 'Andale Mono', cursive;
     font-size: 28px;
     display: block;
     position: absolute;
     margin-top: 5em;
     margin-left: auto;
-    padding-left: 2em;
-    width: 6em; }
+    margin-right: auto; }
     #ca-wrapper .ca-form input {
       width: 18em; }
     #ca-wrapper .ca-form button {
-      margin-left: auto;
+      margin-left: 4.3em;
+      margin-right: auto;
       margin-top: 1em;
       height: 3em;
       width: 11em;
-      font-family: Baumans;
+      font-family: 'Andale Mono';
       font-size: 17px;
       border: none;
       border-radius: 3%;
@@ -720,7 +724,7 @@ html {
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 4em;
-    color: #EFE9F4; }
+    color: #EDEFF7; }
   #hhwrapper .background {
     display: block;
     position: absolute;
@@ -800,7 +804,7 @@ html {
     display: inline-block;
     margin-left: auto; }
     .main-wrapper .profile img {
-      height: 10em;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .profile h2 {
       font-family: 'Baumans', cursive;
@@ -814,9 +818,10 @@ html {
     margin-right: 0;
     position: relative;
     display: inline-block;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-right: auto; }
     .main-wrapper .chores img {
-      height: 10em;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .chores h2 {
       font-family: 'Baumans', cursive;
@@ -832,7 +837,7 @@ html {
     display: inline-block;
     margin-left: auto; }
     .main-wrapper .shopping-list img {
-      height: 10em;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .shopping-list h2 {
       font-family: 'Baumans', cursive;
@@ -848,7 +853,7 @@ html {
     display: inline-block;
     margin-left: auto; }
     .main-wrapper .bills img {
-      height: 10em;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .bills h2 {
       font-family: 'Baumans', cursive;
@@ -863,63 +868,88 @@ html {
     position: relative;
     display: inline-block; }
     .main-wrapper .household img {
-      height: 10em;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .household h2 {
       font-family: 'Baumans', cursive;
       font-size: 1.5em;
       text-align: center;
       color: #dcdcdd; }
-  .main-wrapper .main-section-chores {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-    .main-wrapper .main-section-chores .main-username {
-      text-align: center;
-      font-family: 'Andale Mono';
-      font-size: 3.15em;
-      font-weight: 400;
-      margin: 1.25em 0 1.5em 0;
-      color: #1985A1; }
-    .main-wrapper .main-section-chores .main-chore-list {
-      color: #1985A1; }
-      .main-wrapper .main-section-chores .main-chore-list li {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0;
-        margin: 1em 0 1.25em 9.5%; }
-      .main-wrapper .main-section-chores .main-chore-list h2 {
-        width: 3.2em;
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .main-wrapper .main-section-chores .main-chore-list span {
-        width: 15.25424%;
+  .main-wrapper .main-chore-user-main {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+    .main-wrapper .main-chore-user-main:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .main-wrapper .main-chore-user-main .main-section-main {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      background-color: #FCFCFC;
+      color: #f0f0f5; }
+      .main-wrapper .main-chore-user-main .main-section-main .main-center-avatar {
+        width: 32.20339%;
         float: left;
         margin-right: 1.69492%;
-        margin: -.72em 0 0 .5em; }
-      .main-wrapper .main-section-chores .main-chore-list .main-chore-value {
-        width: 15.25424%;
-        float: left;
-        margin-right: 1.69492%;
-        display: inline-block;
-        margin-left: -10%; }
-      .main-wrapper .main-section-chores .main-chore-list .main-chore-icon {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%;
-        height: 3em;
-        width: 3em;
-        margin-right: .75em; }
-      .main-wrapper .main-section-chores .main-chore-list h2 {
-        font-family: 'Andale Mono';
-        font-size: 2em;
-        width: 3.5em;
-        margin: .20em 10% 0 10%; }
-      .main-wrapper .main-section-chores .main-chore-list .fa-check-circle-o {
-        font-size: 4.5em;
-        cursor: pointer; }
+        margin: 0 0 1em 32%; }
+        .main-wrapper .main-chore-user-main .main-section-main .main-center-avatar .main-user-avatar {
+          width: 6.5em;
+          margin: 2em 0 0 0;
+          border-radius: 50%; }
+    .main-wrapper .main-chore-user-main .main-section-chores {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      background-color: #22637F;
+      overflow: auto; }
+      .main-wrapper .main-chore-user-main .main-section-chores .main-username {
+        text-align: center;
+        font-size: 1.15em;
+        font-weight: 400;
+        margin: 1.25em 0 1.5em 0;
+        color: #FCFCFC; }
+      .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list {
+        color: #F2F2F6; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list li {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0;
+          margin: 1em 0 1.25em 9.5%; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
+          width: 23.72881%;
+          float: left;
+          margin-right: 1.69492%; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list span {
+          width: 15.25424%;
+          float: left;
+          margin-right: 1.69492%;
+          margin: -.72em 0 0 .5em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-value {
+          width: 15.25424%;
+          float: left;
+          margin-right: 1.69492%;
+          display: inline-block;
+          margin-left: -10%; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-icon {
+          width: 23.72881%;
+          float: left;
+          margin-right: 1.69492%;
+          width: 2em;
+          margin-right: .75em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
+          font-size: 1em;
+          width: 7em;
+          margin: .20em 10% 0 10%; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .fa-check-circle-o {
+          font-size: 2em;
+          cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

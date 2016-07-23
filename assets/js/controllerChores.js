@@ -1,4 +1,4 @@
-mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $http, $auth ) {
+mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $http) {
 
   $scope.totalChores;
 
