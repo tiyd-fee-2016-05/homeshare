@@ -881,7 +881,9 @@ html {
     margin-right: auto;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto; }
     .main-wrapper .main-chore-user-main:after {
       content: " ";
       display: block;
@@ -891,8 +893,8 @@ html {
       float: left;
       margin-left: 0;
       margin-right: 0;
-      background-color: #FCFCFC;
-      color: #f0f0f5; }
+      background-color: #EDEFF7;
+      color: #1985A1; }
       .main-wrapper .main-chore-user-main .main-section-main .main-center-avatar {
         width: 32.20339%;
         float: left;
@@ -907,22 +909,21 @@ html {
       float: left;
       margin-left: 0;
       margin-right: 0;
-      background-color: #22637F;
-      overflow: auto; }
+      background-color: #EDEFF7; }
       .main-wrapper .main-chore-user-main .main-section-chores .main-username {
         text-align: center;
-        font-size: 1.15em;
+        font-size: 25px;
         font-weight: 400;
         margin: 1.25em 0 1.5em 0;
-        color: #FCFCFC; }
+        color: #1985A1; }
       .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list {
-        color: #F2F2F6; }
+        color: #1985A1; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list li {
           width: 100%;
           float: left;
           margin-left: 0;
           margin-right: 0;
-          margin: 1em 0 1.25em 9.5%; }
+          margin: 1em auto 1.25em auto; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
           width: 23.72881%;
           float: left;
@@ -937,19 +938,25 @@ html {
           float: left;
           margin-right: 1.69492%;
           display: inline-block;
-          margin-left: -10%; }
+          margin-left: auto;
+          margin-right: auto; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-icon {
           width: 23.72881%;
           float: left;
           margin-right: 1.69492%;
-          width: 2em;
-          margin-right: .75em; }
+          width: 3.5em;
+          height: 3.5em;
+          margin-right: auto; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
-          font-size: 1em;
-          width: 7em;
-          margin: .20em 10% 0 10%; }
+          font-size: 25px;
+          width: 4em;
+          margin: .20em auto 0 10%; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .fa-check-circle-o {
-          font-size: 2em;
-          cursor: pointer; }
+          font-size: 3.6em;
+          cursor: pointer;
+          margin-left: auto;
+          margin-right: auto;
+          position: absolute;
+          margin-top: auto; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -151,11 +151,13 @@ container: 100%,
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
 
   .main-section-main {
     @include span( 12 of 12 );
-    background-color: $color-user-profile;
-    color: $color-user-text;
+    background-color: $background;
+    color: $text;
 
     .main-center-avatar {
       @include span( 4 of 12 );
@@ -174,24 +176,24 @@ container: 100%,
   .main-section-chores {
 
     @include span( 12 of 12 );
-    background-color: $color-user-profile2;
-    overflow: auto;
+    background-color: $background;
+    // overflow: auto;
 
     .main-username {
       text-align: center;
-      font-size: 1.15em;
+      font-size: 25px;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
-      color: $color-user-profile;
+      color: $text;
     }
 
     .main-chore-list {
 
-      color: $color-dull-white;
+      color: $text;
 
       li {
         @include span( 12 of 12 );
-        margin: 1em 0 1.25em 9.5%;
+        margin: 1em auto 1.25em auto;
       }
 
       h2 {
@@ -206,25 +208,31 @@ container: 100%,
       .main-chore-value {
         @include span( 2 of 12 );
         display: inline-block;
-        margin-left: -10%;
+        margin-left: auto;
+        margin-right: auto;
         // background: orange;
       }
 
       .main-chore-icon {
         @include span( 3 of 12 );
-        width: 2em;
-        margin-right: .75em;
+        width: 3.5em;
+        height: 3.5em;
+        margin-right: auto;
       }
 
       h2 {
-        font-size: 1em;
-        width: 7em;
-        margin: .20em 10% 0 10%;
+        font-size: 25px;
+        width: 4em;
+        margin: .20em auto 0 10%;
       }
 
       .fa-check-circle-o {
-        font-size: 2em;
+        font-size: 3.6em;
         cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        margin-top: auto;
       }
     }
   } // end .section-chores
