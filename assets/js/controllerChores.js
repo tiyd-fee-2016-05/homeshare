@@ -1,10 +1,11 @@
-mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $http ) {
+mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $http) {
 
   $scope.totalChores;
 
   $http({
-    url: 'http://d6c901d4.ngrok.io/homes/1/chores.json',
-    method: 'GET'
+    url: 'https://d6c901d4.ngrok.io/homes/1/chores',
+    method: 'GET',
+    headers: {'Authorization':'maria@example.com'}
   }).success( function(data) {
     $scope.totalChores = data.chores.all_chores;
     console.log( $scope.totalChores );

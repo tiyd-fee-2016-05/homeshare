@@ -1,10 +1,10 @@
-<div ng-app="mainApp" ng-controller="choreAdminController"  id="ca-wrapper">
+<div ng-app="mainApp"  id="ca-wrapper">
   <h1 class="ca-header">Chore Admin</h1>
-  <img class="bg" src="assets/images/household/vacuum-cleaner.png">
+  <img class="bg" src="assets/images/chores/vacuum-cleaner.png">
   <form class="ca-form" ng-submit="submitForm()">
-    Type: <input style="font-family: Arial; font-size:20px" name="name" ng-model="item.item1" type="text"></input>
-    Area: <input style="font-family: Arial; font-size:20px" name="desc" ng-model="item2" type="text"></input>
-    Points: <input style="font-family: Arial; font-size:20px" ng-model="form.points" type="text"></input>
+    <h1>Type:</h1> <input style="font-family: Arial; font-size:20px"  ng-model="choreName" type="text"></input>
+    Area: <input style="font-family: Arial; font-size:20px"  ng-model="choreDesc" type="text"></input>
+    Points: <input style="font-family: Arial; font-size:20px" ng-model="chore_xp" type="text"></input>
     <button type="submit">Submit</button>
   </form>
 </div>

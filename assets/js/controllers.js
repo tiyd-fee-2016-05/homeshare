@@ -7,24 +7,26 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
   $scope.submitForm = function() {
           // console.log($scope.choreName);
           $scope.form = {
-            "name": $scope.choreName,
-            "description": $scope.choreDesc,
-            "value": $scope.choreValue
+            'name': $scope.choreName,
+            'description': $scope.choreDesc,
+            'chore_xp': $scope.chore_xp
           };
           console.log($scope.form);
     $http({
-      url: 'http://d6c901d4.ngrok.io/homes/1/chores.json?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.choreValue ,
+      url: 'https://d6c901d4.ngrok.io/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
       method: 'POST',
-      data: 'formData'
+      headers: {'Authorization':'maria@example.com'},
+      data: $scope.form
     }).success(function(data){
       $scope.data = data.data;
-      console.log($scope.data);
+      console.log($scope.form);
 
     });
 };
 $http({
-  url: 'http://d6c901d4.ngrok.io/homes/1/chores.json',
-  method: 'GET'
+  url: 'https://d6c901d4.ngrok.io/homes/1/chores',
+  method: 'GET',
+  headers: {'Authorization': 'maria@example.com'}
 }).success(function(data){
   $scope.totalChores = data;
   console.log($scope.totalChores);
@@ -44,10 +46,10 @@ $http({
               };
               console.log($scope.form);
         $http({
-          url: 'http://d6c901d4.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          url: 'https://d6c901d4.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
-          data: 'formData',
-          // headers: {'Authorization': 'ty@example.com'}
+          data: $scope.form,
+          headers: {'Authorization': 'maria@example.com'}
         }).success(function(data){
           $scope.data = data.data;
           console.log($scope.data);
@@ -69,9 +71,10 @@ $http({
       };
       console.log($scope.form);
       $http({
-        url: 'http://d6c901d4.ngrok.io/users',
+        url: 'https://d6c901d4.ngrok.io/home/1/users',
         method: 'POST',
-
+        data: $scope.form,
+        headers: {'Authorization':'maria@example.com'}
       }).success(function(data){
         alert("WELCOME HOME!");
         $scope.data = data.data;

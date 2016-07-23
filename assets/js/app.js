@@ -1,4 +1,5 @@
-var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"] );
+var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"  ] );
+// $httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
 
 mainApp.config( function($routeProvider) {
 
@@ -19,14 +20,17 @@ mainApp.config( function($routeProvider) {
     controller: "signupController"
   })
   .when( "/profile-edit", {
-    templateUrl: "pages/profile-edit.html"
+    templateUrl: "pages/profile-edit.html",
+    controller: "ControllerAvatar"
+
   })
   .when( "/household", {
     templateUrl: "pages/household.html",
     controller: "hhController"
   })
   .when( "/main", {
-    templateUrl: "pages/main.html"
+    templateUrl: "pages/main.html",
+    controller: "ControllerChores"
   })
   .when( "/user", {
     templateUrl: "pages/user.html"
@@ -38,11 +42,12 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/shop-user.html"
   })
   .when( "/chore-admin", {
-    templateUrl: "pages/chore-admin.html"
+    templateUrl: "pages/chore-admin.html",
+    controller: "choreAdminController"
   })
   .when( "/chore-user", {
     templateUrl: "pages/chore-user.html",
-    controller: "choreAdminController",
+    controller: "ControllerChores"
   })
   .when( "/bill-admin", {
     templateUrl: "pages/bill-admin.html"

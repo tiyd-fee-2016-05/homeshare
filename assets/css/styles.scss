@@ -1,15 +1,15 @@
-$color-user-profile: #2E86AB;
+$color-user-profile: #FCFCFC;
 $color-user-profile2: #22637F;
 $color-user-text: #f0f0f5;
 $color-user-highlights1: #549fbb;
 $color-user-highlights2: #3B4051;
 $color-dull-white: #F2F2F6;
-$background: #EFE9F4;
-
+$background: #EDEFF7;
+$text: #1985A1;
 
 html,
 body {
-  background-color: $color-user-profile;
+  background-color: $background;
   height: 100%;
   // overflow: auto;
 }

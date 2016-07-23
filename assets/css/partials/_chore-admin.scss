@@ -16,8 +16,8 @@ container: 100%,
   margin-left: auto;
   margin-right: auto;
   font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 4em;
-  color: $background;
+  font-size: 3em;
+  color: $text;
   // text-align: center;
 }
 .bg{
@@ -26,30 +26,33 @@ container: 100%,
   position: absolute;
   z-index: -9999;
   margin-left: auto;
+  margin-right: auto;
   margin-top: auto;
-  height: 30em;
+  height: 23em;
   opacity: .35;
 }
 .ca-form{
-  @include span(12 of 12);
-  font-family: 'Baumans', cursive;
+  @include span(4 of 12);
+  font-family: 'Andale Mono', cursive;
   font-size: 28px;
   display: block;
   position: absolute;
   margin-top: 5em;
   margin-left: auto;
-  padding-left: 2em;
-  width: 6em;
+  margin-right: auto;
+  // padding-left: 2em;
+  // width: 6em;
   input{
     width: 18em;
 
   }
   button{
-    margin-left: auto;
+    margin-left: 4.3em;
+    margin-right: auto;
     margin-top: 1em;
     height: 3em;
     width: 11em;
-    font-family: Baumans;
+    font-family: 'Andale Mono';
     font-size: 17px;
     border: none;
     border-radius: 3%;

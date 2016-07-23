@@ -1,11 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
 html,
 body {
-  background-color: #2E86AB;
+  background-color: #EDEFF7;
   height: 100%; }
 
 .fa-bars {
   cursor: pointer; }
+
+.options {
+  font-family: 'Andale Mono';
+  text-decoration-style: none; }
 
 .personal-profile-main {
   max-width: 100%;
@@ -23,7 +27,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5;
     margin-top: 2em; }
     .personal-profile-main .section-main h3 {
@@ -114,7 +118,7 @@ body {
     background-color: #EFE9F4; }
   .personal-profile-main .go-to-chore-list .fa-list {
     font-size: 4.25em;
-    color: #2E86AB;
+    color: #FCFCFC;
     position: relative;
     bottom: 1em;
     right: .25em;
@@ -166,7 +170,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5;
     margin-top: 2em; }
     .group-profile-main .section-main h3 {
@@ -288,7 +292,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5;
     margin-top: 2em; }
     .profile-edit-main .section-main h3 {
@@ -388,7 +392,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5;
     margin-top: 2em; }
     .chore-user-main .section-main .center-avatar {
@@ -411,7 +415,7 @@ body {
       font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
-      color: #2E86AB; }
+      color: #FCFCFC; }
     .chore-user-main .section-chores .chore-list {
       color: #F2F2F6; }
       .chore-user-main .section-chores .chore-list li {
@@ -465,7 +469,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2E86AB;
+    background-color: #FCFCFC;
     color: #f0f0f5; }
     .shop-user-main .section-main .center-avatar {
       width: 32.20339%;
@@ -488,7 +492,7 @@ body {
       font-size: 1.15em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
-      color: #2E86AB; }
+      color: #FCFCFC; }
     .shop-user-main .section-shopping-list .shopping-headings {
       color: #F2F2F6;
       width: 100%;
@@ -557,37 +561,37 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 4em;
-    color: #EFE9F4; }
+    font-size: 3em;
+    color: #1985A1; }
   #ca-wrapper .bg {
     display: block;
     position: absolute;
     z-index: -9999;
     margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
-    height: 30em;
+    height: 23em;
     opacity: .35; }
   #ca-wrapper .ca-form {
-    width: 100%;
+    width: 32.20339%;
     float: left;
-    margin-left: 0;
-    margin-right: 0;
-    font-family: 'Baumans', cursive;
+    margin-right: 1.69492%;
+    font-family: 'Andale Mono', cursive;
     font-size: 28px;
     display: block;
     position: absolute;
     margin-top: 5em;
     margin-left: auto;
-    padding-left: 2em;
-    width: 6em; }
+    margin-right: auto; }
     #ca-wrapper .ca-form input {
       width: 18em; }
     #ca-wrapper .ca-form button {
-      margin-left: auto;
+      margin-left: 4.3em;
+      margin-right: auto;
       margin-top: 1em;
       height: 3em;
       width: 11em;
-      font-family: Baumans;
+      font-family: 'Andale Mono';
       font-size: 17px;
       border: none;
       border-radius: 3%;
@@ -617,42 +621,51 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 4em;
-    color: #EFE9F4;
-    text-align: center; }
-  .landing-wrapper .icon img {
-    height: 250px;
-    margin-left: 43%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    opacity: 0.75;
-    position: relative;
-    display: block; }
+    font-size: 3em;
+    color: #1985A1;
+    margin-left: auto;
+    margin-right: auto; }
+  .landing-wrapper .landing-bg {
+    display: block;
+    position: absolute;
+    z-index: -9999;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14.2em;
+    height: 36em;
+    opacity: .35;
+    padding-left: 7.2em;
+    padding-top: 1em; }
   .landing-wrapper .login {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    font-family: 'Baumans', cursive;
+    font-family: 'Andale Mono', cursive;
     font-size: 1.2em;
     position: relative;
-    width: 17%;
+    width: 66%;
     text-align: center;
-    margin-left: 42%;
-    line-height: 1.7; }
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5em;
+    line-height: 1.7;
+    z-index: 9999;
+    padding-left: 10em; }
     .landing-wrapper .login input {
       height: 34px;
       width: 210px;
       border: none;
-      border-radius: 4%; }
+      border-radius: 4%;
+      background: #A7B8D3; }
     .landing-wrapper .login button {
-      font-family: 'Baumans', cursive;
+      font-family: 'Andale Mono', cursive;
       font-size: 1.1em;
-      height: 30px;
-      width: 150px;
+      height: 1.5em;
+      width: 10em;
       position: relative;
-      margin-left: 7px;
-      margin-top: 10px;
+      margin-left: auto;
+      margin-top: 1em;
       border: none;
       background: #DCDCDD; }
   .landing-wrapper .register {
@@ -661,29 +674,29 @@ body {
     margin-left: 0;
     margin-right: 0; }
     .landing-wrapper .register h2 {
-      font-family: 'Baumans', cursive;
-      font-size: 1.6em;
+      font-family: 'Andale Mono', cursive;
+      font-size: 1.2em;
       position: relative;
-      margin: 3% 0 0 42.4%; }
+      margin-left: auto;
+      margin-right: auto; }
     .landing-wrapper .register img {
-      position: relative;
-      margin: 1.8% 0 0 47.5%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
       border: 12px solid #DCDCDD;
       border-radius: 100%; }
     .landing-wrapper .register button {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
       display: inline-block;
       margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
       height: 3em;
       width: 11em;
-      font-family: Baumans;
+      font-family: Andale Mono;
       font-size: 17px;
       border: none;
       border-radius: 3%;
-      background: #C43F33;
+      background: #1985A1;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
@@ -700,7 +713,7 @@ body {
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 4em;
-    color: #EFE9F4; }
+    color: #EDEFF7; }
   #hhwrapper .background {
     display: block;
     position: absolute;
@@ -745,22 +758,21 @@ body {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0;
-  min-height: 100%;
-  position: absolute; }
+  margin-right: 0; }
   .main-wrapper:after {
     content: " ";
     display: block;
     clear: both; }
-  .main-wrapper .colorbar {
-    width: 100%;
-    height: 38em;
-    background: #094660;
-    z-index: -9999;
-    margin-top: 10em;
-    position: absolute; }
   .main-wrapper * {
     box-sizing: border-box; }
+  .main-wrapper .btn-menu {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    position: relative;
+    background: rgba(50, 50, 50, 0.14); }
   .main-wrapper .header-main {
     width: 100%;
     float: left;
@@ -769,7 +781,6 @@ body {
     font-family: 'Baumans', cursive;
     font-size: 4em;
     text-align: center;
-    margin-top: 2em;
     margin-left: auto;
     display: block;
     margin-bottom: -8%; }
@@ -780,13 +791,9 @@ body {
     margin-right: 0;
     position: relative;
     display: inline-block;
-    margin-top: 3.3em;
     margin-left: auto; }
-    .main-wrapper .profile:hover {
-      text-decoration: underline; }
     .main-wrapper .profile img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .profile h2 {
       font-family: 'Baumans', cursive;
@@ -801,12 +808,9 @@ body {
     position: relative;
     display: inline-block;
     margin-left: auto;
-    margin-top: 3em; }
-    .main-wrapper .chores:hover {
-      text-decoration: underline; }
+    margin-right: auto; }
     .main-wrapper .chores img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .chores h2 {
       font-family: 'Baumans', cursive;
@@ -820,13 +824,9 @@ body {
     margin-right: 0;
     position: relative;
     display: inline-block;
-    margin-top: 5.6em;
     margin-left: auto; }
-    .main-wrapper .shopping-list:hover {
-      text-decoration: underline; }
     .main-wrapper .shopping-list img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .shopping-list h2 {
       font-family: 'Baumans', cursive;
@@ -840,13 +840,9 @@ body {
     margin-right: 0;
     position: relative;
     display: inline-block;
-    margin-top: 5.6em;
     margin-left: auto; }
-    .main-wrapper .bills:hover {
-      text-decoration: underline; }
     .main-wrapper .bills img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .bills h2 {
       font-family: 'Baumans', cursive;
@@ -859,19 +855,90 @@ body {
     margin-left: 0;
     margin-right: 0;
     position: relative;
-    display: inline-block;
-    margin-top: 24em;
-    margin-left: auto; }
-    .main-wrapper .household:hover {
-      text-decoration: underline; }
+    display: inline-block; }
     .main-wrapper .household img {
-      height: 135px;
-      background: #dcdcdd;
+      height: 5em;
       border-radius: 19%; }
     .main-wrapper .household h2 {
       font-family: 'Baumans', cursive;
       font-size: 1.5em;
       text-align: center;
       color: #dcdcdd; }
+  .main-wrapper .main-chore-user-main {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+    .main-wrapper .main-chore-user-main:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .main-wrapper .main-chore-user-main .main-section-main {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      background-color: #FCFCFC;
+      color: #f0f0f5; }
+      .main-wrapper .main-chore-user-main .main-section-main .main-center-avatar {
+        width: 32.20339%;
+        float: left;
+        margin-right: 1.69492%;
+        margin: 0 0 1em 32%; }
+        .main-wrapper .main-chore-user-main .main-section-main .main-center-avatar .main-user-avatar {
+          width: 6.5em;
+          margin: 2em 0 0 0;
+          border-radius: 50%; }
+    .main-wrapper .main-chore-user-main .main-section-chores {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      background-color: #22637F;
+      overflow: auto; }
+      .main-wrapper .main-chore-user-main .main-section-chores .main-username {
+        text-align: center;
+        font-size: 1.15em;
+        font-weight: 400;
+        margin: 1.25em 0 1.5em 0;
+        color: #FCFCFC; }
+      .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list {
+        color: #F2F2F6; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list li {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0;
+          margin: 1em 0 1.25em 9.5%; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
+          width: 23.72881%;
+          float: left;
+          margin-right: 1.69492%; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list span {
+          width: 15.25424%;
+          float: left;
+          margin-right: 1.69492%;
+          margin: -.72em 0 0 .5em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-value {
+          width: 15.25424%;
+          float: left;
+          margin-right: 1.69492%;
+          display: inline-block;
+          margin-left: -10%; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-icon {
+          width: 23.72881%;
+          float: left;
+          margin-right: 1.69492%;
+          width: 2em;
+          margin-right: .75em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
+          font-size: 1em;
+          width: 7em;
+          margin: .20em 10% 0 10%; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .fa-check-circle-o {
+          font-size: 2em;
+          cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
