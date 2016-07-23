@@ -343,11 +343,11 @@ body {
     .profile-edit-main fieldset .location-heading,
     .profile-edit-main fieldset .venmo-username {
       display: block;
-      font-size: 3.25em;
+      font-size: 4.75em;
       margin: 1em 0 .75em 0; }
     .profile-edit-main fieldset input {
       width: 14.75em;
-      font-size: 3.25em; }
+      font-size: 4.25em; }
   .profile-edit-main .payments {
     width: 100%;
     float: left;
