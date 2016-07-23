@@ -325,7 +325,7 @@ body {
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%;
-    margin: 1.5em 0 0 11.35%; }
+    margin: 1em 0 0 11.35%; }
     .profile-edit-main fieldset .edit-name,
     .profile-edit-main fieldset .edit-location,
     .profile-edit-main fieldset .venmo-account {
@@ -355,7 +355,7 @@ body {
     margin-right: 0;
     margin: 3.25em 0 .5em 10%; }
   .profile-edit-main .payment-options {
-    font-size: 3.25em; }
+    font-size: 4.25em; }
   .profile-edit-main .venmo,
   .profile-edit-main .android-pay {
     width: 49.15254%;

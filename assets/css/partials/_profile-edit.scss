@@ -61,7 +61,7 @@
   fieldset {
 
     @include span( 10 of 12 );
-    margin: 1.5em 0 0 11.35%;
+    margin: 1em 0 0 11.35%;
 
     .edit-name,
     .edit-location,
@@ -101,7 +101,7 @@
   }
 
   .payment-options {
-    font-size: 3.25em;
+    font-size: 4.25em;
   }
 
   .venmo,
