@@ -298,7 +298,7 @@ body {
       float: left;
       margin-right: 1.69492%;
       font-size: 4em;
-      margin: 1em 0 0 9.5%;
+      margin: 1em 0 0 9.35%;
       text-align: center;
       cursor: pointer; }
     .profile-edit-main .section-main .center-avatar {
@@ -336,9 +336,9 @@ body {
     .profile-edit-main fieldset .edit-name {
       margin: 1em 0 1em -.75em; }
     .profile-edit-main fieldset .edit-location {
-      margin: .75em 0 1.75em -.75em; }
+      margin: .5em 0 1.75em -.75em; }
     .profile-edit-main fieldset .venmo-account {
-      margin: .75em 0 1.5em -.75em; }
+      margin: .5em 0 1.5em -.75em; }
     .profile-edit-main fieldset .name-heading,
     .profile-edit-main fieldset .location-heading,
     .profile-edit-main fieldset .venmo-username {
