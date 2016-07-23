@@ -26,7 +26,7 @@
       @include span( 3 of 12 );
       // background: red;
       font-size: 4em;
-      margin: 1em 0 0 11.25%;
+      margin: 1em 0 0 11%;
       text-align: center;
       cursor: pointer;
     }
@@ -37,7 +37,7 @@
       margin: -4em 6.5% 0 0;
 
       .user-avatar {
-        width: 22.5em;
+        width: 22em;
         margin-left: -3%;
         border-radius: 50%;
       }
@@ -61,7 +61,7 @@
   fieldset {
 
     @include span( 10 of 12 );
-    margin: 4em 0 0 11.5%;
+    margin: 4em 0 0 11.75%;
 
     .edit-name,
     .edit-location,
@@ -85,12 +85,12 @@
     .location-heading,
     .venmo-username {
       display: block;
-      font-size: 5.25em;
+      font-size: 4.75em;
       margin: 1em 0 .75em 0;
     }
 
     input {
-      width: 10.5em;
+      width: 10.85em;
       font-size: 4.5em;
     }
   } // end fieldset
