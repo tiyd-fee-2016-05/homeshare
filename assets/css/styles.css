@@ -2,8 +2,9 @@
 html {
   background-color: #EDEFF7; }
 
-.fa-bars {
-  cursor: pointer; }
+.fa-cog {
+  cursor: pointer;
+  font-size: 2.3em; }
 
 .options {
   font-family: 'Andale Mono';
@@ -958,5 +959,101 @@ html {
           margin-right: auto;
           position: absolute;
           margin-top: auto; }
+
+.btn-menu {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  background: rgba(50, 50, 50, 0.14);
+  z-index: 9999999999; }
+
+.profile {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  display: inline-block;
+  margin-left: auto; }
+  .profile img {
+    height: 5em;
+    border-radius: 19%; }
+  .profile h2 {
+    font-family: 'Baumans', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color: #dcdcdd; }
+
+.chores {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+  .chores img {
+    height: 5em;
+    border-radius: 19%; }
+  .chores h2 {
+    font-family: 'Baumans', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color: #dcdcdd; }
+
+.shopping-list {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  display: inline-block;
+  margin-left: auto; }
+  .shopping-list img {
+    height: 5em;
+    border-radius: 19%; }
+  .shopping-list h2 {
+    font-family: 'Baumans', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color: #dcdcdd; }
+
+.bills {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  display: inline-block;
+  margin-left: auto; }
+  .bills img {
+    height: 5em;
+    border-radius: 19%; }
+  .bills h2 {
+    font-family: 'Baumans', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color: #dcdcdd; }
+
+.household {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  display: inline-block; }
+  .household img {
+    height: 5em;
+    border-radius: 19%; }
+  .household h2 {
+    font-family: 'Baumans', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color: #dcdcdd; }
 
 /*# sourceMappingURL=styles.css.map */
