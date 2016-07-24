@@ -9,23 +9,22 @@
 
   @include container;
   box-sizing: border-box;
+  background-color: $background;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 
   .section-main {
     @include span( 12 of 12 );
-    background-color: $color-user-profile;
+    background-color: $background;
     color: $color-user-text;
+    margin: 0 0 0 10%;
 
     .center-avatar {
-      @include span( 4 of 12 );
-      // background: orange;
-      // position: fixed;
-      margin: 0 0 1em 32%;
+      @include span( 12 of 12 );
+      margin: 0 0 0 25%;
 
       .user-avatar {
-        width: 6.5em;
-        margin: 2em 0 0 0;
+        width: 22em;
         border-radius: 50%;
       }
     } // end .center-avatar

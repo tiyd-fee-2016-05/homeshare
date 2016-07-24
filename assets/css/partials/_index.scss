@@ -8,24 +8,24 @@
   background: #A0C1D1;
   z-index: 9999999999;
   padding: 1em 0 5.5em 4em;
-}
-.profile{
-  @include span(12 of 12);
-  position: relative;
-  display: inline-block;
-  margin-left: auto;
-  img{
-    height: 4.3em;
-    // background: #dcdcdd;
-    border-radius: 19%;
-  }
-  h2{
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center;
-    color:#dcdcdd;
-  }
-}
+// }
+// .profile{
+//   @include span(12 of 12);
+//   position: relative;
+//   display: inline-block;
+//   margin-left: auto;
+//   img{
+//     height: 4.3em;
+//     // background: #dcdcdd;
+//     border-radius: 19%;
+//   }
+//   h2{
+//     font-family: 'Baumans', cursive;
+//     font-size: 1.5em;
+//     text-align: center;
+//     color:#dcdcdd;
+//   }
+// }
 
 .chores{
   @include span(12 of 12);
@@ -100,4 +100,5 @@
     color:#dcdcdd;
 
   }
+}
 }

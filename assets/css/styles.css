@@ -35,8 +35,8 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
-    color: #f0f0f5;
+    background-color: #EDEFF7;
+    color: #3B4051;
     margin-top: 2em; }
     .personal-profile-main .section-main h3 {
       color: #3B4051; }
@@ -74,7 +74,7 @@ body {
       margin-left: 0;
       margin-right: 0;
       text-align: center;
-      color: #f0f0f5; }
+      color: #3B4051; }
     .personal-profile-main .section-main .user-name {
       font-size: 5.5em;
       margin-top: 1em; }
@@ -179,7 +179,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
+    background-color: #EDEFF7;
     color: #f0f0f5;
     margin-top: 2em; }
     .group-profile-main .section-main h3 {
@@ -301,8 +301,8 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
-    color: #f0f0f5;
+    background-color: #EDEFF7;
+    color: #3B4051;
     margin-top: 2em; }
     .profile-edit-main .section-main h3 {
       color: #3B4051; }
@@ -474,6 +474,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  background-color: #EDEFF7;
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
   .shop-user-main:after {
@@ -485,16 +486,17 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
-    color: #f0f0f5; }
+    background-color: #EDEFF7;
+    color: #f0f0f5;
+    margin: 0 0 0 10%; }
     .shop-user-main .section-main .center-avatar {
-      width: 32.20339%;
+      width: 100%;
       float: left;
-      margin-right: 1.69492%;
-      margin: 0 0 1em 32%; }
+      margin-left: 0;
+      margin-right: 0;
+      margin: 0 0 0 25%; }
       .shop-user-main .section-main .center-avatar .user-avatar {
-        width: 6.5em;
-        margin: 2em 0 0 0;
+        width: 22em;
         border-radius: 50%; }
   .shop-user-main .section-shopping-list {
     width: 100%;
@@ -976,91 +978,70 @@ body {
   background: #A0C1D1;
   z-index: 9999999999;
   padding: 1em 0 5.5em 4em; }
-
-.profile {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block;
-  margin-left: auto; }
-  .profile img {
-    height: 4.3em;
-    border-radius: 19%; }
-  .profile h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center;
-    color: #dcdcdd; }
-
-.chores {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto; }
-  .chores img {
-    height: 8.3em;
-    border-radius: 19%; }
-  .chores h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 4.5em;
-    text-align: center;
-    color: #dcdcdd; }
-
-.shopping-list {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block;
-  margin-left: auto; }
-  .shopping-list img {
-    height: 8.3em;
-    border-radius: 19%; }
-  .shopping-list h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 4.5em;
-    text-align: center;
-    color: #dcdcdd; }
-
-.bills {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block;
-  margin-left: auto; }
-  .bills img {
-    height: 8.3em;
-    border-radius: 19%; }
-  .bills h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 4.5em;
-    text-align: center;
-    color: #dcdcdd; }
-
-.household {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block; }
-  .household img {
-    height: 8.3em;
-    border-radius: 19%; }
-  .household h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 4.5em;
-    text-align: center;
-    color: #dcdcdd; }
+  .btn-menu .chores {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; }
+    .btn-menu .chores img {
+      height: 8.3em;
+      border-radius: 19%; }
+    .btn-menu .chores h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 4.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .btn-menu .shopping-list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: inline-block;
+    margin-left: auto; }
+    .btn-menu .shopping-list img {
+      height: 8.3em;
+      border-radius: 19%; }
+    .btn-menu .shopping-list h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 4.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .btn-menu .bills {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: inline-block;
+    margin-left: auto; }
+    .btn-menu .bills img {
+      height: 8.3em;
+      border-radius: 19%; }
+    .btn-menu .bills h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 4.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .btn-menu .household {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: inline-block; }
+    .btn-menu .household img {
+      height: 8.3em;
+      border-radius: 19%; }
+    .btn-menu .household h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 4.5em;
+      text-align: center;
+      color: #dcdcdd; }
 
 #su-wrapper {
   max-width: 100%;

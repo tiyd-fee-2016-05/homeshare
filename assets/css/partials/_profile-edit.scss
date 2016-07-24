@@ -14,8 +14,8 @@
 
   .section-main {
     @include span( 12 of 12 );
-    background-color: $color-user-profile;
-    color: $color-user-text;
+    background-color: $background;
+    color: $color-user-highlights2;
     margin-top: 2em;
 
     h3 {
