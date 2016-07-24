@@ -11,45 +11,19 @@
     <!-- chore section of page...will include user name and chores unordered list -->
     <section class="main-section-chores">
       <h1 class="main-username">Username Chores</h1>
-      <ul class="main-chore-list" ng-repeat="chore in totalChores">
+      <ul class="main-chore-list" ng-repeat="chore in totalChores | orderBy: 'created_at':true | limitTo: 3">
         <li>
           <img class="main-chore-icon" src={{chores[totalChores.indexOf(chore)].ChoreIcon}} alt="Picture of chore">
           <h2>{{chore.name}}</h2>
           <h2 class="main-chore-value">{{chore.chore_xp}}</h2>
           <h2>{{chore.description}}</h2>
-          <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>
+          <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore(chore)"></span>
         </li>
       </ul>
     </section><!-- end .section-chores -->
   </main>
 
 
-<div class="btn-menu">
-<div class="profile">
-  <img src="assets/images/avatars/robocop.png">
-  <!-- <h2>Profile</h2> -->
-</div>
 
-<div class="chores">
-  <a href="/#chore-admin"><img src="assets/images/chores/liquid-soap.png"></a>
-  <!-- <h2>Chores</h2> -->
-</div>
-
-<div class="shopping-list">
-  <img src="assets/images/misc/cart.png">
-  <!-- <h2>Shopping List</h2> -->
-</div>
-
-<div class="bills">
-  <img src="assets/images/misc/payment.png">
-  <!-- <h2>Bills</h2> -->
-</div>
-
-
-<div class="household">
-  <a href="/#household"><img src="assets/images/misc/house.png"></a>
-  <!-- <h2>Household</h2> -->
-</div>
-</div>
 
 </div>

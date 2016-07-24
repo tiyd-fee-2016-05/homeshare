@@ -6,47 +6,64 @@ columns: 12,
 container: 100%,
 );
 
-#hhwrapper{
+#su-wrapper{
+@include container;
+// border: solid 2px black;
+@include span(12 of 12);
+// margin-bottom: 0;
+
+
+* {
+    box-sizing: border-box;
+}
+
+.su-header{
   @include span(12 of 12);
-.hh-header{
-  @include span(12 of 12);
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 3em;
   color: $text;
-  text-align: center;
+  width: 8em;
+  padding-bottom: 1em;
+  // text-align: center;
 }
-.background{
+.bg{
+
   display: block;
   position: absolute;
   z-index: -9999;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5em;
-  // padding-left: 2em;
+  margin-top: auto;
+  height: 23em;
   opacity: .35;
-  height: 22em;
 }
-.hh-form{
-  @include span(12 of 12);
-  font-family: 'Baumans', cursive;
-  font-size: 28px;
+.su-form{
+  @include span(4 of 12);
+  font-family: 'Andale Mono', cursive;
+  font-size: 23px;
   display: block;
   position: absolute;
   margin-top: 5em;
   margin-left: auto;
-  width: 6em;
-  padding-left: 0.8em;
+  margin-right: auto;
+  padding-bottom: .7em;
+  padding-left: 1em;
+  // width: 6em;
   input{
-    width: 15em;
+    width: 13em;
+    padding-left: 1em;
 
   }
   button{
     margin-left: auto;
+    margin-right: auto;
     margin-top: 1em;
     height: 3em;
     width: 11em;
-    font-family: Baumans;
-    font-size: 17px;
+    font-family: 'Andale Mono';
+    font-size: 20px;
     border: none;
     border-radius: 3%;
     background: #C43F33;
