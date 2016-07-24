@@ -13,7 +13,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
           };
           console.log($scope.form);
     $http({
-      url: 'https://d6c901d4.ngrok.io/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
+      url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
       method: 'POST',
       headers: {'Authorization':'maria@example.com'},
       data: $scope.form
@@ -24,7 +24,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     });
 };
 $http({
-  url: 'https://d6c901d4.ngrok.io/homes/1/chores',
+  url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores',
   method: 'GET',
   headers: {'Authorization': 'maria@example.com'}
 }).success(function(data){
@@ -41,12 +41,12 @@ $http({
               // console.log($scope.choreName);
               $scope.form = {
                 "name": $scope.hhName,
-                "description": $scope.hhDesc,
+                "city": $scope.hhDesc,
                 "value": $scope.hhRent
               };
               console.log($scope.form);
         $http({
-          url: 'https://d6c901d4.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          url: 'http://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
           data: $scope.form,
           headers: {'Authorization': 'maria@example.com'}
@@ -57,6 +57,15 @@ $http({
         });
       };
 
+      $http({
+        url: 'http://tiy-homeshare.herokuapp.com/homes/',
+        method: 'GET',
+        headers: {'Authorization': 'maria@example.com'}
+      }).success(function(data){
+        $scope.home_id = data;
+        console.log($scope.home_id);
+
+      });
 
   }]);
 
@@ -71,7 +80,7 @@ $http({
       };
       console.log($scope.form);
       $http({
-        url: 'https://d6c901d4.ngrok.io/home/1/users',
+        url: 'http://tiy-homeshare.herokuapp.com/homes/1/users',
         method: 'POST',
         data: $scope.form,
         headers: {'Authorization':'maria@example.com'}
@@ -82,4 +91,33 @@ $http({
       });
     };
 
+    $http({
+      url: 'http://tiy-homeshare.herokuapp.com/homes/1/users',
+      method: 'GET',
+      headers: {'Authorization': 'maria@example.com'}
+    }).success(function(data){
+      $scope.data = data.data;
+      console.log($scope.data);
+
+    });
+
+
+}]);
+
+//OPTIONS POP OUT
+mainApp.controller( "optionsController", [ "$scope", function( $scope ) {
+//Close pannel
+$(window).ready(function () {
+
+   $(".options").hide()
+ });
+//Accordion menu
+  $( ".fa-cog" ).click( function() {
+    console.log( "Hello" );
+    $( ".options" ).slideToggle();
+
+    // thank you http://www.electrictoolbox.com/jquery-scroll-bottom/ for your help
+    $( "html, body" ).animate( { scrollTop: $(document).width() }, 'slow' );
+    return false;
+  }); // end ".user-avatar" click event
 }]);
