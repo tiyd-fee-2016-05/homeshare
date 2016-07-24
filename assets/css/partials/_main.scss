@@ -30,6 +30,17 @@ container: 100%,
 * {
     box-sizing: border-box;
 }
+
+//Divider bar
+.divider{
+  length: 25em;
+  color: gray;
+  height: .3em;
+}
+
+
+
+
 // NAV BAR
 .btn-menu{
   @include span(12 of 12);
@@ -163,11 +174,13 @@ container: 100%,
       @include span( 4 of 12 );
       // background: orange;
       // position: fixed;
-      margin: 0 0 1em 32%;
+      margin-right: auto;
+      margin-left: auto;
 
       .main-user-avatar {
-        width: 6.5em;
-        margin: 2em 0 0 0;
+        height: 11.4em;
+        margin-left: 10em;
+        margin-right: auto;
         border-radius: 50%;
       }
     } // end .center-avatar
@@ -251,7 +264,8 @@ container: 100%,
 
     .main-username {
       text-align: center;
-      font-size: 1.15em;
+      font-family: 'Roboto', sans-serif;
+      font-size: 21px;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
       color: $text;
@@ -262,6 +276,8 @@ container: 100%,
       color: $text;
       @include span( 12 of 12 );
       font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+      font-size: 19px;
 
       li {
         @include span( 3 of 12 );
@@ -300,7 +316,9 @@ container: 100%,
       }
 
       h2 {
-        font-size: 1em;
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+
       }
 
       .main-qty {
@@ -309,13 +327,20 @@ container: 100%,
 
       .main-shopping-item {
         width: 8em;
-        margin: .45em 1.5em 0 -3.75em;
+        margin: .45em auto 0 -3.75em;
       }
 
       .main-item-checkbox {
-        // height: 5em;
-        width: 5em;
-        margin: .95em 0 0 1.5em;
+        margin: .95em auto 0 auto;
+        input {
+    // -webkit-appearance:none;
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
       }
     }
   } // end .shopping-list feed

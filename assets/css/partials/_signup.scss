@@ -32,7 +32,7 @@ container: 100%,
 
   display: block;
   position: absolute;
-  z-index: -9999;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -41,8 +41,6 @@ container: 100%,
 }
 .su-form{
   @include span(4 of 12);
-  font-family: 'Andale Mono', cursive;
-  font-size: 23px;
   display: block;
   position: absolute;
   margin-top: 5em;
@@ -51,6 +49,10 @@ container: 100%,
   padding-bottom: .7em;
   padding-left: 1em;
   // width: 6em;
+  p{
+    font-family: 'Roboto', cursive;
+    font-size: 23px;
+  }
   input{
     width: 13em;
     padding-left: 1em;
@@ -70,6 +72,11 @@ container: 100%,
     -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  }
+  h4{
+    font-family: 'Roboto', cursive;
+    font-size: 14px;
+    color: #B5B2C2;
   }
 }
 
