@@ -6,11 +6,18 @@ body {
 
 .fa-cog {
   cursor: pointer;
-  font-size: 2.3em; }
+  font-size: 5.5em;
+  margin: .3em 0 0 .3em; }
 
 .options {
   font-family: 'Andale Mono';
-  text-decoration-style: none; }
+  font-size: 4em;
+  color: #3B4051;
+  margin: 0 0 0 1.5em;
+  z-index: 1; }
+  .options a {
+    text-decoration: none;
+    color: #3B4051; }
 
 .personal-profile-main {
   max-width: 100%;
@@ -40,7 +47,8 @@ body {
       font-size: 4em;
       margin: 1em 0 0 10%;
       text-align: center;
-      cursor: pointer; }
+      cursor: pointer;
+      z-index: 0; }
     .personal-profile-main .section-main .center-avatar {
       width: 23.72881%;
       float: left;
@@ -415,7 +423,7 @@ body {
       text-align: center;
       font-size: 5.5em;
       font-weight: 400;
-      margin: 1.25em 0 1.5em 0;
+      margin: 1.25em 0 1em 0;
       color: #FCFCFC; }
     .chore-user-main .section-chores .chore-list {
       color: #F2F2F6; }
@@ -424,7 +432,7 @@ body {
         float: left;
         margin-left: 0;
         margin-right: 0;
-        margin: 3.25em 0 1.25em 9.5%; }
+        margin: 3.25em 0 1.25em 9%; }
       .chore-user-main .section-chores .chore-list h2 {
         width: 23.72881%;
         float: left;
@@ -963,10 +971,11 @@ body {
   margin-right: 0;
   display: flex;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
+  height: 4em;
   background: #A0C1D1;
   z-index: 9999999999;
-  padding-left: 1em; }
+  padding: 1em 0 5.5em 4em; }
 
 .profile {
   width: 100%;
@@ -995,11 +1004,11 @@ body {
   margin-left: auto;
   margin-right: auto; }
   .chores img {
-    height: 4.3em;
+    height: 8.3em;
     border-radius: 19%; }
   .chores h2 {
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
+    font-size: 4.5em;
     text-align: center;
     color: #dcdcdd; }
 
@@ -1012,11 +1021,11 @@ body {
   display: inline-block;
   margin-left: auto; }
   .shopping-list img {
-    height: 4.3em;
+    height: 8.3em;
     border-radius: 19%; }
   .shopping-list h2 {
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
+    font-size: 4.5em;
     text-align: center;
     color: #dcdcdd; }
 
@@ -1029,11 +1038,11 @@ body {
   display: inline-block;
   margin-left: auto; }
   .bills img {
-    height: 4.3em;
+    height: 8.3em;
     border-radius: 19%; }
   .bills h2 {
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
+    font-size: 4.5em;
     text-align: center;
     color: #dcdcdd; }
 
@@ -1045,11 +1054,11 @@ body {
   position: relative;
   display: inline-block; }
   .household img {
-    height: 4.3em;
+    height: 8.3em;
     border-radius: 19%; }
   .household h2 {
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
+    font-size: 4.5em;
     text-align: center;
     color: #dcdcdd; }
 
