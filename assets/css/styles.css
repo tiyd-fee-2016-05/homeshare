@@ -643,10 +643,8 @@ html {
     z-index: -9999;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 14.2em;
-    height: 36em;
+    height: 22em;
     opacity: .35;
-    padding-left: 7.2em;
     padding-top: 1em; }
   .landing-wrapper .login {
     width: 100%;
@@ -663,7 +661,7 @@ html {
     padding-top: 2.5em;
     line-height: 1.7;
     z-index: 9999;
-    padding-left: 10em; }
+    padding-left: 3.49em; }
     .landing-wrapper .login input {
       height: 34px;
       width: 210px;
@@ -674,7 +672,7 @@ html {
       font-family: 'Andale Mono', cursive;
       font-size: 1.1em;
       height: 1.5em;
-      width: 10em;
+      width: 7em;
       position: relative;
       margin-left: auto;
       margin-top: 1em;
@@ -724,16 +722,18 @@ html {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 4em;
-    color: #EDEFF7; }
+    font-size: 3em;
+    color: #1985A1;
+    text-align: center; }
   #hhwrapper .background {
     display: block;
     position: absolute;
     z-index: -9999;
     margin-left: auto;
+    margin-right: auto;
     margin-top: 5em;
-    padding-left: 2em;
-    opacity: .35; }
+    opacity: .35;
+    height: 22em; }
   #hhwrapper .hh-form {
     width: 100%;
     float: left;
@@ -743,12 +743,12 @@ html {
     font-size: 28px;
     display: block;
     position: absolute;
-    margin-top: 8em;
+    margin-top: 5em;
     margin-left: auto;
     width: 6em;
-    padding-left: 3.8em; }
+    padding-left: 0.8em; }
     #hhwrapper .hh-form input {
-      width: 18em; }
+      width: 15em; }
     #hhwrapper .hh-form button {
       margin-left: auto;
       margin-top: 1em;
@@ -968,8 +968,9 @@ html {
   display: flex;
   position: fixed;
   bottom: 0px;
-  background: rgba(50, 50, 50, 0.14);
-  z-index: 9999999999; }
+  background: #A0C1D1;
+  z-index: 9999999999;
+  padding-left: 1em; }
 
 .profile {
   width: 100%;
@@ -980,7 +981,7 @@ html {
   display: inline-block;
   margin-left: auto; }
   .profile img {
-    height: 5em;
+    height: 4.3em;
     border-radius: 19%; }
   .profile h2 {
     font-family: 'Baumans', cursive;
@@ -998,7 +999,7 @@ html {
   margin-left: auto;
   margin-right: auto; }
   .chores img {
-    height: 5em;
+    height: 4.3em;
     border-radius: 19%; }
   .chores h2 {
     font-family: 'Baumans', cursive;
@@ -1015,7 +1016,7 @@ html {
   display: inline-block;
   margin-left: auto; }
   .shopping-list img {
-    height: 5em;
+    height: 4.3em;
     border-radius: 19%; }
   .shopping-list h2 {
     font-family: 'Baumans', cursive;
@@ -1032,7 +1033,7 @@ html {
   display: inline-block;
   margin-left: auto; }
   .bills img {
-    height: 5em;
+    height: 4.3em;
     border-radius: 19%; }
   .bills h2 {
     font-family: 'Baumans', cursive;
@@ -1048,12 +1049,78 @@ html {
   position: relative;
   display: inline-block; }
   .household img {
-    height: 5em;
+    height: 4.3em;
     border-radius: 19%; }
   .household h2 {
     font-family: 'Baumans', cursive;
     font-size: 1.5em;
     text-align: center;
     color: #dcdcdd; }
+
+#su-wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  #su-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  #su-wrapper * {
+    box-sizing: border-box; }
+  #su-wrapper .su-header {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 3em;
+    color: #1985A1;
+    width: 8em;
+    padding-bottom: 1em; }
+  #su-wrapper .bg {
+    display: block;
+    position: absolute;
+    z-index: -9999;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    height: 23em;
+    opacity: .35; }
+  #su-wrapper .su-form {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    font-family: 'Andale Mono', cursive;
+    font-size: 23px;
+    display: block;
+    position: absolute;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .7em;
+    padding-left: 1em; }
+    #su-wrapper .su-form input {
+      width: 13em;
+      padding-left: 1em; }
+    #su-wrapper .su-form button {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+      height: 3em;
+      width: 11em;
+      font-family: 'Andale Mono';
+      font-size: 20px;
+      border: none;
+      border-radius: 3%;
+      background: #C43F33;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
 
 /*# sourceMappingURL=styles.css.map */

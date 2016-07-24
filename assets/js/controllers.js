@@ -41,7 +41,7 @@ $http({
               // console.log($scope.choreName);
               $scope.form = {
                 "name": $scope.hhName,
-                "description": $scope.hhDesc,
+                "city": $scope.hhDesc,
                 "value": $scope.hhRent
               };
               console.log($scope.form);
@@ -57,6 +57,15 @@ $http({
         });
       };
 
+      $http({
+        url: 'http://tiy-homeshare.herokuapp.com/homes/',
+        method: 'GET',
+        headers: {'Authorization': 'maria@example.com'}
+      }).success(function(data){
+        $scope.home_id = data;
+        console.log($scope.home_id);
+
+      });
 
   }]);
 
@@ -71,7 +80,7 @@ $http({
       };
       console.log($scope.form);
       $http({
-        url: 'http://tiy-homeshare.herokuapp.com/home/1/users',
+        url: 'http://tiy-homeshare.herokuapp.com/homes/1/users',
         method: 'POST',
         data: $scope.form,
         headers: {'Authorization':'maria@example.com'}
@@ -81,6 +90,17 @@ $http({
         console.log($scope.data);
       });
     };
+
+    $http({
+      url: 'http://tiy-homeshare.herokuapp.com/homes/1/users',
+      method: 'GET',
+      headers: {'Authorization': 'maria@example.com'}
+    }).success(function(data){
+      $scope.data = data.data;
+      console.log($scope.data);
+
+    });
+
 
 }]);
 
