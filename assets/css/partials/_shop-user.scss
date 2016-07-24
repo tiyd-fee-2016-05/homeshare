@@ -9,23 +9,23 @@
 
   @include container;
   box-sizing: border-box;
+  background-color: $background;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 
   .section-main {
     @include span( 12 of 12 );
-    background-color: $color-user-profile;
+    background-color: $background;
     color: $color-user-text;
+    // margin: 0 0 0 10%;
+    margin-top: 2em;
 
     .center-avatar {
-      @include span( 4 of 12 );
-      // background: orange;
-      // position: fixed;
-      margin: 0 0 1em 32%;
+      @include span( 12 of 12 );
+      margin: -4em 6.5% 0 32.35%;
 
       .user-avatar {
-        width: 6.5em;
-        margin: 2em 0 0 0;
+        width: 22em;
         border-radius: 50%;
       }
     } // end .center-avatar
@@ -37,18 +37,24 @@
     background-color: $color-user-profile2;
     overflow: auto;
 
-    .username {
+    .username,
+    .username2 {
       text-align: center;
-      font-size: 1.15em;
+      font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
       color: $color-user-profile;
+    }
+
+    .username2 {
+      margin-top: -1.25em;
     }
 
     .shopping-headings {
 
       color: $color-dull-white;
       @include span( 12 of 12 );
+      font-size: 4em;
       font-weight: 400;
 
       li {
@@ -58,27 +64,32 @@
       }
 
       .qty-heading {
-        margin-left: 15%;
+        margin-left: -.5em;
       }
 
       .item-heading {
         @include span( 5 of 12 );
         width: 8em;
-        margin-left: 7%;
+        margin-left: -32%;
       }
 
       .checkbox-heading {
-        margin-left: 90%;
+        margin: 0 0 0 77%;
       }
     } // end .shopping-headings
 
     .shopping-list {
 
       color: $color-dull-white;
+      padding-bottom: 25.5em;
 
       li {
         @include span( 12 of 12 );
         margin-bottom: 3em;
+      }
+
+      li:last-child {
+        padding-bottom: 15em;
       }
 
       .qty,
@@ -88,22 +99,23 @@
       }
 
       h2 {
-        font-size: 1em;
+        font-size: 3.5em;
       }
 
       .qty {
-        margin: .45em 2em 0 10.35%;
+        margin: .45em 2em 0 1.25em;
       }
 
       .shopping-item {
         width: 8em;
-        margin: .45em 1.5em 0 -3.75em;
+        margin: .45em 1.5em 0 -3.5em;
       }
 
       .item-checkbox {
-        // height: 5em;
+        height: 5em;
         width: 5em;
-        margin: .95em 0 0 1.5em;
+        margin: 1.5em 0 0 8em;
+        padding-top: .5em;
       }
     }
   } // end .shopping-list

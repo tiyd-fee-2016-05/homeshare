@@ -117,7 +117,7 @@ $(window).ready(function () {
     $( ".options" ).slideToggle();
 
     // thank you http://www.electrictoolbox.com/jquery-scroll-bottom/ for your help
-    $( "html, body" ).animate( { scrollTop: $(document).width() }, 'slow' );
-    return false;
+    // $( "html, body" ).animate( { scrollTop: $(document).width() }, 'slow' );
+    // return false;
   }); // end ".user-avatar" click event
 }]);

@@ -2,15 +2,25 @@
 html,
 body {
   background-color: #EDEFF7;
-  height: 100%; }
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto; }
 
 .fa-cog {
   cursor: pointer;
-  font-size: 2.3em; }
+  font-size: 5.5em;
+  margin: .3em 0 0 .3em; }
 
 .options {
   font-family: 'Andale Mono';
-  text-decoration-style: none; }
+  font-size: 4em;
+  color: #3B4051;
+  margin: 0 0 0 1.5em;
+  z-index: 1; }
+  .options a {
+    text-decoration: none;
+    color: #3B4051; }
 
 .personal-profile-main {
   max-width: 100%;
@@ -28,8 +38,8 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
-    color: #f0f0f5;
+    background-color: #EDEFF7;
+    color: #3B4051;
     margin-top: 2em; }
     .personal-profile-main .section-main h3 {
       color: #3B4051; }
@@ -40,7 +50,8 @@ body {
       font-size: 4em;
       margin: 1em 0 0 10%;
       text-align: center;
-      cursor: pointer; }
+      cursor: pointer;
+      z-index: 0; }
     .personal-profile-main .section-main .center-avatar {
       width: 23.72881%;
       float: left;
@@ -66,7 +77,7 @@ body {
       margin-left: 0;
       margin-right: 0;
       text-align: center;
-      color: #f0f0f5; }
+      color: #3B4051; }
     .personal-profile-main .section-main .user-name {
       font-size: 5.5em;
       margin-top: 1em; }
@@ -161,7 +172,8 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
-  font-weight: 300; }
+  font-weight: 300;
+  min-height: 100%; }
   .group-profile-main:after {
     content: " ";
     display: block;
@@ -171,8 +183,8 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
-    color: #f0f0f5;
+    background-color: #EDEFF7;
+    color: #3B4051;
     margin-top: 2em; }
     .group-profile-main .section-main h3 {
       color: #3B4051; }
@@ -208,7 +220,7 @@ body {
       margin-left: 0;
       margin-right: 0;
       text-align: center;
-      color: #f0f0f5; }
+      color: #3B4051; }
     .group-profile-main .section-main .group-name {
       font-size: 5.5em;
       margin-top: 1em; }
@@ -259,7 +271,7 @@ body {
       display: none;
       width: 100%;
       margin: 0 0 1.5em -1.15em;
-      padding-bottom: .5em; }
+      padding-bottom: 17.5em; }
       .group-profile-main .section-members .member-stats .member-level1,
       .group-profile-main .section-members .member-stats .member-points1,
       .group-profile-main .section-members .member-stats .member-expertise1 {
@@ -283,7 +295,9 @@ body {
   margin-right: auto;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  min-height: 100%;
+  overflow: visible; }
   .profile-edit-main:after {
     content: " ";
     display: block;
@@ -293,8 +307,8 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
-    color: #f0f0f5;
+    background-color: #EDEFF7;
+    color: #3B4051;
     margin-top: 2em; }
     .profile-edit-main .section-main h3 {
       color: #3B4051; }
@@ -358,7 +372,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    margin: 3.25em 0 .5em 10%; }
+    margin: 3.25em 0 13.5em 10%; }
   .profile-edit-main .payment-options {
     font-size: 4.25em; }
   .profile-edit-main .venmo,
@@ -393,7 +407,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
+    background-color: #EDEFF7;
     color: #f0f0f5;
     margin-top: 2em; }
     .chore-user-main .section-main .center-avatar {
@@ -410,12 +424,13 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: #22637F;
+    padding-bottom: 13.5em;
     overflow: auto; }
     .chore-user-main .section-chores .username {
       text-align: center;
       font-size: 5.5em;
       font-weight: 400;
-      margin: 1.25em 0 1.5em 0;
+      margin: 1.25em 0 1em 0;
       color: #FCFCFC; }
     .chore-user-main .section-chores .chore-list {
       color: #F2F2F6; }
@@ -424,7 +439,7 @@ body {
         float: left;
         margin-left: 0;
         margin-right: 0;
-        margin: 1em 0 1.25em 9.5%; }
+        margin: 3.25em 0 1.25em 9%; }
       .chore-user-main .section-chores .chore-list h2 {
         width: 23.72881%;
         float: left;
@@ -434,31 +449,39 @@ body {
         float: left;
         margin-right: 1.69492%;
         margin: -.72em 0 0 .5em; }
-      .chore-user-main .section-chores .chore-list .chore-value {
-        width: 15.25424%;
-        float: left;
-        margin-right: 1.69492%;
-        display: inline-block;
-        margin-left: -10%; }
+      .chore-user-main .section-chores .chore-list .chore-name,
+      .chore-user-main .section-chores .chore-list .chore-value,
+      .chore-user-main .section-chores .chore-list .chore-description {
+        font-size: 4em; }
       .chore-user-main .section-chores .chore-list .chore-icon {
         width: 23.72881%;
         float: left;
         margin-right: 1.69492%;
-        width: 2em;
+        width: 4.5em;
         margin-right: .75em; }
-      .chore-user-main .section-chores .chore-list h2 {
-        font-size: 1em;
-        width: 7em;
-        margin: .20em 10% 0 10%; }
+      .chore-user-main .section-chores .chore-list .chore-name {
+        margin-left: 1em; }
+      .chore-user-main .section-chores .chore-list .chore-value {
+        width: 15.25424%;
+        float: left;
+        margin-right: 1.69492%;
+        margin-left: 1.5em; }
       .chore-user-main .section-chores .chore-list .fa-check-circle-o {
-        font-size: 2em;
+        width: 6.77966%;
+        float: left;
+        margin-right: 1.69492%;
+        font-size: 5.5em;
+        margin: -.15em 0 0 .65em;
         cursor: pointer; }
+      .chore-user-main .section-chores .chore-list .chore-description {
+        margin: 0 0 0 15%; }
 
 .shop-user-main {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  background-color: #EDEFF7;
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
   .shop-user-main:after {
@@ -470,16 +493,17 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
-    color: #f0f0f5; }
+    background-color: #EDEFF7;
+    color: #f0f0f5;
+    margin-top: 2em; }
     .shop-user-main .section-main .center-avatar {
-      width: 32.20339%;
+      width: 100%;
       float: left;
-      margin-right: 1.69492%;
-      margin: 0 0 1em 32%; }
+      margin-left: 0;
+      margin-right: 0;
+      margin: -4em 6.5% 0 32.35%; }
       .shop-user-main .section-main .center-avatar .user-avatar {
-        width: 6.5em;
-        margin: 2em 0 0 0;
+        width: 22em;
         border-radius: 50%; }
   .shop-user-main .section-shopping-list {
     width: 100%;
@@ -488,18 +512,22 @@ body {
     margin-right: 0;
     background-color: #22637F;
     overflow: auto; }
-    .shop-user-main .section-shopping-list .username {
+    .shop-user-main .section-shopping-list .username,
+    .shop-user-main .section-shopping-list .username2 {
       text-align: center;
-      font-size: 1.15em;
+      font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
       color: #FCFCFC; }
+    .shop-user-main .section-shopping-list .username2 {
+      margin-top: -1.25em; }
     .shop-user-main .section-shopping-list .shopping-headings {
       color: #F2F2F6;
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
+      font-size: 4em;
       font-weight: 400; }
       .shop-user-main .section-shopping-list .shopping-headings li {
         width: 23.72881%;
@@ -508,23 +536,26 @@ body {
         text-align: center;
         margin: 1em 0 1em 0; }
       .shop-user-main .section-shopping-list .shopping-headings .qty-heading {
-        margin-left: 15%; }
+        margin-left: -.5em; }
       .shop-user-main .section-shopping-list .shopping-headings .item-heading {
         width: 40.67797%;
         float: left;
         margin-right: 1.69492%;
         width: 8em;
-        margin-left: 7%; }
+        margin-left: -32%; }
       .shop-user-main .section-shopping-list .shopping-headings .checkbox-heading {
-        margin-left: 90%; }
+        margin: 0 0 0 77%; }
     .shop-user-main .section-shopping-list .shopping-list {
-      color: #F2F2F6; }
+      color: #F2F2F6;
+      padding-bottom: 25.5em; }
       .shop-user-main .section-shopping-list .shopping-list li {
         width: 100%;
         float: left;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 3em; }
+      .shop-user-main .section-shopping-list .shopping-list li:last-child {
+        padding-bottom: 15em; }
       .shop-user-main .section-shopping-list .shopping-list .qty,
       .shop-user-main .section-shopping-list .shopping-list .shopping-item,
       .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
@@ -532,15 +563,17 @@ body {
         float: left;
         margin-right: 1.69492%; }
       .shop-user-main .section-shopping-list .shopping-list h2 {
-        font-size: 1em; }
+        font-size: 3.5em; }
       .shop-user-main .section-shopping-list .shopping-list .qty {
-        margin: .45em 2em 0 10.35%; }
+        margin: .45em 2em 0 1.25em; }
       .shop-user-main .section-shopping-list .shopping-list .shopping-item {
         width: 8em;
-        margin: .45em 1.5em 0 -3.75em; }
+        margin: .45em 1.5em 0 -3.5em; }
       .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
+        height: 5em;
         width: 5em;
-        margin: .95em 0 0 1.5em; }
+        margin: 1.5em 0 0 8em;
+        padding-top: .5em; }
 
 #ca-wrapper {
   max-width: 100%;
@@ -1031,95 +1064,76 @@ body {
   margin-right: 0;
   display: flex;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
+  height: 4em;
   background: #A0C1D1;
+  opacity: .3em;
   z-index: 9999999999;
-  padding-left: 1em; }
-
-.profile {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block;
-  margin-left: auto; }
-  .profile img {
-    height: 4.3em;
-    border-radius: 19%; }
-  .profile h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center;
-    color: #dcdcdd; }
-
-.chores {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto; }
-  .chores img {
-    height: 4.3em;
-    border-radius: 19%; }
-  .chores h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center;
-    color: #dcdcdd; }
-
-.shopping-list {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block;
-  margin-left: auto; }
-  .shopping-list img {
-    height: 4.3em;
-    border-radius: 19%; }
-  .shopping-list h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center;
-    color: #dcdcdd; }
-
-.bills {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block;
-  margin-left: auto; }
-  .bills img {
-    height: 4.3em;
-    border-radius: 19%; }
-  .bills h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center;
-    color: #dcdcdd; }
-
-.household {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  display: inline-block; }
-  .household img {
-    height: 4.3em;
-    border-radius: 19%; }
-  .household h2 {
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center;
-    color: #dcdcdd; }
+  padding: 1em 0 5.5em 4em; }
+  .btn-menu .chores {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; }
+    .btn-menu .chores img {
+      height: 8.3em;
+      border-radius: 19%; }
+    .btn-menu .chores h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 4.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .btn-menu .shopping-list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: inline-block;
+    margin-left: auto; }
+    .btn-menu .shopping-list img {
+      height: 8.3em;
+      border-radius: 19%; }
+    .btn-menu .shopping-list h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 4.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .btn-menu .bills {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: inline-block;
+    margin-left: auto; }
+    .btn-menu .bills img {
+      height: 8.3em;
+      border-radius: 19%; }
+    .btn-menu .bills h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 4.5em;
+      text-align: center;
+      color: #dcdcdd; }
+  .btn-menu .household {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: inline-block; }
+    .btn-menu .household img {
+      height: 8.3em;
+      border-radius: 19%; }
+    .btn-menu .household h2 {
+      font-family: 'Baumans', cursive;
+      font-size: 4.5em;
+      text-align: center;
+      color: #dcdcdd; }
 
 #su-wrapper {
   max-width: 100%;

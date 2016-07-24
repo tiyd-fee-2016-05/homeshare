@@ -64,9 +64,11 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $
     },
   ];
 
-  $scope.removeChore = function(chore) {
-    console.log( $scope.chores.indexOf(chore) );
-    $scope.chores.splice( $scope.chores.indexOf(chore), 1 );
+
+  $scope.removeChore = function( chore ) {
+    console.log( $scope.totalChores.indexOf( chore ) );
+    $scope.chores.splice( $scope.totalChores.indexOf( chore ), 1 );
+    $scope.totalChores.splice( $scope.totalChores.indexOf( chore ), 1 );
   }; // end removeChore()
 
 }]); // end ControllerChores

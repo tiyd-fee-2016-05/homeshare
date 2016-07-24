@@ -3,28 +3,30 @@
   @include span(12 of 12);
   display:flex;
   position: fixed;
-  bottom:0px;
+  bottom: 0;
+  height: 4em;
   background: #A0C1D1;
+  opacity: .3em;
   z-index: 9999999999;
-  padding-left: 1em;
-}
-.profile{
-  @include span(12 of 12);
-  position: relative;
-  display: inline-block;
-  margin-left: auto;
-  img{
-      height: 4.3em;
-    // background: #dcdcdd;
-    border-radius: 19%;
-  }
-  h2{
-    font-family: 'Baumans', cursive;
-    font-size: 1.5em;
-    text-align: center;
-    color:#dcdcdd;
-  }
-}
+  padding: 1em 0 5.5em 4em;
+// }
+// .profile{
+//   @include span(12 of 12);
+//   position: relative;
+//   display: inline-block;
+//   margin-left: auto;
+//   img{
+//     height: 4.3em;
+//     // background: #dcdcdd;
+//     border-radius: 19%;
+//   }
+//   h2{
+//     font-family: 'Baumans', cursive;
+//     font-size: 1.5em;
+//     text-align: center;
+//     color:#dcdcdd;
+//   }
+// }
 
 .chores{
   @include span(12 of 12);
@@ -33,13 +35,13 @@
   margin-left: auto;
   margin-right: auto;
   img{
-    height: 4.3em;
+    height: 8.3em;
     // background: #dcdcdd;
     border-radius: 19%;
   }
   h2{
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
+    font-size: 4.5em;
     text-align: center;
     color:#dcdcdd;
 
@@ -52,13 +54,13 @@
   display: inline-block;
   margin-left: auto;
   img{
-    height:4.3em;
+    height:8.3em;
     // background: #dcdcdd;
     border-radius: 19%;
   }
   h2{
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
+    font-size: 4.5em;
     text-align: center;
     color:#dcdcdd;
 
@@ -71,13 +73,13 @@
   display: inline-block;
   margin-left: auto;
   img{
-    height:4.3em;
+    height:8.3em;
     // background: #dcdcdd;
     border-radius: 19%;
   }
   h2{
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
+    font-size: 4.5em;
     text-align: center;
     color:#dcdcdd;
 
@@ -88,15 +90,16 @@
   position: relative;
   display: inline-block;
   img{
-    height:4.3em;
+    height:8.3em;
     // background: #dcdcdd;
     border-radius: 19%;
   }
   h2{
     font-family: 'Baumans', cursive;
-    font-size: 1.5em;
+    font-size: 4.5em;
     text-align: center;
     color:#dcdcdd;
 
   }
+}
 }
