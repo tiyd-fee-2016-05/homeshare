@@ -10,8 +10,10 @@ $text: #1985A1;
 html,
 body {
   background-color: $background;
-  height: 100%;
-  // overflow: auto;
+  min-height: 100%;
+  padding:0;
+  margin:0;
+  overflow: auto;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);

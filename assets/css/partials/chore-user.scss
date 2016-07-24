@@ -14,7 +14,7 @@
 
   .section-main {
     @include span( 12 of 12 );
-    background-color: $color-user-profile;
+    background-color: $background;
     color: $color-user-text;
     margin-top: 2em;
 
@@ -34,6 +34,7 @@
 
     @include span( 12 of 12 );
     background-color: $color-user-profile2;
+    padding-bottom: 13.5em;
     overflow: auto;
 
     .username {

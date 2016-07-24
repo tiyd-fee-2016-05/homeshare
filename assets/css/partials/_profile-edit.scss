@@ -11,6 +11,8 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  min-height: 100%;
+  overflow: visible;
 
   .section-main {
     @include span( 12 of 12 );
@@ -97,7 +99,7 @@
 
   .payments {
     @include span( 12 of 12 );
-    margin: 3.25em 0 .5em 10%;
+    margin: 3.25em 0 13.5em 10%;
   }
 
   .payment-options {

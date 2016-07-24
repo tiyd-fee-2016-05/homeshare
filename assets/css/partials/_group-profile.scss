@@ -12,6 +12,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 300;
+  min-height: 100%;
 
   .section-main {
     @include span( 12 of 12 );
@@ -119,7 +120,7 @@
       display: none;
       width: 100%;
       margin: 0 0 1.5em -1.15em;
-      padding-bottom: .5em;
+      padding-bottom: 11.5em;
 
       .member-level1,
       .member-points1,

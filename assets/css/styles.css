@@ -2,7 +2,10 @@
 html,
 body {
   background-color: #EDEFF7;
-  height: 100%; }
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto; }
 
 .fa-cog {
   cursor: pointer;
@@ -169,7 +172,8 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
-  font-weight: 300; }
+  font-weight: 300;
+  min-height: 100%; }
   .group-profile-main:after {
     content: " ";
     display: block;
@@ -267,7 +271,7 @@ body {
       display: none;
       width: 100%;
       margin: 0 0 1.5em -1.15em;
-      padding-bottom: .5em; }
+      padding-bottom: 11.5em; }
       .group-profile-main .section-members .member-stats .member-level1,
       .group-profile-main .section-members .member-stats .member-points1,
       .group-profile-main .section-members .member-stats .member-expertise1 {
@@ -291,7 +295,9 @@ body {
   margin-right: auto;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  min-height: 100%;
+  overflow: visible; }
   .profile-edit-main:after {
     content: " ";
     display: block;
@@ -366,7 +372,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    margin: 3.25em 0 .5em 10%; }
+    margin: 3.25em 0 13.5em 10%; }
   .profile-edit-main .payment-options {
     font-size: 4.25em; }
   .profile-edit-main .venmo,
@@ -401,7 +407,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #FCFCFC;
+    background-color: #EDEFF7;
     color: #f0f0f5;
     margin-top: 2em; }
     .chore-user-main .section-main .center-avatar {
@@ -418,6 +424,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: #22637F;
+    padding-bottom: 13.5em;
     overflow: auto; }
     .chore-user-main .section-chores .username {
       text-align: center;
@@ -488,13 +495,13 @@ body {
     margin-right: 0;
     background-color: #EDEFF7;
     color: #f0f0f5;
-    margin: 0 0 0 10%; }
+    margin-top: 2em; }
     .shop-user-main .section-main .center-avatar {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
-      margin: 0 0 0 25%; }
+      margin: -4em 6.5% 0 32.35%; }
       .shop-user-main .section-main .center-avatar .user-avatar {
         width: 22em;
         border-radius: 50%; }
@@ -505,18 +512,22 @@ body {
     margin-right: 0;
     background-color: #22637F;
     overflow: auto; }
-    .shop-user-main .section-shopping-list .username {
+    .shop-user-main .section-shopping-list .username,
+    .shop-user-main .section-shopping-list .username2 {
       text-align: center;
-      font-size: 1.15em;
+      font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
       color: #FCFCFC; }
+    .shop-user-main .section-shopping-list .username2 {
+      margin-top: -1.25em; }
     .shop-user-main .section-shopping-list .shopping-headings {
       color: #F2F2F6;
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
+      font-size: 4em;
       font-weight: 400; }
       .shop-user-main .section-shopping-list .shopping-headings li {
         width: 23.72881%;
@@ -525,23 +536,26 @@ body {
         text-align: center;
         margin: 1em 0 1em 0; }
       .shop-user-main .section-shopping-list .shopping-headings .qty-heading {
-        margin-left: 15%; }
+        margin-left: -.5em; }
       .shop-user-main .section-shopping-list .shopping-headings .item-heading {
         width: 40.67797%;
         float: left;
         margin-right: 1.69492%;
         width: 8em;
-        margin-left: 7%; }
+        margin-left: -32%; }
       .shop-user-main .section-shopping-list .shopping-headings .checkbox-heading {
-        margin-left: 90%; }
+        margin: 0 0 0 77%; }
     .shop-user-main .section-shopping-list .shopping-list {
-      color: #F2F2F6; }
+      color: #F2F2F6;
+      padding-bottom: 25.5em; }
       .shop-user-main .section-shopping-list .shopping-list li {
         width: 100%;
         float: left;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 3em; }
+      .shop-user-main .section-shopping-list .shopping-list li:last-child {
+        padding-bottom: 15em; }
       .shop-user-main .section-shopping-list .shopping-list .qty,
       .shop-user-main .section-shopping-list .shopping-list .shopping-item,
       .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
@@ -549,15 +563,17 @@ body {
         float: left;
         margin-right: 1.69492%; }
       .shop-user-main .section-shopping-list .shopping-list h2 {
-        font-size: 1em; }
+        font-size: 3.5em; }
       .shop-user-main .section-shopping-list .shopping-list .qty {
-        margin: .45em 2em 0 10.35%; }
+        margin: .45em 2em 0 1.25em; }
       .shop-user-main .section-shopping-list .shopping-list .shopping-item {
         width: 8em;
-        margin: .45em 1.5em 0 -3.75em; }
+        margin: .45em 1.5em 0 -3.5em; }
       .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
+        height: 5em;
         width: 5em;
-        margin: .95em 0 0 1.5em; }
+        margin: 1.5em 0 0 8em;
+        padding-top: .5em; }
 
 #ca-wrapper {
   max-width: 100%;
@@ -976,6 +992,7 @@ body {
   bottom: 0;
   height: 4em;
   background: #A0C1D1;
+  opacity: .3em;
   z-index: 9999999999;
   padding: 1em 0 5.5em 4em; }
   .btn-menu .chores {
