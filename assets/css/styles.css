@@ -184,7 +184,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: #EDEFF7;
-    color: #f0f0f5;
+    color: #3B4051;
     margin-top: 2em; }
     .group-profile-main .section-main h3 {
       color: #3B4051; }
@@ -220,7 +220,7 @@ body {
       margin-left: 0;
       margin-right: 0;
       text-align: center;
-      color: #f0f0f5; }
+      color: #3B4051; }
     .group-profile-main .section-main .group-name {
       font-size: 5.5em;
       margin-top: 1em; }
@@ -271,7 +271,7 @@ body {
       display: none;
       width: 100%;
       margin: 0 0 1.5em -1.15em;
-      padding-bottom: 11.5em; }
+      padding-bottom: 17.5em; }
       .group-profile-main .section-members .member-stats .member-level1,
       .group-profile-main .section-members .member-stats .member-points1,
       .group-profile-main .section-members .member-stats .member-expertise1 {

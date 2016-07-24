@@ -17,7 +17,7 @@
   .section-main {
     @include span( 12 of 12 );
     background-color: $background;
-    color: $color-user-text;
+    color: $color-user-highlights2;
     margin-top: 2em;
 
     h3 {
@@ -59,7 +59,7 @@
     .group-members-num {
       @include span( 12 of 12 );
       text-align: center;
-      color: $color-user-text;
+      color: $color-user-highlights2;
     }
 
     .group-name {
@@ -120,7 +120,7 @@
       display: none;
       width: 100%;
       margin: 0 0 1.5em -1.15em;
-      padding-bottom: 11.5em;
+      padding-bottom: 17.5em;
 
       .member-level1,
       .member-points1,
