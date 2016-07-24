@@ -423,7 +423,7 @@ body {
         float: left;
         margin-left: 0;
         margin-right: 0;
-        margin: 1em 0 1.25em 9.5%; }
+        margin: 3.25em 0 1.25em 9.5%; }
       .chore-user-main .section-chores .chore-list h2 {
         width: 23.72881%;
         float: left;
@@ -433,25 +433,32 @@ body {
         float: left;
         margin-right: 1.69492%;
         margin: -.72em 0 0 .5em; }
-      .chore-user-main .section-chores .chore-list .chore-value {
-        width: 15.25424%;
-        float: left;
-        margin-right: 1.69492%;
-        display: inline-block;
-        margin-left: -10%; }
+      .chore-user-main .section-chores .chore-list .chore-name,
+      .chore-user-main .section-chores .chore-list .chore-value,
+      .chore-user-main .section-chores .chore-list .chore-description {
+        font-size: 4em; }
       .chore-user-main .section-chores .chore-list .chore-icon {
         width: 23.72881%;
         float: left;
         margin-right: 1.69492%;
-        width: 2em;
+        width: 4.5em;
         margin-right: .75em; }
-      .chore-user-main .section-chores .chore-list h2 {
-        font-size: 1em;
-        width: 7em;
-        margin: .20em 10% 0 10%; }
+      .chore-user-main .section-chores .chore-list .chore-name {
+        margin-left: 1em; }
+      .chore-user-main .section-chores .chore-list .chore-value {
+        width: 15.25424%;
+        float: left;
+        margin-right: 1.69492%;
+        margin-left: 1.5em; }
       .chore-user-main .section-chores .chore-list .fa-check-circle-o {
-        font-size: 2em;
+        width: 6.77966%;
+        float: left;
+        margin-right: 1.69492%;
+        font-size: 5.5em;
+        margin: -.15em 0 0 .65em;
         cursor: pointer; }
+      .chore-user-main .section-chores .chore-list .chore-description {
+        margin: 0 0 0 15%; }
 
 .shop-user-main {
   max-width: 100%;
