@@ -22,7 +22,7 @@ container: 100%,
 //   width: 100%;
 //   height: 38em;
 //   background: #094660;
-//   z-index: -9999;
+//   z-main: -9999;
 //   margin-top: 10em;
 //   position: absolute;
 // }
@@ -239,5 +239,85 @@ container: 100%,
 
 
 } // end .chore-user-main
+
+//SHOPPING LIST FEED
+
+
+  .main-section-shopping-list {
+
+    @include span( 12 of 12 );
+    background-color: $background;
+    overflow: auto;
+
+    .main-username {
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: 400;
+      margin: 1.25em 0 1.5em 0;
+      color: $text;
+    }
+
+    .main-shopping-headings {
+
+      color: $text;
+      @include span( 12 of 12 );
+      font-weight: 400;
+
+      li {
+        @include span( 3 of 12 );
+        text-align: center;
+        margin: 1em 0 1em 0;
+      }
+
+      .main-qty-heading {
+        margin-left: 15%;
+      }
+
+      .main-item-heading {
+        @include span( 5 of 12 );
+        width: 8em;
+        margin-left: 7%;
+      }
+
+      .main-checkbox-heading {
+        margin-left: 90%;
+      }
+    } // end .shopping-headings
+
+    .main-shopping-list {
+
+      color: $text;
+
+      li {
+        @include span( 12 of 12 );
+        margin-bottom: 3em;
+      }
+
+      .main-qty,
+      .main-shopping-item,
+      .main-item-checkbox {
+        @include span( 3 of 12 );
+      }
+
+      h2 {
+        font-size: 1em;
+      }
+
+      .main-qty {
+        margin: .45em 2em 0 10.35%;
+      }
+
+      .main-shopping-item {
+        width: 8em;
+        margin: .45em 1.5em 0 -3.75em;
+      }
+
+      .main-item-checkbox {
+        // height: 5em;
+        width: 5em;
+        margin: .95em 0 0 1.5em;
+      }
+    }
+  } // end .shopping-list feed
 
 } //end main-wrapper

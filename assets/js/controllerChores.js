@@ -3,7 +3,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $
   $scope.totalChores;
 
   $http({
-    url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores',
+    url: 'https://d6c901d4.ngrok.io/homes/1/chores',
     method: 'GET',
     headers: {'Authorization':'maria@example.com'}
   }).success( function(data) {
@@ -64,9 +64,9 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $
     },
   ];
 
-  $scope.removeChore = function( chore ) {
-    console.log( $scope.chores.indexOf( chore ) );
-    $scope.chores.splice( $scope.chores.indexOf( chore ), 1 );
+  $scope.removeChore = function(chore) {
+    console.log( $scope.chores.indexOf(chore) );
+    $scope.chores.splice( $scope.chores.indexOf(chore), 1 );
   }; // end removeChore()
 
 }]); // end ControllerChores

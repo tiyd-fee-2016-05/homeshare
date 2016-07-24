@@ -948,6 +948,66 @@ body {
           margin-right: auto;
           position: absolute;
           margin-top: auto; }
+  .main-wrapper .main-section-shopping-list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #EDEFF7;
+    overflow: auto; }
+    .main-wrapper .main-section-shopping-list .main-username {
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: 400;
+      margin: 1.25em 0 1.5em 0;
+      color: #1985A1; }
+    .main-wrapper .main-section-shopping-list .main-shopping-headings {
+      color: #1985A1;
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: 400; }
+      .main-wrapper .main-section-shopping-list .main-shopping-headings li {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%;
+        text-align: center;
+        margin: 1em 0 1em 0; }
+      .main-wrapper .main-section-shopping-list .main-shopping-headings .main-qty-heading {
+        margin-left: 15%; }
+      .main-wrapper .main-section-shopping-list .main-shopping-headings .main-item-heading {
+        width: 40.67797%;
+        float: left;
+        margin-right: 1.69492%;
+        width: 8em;
+        margin-left: 7%; }
+      .main-wrapper .main-section-shopping-list .main-shopping-headings .main-checkbox-heading {
+        margin-left: 90%; }
+    .main-wrapper .main-section-shopping-list .main-shopping-list {
+      color: #1985A1; }
+      .main-wrapper .main-section-shopping-list .main-shopping-list li {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 3em; }
+      .main-wrapper .main-section-shopping-list .main-shopping-list .main-qty,
+      .main-wrapper .main-section-shopping-list .main-shopping-list .main-shopping-item,
+      .main-wrapper .main-section-shopping-list .main-shopping-list .main-item-checkbox {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%; }
+      .main-wrapper .main-section-shopping-list .main-shopping-list h2 {
+        font-size: 1em; }
+      .main-wrapper .main-section-shopping-list .main-shopping-list .main-qty {
+        margin: .45em 2em 0 10.35%; }
+      .main-wrapper .main-section-shopping-list .main-shopping-list .main-shopping-item {
+        width: 8em;
+        margin: .45em 1.5em 0 -3.75em; }
+      .main-wrapper .main-section-shopping-list .main-shopping-list .main-item-checkbox {
+        width: 5em;
+        margin: .95em 0 0 1.5em; }
 
 .btn-menu {
   width: 100%;
