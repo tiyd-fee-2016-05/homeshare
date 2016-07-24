@@ -16,137 +16,117 @@
     @include span( 12 of 12 );
     background-color: $color-user-profile;
     color: $color-user-text;
+    margin-top: 2em;
 
     h3 {
       color: $color-user-highlights2;
     }
 
     .left-chores {
-      @include span( 4 of 12 );
-      // background: blue;
-      margin: 1.5em 0 0 0;
+      @include span( 3 of 12 );
+      // background: red;
+      font-size: 4em;
+      margin: 1em 0 0 9.35%;
       text-align: center;
+      cursor: pointer;
     }
 
     .center-avatar {
-      @include span( 4 of 12 );
+      @include span( 3 of 12 );
       // background: orange;
-      text-align: center;
-      position: relative;
-      right: .1%;
+      margin: -4em 6.5% 0 0;
 
       .user-avatar {
-        width: 6.5em;
-        margin-top: 2em;
+        width: 22em;
+        margin-left: -3%;
         border-radius: 50%;
       }
     }
 
     .right-level {
-      @include span( 4 of 12 );
+      @include span( 3 of 12 );
+      font-size: 4em;
       // background: green;
-      margin: 1.5em 0 0 0;
+      margin: 1em 0 0 2.5%;
       text-align: center;
     }
 
     .fa-arrow-left,
     .fa-arrow-right {
-      font-size: 2.5em;
+      font-size: 7.5em;
       cursor: pointer;
-    }
-
-    .user-name,
-    .group-location,
-    .user-age,
-    .group-members-num {
-      @include span( 12 of 12 );
-      text-align: center;
-      color: $color-user-text;
-    }
-
-    .user-name {
-      font-size: 2em;
-      margin-top: 1em;
-    }
-
-    .group-location {
-      font-size: 1.15em;
-      margin-top: 2em;
-    }
-
-    .user-age {
-      font-size: .95em;
-      margin-top: 1.75em;
-    }
-
-    .group-members-num {
-      font-size: .95em;
-      margin: .5em auto 1.5em;
     }
   } // end .section-main
 
   fieldset {
 
-    margin: 2em 0 0 11.5%;
+    @include span( 10 of 12 );
+    margin: 1em 0 0 11.35%;
 
     .edit-name,
-    .edit-location {
-      @include span( 10 of 12 );
+    .edit-location,
+    .venmo-account {
+      @include span( 12 of 12 );
     }
 
     .edit-name {
-      margin: 1.5em 0 1em -.75em;
+      margin: 1em 0 1em -.75em;
     }
 
     .edit-location {
-      margin: 1em 0 3.5em -.75em;
+      margin: .5em 0 1.75em -.75em;
+    }
+
+    .venmo-account {
+      margin: .5em 0 1.5em -.75em;
     }
 
     .name-heading,
-    .location-heading {
+    .location-heading,
+    .venmo-username {
       display: block;
-      font-size: 1.5em;
+      font-size: 4.25em;
       margin: 1em 0 .75em 0;
     }
 
     input {
-      width: 12em;
-      font-size: 1.25em;
+      width: 10.85em;
+      font-size: 4.5em;
     }
+  } // end fieldset
 
-    .payments {
-      @include span( 12 of 12 );
-    }
-
-    .payment-options {
-      font-size: 1.45em;
-      margin: 0 1em .5em -.5em;
-    }
-
-    .venmo,
-    .android-pay {
-      @include span( 6 of 12 );
-      display: inline-block;
-      // text-align: center;
-      // width: 17em;
-      margin: 0 1em 0 -.5em;
-    }
-
-    .venmo {
-      width: 5.5em;
-      margin: .75em 0 1em 1.5em;
-      cursor: pointer;
-    }
-
-    .android-pay {
-      width: 3.5em;
-      margin: 0 0 1em 2em;
-      cursor: pointer;
-    }
-
-    // .payments {
-    //   margin: 0 0 3em 10%;
-    // }
+  .payments {
+    @include span( 12 of 12 );
+    margin: 3.25em 0 .5em 10%;
   }
+
+  .payment-options {
+    font-size: 4.25em;
+  }
+
+  .venmo,
+  .android-pay {
+    @include span( 6 of 12 );
+    display: inline-block;
+    // text-align: center;
+    // width: 17em;
+    margin: 0 1em 0 4.5em;
+  }
+
+  .venmo {
+    width: 18em;
+    margin: 3.75em 0 1em 5.5em;
+    cursor: pointer;
+  }
+
+  .android-pay {
+    width: 10.5em;
+    margin: 1.5em 0 1em 11.5em;
+    cursor: pointer;
+  }
+
+  // .payments {
+  //   margin: 0 0 3em 10%;
+  // }
 
 } // end .personal-profile-main

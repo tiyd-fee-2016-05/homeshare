@@ -7,8 +7,11 @@ $color-dull-white: #F2F2F6;
 $background: #EDEFF7;
 $text: #1985A1;
 
-html {
+html,
+body {
   background-color: $background;
+  height: 100%;
+  // overflow: auto;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);

@@ -21,7 +21,7 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/profile-edit", {
     templateUrl: "pages/profile-edit.html",
-    controller: "controllerAvatar.js"
+    controller: "ControllerAvatar"
 
   })
   .when( "/household", {

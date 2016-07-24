@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
-html {
-  background-color: #EDEFF7; }
+html,
+body {
+  background-color: #EDEFF7;
+  height: 100%; }
 
 .fa-cog {
   cursor: pointer;
@@ -27,32 +29,33 @@ html {
     margin-left: 0;
     margin-right: 0;
     background-color: #FCFCFC;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 2em; }
     .personal-profile-main .section-main h3 {
       color: #3B4051; }
     .personal-profile-main .section-main .left-chores {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 4em 0 0 0;
+      font-size: 4em;
+      margin: 1em 0 0 10%;
       text-align: center;
       cursor: pointer; }
     .personal-profile-main .section-main .center-avatar {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      text-align: center;
-      position: relative;
-      right: .1%; }
+      margin: -4em 6.5% 0 0; }
       .personal-profile-main .section-main .center-avatar .user-avatar {
-        width: 6.5em;
-        margin-top: 2em;
+        width: 22em;
+        margin-left: -6%;
         border-radius: 50%; }
     .personal-profile-main .section-main .right-level {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 4em 0 0 0;
+      font-size: 4em;
+      margin: 1em 0 0 0;
       text-align: center; }
     .personal-profile-main .section-main .user-name,
     .personal-profile-main .section-main .group-location,
@@ -65,27 +68,26 @@ html {
       text-align: center;
       color: #f0f0f5; }
     .personal-profile-main .section-main .user-name {
-      font-size: 2em;
+      font-size: 5.5em;
       margin-top: 1em; }
     .personal-profile-main .section-main .group-location {
-      font-size: 1.15em;
-      margin-top: 2em; }
+      font-size: 4em;
+      margin-top: 1.85em; }
     .personal-profile-main .section-main .user-age {
-      font-size: .95em;
-      margin-top: 1.75em; }
+      font-size: 3.25em;
+      margin-top: 2em; }
     .personal-profile-main .section-main .group-members-num {
-      font-size: .95em;
-      margin: .5em auto 1.5em; }
+      font-size: 4em;
+      margin: .5em auto .75em; }
   .personal-profile-main .fa-sort-asc {
     margin: 0 0 0 47%;
-    font-size: 2.5em;
+    font-size: 5em;
     cursor: pointer; }
   .personal-profile-main .section-chores {
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%;
-    margin: 1em 0 2.5em 8%;
-    overflow: hidden; }
+    margin: 1em 0 3.25em 8%; }
     .personal-profile-main .section-chores .chore-icon,
     .personal-profile-main .section-chores h2,
     .personal-profile-main .section-chores span {
@@ -94,16 +96,17 @@ html {
       margin-right: 1.69492%;
       color: #3B4051; }
     .personal-profile-main .section-chores .chore-icon {
-      width: 2.5em; }
+      width: 4.5em;
+      margin-top: 1.25em; }
     .personal-profile-main .section-chores h2 {
       text-align: center;
-      font-size: 1.75em;
+      font-size: 3.75em;
       font-weight: 400;
-      margin: 0.45em 0 0 14%; }
+      margin: 0.45em 0 0 25.5%; }
     .personal-profile-main .section-chores span {
       text-align: center;
-      font-size: 2.25em;
-      margin: .15em 0 0 17%;
+      font-size: 5em;
+      margin: .35em 0 0 14%;
       cursor: pointer; }
     .personal-profile-main .section-chores .chore {
       margin-bottom: 3.5em; }
@@ -113,47 +116,45 @@ html {
     margin-left: 0;
     margin-right: 0;
     display: none;
-    background-color: #EFE9F4;
-    overflow: hidden; }
+    background-color: #EFE9F4; }
   .personal-profile-main .go-to-chore-list .fa-list {
-    font-size: 1.5em;
+    font-size: 4.25em;
     color: #FCFCFC;
     position: relative;
     bottom: 1em;
     right: .25em;
     cursor: pointer; }
-  .personal-profile-main .section-secondary {
+
+.section-secondary {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  color: #f0f0f5; }
+  .section-secondary .user-rating,
+  .section-secondary .fav-chore,
+  .section-secondary .years-experience {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #22637F;
-    color: #f0f0f5; }
-    .personal-profile-main .section-secondary .user-rating,
-    .personal-profile-main .section-secondary .fav-chore,
-    .personal-profile-main .section-secondary .years-experience {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center; }
-    .personal-profile-main .section-secondary .user-rating {
-      font-size: 1.15em;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: #549fbb;
-      margin: 1.5em auto 1.5em; }
-    .personal-profile-main .section-secondary .fav-chore {
-      margin-top: 1.5em; }
-    .personal-profile-main .section-secondary .fav-chore,
-    .personal-profile-main .section-secondary .years-experience {
-      font-size: .95em;
-      line-height: 1.75em; }
-    .personal-profile-main .section-secondary .years-experience {
-      margin-bottom: 1.5em; }
+    text-align: center; }
+  .section-secondary .user-rating {
+    font-size: 1.15em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #549fbb;
+    margin: 1.5em auto 1.5em; }
+  .section-secondary .fav-chore {
+    margin-top: 1.5em; }
+  .section-secondary .fav-chore,
+  .section-secondary .years-experience {
+    font-size: 3em;
+    line-height: 1.75em; }
+  .section-secondary .years-experience {
+    margin-bottom: 1.5em; }
 
 .group-profile-main {
-  overflow: scroll;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -171,31 +172,32 @@ html {
     margin-left: 0;
     margin-right: 0;
     background-color: #FCFCFC;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 2em; }
     .group-profile-main .section-main h3 {
       color: #3B4051; }
     .group-profile-main .section-main .left-chores {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 4em 0 0 0;
+      font-size: 4em;
+      margin: 1em 0 0 10%;
       text-align: center; }
     .group-profile-main .section-main .center-avatar {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      text-align: center;
-      position: relative;
-      right: .1%; }
+      margin: -4em 6.5% 0 0; }
       .group-profile-main .section-main .center-avatar .group-avatar {
-        width: 6.3em;
-        margin-top: 2em;
+        width: 22em;
+        margin-left: -6%;
         border-radius: 50%; }
     .group-profile-main .section-main .right-level {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 4em 0 0 0;
+      font-size: 4em;
+      margin: 1em 0 0 0;
       text-align: center; }
     .group-profile-main .section-main .group-name,
     .group-profile-main .section-main .group-location,
@@ -208,16 +210,13 @@ html {
       text-align: center;
       color: #f0f0f5; }
     .group-profile-main .section-main .group-name {
-      font-size: 2em;
+      font-size: 5.5em;
       margin-top: 1em; }
     .group-profile-main .section-main .group-location {
-      font-size: 1.15em;
+      font-size: 4em;
       margin-top: 2em; }
-    .group-profile-main .section-main .user-age {
-      font-size: .95em;
-      margin-top: 1.75em; }
     .group-profile-main .section-main .group-members-num {
-      font-size: .95em;
+      font-size: 3.25em;
       margin: .5em auto 1.5em; }
   .group-profile-main .section-members {
     width: 100%;
@@ -225,14 +224,15 @@ html {
     margin-left: 0;
     margin-right: 0;
     background-color: #22637F;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 1.5em; }
     .group-profile-main .section-members .group-members-heading {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
       text-align: center;
-      font-size: 1.15em;
+      font-size: 3em;
       font-weight: 400;
       text-transform: uppercase;
       color: #549fbb;
@@ -245,10 +245,10 @@ html {
       text-align: center;
       cursor: pointer; }
     .group-profile-main .section-members .user-avatar {
-      width: 3em;
+      width: 11em;
       border-radius: 50%; }
     .group-profile-main .section-members .member-name {
-      font-size: 1.15em;
+      font-size: 3.25em;
       color: #fff;
       margin: 1em 0 1em 0; }
     .group-profile-main .section-members .member-stats {
@@ -258,7 +258,8 @@ html {
       margin-right: 0;
       display: none;
       width: 100%;
-      margin: 0 0 1.5em -1.15em; }
+      margin: 0 0 1.5em -1.15em;
+      padding-bottom: .5em; }
       .group-profile-main .section-members .member-stats .member-level1,
       .group-profile-main .section-members .member-stats .member-points1,
       .group-profile-main .section-members .member-stats .member-expertise1 {
@@ -266,9 +267,9 @@ html {
         float: left;
         margin-right: 1.69492%;
         text-align: center;
-        font-size: .95em;
+        font-size: 3em;
         color: #f0f0f5;
-        margin: 1.5em 0 0 1.75em; }
+        margin: 1.5em 0 0 1.4em; }
       .group-profile-main .section-members .member-stats .line-two {
         font-size: .85em;
         color: #549fbb;
@@ -293,100 +294,88 @@ html {
     margin-left: 0;
     margin-right: 0;
     background-color: #FCFCFC;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 2em; }
     .profile-edit-main .section-main h3 {
       color: #3B4051; }
     .profile-edit-main .section-main .left-chores {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 1.5em 0 0 0;
-      text-align: center; }
-    .profile-edit-main .section-main .center-avatar {
-      width: 32.20339%;
-      float: left;
-      margin-right: 1.69492%;
+      font-size: 4em;
+      margin: 1em 0 0 9.35%;
       text-align: center;
-      position: relative;
-      right: .1%; }
+      cursor: pointer; }
+    .profile-edit-main .section-main .center-avatar {
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%;
+      margin: -4em 6.5% 0 0; }
       .profile-edit-main .section-main .center-avatar .user-avatar {
-        width: 6.5em;
-        margin-top: 2em;
+        width: 22em;
+        margin-left: -3%;
         border-radius: 50%; }
     .profile-edit-main .section-main .right-level {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 1.5em 0 0 0;
+      font-size: 4em;
+      margin: 1em 0 0 2.5%;
       text-align: center; }
     .profile-edit-main .section-main .fa-arrow-left,
     .profile-edit-main .section-main .fa-arrow-right {
-      font-size: 2.5em;
+      font-size: 7.5em;
       cursor: pointer; }
-    .profile-edit-main .section-main .user-name,
-    .profile-edit-main .section-main .group-location,
-    .profile-edit-main .section-main .user-age,
-    .profile-edit-main .section-main .group-members-num {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center;
-      color: #f0f0f5; }
-    .profile-edit-main .section-main .user-name {
-      font-size: 2em;
-      margin-top: 1em; }
-    .profile-edit-main .section-main .group-location {
-      font-size: 1.15em;
-      margin-top: 2em; }
-    .profile-edit-main .section-main .user-age {
-      font-size: .95em;
-      margin-top: 1.75em; }
-    .profile-edit-main .section-main .group-members-num {
-      font-size: .95em;
-      margin: .5em auto 1.5em; }
   .profile-edit-main fieldset {
-    margin: 2em 0 0 11.5%; }
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin: 1em 0 0 11.35%; }
     .profile-edit-main fieldset .edit-name,
-    .profile-edit-main fieldset .edit-location {
-      width: 83.05085%;
-      float: left;
-      margin-right: 1.69492%; }
-    .profile-edit-main fieldset .edit-name {
-      margin: 1.5em 0 1em -.75em; }
-    .profile-edit-main fieldset .edit-location {
-      margin: 1em 0 3.5em -.75em; }
-    .profile-edit-main fieldset .name-heading,
-    .profile-edit-main fieldset .location-heading {
-      display: block;
-      font-size: 1.5em;
-      margin: 1em 0 .75em 0; }
-    .profile-edit-main fieldset input {
-      width: 12em;
-      font-size: 1.25em; }
-    .profile-edit-main fieldset .payments {
+    .profile-edit-main fieldset .edit-location,
+    .profile-edit-main fieldset .venmo-account {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0; }
-    .profile-edit-main fieldset .payment-options {
-      font-size: 1.45em;
-      margin: 0 1em .5em -.5em; }
-    .profile-edit-main fieldset .venmo,
-    .profile-edit-main fieldset .android-pay {
-      width: 49.15254%;
-      float: left;
-      margin-right: 1.69492%;
-      display: inline-block;
-      margin: 0 1em 0 -.5em; }
-    .profile-edit-main fieldset .venmo {
-      width: 5.5em;
-      margin: .75em 0 1em 1.5em;
-      cursor: pointer; }
-    .profile-edit-main fieldset .android-pay {
-      width: 3.5em;
-      margin: 0 0 1em 2em;
-      cursor: pointer; }
+    .profile-edit-main fieldset .edit-name {
+      margin: 1em 0 1em -.75em; }
+    .profile-edit-main fieldset .edit-location {
+      margin: .5em 0 1.75em -.75em; }
+    .profile-edit-main fieldset .venmo-account {
+      margin: .5em 0 1.5em -.75em; }
+    .profile-edit-main fieldset .name-heading,
+    .profile-edit-main fieldset .location-heading,
+    .profile-edit-main fieldset .venmo-username {
+      display: block;
+      font-size: 4.25em;
+      margin: 1em 0 .75em 0; }
+    .profile-edit-main fieldset input {
+      width: 10.85em;
+      font-size: 4.5em; }
+  .profile-edit-main .payments {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 3.25em 0 .5em 10%; }
+  .profile-edit-main .payment-options {
+    font-size: 4.25em; }
+  .profile-edit-main .venmo,
+  .profile-edit-main .android-pay {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline-block;
+    margin: 0 1em 0 4.5em; }
+  .profile-edit-main .venmo {
+    width: 18em;
+    margin: 3.75em 0 1em 5.5em;
+    cursor: pointer; }
+  .profile-edit-main .android-pay {
+    width: 10.5em;
+    margin: 1.5em 0 1em 11.5em;
+    cursor: pointer; }
 
 .chore-user-main {
   max-width: 100%;
@@ -405,15 +394,15 @@ html {
     margin-left: 0;
     margin-right: 0;
     background-color: #FCFCFC;
-    color: #f0f0f5; }
+    color: #f0f0f5;
+    margin-top: 2em; }
     .chore-user-main .section-main .center-avatar {
-      width: 32.20339%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: 0 0 1em 32%; }
+      margin: -4em 6.5% 0 32.35%; }
       .chore-user-main .section-main .center-avatar .user-avatar {
-        width: 6.5em;
-        margin: 2em 0 0 0;
+        width: 22em;
         border-radius: 50%; }
   .chore-user-main .section-chores {
     width: 100%;
@@ -424,7 +413,7 @@ html {
     overflow: auto; }
     .chore-user-main .section-chores .username {
       text-align: center;
-      font-size: 1.15em;
+      font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
       color: #FCFCFC; }
