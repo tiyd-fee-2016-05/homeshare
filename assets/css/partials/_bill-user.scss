@@ -1,0 +1,105 @@
+@import "../../../bower_components/susy/sass/susy";
+
+  $susy: (
+    columns: 12,
+    container: 100%
+  );
+
+  .bill-user-main {
+
+    @include container;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color: $background;
+    color: $text;
+    margin-top: -2em;
+
+    .page-heading {
+      text-align: center;
+      font-size: 5.5em;
+      font-weight: 400;
+      margin: 1.25em 0 1em 0;
+    }
+
+    .bill-headings {
+
+      .user-heading,
+      .descrip-heading,
+      .amount-heading,
+      .paid-heading {
+        display: inline-block;
+        font-size: 4em;
+        font-weight: 400;
+        margin: 0 0 2em 0;
+      }
+
+      .user-heading {
+        @include span( 2 of 12 );
+        margin-left: .75em
+      }
+
+      .descrip-heading {
+        @include span( 3 of 12 );
+        margin-left: .5em;
+      }
+
+      .amount-heading {
+        @include span( 2 of 12 );
+        margin-left: .5em;
+      }
+
+      .paid-heading {
+        @include span( 2 of 12 );
+        margin-left: 1.65em;
+        // background: yellow;
+      }
+    } // end .bill-headings
+
+    .bills {
+
+      margin: 2em 0 0 .35em;
+
+      li {
+        @include span( 12 of 12 );
+        margin-bottom: 7em;
+      }
+
+      li:last-child {
+        margin-bottom: 23em;
+      }
+
+      img,
+      span {
+        display: inline-block;
+        font-size: 4.5em;
+      }
+
+      img {
+        @include span( 2 of 12 );
+        width: 2.75em;
+        margin-left: .15em;
+      }
+
+      span {
+        margin-top: 1em;
+      }
+
+      .bill-descrip {
+        @include span( 3 of 12 );
+        margin-left: .25em;
+      }
+
+      .bill-amount {
+        @include span( 2 of 12 );
+        margin-left: .75em;
+      }
+
+      .fa-check-circle-o {
+        @include span( 2 of 12 );
+        font-size: 7em;
+        margin: .4em 0 0 1em;
+      }
+
+    } // end .bills
+  } // end bill-user-main

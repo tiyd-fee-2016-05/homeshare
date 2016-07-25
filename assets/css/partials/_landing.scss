@@ -20,7 +20,7 @@ container: 100%,
 // border: solid 2px black;
 @include span(12 of 12);
 margin-bottom: 0;
-margin-bottom: -8%;
+// margin-bottom: -8%;
 
 * {
     box-sizing: border-box;
@@ -32,63 +32,62 @@ margin-bottom: -8%;
   @include span(12 of 12);
 
   font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 5em;
-  color: $text;
+  font-size: 9em;
+  color: #1985A1;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .landing-bg{
   display: block;
   position: absolute;
-  margin-left: 8em;
+  // margin-left: 8em;
   margin-right: auto;
-  margin-top: 5em;
-  opacity: .35;
-  height: 41em;
+  margin-top: 17em;
+  opacity: .30;
+  height: 62em;
 }
 //LOGIN FORM
 .login{
   @include span(12 of 12);
-
+  float: left;
+  margin-left: 0;
   font-family: 'Andale Mono', cursive;
   font-size: 1.2em;
   position: relative;
-  width: 66%;
+  width: 87%;
   text-align: center;
-  margin-left: 6.5em;
   margin-right: auto;
-  padding-top: 2.5em;
+  padding-top: 15.5em;
   line-height: 1.7;
   z-index: 9999;
-  padding-left: 3.49em;
+  padding-left: 7.49em;
+
   p{
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-
+    font-size: 4em;
   }
   input{
-    height: 8em;
-    width: 37em;
+    height: 3em;
+    width: 21.5em;
     border: none;
     border-radius: 4%;
-    background: #A7B8D3;
+    // background: #A7B8D3;
   }
   .landing-submit{
   margin-top: 1em;
-  height: 5em;
-  width: 19em;
+  height: 8em;
+  width: 24em;
   border: none;
   border-radius: 3%;
-  background: #C43F33;
+  background: #85DDA2;
   -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
 p{
   font-family: 'Roboto',sans-serif;
-  font-size: 2em;
+  font-size: 4.2em;
 }
 }
 }
@@ -98,11 +97,12 @@ p{
   @include span(12 of 12);
 
   h2{
-  font-family: 'Andale Mono', cursive;
-  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2em;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  padding-top:.8em;
 }
   img{
     position: absolute;
@@ -118,18 +118,18 @@ p{
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
-    height: 3em;
-    width: 9em;
+    height: 7em;
+    width: 21em;
     border: none;
     border-radius: 3%;
-    background: $text;
+    background: #d4f1f4;
     -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
   }
   p{
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 4em;
   }
 }
 }
