@@ -21,6 +21,8 @@ body {
   width: 8em; }
   .options li {
     background: #A0C1D1; }
+    .options li:hover {
+      background: #85DDA2; }
   .options a {
     text-decoration: none;
     color: #3B4051; }
@@ -299,7 +301,8 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  width: 100%; }
+  min-height: 100%;
+  overflow: visible; }
   .profile-edit-main:after {
     content: " ";
     display: block;
@@ -343,13 +346,23 @@ body {
       font-size: 7.5em;
       cursor: pointer; }
   .profile-edit-main fieldset {
-    margin: 1em 0 0 9.35%; }
-    .profile-edit-main fieldset .edit-name {
-      margin: 1em 0 1.5em -.75em; }
-    .profile-edit-main fieldset .edit-location {
-      margin: 1em 0 2.25em -.75em; }
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin: 1em 0 0 11.35%; }
+    .profile-edit-main fieldset .edit-name,
+    .profile-edit-main fieldset .edit-location,
     .profile-edit-main fieldset .venmo-account {
-      margin: 1em 0 2.25em -.75em; }
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    .profile-edit-main fieldset .edit-name {
+      margin: 1em 0 1em -.75em; }
+    .profile-edit-main fieldset .edit-location {
+      margin: .5em 0 1.75em -.75em; }
+    .profile-edit-main fieldset .venmo-account {
+      margin: .5em 0 1.5em -.75em; }
     .profile-edit-main fieldset .name-heading,
     .profile-edit-main fieldset .location-heading,
     .profile-edit-main fieldset .venmo-username {
@@ -364,7 +377,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    margin: 3.75em 0 13.5em 10%; }
+    margin: 3.25em 0 13.5em 10%; }
   .profile-edit-main .payment-options {
     font-size: 4.25em; }
   .profile-edit-main .venmo,
@@ -417,8 +430,8 @@ body {
     margin-right: 0;
     background-color: #EDEFF7;
     padding-bottom: 13.5em;
-    width: 100%;
-    overflow: hidden; }
+    overflow: auto;
+    margin-left: -2em; }
     .chore-user-main .section-chores .username {
       text-align: center;
       font-size: 5.5em;
@@ -479,8 +492,7 @@ body {
   box-sizing: border-box;
   background-color: #EDEFF7;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  width: 100%; }
+  font-weight: 300; }
   .shop-user-main:after {
     content: " ";
     display: block;
@@ -494,6 +506,10 @@ body {
     color: #f0f0f5;
     margin-top: 2em; }
     .shop-user-main .section-main .center-avatar {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
       margin: -4em 6.5% 0 32.35%; }
       .shop-user-main .section-main .center-avatar .user-avatar {
         width: 22em;
@@ -503,9 +519,8 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #EDEFF7; }
+    background-color: #EDEFF7;
+    overflow: auto; }
     .shop-user-main .section-shopping-list .username,
     .shop-user-main .section-shopping-list .username2 {
       text-align: center;
@@ -608,15 +623,16 @@ body {
     margin-right: 1.69492%;
     display: block;
     position: absolute;
-    margin-top: 34em;
+    margin-top: 30em;
     margin-left: 8em;
     margin-right: auto; }
     #ca-wrapper .ca-form h2 {
       font-size: 7em;
       font-family: 'Roboto', sans-serif; }
     #ca-wrapper .ca-form input {
-      width: 63em;
-      height: 8em; }
+      width: 20em;
+      height: 3em;
+      font-size: 2em; }
     #ca-wrapper .ca-form .ca-submit {
       margin-left: 11.3em;
       margin-right: auto;
@@ -654,7 +670,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 5em;
+    font-size: 9em;
     color: #1985A1;
     text-align: center;
     margin-left: auto;
@@ -662,11 +678,11 @@ body {
   .landing-wrapper .landing-bg {
     display: block;
     position: absolute;
-    margin-left: 8em;
+    /* margin-left: 4em; */
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 17em;
     opacity: .35;
-    height: 41em; }
+    height: 62em; }
   .landing-wrapper .login {
     width: 100%;
     float: left;
@@ -675,17 +691,16 @@ body {
     font-family: 'Andale Mono', cursive;
     font-size: 1.2em;
     position: relative;
-    width: 66%;
+    width: 87%;
     text-align: center;
-    margin-left: 6.5em;
     margin-right: auto;
-    padding-top: 2.5em;
+    padding-top: 15.5em;
     line-height: 1.7;
     z-index: 9999;
-    padding-left: 3.49em; }
+    padding-left: 6.49em; }
     .landing-wrapper .login p {
       font-family: 'Roboto', sans-serif;
-      font-size: 2em; }
+      font-size: 4em; }
     .landing-wrapper .login input {
       height: 3em;
       width: 21.5em;
@@ -694,17 +709,17 @@ body {
       background: #A7B8D3; }
     .landing-wrapper .login .landing-submit {
       margin-top: 1em;
-      height: 5em;
-      width: 19em;
+      height: 8em;
+      width: 24em;
       border: none;
       border-radius: 3%;
-      background: #C43F33;
+      background: #85DDA2;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
       .landing-wrapper .login .landing-submit p {
         font-family: 'Roboto',sans-serif;
-        font-size: 2em; }
+        font-size: 4.2em; }
   .landing-wrapper .register {
     width: 100%;
     float: left;
@@ -712,7 +727,7 @@ body {
     margin-right: 0; }
     .landing-wrapper .register h2 {
       font-family: 'Andale Mono', cursive;
-      font-size: 1.2em;
+      font-size: 2.2em;
       position: relative;
       margin-left: auto;
       margin-right: auto; }
@@ -727,8 +742,8 @@ body {
       margin-top: 1em;
       margin-left: auto;
       margin-right: auto;
-      height: 3em;
-      width: 9em;
+      height: 7em;
+      width: 21em;
       border: none;
       border-radius: 3%;
       background: #1985A1;
@@ -737,7 +752,7 @@ body {
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
     .landing-wrapper .register p {
       font-family: 'Roboto', sans-serif;
-      font-size: 17px; }
+      font-size: 4em; }
 
 #hhwrapper {
   width: 100%;
@@ -750,17 +765,17 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 5em;
+    font-size: 7em;
     color: #1985A1;
     text-align: center; }
   #hhwrapper .background {
     display: block;
     position: absolute;
-    margin-left: 8em;
+    margin-left: auto;
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 17em;
     opacity: .35;
-    height: 41em; }
+    height: 61em; }
   #hhwrapper .hh-form {
     width: 100%;
     float: left;
@@ -768,32 +783,31 @@ body {
     margin-right: 0;
     display: block;
     position: absolute;
-    margin-top: 9em;
-    margin-left: 13em;
-    width: 16em;
+    margin-top: 33em;
+    margin-left: 11em;
+    width: 29em;
     padding-left: 0.8em; }
     #hhwrapper .hh-form p {
       font-family: 'Roboto', sans-serif;
-      font-size: 2em; }
+      font-size: 4em; }
     #hhwrapper .hh-form input {
-      width: 25em;
-      height: 3em; }
-    #hhwrapper .hh-form .hh-submit {
-      margin-left: 4em;
-      margin-top: 1em;
-      height: 5em;
-      width: 19em;
-      font-family: Baumans;
-      font-size: 17px;
-      border: none;
-      border-radius: 3%;
-      background: #C43F33;
-      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
-      #hhwrapper .hh-form .hh-submit p {
-        font-family: 'Roboto',sans-serif;
-        font-size: 2em; }
+      width: 29em;
+      height: 3.6em; }
+  #hhwrapper .hh-submit {
+    margin-left: 13em;
+    margin-top: 1em;
+    height: 9em;
+    width: 27em;
+    font-family: Baumans;
+    border: none;
+    border-radius: 3%;
+    background: #85DDA2;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+    #hhwrapper .hh-submit p {
+      font-family: 'Roboto',sans-serif;
+      font-size: 3.4em; }
 
 .main-wrapper {
   max-width: 100%;
