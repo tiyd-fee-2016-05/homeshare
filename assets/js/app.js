@@ -59,6 +59,6 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/calendar.html"
   })
   .otherwise({
-    redirectTo: "/main"
+    redirectTo: "/landing"
   });
 }); // end mainApp.config

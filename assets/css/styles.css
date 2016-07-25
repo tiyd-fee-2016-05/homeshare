@@ -17,7 +17,10 @@ body {
   font-size: 4em;
   color: #3B4051;
   margin: 0 0 0 1.5em;
-  z-index: 1; }
+  position: absolute;
+  width: 8em; }
+  .options li {
+    background: #A0C1D1; }
   .options a {
     text-decoration: none;
     color: #3B4051; }
@@ -408,8 +411,8 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: #EDEFF7;
-    color: #f0f0f5;
-    margin-top: 2em; }
+    color: #1985A1;
+    margin-top: -2em; }
     .chore-user-main .section-main .center-avatar {
       width: 23.72881%;
       float: left;
@@ -423,23 +426,26 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #22637F;
+    background-color: #EDEFF7;
     padding-bottom: 13.5em;
-    overflow: auto; }
+    overflow: auto;
+    margin-left: -2em; }
     .chore-user-main .section-chores .username {
       text-align: center;
       font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1em 0;
-      color: #FCFCFC; }
+      color: #1985A1; }
     .chore-user-main .section-chores .chore-list {
-      color: #F2F2F6; }
+      color: #1985A1; }
       .chore-user-main .section-chores .chore-list li {
         width: 100%;
         float: left;
         margin-left: 0;
         margin-right: 0;
         margin: 3.25em 0 1.25em 9%; }
+      .chore-user-main .section-chores .chore-list li:nth-child(odd) {
+        background: rgba(160, 193, 209, 0.18); }
       .chore-user-main .section-chores .chore-list h2 {
         width: 23.72881%;
         float: left;
@@ -458,7 +464,8 @@ body {
         float: left;
         margin-right: 1.69492%;
         width: 4.5em;
-        margin-right: .75em; }
+        margin-right: .75em;
+        padding: .8em .3em; }
       .chore-user-main .section-chores .chore-list .chore-name {
         margin-left: 1em; }
       .chore-user-main .section-chores .chore-list .chore-value {
@@ -471,7 +478,7 @@ body {
         float: left;
         margin-right: 1.69492%;
         font-size: 5.5em;
-        margin: -.15em 0 0 .65em;
+        margin: 0.05em 0 0 .65em;
         cursor: pointer; }
       .chore-user-main .section-chores .chore-list .chore-description {
         margin: 0 0 0 15%; }
@@ -510,7 +517,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #22637F;
+    background-color: #EDEFF7;
     overflow: auto; }
     .shop-user-main .section-shopping-list .username,
     .shop-user-main .section-shopping-list .username2 {
@@ -518,11 +525,11 @@ body {
       font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
-      color: #FCFCFC; }
+      color: #1985A1; }
     .shop-user-main .section-shopping-list .username2 {
       margin-top: -1.25em; }
     .shop-user-main .section-shopping-list .shopping-headings {
-      color: #F2F2F6;
+      color: #1985A1;
       width: 100%;
       float: left;
       margin-left: 0;
@@ -546,7 +553,7 @@ body {
       .shop-user-main .section-shopping-list .shopping-headings .checkbox-heading {
         margin: 0 0 0 77%; }
     .shop-user-main .section-shopping-list .shopping-list {
-      color: #F2F2F6;
+      color: #1985A1;
       padding-bottom: 25.5em; }
       .shop-user-main .section-shopping-list .shopping-list li {
         width: 100%;
@@ -556,6 +563,8 @@ body {
         margin-bottom: 3em; }
       .shop-user-main .section-shopping-list .shopping-list li:last-child {
         padding-bottom: 15em; }
+      .shop-user-main .section-shopping-list .shopping-list li:nth-child(odd) {
+        background: rgba(160, 193, 209, 0.18); }
       .shop-user-main .section-shopping-list .shopping-list .qty,
       .shop-user-main .section-shopping-list .shopping-list .shopping-item,
       .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
@@ -953,13 +962,39 @@ body {
       margin-right: 0;
       background-color: #EDEFF7;
       padding-bottom: 13.5em;
-      overflow: auto; }
+      overflow: auto;
+      margin-left: -3em; }
       .main-wrapper .main-chore-user-main .main-section-chores .main-username {
         text-align: center;
         font-size: 5.5em;
         font-weight: 400;
         margin: 1.25em 0 1em 0;
         color: #1985A1; }
+      .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings {
+        font-family: 'Roboto', sans-serif;
+        color: #1985A1;
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 2.7em;
+        font-weight: 400; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings li {
+          width: 23.72881%;
+          float: left;
+          margin-right: 1.69492%;
+          text-align: center;
+          margin: 1em 0 1em 0; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings .main-type-heading {
+          margin-left: 5.5em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings .main-points-heading {
+          width: 40.67797%;
+          float: left;
+          margin-right: 1.69492%;
+          width: 8em;
+          margin-left: 5em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings .main-confirm-heading {
+          margin: 0 0 0 6em; }
       .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list {
         color: #1985A1; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list li {
@@ -967,7 +1002,10 @@ body {
           float: left;
           margin-left: 0;
           margin-right: 0;
-          margin: 3.25em 0 1.25em 9%; }
+          margin: 3.25em 0 1.25em 9%;
+          padding-top: 1em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list li:nth-child(odd) {
+          background: rgba(160, 193, 209, 0.18); }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
           width: 23.72881%;
           float: left;
@@ -993,13 +1031,14 @@ body {
           width: 15.25424%;
           float: left;
           margin-right: 1.69492%;
-          margin-left: 1.5em; }
+          margin-left: 1.5em;
+          padding-top: .4em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .fa-check-circle-o {
           width: 6.77966%;
           float: left;
           margin-right: 1.69492%;
           font-size: 5.5em;
-          margin: -.15em 0 0 .65em;
+          margin: 0.05em 0 0 .65em;
           cursor: pointer; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-description {
           margin: 0 0 0 15%; }
@@ -1018,12 +1057,13 @@ body {
       margin: 1.25em 0 1.5em 0;
       color: #1985A1; }
     .main-wrapper .main-section-shopping-list .main-shopping-headings {
+      font-family: 'Roboto', sans-serif;
       color: #1985A1;
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
-      font-size: 4em;
+      font-size: 2.7em;
       font-weight: 400; }
       .main-wrapper .main-section-shopping-list .main-shopping-headings li {
         width: 23.72881%;
@@ -1052,6 +1092,8 @@ body {
         margin-bottom: 3em; }
       .main-wrapper .main-section-shopping-list .main-shopping-list li:last-child {
         padding-bottom: 15em; }
+      .main-wrapper .main-section-shopping-list .main-shopping-list li:nth-child(odd) {
+        background: rgba(160, 193, 209, 0.18); }
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-qty,
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-shopping-item,
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-item-checkbox {
@@ -1174,9 +1216,9 @@ body {
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 6.8em;
     color: #1985A1;
-    width: 8em;
-    padding-bottom: .5em;
-    margin-top: -100%; }
+    width: 9em;
+    padding-bottom: 1.5em;
+    margin-top: -42%; }
   #su-wrapper .bg {
     display: block;
     position: absolute;
@@ -1193,16 +1235,16 @@ body {
     display: block;
     position: absolute;
     margin-top: 9em;
-    margin-left: 13em;
+    margin-left: 7em;
     margin-right: auto;
     padding-bottom: .7em;
     padding-left: 1em;
-    width: 16em; }
+    width: 19em; }
     #su-wrapper .su-form p {
       font-family: 'Roboto', cursive;
       font-size: 23px; }
     #su-wrapper .su-form input {
-      width: 25em;
+      width: 31em;
       height: 3em; }
     #su-wrapper .su-form .su-submit {
       margin-left: 7em;
