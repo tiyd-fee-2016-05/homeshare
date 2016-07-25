@@ -35,7 +35,8 @@
     @include span( 12 of 12 );
     background-color: $color-user-profile2;
     padding-bottom: 13.5em;
-    overflow: auto;
+    width: 100%;
+    overflow: hidden;
 
     .username {
       text-align: center;

@@ -12,16 +12,15 @@
   background-color: $background;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  width: 100%;
 
   .section-main {
     @include span( 12 of 12 );
     background-color: $background;
     color: $color-user-text;
-    // margin: 0 0 0 10%;
     margin-top: 2em;
 
     .center-avatar {
-      @include span( 12 of 12 );
       margin: -4em 6.5% 0 32.35%;
 
       .user-avatar {
@@ -35,7 +34,8 @@
 
     @include span( 12 of 12 );
     background-color: $color-user-profile2;
-    overflow: auto;
+    width: 100%;
+    overflow: hidden;
 
     .username,
     .username2 {
@@ -53,7 +53,6 @@
     .shopping-headings {
 
       color: $color-dull-white;
-      @include span( 12 of 12 );
       font-size: 4em;
       font-weight: 400;
 
