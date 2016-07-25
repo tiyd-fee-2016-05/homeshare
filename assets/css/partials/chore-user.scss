@@ -35,8 +35,10 @@
     @include span( 12 of 12 );
     background-color: $background;
     padding-bottom: 13.5em;
-    overflow: auto;
-    margin-left:-2em;
+    width: 100%;
+    overflow: hidden;
+    // margin-left:-2em;
+
 
     .username {
       text-align: center;

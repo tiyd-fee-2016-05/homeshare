@@ -11,8 +11,8 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  min-height: 100%;
-  overflow: visible;
+  width: 100%;
+  // overflow: hidden;
 
   .section-main {
     @include span( 12 of 12 );
@@ -55,6 +55,7 @@
 
     .fa-arrow-left,
     .fa-arrow-right {
+      // background: green;
       font-size: 7.5em;
       cursor: pointer;
     }
@@ -62,25 +63,25 @@
 
   fieldset {
 
-    @include span( 10 of 12 );
-    margin: 1em 0 0 11.35%;
+    margin: 1em 0 0 9.35%;
+    // background: orange;
 
     .edit-name,
     .edit-location,
     .venmo-account {
-      @include span( 12 of 12 );
+      // @include span( 12 of 12 );
     }
 
     .edit-name {
-      margin: 1em 0 1em -.75em;
+      margin: 1em 0 1.5em -.75em;
     }
 
     .edit-location {
-      margin: .5em 0 1.75em -.75em;
+      margin: 1em 0 2.25em -.75em;
     }
 
     .venmo-account {
-      margin: .5em 0 1.5em -.75em;
+      margin: 1em 0 2.25em -.75em;
     }
 
     .name-heading,
@@ -99,7 +100,7 @@
 
   .payments {
     @include span( 12 of 12 );
-    margin: 3.25em 0 13.5em 10%;
+    margin: 3.75em 0 13.5em 10%;
   }
 
   .payment-options {
