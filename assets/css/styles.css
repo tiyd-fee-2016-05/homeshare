@@ -21,8 +21,6 @@ body {
   width: 8em; }
   .options li {
     background: #A0C1D1; }
-    .options li:hover {
-      background: #85DDA2; }
   .options a {
     text-decoration: none;
     color: #3B4051; }
@@ -623,16 +621,15 @@ body {
     margin-right: 1.69492%;
     display: block;
     position: absolute;
-    margin-top: 30em;
+    margin-top: 34em;
     margin-left: 8em;
     margin-right: auto; }
     #ca-wrapper .ca-form h2 {
       font-size: 7em;
       font-family: 'Roboto', sans-serif; }
     #ca-wrapper .ca-form input {
-      width: 20em;
-      height: 3em;
-      font-size: 2em; }
+      width: 63em;
+      height: 8em; }
     #ca-wrapper .ca-form .ca-submit {
       margin-left: 11.3em;
       margin-right: auto;
@@ -678,16 +675,17 @@ body {
   .landing-wrapper .landing-bg {
     display: block;
     position: absolute;
-    /* margin-left: 4em; */
     margin-right: auto;
     margin-top: 17em;
-    opacity: .35;
+    opacity: .30;
     height: 62em; }
   .landing-wrapper .login {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
+    float: left;
+    margin-left: 0;
     font-family: 'Andale Mono', cursive;
     font-size: 1.2em;
     position: relative;
@@ -697,7 +695,7 @@ body {
     padding-top: 15.5em;
     line-height: 1.7;
     z-index: 9999;
-    padding-left: 6.49em; }
+    padding-left: 7.49em; }
     .landing-wrapper .login p {
       font-family: 'Roboto', sans-serif;
       font-size: 4em; }
@@ -705,8 +703,7 @@ body {
       height: 3em;
       width: 21.5em;
       border: none;
-      border-radius: 4%;
-      background: #A7B8D3; }
+      border-radius: 4%; }
     .landing-wrapper .login .landing-submit {
       margin-top: 1em;
       height: 8em;
@@ -726,11 +723,12 @@ body {
     margin-left: 0;
     margin-right: 0; }
     .landing-wrapper .register h2 {
-      font-family: 'Andale Mono', cursive;
+      font-family: 'Roboto', sans-serif;
       font-size: 2.2em;
       position: relative;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      padding-top: .8em; }
     .landing-wrapper .register img {
       position: absolute;
       margin-left: auto;
@@ -746,7 +744,7 @@ body {
       width: 21em;
       border: none;
       border-radius: 3%;
-      background: #1985A1;
+      background: #d4f1f4;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
@@ -793,21 +791,21 @@ body {
     #hhwrapper .hh-form input {
       width: 29em;
       height: 3.6em; }
-  #hhwrapper .hh-submit {
-    margin-left: 13em;
-    margin-top: 1em;
-    height: 9em;
-    width: 27em;
-    font-family: Baumans;
-    border: none;
-    border-radius: 3%;
-    background: #85DDA2;
-    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
-    #hhwrapper .hh-submit p {
-      font-family: 'Roboto',sans-serif;
-      font-size: 3.4em; }
+    #hhwrapper .hh-form .hh-submit {
+      margin-left: 13em;
+      margin-top: 1em;
+      height: 9em;
+      width: 27em;
+      font-family: Baumans;
+      border: none;
+      border-radius: 3%;
+      background: #85DDA2;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+      #hhwrapper .hh-form .hh-submit p {
+        font-family: 'Roboto',sans-serif;
+        font-size: 3.4em; }
 
 .main-wrapper {
   max-width: 100%;
