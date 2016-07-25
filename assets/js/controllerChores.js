@@ -3,7 +3,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $
   $scope.totalChores;
 
   $http({
-    url: 'https://d6c901d4.ngrok.io/homes/1/chores',
+    url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores',
     method: 'GET',
     headers: {'Authorization':'maria@example.com'}
   }).success( function(data) {

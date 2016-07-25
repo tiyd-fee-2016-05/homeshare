@@ -654,8 +654,7 @@ body {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0;
-  margin-bottom: -8%; }
+  margin-bottom: 0; }
   .landing-wrapper:after {
     content: " ";
     display: block;
@@ -701,8 +700,8 @@ body {
       font-family: 'Roboto', sans-serif;
       font-size: 2em; }
     .landing-wrapper .login input {
-      height: 8em;
-      width: 37em;
+      height: 3em;
+      width: 21.5em;
       border: none;
       border-radius: 4%;
       background: #A7B8D3; }
