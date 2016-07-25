@@ -667,7 +667,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 5em;
+    font-size: 9em;
     color: #1985A1;
     text-align: center;
     margin-left: auto;
@@ -675,49 +675,48 @@ body {
   .landing-wrapper .landing-bg {
     display: block;
     position: absolute;
-    margin-left: 8em;
     margin-right: auto;
-    margin-top: 5em;
-    opacity: .35;
-    height: 41em; }
+    margin-top: 17em;
+    opacity: .30;
+    height: 62em; }
   .landing-wrapper .login {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
+    float: left;
+    margin-left: 0;
     font-family: 'Andale Mono', cursive;
     font-size: 1.2em;
     position: relative;
-    width: 66%;
+    width: 87%;
     text-align: center;
-    margin-left: 6.5em;
     margin-right: auto;
-    padding-top: 2.5em;
+    padding-top: 15.5em;
     line-height: 1.7;
     z-index: 9999;
-    padding-left: 3.49em; }
+    padding-left: 7.49em; }
     .landing-wrapper .login p {
       font-family: 'Roboto', sans-serif;
-      font-size: 2em; }
+      font-size: 4em; }
     .landing-wrapper .login input {
       height: 3em;
       width: 21.5em;
       border: none;
-      border-radius: 4%;
-      background: #A7B8D3; }
+      border-radius: 4%; }
     .landing-wrapper .login .landing-submit {
       margin-top: 1em;
-      height: 5em;
-      width: 19em;
+      height: 8em;
+      width: 24em;
       border: none;
       border-radius: 3%;
-      background: #C43F33;
+      background: #85DDA2;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
       .landing-wrapper .login .landing-submit p {
         font-family: 'Roboto',sans-serif;
-        font-size: 2em; }
+        font-size: 4.2em; }
   .landing-wrapper .register {
     width: 100%;
     float: left;
@@ -725,10 +724,11 @@ body {
     margin-right: 0; }
     .landing-wrapper .register h2 {
       font-family: 'Roboto', sans-serif;
-      font-size: 1.2em;
+      font-size: 2.2em;
       position: relative;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      padding-top: .8em; }
     .landing-wrapper .register img {
       position: absolute;
       margin-left: auto;
@@ -740,17 +740,17 @@ body {
       margin-top: 1em;
       margin-left: auto;
       margin-right: auto;
-      height: 3em;
-      width: 9em;
+      height: 7em;
+      width: 21em;
       border: none;
       border-radius: 3%;
-      background: #1985A1;
+      background: #d4f1f4;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
     .landing-wrapper .register p {
       font-family: 'Roboto', sans-serif;
-      font-size: 17px; }
+      font-size: 4em; }
 
 #hhwrapper {
   width: 100%;
@@ -763,17 +763,17 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 5em;
+    font-size: 7em;
     color: #1985A1;
     text-align: center; }
   #hhwrapper .background {
     display: block;
     position: absolute;
-    margin-left: 8em;
+    margin-left: auto;
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 17em;
     opacity: .35;
-    height: 41em; }
+    height: 61em; }
   #hhwrapper .hh-form {
     width: 100%;
     float: left;
@@ -781,32 +781,31 @@ body {
     margin-right: 0;
     display: block;
     position: absolute;
-    margin-top: 9em;
-    margin-left: 13em;
-    width: 16em;
+    margin-top: 33em;
+    margin-left: 11em;
+    width: 29em;
     padding-left: 0.8em; }
     #hhwrapper .hh-form p {
       font-family: 'Roboto', sans-serif;
-      font-size: 2em; }
+      font-size: 4em; }
     #hhwrapper .hh-form input {
-      width: 25em;
-      height: 3em; }
+      width: 29em;
+      height: 3.6em; }
     #hhwrapper .hh-form .hh-submit {
-      margin-left: 4em;
+      margin-left: 13em;
       margin-top: 1em;
-      height: 5em;
-      width: 19em;
+      height: 9em;
+      width: 27em;
       font-family: Baumans;
-      font-size: 17px;
       border: none;
       border-radius: 3%;
-      background: #C43F33;
+      background: #85DDA2;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
       #hhwrapper .hh-form .hh-submit p {
         font-family: 'Roboto',sans-serif;
-        font-size: 2em; }
+        font-size: 3.4em; }
 
 .main-wrapper {
   max-width: 100%;
