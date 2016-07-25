@@ -22,10 +22,11 @@ container: 100%,
   margin-left: auto;
   margin-right: auto;
   font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 3em;
+  font-size: 6.8em;
   color: $text;
   width: 8em;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
+  margin-top: -100%;
   // text-align: center;
 }
 .bg{
@@ -43,23 +44,23 @@ container: 100%,
   @include span(4 of 12);
   display: block;
   position: absolute;
-  margin-top: 5em;
-  margin-left: auto;
+  margin-top: 9em;
+  margin-left: 13em;
   margin-right: auto;
   padding-bottom: .7em;
   padding-left: 1em;
-  // width: 6em;
+  width: 16em;
   p{
     font-family: 'Roboto', cursive;
     font-size: 23px;
   }
   input{
-    width: 13em;
-    padding-left: 1em;
+    width: 25em;
+    height: 3em;
 
   }
-  button{
-    margin-left: auto;
+  .su-submit{
+    margin-left: 7em;
     margin-right: auto;
     margin-top: 1em;
     height: 3em;
@@ -78,6 +79,11 @@ container: 100%,
     font-size: 14px;
     color: #B5B2C2;
   }
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+
+}
 }
 
 }
