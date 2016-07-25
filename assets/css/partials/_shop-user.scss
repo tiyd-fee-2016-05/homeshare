@@ -34,7 +34,7 @@
   .section-shopping-list {
 
     @include span( 12 of 12 );
-    background-color: $color-user-profile2;
+    background-color: $background;
     overflow: auto;
 
     .username,
@@ -43,7 +43,7 @@
       font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
-      color: $color-user-profile;
+      color: $text;
     }
 
     .username2 {
@@ -52,7 +52,7 @@
 
     .shopping-headings {
 
-      color: $color-dull-white;
+      color: $text;
       @include span( 12 of 12 );
       font-size: 4em;
       font-weight: 400;
@@ -80,7 +80,7 @@
 
     .shopping-list {
 
-      color: $color-dull-white;
+      color: $text;
       padding-bottom: 25.5em;
 
       li {
@@ -90,6 +90,9 @@
 
       li:last-child {
         padding-bottom: 15em;
+      }
+      li:nth-child(odd){
+        background: rgba(160,193,209,0.18);
       }
 
       .qty,

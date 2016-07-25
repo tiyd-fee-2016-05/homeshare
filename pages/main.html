@@ -11,6 +11,11 @@
     <!-- chore section of page...will include user name and chores unordered list -->
     <section class="main-section-chores">
       <h1 class="main-username">House Feed</h1>
+      <ul class="main-chores-headings">
+        <li><h2 class="main-type-heading">Chore</h2></li>
+        <li><h2 class="main-points-heading">Points</h2></li>
+        <li><h2 class="main-confirm-heading">Complete?</h2></li>
+      </ul>
       <ul class="main-chore-list"  ng-repeat="chore in totalChores | orderBy: 'created_at':true | limitTo:3">
         <li>
           <img class="main-chore-icon" src={{chores[totalChores.indexOf(chore)].ChoreIcon}} alt="Picture of chore">
@@ -29,7 +34,7 @@
     <ul class="main-shopping-headings">
       <li><h2 class="main-qty-heading">Qty</h2></li>
       <li><h2 class="main-item-heading">Item Name</h2></li>
-      <li><h2 class="main-checkbox-heading">Complete</h2></li>
+      <li><h2 class="main-checkbox-heading">Complete?</h2></li>
     </ul>
     <ul class="main-shopping-list">
       <li>

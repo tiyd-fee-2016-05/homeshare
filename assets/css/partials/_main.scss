@@ -191,6 +191,7 @@ container: 100%,
     background-color: $background;
     padding-bottom: 13.5em;
     overflow: auto;
+    margin-left: -3em;
     .main-username {
       text-align: center;
       font-size: 5.5em;
@@ -199,6 +200,36 @@ container: 100%,
       color: $text;
     }
 
+    .main-chores-headings {
+      font-family: 'Roboto', sans-serif;
+      color: $text;
+      @include span( 12 of 12 );
+      font-size: 2.7em;
+      font-weight: 400;
+
+      li {
+        @include span( 3 of 12 );
+        text-align: center;
+        margin: 1em 0 1em 0;
+      }
+
+
+      .main-type-heading {
+        margin-left: 5.5em;
+      }
+
+      .main-points-heading {
+        @include span( 5 of 12 );
+        width: 8em;
+        margin-left: 5em;
+      }
+
+      .main-confirm-heading {
+        margin: 0 0 0 6em;
+      }
+    } // end .chores-headings
+
+
     .main-chore-list {
 
       color: $text;
@@ -206,6 +237,10 @@ container: 100%,
       li {
         @include span( 12 of 12 );
         margin: 3.25em 0 1.25em 9%;
+        padding-top:1em;
+      }
+      li:nth-child(odd){
+        background: rgba(160,193,209,0.18);
       }
 
       h2 {
@@ -235,13 +270,13 @@ container: 100%,
       .main-chore-value {
         @include span( 2 of 12 );
         margin-left: 1.5em;
-        // background: orange;
+        padding-top:.4em;
       }
 
       .fa-check-circle-o {
         @include span( 1 of 12 );
         font-size: 5.5em;
-        margin: -.15em 0 0 .65em;
+        margin: 0.05em 0 0 .65em;
         cursor: pointer;
         // background: blue;
       }
@@ -275,10 +310,10 @@ container: 100%,
     }
 
     .main-shopping-headings {
-
+      font-family: 'Roboto', sans-serif;
       color: $text;
       @include span( 12 of 12 );
-      font-size: 4em;
+      font-size: 2.7em;
       font-weight: 400;
 
       li {
@@ -286,6 +321,7 @@ container: 100%,
         text-align: center;
         margin: 1em 0 1em 0;
       }
+
 
       .main-qty-heading {
         margin-left: -.5em;
@@ -314,6 +350,9 @@ container: 100%,
 
       li:last-child {
         padding-bottom: 15em;
+      }
+      li:nth-child(odd){
+        background: rgba(160,193,209,0.18);
       }
       .main-qty,
       .main-shopping-item,

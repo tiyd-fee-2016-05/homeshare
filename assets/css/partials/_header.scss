@@ -9,7 +9,11 @@
   font-size: 4em;
   color: $color-user-highlights2;
   margin: 0 0 0 1.5em;
-  z-index: 1;
+  position: absolute;
+  width: 8em;
+  li{
+    background: #A0C1D1;
+  }
 
   a {
     text-decoration: none;

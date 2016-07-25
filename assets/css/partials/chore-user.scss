@@ -11,12 +11,12 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-
+  // z-index: 1;
   .section-main {
     @include span( 12 of 12 );
     background-color: $background;
-    color: $color-user-text;
-    margin-top: 2em;
+    color: $text;
+    margin-top: -2em;
 
     .center-avatar {
       @include span( 3 of 12 );
@@ -33,25 +33,30 @@
   .section-chores {
 
     @include span( 12 of 12 );
-    background-color: $color-user-profile2;
+    background-color: $background;
     padding-bottom: 13.5em;
     overflow: auto;
+    margin-left:-2em;
 
     .username {
       text-align: center;
       font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1em 0;
-      color: $color-user-profile;
+      color: $text;
     }
 
     .chore-list {
 
-      color: $color-dull-white;
+      color: $text;
 
       li {
         @include span( 12 of 12 );
         margin: 3.25em 0 1.25em 9%;
+      }
+      li:nth-child(odd){
+        background: rgba(160,193,209,0.18);
+
       }
 
       h2 {
@@ -73,6 +78,7 @@
         @include span( 3 of 12 );
         width: 4.5em;
         margin-right: .75em;
+        padding: .8em .3em;
       }
 
       .chore-name {
@@ -88,7 +94,7 @@
       .fa-check-circle-o {
         @include span( 1 of 12 );
         font-size: 5.5em;
-        margin: -.15em 0 0 .65em;
+        margin: 0.05em 0 0 .65em;
         cursor: pointer;
         // background: blue;
       }
