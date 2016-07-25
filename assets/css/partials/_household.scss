@@ -11,48 +11,54 @@ container: 100%,
 .hh-header{
   @include span(12 of 12);
   font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 3em;
+  font-size: 5em;
   color: $text;
   text-align: center;
 }
 .background{
   display: block;
   position: absolute;
-  z-index: -9999;
-  margin-left: auto;
+  margin-left: 8em;
   margin-right: auto;
   margin-top: 5em;
-  // padding-left: 2em;
   opacity: .35;
-  height: 22em;
+  height: 41em;
 }
 .hh-form{
   @include span(12 of 12);
-  font-family: 'Baumans', cursive;
-  font-size: 28px;
   display: block;
   position: absolute;
-  margin-top: 5em;
-  margin-left: auto;
-  width: 6em;
+  margin-top: 9em;
+  margin-left: 13em;
+  width: 16em;
   padding-left: 0.8em;
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+ 
+  }
   input{
-    width: 15em;
+    width: 25em;
+    height: 3em;
 
   }
-  button{
-    margin-left: auto;
-    margin-top: 1em;
-    height: 3em;
-    width: 11em;
-    font-family: Baumans;
-    font-size: 17px;
-    border: none;
-    border-radius: 3%;
-    background: #C43F33;
-    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      .hh-submit{
+      margin-left: 4em;
+      margin-top: 1em;
+      height: 5em;
+      width: 19em;
+      font-family: Baumans;
+      font-size: 17px;
+      border: none;
+      border-radius: 3%;
+      background: #C43F33;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    p{
+      font-family: 'Roboto',sans-serif;
+      font-size: 2em;
+    }
   }
 }
 

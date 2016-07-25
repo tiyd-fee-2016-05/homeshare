@@ -22,17 +22,18 @@ container: 100%,
   margin-left: auto;
   margin-right: auto;
   font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 3em;
+  font-size: 6.8em;
   color: $text;
-  width: 8em;
-  padding-bottom: 1em;
+  width: 9em;
+  padding-bottom: 1.5em;
+  margin-top: -42%;
   // text-align: center;
 }
 .bg{
 
   display: block;
   position: absolute;
-  z-index: -9999;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -41,23 +42,25 @@ container: 100%,
 }
 .su-form{
   @include span(4 of 12);
-  font-family: 'Andale Mono', cursive;
-  font-size: 23px;
   display: block;
   position: absolute;
-  margin-top: 5em;
-  margin-left: auto;
+  margin-top: 9em;
+  margin-left: 7em;
   margin-right: auto;
   padding-bottom: .7em;
   padding-left: 1em;
-  // width: 6em;
+  width: 19em;
+  p{
+    font-family: 'Roboto', cursive;
+    font-size: 23px;
+  }
   input{
-    width: 13em;
-    padding-left: 1em;
+    width: 31em;
+    height: 3em;
 
   }
-  button{
-    margin-left: auto;
+  .su-submit{
+    margin-left: 7em;
     margin-right: auto;
     margin-top: 1em;
     height: 3em;
@@ -71,6 +74,16 @@ container: 100%,
     -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
   }
+  h4{
+    font-family: 'Roboto', cursive;
+    font-size: 14px;
+    color: #B5B2C2;
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+
+}
 }
 
 }

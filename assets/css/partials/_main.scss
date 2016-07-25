@@ -22,7 +22,7 @@ container: 100%,
 //   width: 100%;
 //   height: 38em;
 //   background: #094660;
-//   z-index: -9999;
+//   z-main: -9999;
 //   margin-top: 10em;
 //   position: absolute;
 // }
@@ -30,6 +30,17 @@ container: 100%,
 * {
     box-sizing: border-box;
 }
+
+//Divider bar
+.divider{
+  length: 25em;
+  color: gray;
+  height: .3em;
+}
+
+
+
+
 // NAV BAR
 .btn-menu{
   @include span(12 of 12);
@@ -158,16 +169,17 @@ container: 100%,
     @include span( 12 of 12 );
     background-color: $background;
     color: $text;
+    margin-top: 2em;
 
     .main-center-avatar {
       @include span( 4 of 12 );
       // background: orange;
       // position: fixed;
-      margin: 0 0 1em 32%;
+      margin: -4em 6.5% 0 32.35%;
+
 
       .main-user-avatar {
-        width: 6.5em;
-        margin: 2em 0 0 0;
+        width: 22em;
         border-radius: 50%;
       }
     } // end .center-avatar
@@ -177,15 +189,46 @@ container: 100%,
 
     @include span( 12 of 12 );
     background-color: $background;
-    // overflow: auto;
-
+    padding-bottom: 13.5em;
+    overflow: auto;
+    margin-left: -3em;
     .main-username {
       text-align: center;
-      font-size: 25px;
+      font-size: 5.5em;
       font-weight: 400;
-      margin: 1.25em 0 1.5em 0;
+      margin: 1.25em 0 1em 0;
       color: $text;
     }
+
+    .main-chores-headings {
+      font-family: 'Roboto', sans-serif;
+      color: $text;
+      @include span( 12 of 12 );
+      font-size: 2.7em;
+      font-weight: 400;
+
+      li {
+        @include span( 3 of 12 );
+        text-align: center;
+        margin: 1em 0 1em 0;
+      }
+
+
+      .main-type-heading {
+        margin-left: 5.5em;
+      }
+
+      .main-points-heading {
+        @include span( 5 of 12 );
+        width: 8em;
+        margin-left: 5em;
+      }
+
+      .main-confirm-heading {
+        margin: 0 0 0 6em;
+      }
+    } // end .chores-headings
+
 
     .main-chore-list {
 
@@ -193,7 +236,11 @@ container: 100%,
 
       li {
         @include span( 12 of 12 );
-        margin: 1em auto 1.25em auto;
+        margin: 3.25em 0 1.25em 9%;
+        padding-top:1em;
+      }
+      li:nth-child(odd){
+        background: rgba(160,193,209,0.18);
       }
 
       h2 {
@@ -204,40 +251,138 @@ container: 100%,
         @include span( 2 of 12 );
         margin: -.72em 0 0 .5em;
       }
-
-      .main-chore-value {
-        @include span( 2 of 12 );
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        // background: orange;
+      .main-chore-name,
+      .main-chore-value,
+      .main-chore-description {
+        font-size: 4em;
       }
 
       .main-chore-icon {
         @include span( 3 of 12 );
-        width: 3.5em;
-        height: 3.5em;
-        margin-right: auto;
+        width: 4.5em;
+        margin-right: .75em;
       }
 
-      h2 {
-        font-size: 25px;
-        width: 4em;
-        margin: .20em auto 0 10%;
+      .main-chore-name {
+        margin-left: 1em;
+      }
+
+      .main-chore-value {
+        @include span( 2 of 12 );
+        margin-left: 1.5em;
+        padding-top:.4em;
       }
 
       .fa-check-circle-o {
-        font-size: 3.6em;
+        @include span( 1 of 12 );
+        font-size: 5.5em;
+        margin: 0.05em 0 0 .65em;
         cursor: pointer;
-        margin-left: auto;
-        margin-right: auto;
-        position: absolute;
-        margin-top: auto;
+        // background: blue;
       }
-    }
-  } // end .section-chores
+
+      .main-chore-description {
+        margin: 0 0 0 15%;
+        // background: red;
+      }
+      }
+      } // end .section-chores
 
 
 } // end .chore-user-main
+
+//SHOPPING LIST FEED
+
+
+  .main-section-shopping-list {
+
+    @include span( 12 of 12 );
+    background-color: $background;
+    overflow: auto;
+
+    .main-username {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 5.5em;
+      font-weight: 400;
+      margin: 1.25em 0 1.5em 0;
+      color: $text;
+    }
+
+    .main-shopping-headings {
+      font-family: 'Roboto', sans-serif;
+      color: $text;
+      @include span( 12 of 12 );
+      font-size: 2.7em;
+      font-weight: 400;
+
+      li {
+        @include span( 3 of 12 );
+        text-align: center;
+        margin: 1em 0 1em 0;
+      }
+
+
+      .main-qty-heading {
+        margin-left: -.5em;
+      }
+
+      .main-item-heading {
+        @include span( 5 of 12 );
+        width: 8em;
+        margin-left: -32%;
+      }
+
+      .main-checkbox-heading {
+        margin: 0 0 0 77%;
+      }
+    } // end .shopping-headings
+
+    .main-shopping-list {
+
+      color: $text;
+      padding-bottom: 25.5em;
+
+      li {
+        @include span( 12 of 12 );
+        margin-bottom: 3em;
+      }
+
+      li:last-child {
+        padding-bottom: 15em;
+      }
+      li:nth-child(odd){
+        background: rgba(160,193,209,0.18);
+      }
+      .main-qty,
+      .main-shopping-item,
+      .main-item-checkbox {
+        @include span( 3 of 12 );
+      }
+
+      h2 {
+        font-size: 3.5em;
+        font-family: "Roboto", sans-serif;
+
+      }
+
+      .main-qty {
+        margin: .45em 2em 0 1.25em;
+      }
+
+      .main-shopping-item {
+        width: 8em;
+        margin: .45em 1.5em 0 -3.5em;
+      }
+
+      .main-item-checkbox {
+        height: 5em;
+        width: 5em;
+        margin: 1.5em 0 0 8em;
+        padding-top: .5em;
+
+      }
+    }
+  } // end .shopping-list feed
 
 } //end main-wrapper
