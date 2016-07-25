@@ -595,44 +595,47 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 3em;
-    color: #1985A1; }
+    font-size: 13.8em;
+    color: #1985A1;
+    text-align: center; }
   #ca-wrapper .bg {
     display: block;
     position: absolute;
-    z-index: -9999;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    height: 23em;
+    margin-top: 30em;
+    height: 61em;
     opacity: .35; }
   #ca-wrapper .ca-form {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
-    font-family: 'Andale Mono', cursive;
-    font-size: 28px;
     display: block;
     position: absolute;
-    margin-top: 5em;
-    margin-left: auto;
+    margin-top: 34em;
+    margin-left: 8em;
     margin-right: auto; }
+    #ca-wrapper .ca-form h2 {
+      font-size: 7em;
+      font-family: 'Roboto', sans-serif; }
     #ca-wrapper .ca-form input {
-      width: 18em; }
-    #ca-wrapper .ca-form button {
-      margin-left: 4.3em;
+      width: 63em;
+      height: 8em; }
+    #ca-wrapper .ca-form .ca-submit {
+      margin-left: 11.3em;
       margin-right: auto;
       margin-top: 1em;
-      height: 3em;
-      width: 11em;
-      font-family: 'Andale Mono';
-      font-size: 17px;
+      height: 11em;
+      width: 40em;
       border: none;
       border-radius: 3%;
       background: #C43F33;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+    #ca-wrapper .ca-form p {
+      font-family: 'Andale Mono';
+      font-size: 7em; }
 
 .landing-wrapper {
   max-width: 100%;
@@ -642,7 +645,8 @@ body {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-bottom: -8%; }
   .landing-wrapper:after {
     content: " ";
     display: block;
@@ -655,19 +659,19 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 3em;
+    font-size: 5em;
     color: #1985A1;
+    text-align: center;
     margin-left: auto;
     margin-right: auto; }
   .landing-wrapper .landing-bg {
     display: block;
     position: absolute;
-    z-index: 1;
-    margin-left: auto;
+    margin-left: 8em;
     margin-right: auto;
-    height: 22em;
+    margin-top: 5em;
     opacity: .35;
-    padding-top: 1em; }
+    height: 41em; }
   .landing-wrapper .login {
     width: 100%;
     float: left;
@@ -678,29 +682,34 @@ body {
     position: relative;
     width: 66%;
     text-align: center;
-    margin-left: auto;
+    margin-left: 6.5em;
     margin-right: auto;
     padding-top: 2.5em;
     line-height: 1.7;
     z-index: 9999;
     padding-left: 3.49em; }
+    .landing-wrapper .login p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2em; }
     .landing-wrapper .login input {
-      height: 34px;
-      width: 210px;
+      height: 8em;
+      width: 37em;
       border: none;
       border-radius: 4%;
       background: #A7B8D3; }
-    .landing-wrapper .login button {
-      font-family: 'Andale Mono', cursive;
-      font-size: 1.1em;
-      height: 1.5em;
-      width: 7em;
-      position: relative;
-      margin-left: auto;
+    .landing-wrapper .login .landing-submit {
       margin-top: 1em;
-      background: #DCDCDD;
-      border: 2px solid #A7B8D3;
-      border-radius: 4%; }
+      height: 5em;
+      width: 19em;
+      border: none;
+      border-radius: 3%;
+      background: #C43F33;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+      .landing-wrapper .login .landing-submit p {
+        font-family: 'Roboto',sans-serif;
+        font-size: 2em; }
   .landing-wrapper .register {
     width: 100%;
     float: left;
@@ -718,21 +727,22 @@ body {
       margin-right: auto;
       border: 12px solid #DCDCDD;
       border-radius: 100%; }
-    .landing-wrapper .register button {
+    .landing-wrapper .register .landing-reg {
       display: inline-block;
       margin-top: 1em;
       margin-left: auto;
       margin-right: auto;
-      height: 2em;
-      width: 6em;
-      font-family: Andale Mono;
-      font-size: 17px;
+      height: 3em;
+      width: 9em;
       border: none;
       border-radius: 3%;
       background: #1985A1;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+    .landing-wrapper .register p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 17px; }
 
 #hhwrapper {
   width: 100%;
@@ -745,37 +755,39 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 3em;
+    font-size: 5em;
     color: #1985A1;
     text-align: center; }
   #hhwrapper .background {
     display: block;
     position: absolute;
-    margin-left: auto;
+    margin-left: 8em;
     margin-right: auto;
     margin-top: 5em;
     opacity: .35;
-    height: 22em; }
+    height: 41em; }
   #hhwrapper .hh-form {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    font-family: 'Baumans', cursive;
-    font-size: 28px;
     display: block;
     position: absolute;
-    margin-top: 5em;
-    margin-left: auto;
-    width: 6em;
+    margin-top: 9em;
+    margin-left: 13em;
+    width: 16em;
     padding-left: 0.8em; }
+    #hhwrapper .hh-form p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2em; }
     #hhwrapper .hh-form input {
-      width: 15em; }
-    #hhwrapper .hh-form button {
-      margin-left: auto;
+      width: 25em;
+      height: 3em; }
+    #hhwrapper .hh-form .hh-submit {
+      margin-left: 4em;
       margin-top: 1em;
-      height: 3em;
-      width: 11em;
+      height: 5em;
+      width: 19em;
       font-family: Baumans;
       font-size: 17px;
       border: none;
@@ -784,6 +796,9 @@ body {
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+      #hhwrapper .hh-form .hh-submit p {
+        font-family: 'Roboto',sans-serif;
+        font-size: 2em; }
 
 .main-wrapper {
   max-width: 100%;
@@ -921,29 +936,29 @@ body {
       margin-left: 0;
       margin-right: 0;
       background-color: #EDEFF7;
-      color: #1985A1; }
+      color: #1985A1;
+      margin-top: 2em; }
       .main-wrapper .main-chore-user-main .main-section-main .main-center-avatar {
         width: 32.20339%;
         float: left;
         margin-right: 1.69492%;
-        margin-right: auto;
-        margin-left: auto; }
+        margin: -4em 6.5% 0 32.35%; }
         .main-wrapper .main-chore-user-main .main-section-main .main-center-avatar .main-user-avatar {
-          height: 11.4em;
-          margin-left: 4em;
-          margin-right: auto;
+          width: 22em;
           border-radius: 50%; }
     .main-wrapper .main-chore-user-main .main-section-chores {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
-      background-color: #EDEFF7; }
+      background-color: #EDEFF7;
+      padding-bottom: 13.5em;
+      overflow: auto; }
       .main-wrapper .main-chore-user-main .main-section-chores .main-username {
         text-align: center;
-        font-size: 25px;
+        font-size: 5.5em;
         font-weight: 400;
-        margin: 1.25em 0 1.5em 0;
+        margin: 1.25em 0 1em 0;
         color: #1985A1; }
       .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list {
         color: #1985A1; }
@@ -952,7 +967,7 @@ body {
           float: left;
           margin-left: 0;
           margin-right: 0;
-          margin: 1em auto 1.25em auto; }
+          margin: 3.25em 0 1.25em 9%; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
           width: 23.72881%;
           float: left;
@@ -962,31 +977,32 @@ body {
           float: left;
           margin-right: 1.69492%;
           margin: -.72em 0 0 .5em; }
-        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-value {
-          width: 15.25424%;
-          float: left;
-          margin-right: 1.69492%;
-          display: inline-block;
-          margin-left: auto;
-          margin-right: auto; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-name,
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-value,
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-description {
+          font-size: 4em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-icon {
           width: 23.72881%;
           float: left;
           margin-right: 1.69492%;
-          width: 3.5em;
-          height: 3.5em;
-          margin-right: auto; }
-        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list h2 {
-          font-size: 25px;
-          width: 4em;
-          margin: .20em auto 0 10%; }
+          width: 4.5em;
+          margin-right: .75em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-name {
+          margin-left: 1em; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-value {
+          width: 15.25424%;
+          float: left;
+          margin-right: 1.69492%;
+          margin-left: 1.5em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .fa-check-circle-o {
-          font-size: 3.6em;
-          cursor: pointer;
-          margin-left: auto;
-          margin-right: auto;
-          position: absolute;
-          margin-top: auto; }
+          width: 6.77966%;
+          float: left;
+          margin-right: 1.69492%;
+          font-size: 5.5em;
+          margin: -.15em 0 0 .65em;
+          cursor: pointer; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-description {
+          margin: 0 0 0 15%; }
   .main-wrapper .main-section-shopping-list {
     width: 100%;
     float: left;
@@ -997,7 +1013,7 @@ body {
     .main-wrapper .main-section-shopping-list .main-username {
       text-align: center;
       font-family: 'Roboto', sans-serif;
-      font-size: 21px;
+      font-size: 5.5em;
       font-weight: 400;
       margin: 1.25em 0 1.5em 0;
       color: #1985A1; }
@@ -1007,9 +1023,8 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
-      font-weight: 400;
-      font-family: 'Roboto', sans-serif;
-      font-size: 19px; }
+      font-size: 4em;
+      font-weight: 400; }
       .main-wrapper .main-section-shopping-list .main-shopping-headings li {
         width: 23.72881%;
         float: left;
@@ -1017,23 +1032,26 @@ body {
         text-align: center;
         margin: 1em 0 1em 0; }
       .main-wrapper .main-section-shopping-list .main-shopping-headings .main-qty-heading {
-        margin-left: 15%; }
+        margin-left: -.5em; }
       .main-wrapper .main-section-shopping-list .main-shopping-headings .main-item-heading {
         width: 40.67797%;
         float: left;
         margin-right: 1.69492%;
         width: 8em;
-        margin-left: 7%; }
+        margin-left: -32%; }
       .main-wrapper .main-section-shopping-list .main-shopping-headings .main-checkbox-heading {
-        margin-left: 90%; }
+        margin: 0 0 0 77%; }
     .main-wrapper .main-section-shopping-list .main-shopping-list {
-      color: #1985A1; }
+      color: #1985A1;
+      padding-bottom: 25.5em; }
       .main-wrapper .main-section-shopping-list .main-shopping-list li {
         width: 100%;
         float: left;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 3em; }
+      .main-wrapper .main-section-shopping-list .main-shopping-list li:last-child {
+        padding-bottom: 15em; }
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-qty,
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-shopping-item,
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-item-checkbox {
@@ -1041,21 +1059,18 @@ body {
         float: left;
         margin-right: 1.69492%; }
       .main-wrapper .main-section-shopping-list .main-shopping-list h2 {
-        font-size: 25px;
+        font-size: 3.5em;
         font-family: "Roboto", sans-serif; }
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-qty {
-        margin: .45em 2em 0 10.35%; }
+        margin: .45em 2em 0 1.25em; }
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-shopping-item {
         width: 8em;
-        margin: .45em auto 0 -3.75em; }
+        margin: .45em 1.5em 0 -3.5em; }
       .main-wrapper .main-section-shopping-list .main-shopping-list .main-item-checkbox {
-        margin: .95em auto 0 auto; }
-        .main-wrapper .main-section-shopping-list .main-shopping-list .main-item-checkbox input {
-          width: 30px;
-          height: 30px;
-          background: white;
-          border-radius: 5px;
-          border: 2px solid #555; }
+        height: 5em;
+        width: 5em;
+        margin: 1.5em 0 0 8em;
+        padding-top: .5em; }
 
 .btn-menu {
   width: 100%;
