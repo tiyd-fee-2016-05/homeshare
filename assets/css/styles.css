@@ -299,7 +299,8 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  width: 100%; }
+  min-height: 100%;
+  overflow: visible; }
   .profile-edit-main:after {
     content: " ";
     display: block;
@@ -343,13 +344,23 @@ body {
       font-size: 7.5em;
       cursor: pointer; }
   .profile-edit-main fieldset {
-    margin: 1em 0 0 9.35%; }
-    .profile-edit-main fieldset .edit-name {
-      margin: 1em 0 1.5em -.75em; }
-    .profile-edit-main fieldset .edit-location {
-      margin: 1em 0 2.25em -.75em; }
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin: 1em 0 0 11.35%; }
+    .profile-edit-main fieldset .edit-name,
+    .profile-edit-main fieldset .edit-location,
     .profile-edit-main fieldset .venmo-account {
-      margin: 1em 0 2.25em -.75em; }
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    .profile-edit-main fieldset .edit-name {
+      margin: 1em 0 1em -.75em; }
+    .profile-edit-main fieldset .edit-location {
+      margin: .5em 0 1.75em -.75em; }
+    .profile-edit-main fieldset .venmo-account {
+      margin: .5em 0 1.5em -.75em; }
     .profile-edit-main fieldset .name-heading,
     .profile-edit-main fieldset .location-heading,
     .profile-edit-main fieldset .venmo-username {
@@ -364,7 +375,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    margin: 3.75em 0 13.5em 10%; }
+    margin: 3.25em 0 13.5em 10%; }
   .profile-edit-main .payment-options {
     font-size: 4.25em; }
   .profile-edit-main .venmo,
@@ -417,8 +428,8 @@ body {
     margin-right: 0;
     background-color: #EDEFF7;
     padding-bottom: 13.5em;
-    width: 100%;
-    overflow: hidden; }
+    overflow: auto;
+    margin-left: -2em; }
     .chore-user-main .section-chores .username {
       text-align: center;
       font-size: 5.5em;
@@ -479,8 +490,7 @@ body {
   box-sizing: border-box;
   background-color: #EDEFF7;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  width: 100%; }
+  font-weight: 300; }
   .shop-user-main:after {
     content: " ";
     display: block;
@@ -494,6 +504,10 @@ body {
     color: #f0f0f5;
     margin-top: 2em; }
     .shop-user-main .section-main .center-avatar {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
       margin: -4em 6.5% 0 32.35%; }
       .shop-user-main .section-main .center-avatar .user-avatar {
         width: 22em;
@@ -503,9 +517,8 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #EDEFF7; }
+    background-color: #EDEFF7;
+    overflow: auto; }
     .shop-user-main .section-shopping-list .username,
     .shop-user-main .section-shopping-list .username2 {
       text-align: center;

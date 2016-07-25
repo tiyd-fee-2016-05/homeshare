@@ -1,0 +1,50 @@
+<div class="main-wrapper">
+  <!-- <div class="colorbar"></div> -->
+  <main class="main-chore-user-main">
+    <section class="main-section-main">
+      <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
+      <div class="main-center-avatar">
+        <img class="main-user-avatar" src="../assets/images/santa-claus.png" alt="user-avatar">
+      </div>
+    </section><!-- end .section-main -->
+
+    <!-- chore section of page...will include user name and chores unordered list -->
+    <section class="main-section-chores">
+      <h1 class="main-username">House Feed</h1>
+      <ul class="main-chores-headings">
+        <li><h2 class="main-type-heading">Chore</h2></li>
+        <li><h2 class="main-points-heading">Points</h2></li>
+        <li><h2 class="main-confirm-heading">Complete?</h2></li>
+      </ul>
+      <ul class="main-chore-list"  ng-repeat="chore in totalChores | orderBy: 'created_at':true | limitTo:3">
+        <li>
+          <img class="main-chore-icon" src={{chores[totalChores.indexOf(chore)].ChoreIcon}} alt="Picture of chore">
+          <h2 class="main-chore-name">{{chore.name}}</h2>
+          <h2 class="main-chore-value">{{chore.chore_xp}}</h2>
+          <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>
+          <h2 class="main-chore-description">{{chore.description}}</h2>
+        </li>
+      </ul>
+    </section><!-- end .section-chores -->
+  </main>
+<div class="divider"></div>
+
+  <section class="main-section-shopping-list">
+    <h1 class="main-username">Shopping List</h1>
+    <ul class="main-shopping-headings">
+      <li><h2 class="main-qty-heading">Qty</h2></li>
+      <li><h2 class="main-item-heading">Item Name</h2></li>
+      <li><h2 class="main-checkbox-heading">Complete?</h2></li>
+    </ul>
+    <ul class="main-shopping-list">
+      <li>
+        <h2 class="main-qty">10</h2>
+        <h2 class="main-shopping-item">Yoplait Raspberry</h2>
+        <input class="main-item-checkbox" type="checkbox" ng-model="checkboxModel.value2" ng-true-value="'YES'" ng-false-value="'NO'">
+      </li>
+    </ul>
+  </section><!-- end .section-chores -->
+
+
+
+</div>

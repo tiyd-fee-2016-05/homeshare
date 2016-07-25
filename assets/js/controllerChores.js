@@ -7,7 +7,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $
     method: 'GET',
     headers: {'Authorization':'maria@example.com'}
   }).success( function(data) {
-    $scope.totalChores = data.chores.incomplete;
+    $scope.totalChores = data.chores.all_chores;
     console.log( $scope.totalChores );
   }); // end GET GET success
 
@@ -66,22 +66,9 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $
 
 
   $scope.removeChore = function( chore ) {
-    var clickedChore = $scope.totalChores.indexOf( chore );
-    var clickedChoreId = $scope.totalChores[clickedChore].id;
     console.log( $scope.totalChores.indexOf( chore ) );
-    console.log( $scope.totalChores[clickedChore].id );
     $scope.chores.splice( $scope.totalChores.indexOf( chore ), 1 );
     $scope.totalChores.splice( $scope.totalChores.indexOf( chore ), 1 );
-
-    $http({
-      url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores/' + clickedChoreId + '/mark_complete',
-      method: 'POST',
-      headers: {'Authorization':'maria@example.com'},
-      data: $scope.form
-    }).success(function(data){
-      $scope.data = data.data;
-      console.log($scope.form);
-    });
   }; // end removeChore()
 
 }]); // end ControllerChores
