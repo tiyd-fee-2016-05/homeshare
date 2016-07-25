@@ -62,7 +62,7 @@ $http({
         method: 'GET',
         headers: {'Authorization': 'maria@example.com'}
       }).success(function(data){
-        $scope.home_id = data;
+        $scope.home_id = data.data;
         console.log($scope.home_id);
 
       });
