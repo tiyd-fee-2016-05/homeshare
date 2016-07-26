@@ -1,12 +1,12 @@
 <div id="hhwrapper">
   <h1 class="hh-header">Household Setup</h1>
   <img class="background" src="assets/images/misc/castle.png">
-  <form class="hh-form" ng-submit="submitForm()">
-    <p>Name:</p> <input style="font-family: Arial; font-size:20px" name="name" ng-model="hhName" type="text"></input>
-    <p>City:</p> <input style="font-family: Arial; font-size:20px" name="desc" ng-model="hhDesc" type="text"></input>
-    <p>Rent Amount:</p> <input style="font-family: Arial; font-size:20px" ng-model="hhRent" type="number"></input>
+  <form name ="hhSetup" class="hh-form" ng-submit="submitForm()">
+    <p>Name:</p> <input style="font-family: Arial;" name="name" ng-model="hhName" type="text"></input>
+    <p>City:</p> <input style="font-family: Arial;" name="desc" ng-model="hhDesc" type="text"></input>
+    <p>Rent Amount:</p> <input style="font-family: Arial;" name="rent" ng-model="hhRent" type="number"></input>
     <!-- Notes: <input type="text"></input> -->
-    <button class="hh-submit" type="submit"><p>CREATE HOUSEHOLD!</p></button>
+    <button ng-click="submit(place)" class="hh-submit" type="submit"><p>CREATE HOUSEHOLD!</p></button>
   </form>
 
 

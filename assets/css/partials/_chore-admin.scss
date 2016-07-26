@@ -36,7 +36,7 @@ container: 100%,
   display: block;
   position: absolute;
   margin-top: 34em;
-  margin-left: 8em;
+  margin-left: 4em;
   margin-right: auto;
   // padding-left: 2em;
   // width: 6em;
@@ -47,8 +47,10 @@ container: 100%,
   }
 
   input{
-    width: 63em;
-    height: 8em;
+    width: 18em;
+    height: 2em;
+    font-size: 3em;
+    padding-bottom: 5px;
   }
   .ca-submit{
     margin-left: 11.3em;
@@ -58,7 +60,7 @@ container: 100%,
     width: 40em;
     border: none;
     border-radius: 3%;
-    background: #C43F33;
+    background: #85DDA2;
     -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);

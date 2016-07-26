@@ -13,7 +13,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
           };
           console.log($scope.form);
     $http({
-      url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
+      url: 'https://46522539.ngrok.io/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
       method: 'POST',
       headers: {'Authorization':'maria@example.com'},
       data: $scope.form
@@ -24,7 +24,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     });
 };
 $http({
-  url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores',
+  url: 'https://46522539.ngrok.io/homes/1/chores',
   method: 'GET',
   headers: {'Authorization': 'maria@example.com'}
 }).success(function(data){
@@ -45,8 +45,10 @@ $http({
                 "value": $scope.hhRent
               };
               console.log($scope.form);
+
+
         $http({
-          url: 'http://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          url: 'https://46522539.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
           data: $scope.form,
           headers: {'Authorization': 'maria@example.com'}
@@ -58,7 +60,7 @@ $http({
       };
 
       $http({
-        url: 'http://tiy-homeshare.herokuapp.com/homes/',
+        url: 'https://46522539.ngrok.io/homes/',
         method: 'GET',
         headers: {'Authorization': 'maria@example.com'}
       }).success(function(data){
@@ -69,40 +71,7 @@ $http({
 
   }]);
 
-  //SIGNUP CONTROLLER
-  mainApp.controller('signupController', ['$scope', '$http', function($scope, $http){
-    // var user = {"user":{"email":"maria@example.com","password":"password"}};
 
-    $scope.submitForm = function(){
-      $scope.form = {
-        "email": $scope.suEmail,
-        "password": $scope.suPassword
-      };
-      console.log($scope.form);
-      $http({
-        url: 'http://tiy-homeshare.herokuapp.com/homes/1/users',
-        method: 'POST',
-        data: $scope.form,
-        headers: {'Authorization':'maria@example.com'}
-      }).success(function(data){
-        alert("WELCOME HOME!");
-        $scope.data = data.data;
-        console.log($scope.data);
-      });
-    };
-
-    $http({
-      url: 'http://tiy-homeshare.herokuapp.com/homes/1/users',
-      method: 'GET',
-      headers: {'Authorization': 'maria@example.com'}
-    }).success(function(data){
-      $scope.data = data.data;
-      console.log($scope.data);
-
-    });
-
-
-}]);
 
 //OPTIONS POP OUT
 mainApp.controller( "optionsController", [ "$scope", function( $scope ) {
@@ -121,3 +90,23 @@ $(window).ready(function () {
     // return false;
   }); // end ".user-avatar" click event
 }]);
+
+//DROPDOWN MENU THAT POPULATES CHORES list
+//Thanks very much, https://aspdotnetcodehelp.wordpress.com/2015/08/08/how-to-populate-dropdownlist-from-database-using-angularjs-ng-options-attribute/
+mainApp.controller('drpdwnCtrl',['$scope','$http' , function ($scope, $http) {
+            $scope.ChoreList = null;
+            //Declaring the function to load data from database
+            $scope.fillChoreList = function () {
+                $http({
+                    method: 'POST',
+                    url: 'https://46522539.ngrok.io/homes/1/chores',
+                    data: $scope.ChoreList,
+                    headers: {'Authorization':'maria@example.com'}
+                }).success(function (result) {
+                    $scope.ChoreList = result.chores.incomplete;
+                    console.log($scope.ChoreList);
+                });
+            };
+            //Calling the function to load the data on pageload
+            $scope.fillChoreList();
+        }]);

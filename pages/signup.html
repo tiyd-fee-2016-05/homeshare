@@ -1,12 +1,13 @@
 <div id="su-wrapper">
   <form class="su-form" ng-submit="submitForm()">
     <div class="colorbar"></div>
-    <div class="su-header">Sign up</div>
-    <p>Email:</p> <input style="font-family: Arial; font-size:20px" name="email" ng-model="suEmail" type="text"></input>
-    <p>Password:</p> <input style="font-family: Arial; font-size:20px" name="password" ng-model="suPassword" type="password"></input>
-    <p>Venmo Username</p><h4>(optional)</h4> <input style="font-family: Arial; font-size:20px" name="venmo"  type="text"></input>
+    <div class="su-header"><h3>Sign up</h3></div>
+    <h2>Email:</h2> <input style="font-family: Arial;" name="email" ng-model="user.email" type="text"></input>
+    <h2>Password:</h2> <input style="font-family: Arial;" name="password" ng-model="user.password" type="password"></input>
+    <h2>Confirm Password:</h2> <input style="font-family: Arial;" name="password" ng-model="user.passwordConfirmation" type="password"></input>
+    <h2>Venmo Username</h2><h4>(optional)</h4> <input style="font-family: Arial;" name="venmo"  type="text"></input>
 
-    <a href="/#household"><button class="su-submit" type="submit"><p>Sign Up</p></button></a>
+    <button ng-click="register()" class="su-submit" type="submit"><p>Sign Up</p></button>
   </form>
 
 </div>
