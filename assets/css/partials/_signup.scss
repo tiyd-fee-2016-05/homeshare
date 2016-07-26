@@ -1,0 +1,95 @@
+@import "../../../bower_components/susy/sass/susy";
+
+
+$susy: (
+columns: 12,
+container: 100%,
+);
+
+#su-wrapper{
+@include container;
+// border: solid 2px black;
+@include span(12 of 12);
+// margin-bottom: 0;
+
+
+* {
+    box-sizing: border-box;
+}
+
+.su-header{
+  @include span(12 of 12);
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 55em;
+  padding-bottom: 5.5em;
+  padding-left: 9em;
+  // margin-top: -42%;
+  // text-align: center;
+  h3{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 7.8em;
+    color: $text;
+  }
+}
+.bg{
+
+  display: block;
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  height: 23em;
+  opacity: .35;
+}
+.su-form{
+  @include span(4 of 12);
+  display: block;
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 2em;
+  margin-right: auto;
+  // padding-left: 2em;
+  // width: 6em;
+  // p{
+  //   font-family: 'Andale Mono';
+  //   font-size: 5em;
+  // }
+  h2{
+    font-size: 2.6em;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  input{
+    width: 18em;
+    height: 2em;
+    font-size: 3em;
+    padding-bottom: 5px;
+  }
+  .su-submit{
+    margin-left: 18.3em;
+    margin-right: auto;
+    margin-top: 3em;
+    height: 11em;
+    width: 40em;
+    border: none;
+    border-radius: 3%;
+    background: #85DDA2;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    p{
+      font-family: 'Andale Mono';
+      font-size: 5em;
+    }
+    h4{
+      font-size: 2.4em;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+
+}
+
+}

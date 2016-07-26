@@ -5,7 +5,11 @@
       <img class="user-avatar" src="assets/images/santa-claus.png" alt="user-avatar">
     </div>
   </section><!-- end .section-main -->
-
+  <div ng-controller="drpdwnCtrl">
+      <select ng-model="drpdpwnvalue" ng-repeat="chore in ChoreList">
+          <option value="" label="Select a chore"></option>
+      </select>
+  </div>
   <!-- chore section of page...will include user name and chores unordered list -->
   <section class="section-chores">
     <h1 class="username">Username Chores</h1>

@@ -11,10 +11,6 @@ container: 100%,
 //   background-color: #EE6352;
 // }
 
-
-
-
-
 .landing-wrapper{
 @include container;
 // border: solid 2px black;
@@ -73,7 +69,9 @@ margin-bottom: 0;
     width: 21.5em;
     border: none;
     border-radius: 4%;
+    font-size: 3em;
     // background: #A7B8D3;
+    padding-bottom: 5px;
   }
   .landing-submit{
   margin-top: 1em;

@@ -88,6 +88,8 @@
 
       .chore-name {
         margin-left: 1em;
+        text-transform: capitalize;
+
       }
 
       .chore-value {
@@ -106,6 +108,7 @@
 
       .chore-description {
         margin: 0 0 0 6.75%;
+        text-transform: capitalize;
         // background: red;
       }
     }

@@ -17,7 +17,7 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/signup", {
     templateUrl: "pages/signup.html",
-    // controller: "signupController"
+    controller: "RegisterController"
   })
   .when( "/profile-edit", {
     templateUrl: "pages/profile-edit.html",

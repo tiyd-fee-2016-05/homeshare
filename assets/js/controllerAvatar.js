@@ -132,7 +132,7 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
     jQuery( ".profile-name-input" ).val("");
     jQuery( ".profile-location-input" ).val("");
     jQuery( ".profile-venmo-input" ).val("");
-    
+
   } // end sendProfile click event
 
   /****************************************************************************************
@@ -151,6 +151,5 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
   $( ".fa-sort-asc" ).click( function() {
     $( ".chores-bg-color" ).slideUp();
   }); // end .fa-sort-asc click event
-
 
 }]); // end ControllerAvatar
