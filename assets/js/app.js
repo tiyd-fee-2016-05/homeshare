@@ -39,7 +39,8 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/shop-admin.html"
   })
   .when( "/shop-user", {
-    templateUrl: "pages/shop-user.html"
+    templateUrl: "pages/shop-user.html",
+    controller: "ControllerShopping"
   })
   .when( "/chore-admin", {
     templateUrl: "pages/chore-admin.html",

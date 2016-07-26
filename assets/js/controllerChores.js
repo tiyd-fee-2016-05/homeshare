@@ -77,7 +77,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $
       url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores/' + clickedChoreId + '/mark_complete',
       method: 'POST',
       headers: {'Authorization':'maria@example.com'},
-      data: $scope.form
+      // data: $scope.form
     }).success(function(data){
       $scope.data = data.data;
       console.log($scope.form);
