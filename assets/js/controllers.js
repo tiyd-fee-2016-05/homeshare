@@ -5,13 +5,13 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
 
 
   $scope.submitForm = function() {
-          // console.log($scope.choreName);
-          $scope.form = {
-            'name': $scope.choreName,
-            'description': $scope.choreDesc,
-            'chore_xp': $scope.chore_xp
-          };
-          console.log($scope.form);
+    // console.log($scope.choreName);
+    $scope.form = {
+      'name': $scope.choreName,
+      'description': $scope.choreDesc,
+      'chore_xp': $scope.chore_xp
+    };
+    console.log($scope.form);
     $http({
       url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
       method: 'POST',
@@ -20,9 +20,13 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     }).success(function(data){
       $scope.data = data.data;
       console.log($scope.form);
-
     });
-};
+
+    jQuery( ".chore-name-input" ).val("");
+    jQuery( ".chore-area-input" ).val("");
+    jQuery( ".chore-points-input" ).val("");
+
+  }; // end submitForm click event
 $http({
   url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores',
   method: 'GET',
@@ -38,13 +42,13 @@ $http({
 
     mainApp.controller("hhController", ['$scope', '$http', function($scope, $http){
       $scope.submitForm = function() {
-              // console.log($scope.choreName);
-              $scope.form = {
-                "name": $scope.hhName,
-                "city": $scope.hhDesc,
-                "value": $scope.hhRent
-              };
-              console.log($scope.form);
+        // console.log($scope.choreName);
+        $scope.form = {
+          "name": $scope.hhName,
+          "city": $scope.hhDesc,
+          "value": $scope.hhRent
+        };
+        console.log($scope.form);
         $http({
           url: 'http://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
@@ -55,7 +59,12 @@ $http({
           console.log($scope.data);
 
         });
-      };
+
+        jQuery( ".house-name-input" ).val("");
+        jQuery( ".house-location-input" ).val("");
+        jQuery( ".house-rent-input" ).val("");
+        
+      }; // end submitForm click event
 
       $http({
         url: 'http://tiy-homeshare.herokuapp.com/homes/',

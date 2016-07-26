@@ -13,20 +13,20 @@
       <!-- <legend>Edit Profile</legend> -->
       <label class="edit-name">
         <h2 class="name-heading">Name</h2>
-        <input type="text" name="user-name" placeholder="username">
+        <input class="profile-name-input" type="text" name="user-name" placeholder="username" ng-model="name">
       </label>
       <label class="edit-location">
         <h2 class="location-heading">Group Location</h2>
-        <input type="text" name="group-location" placeholder="location">
+        <input class="profile-location-input" type="text" name="group-location" placeholder="location" ng-model="location">
       </label>
       <label class="venmo-account">
         <h2 class="venmo-username">Venmo Username</h2>
-        <input type="text" name="group-location" placeholder="username (optional)">
+        <input class="profile-venmo-input" type="text" name="group-location" placeholder="username (optional)" ng-model="venmo">
       </label>
     </fieldset>
     <div class="save">
       <!-- <h2 class="payment-options">Payment Options</h2> -->
-      <button class="profile-save" type="submit"><p>Save Changes</p></button>
+      <button class="profile-save" type="submit" ng-click="sendProfile()"><p>Save Changes</p></button>
     </div>
   </section>
 </main>
