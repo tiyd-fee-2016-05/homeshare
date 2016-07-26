@@ -621,8 +621,8 @@ body {
       font-size: 7em;
       font-family: 'Roboto', sans-serif; }
     #ca-wrapper .ca-form input {
-      width: 63em;
-      height: 8em; }
+      width: 10.85em;
+      font-size: 4.5em; }
     #ca-wrapper .ca-form .ca-submit {
       margin-left: 11.3em;
       margin-right: auto;
@@ -1182,96 +1182,6 @@ body {
       font-size: 4.5em;
       text-align: center;
       color: #dcdcdd; }
-
-#su-wrapper {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-  #su-wrapper:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  #su-wrapper * {
-    box-sizing: border-box; }
-  #su-wrapper .su-header {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 6.8em;
-    color: #1985A1;
-    width: 9em;
-    padding-bottom: 1.5em;
-    margin-top: -42%; }
-  #su-wrapper .bg {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    height: 23em;
-    opacity: .35; }
-  #su-wrapper .su-form {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-    display: block;
-    position: absolute;
-    margin-top: 9em;
-    margin-left: 7em;
-    margin-right: auto;
-    padding-bottom: .7em;
-    padding-left: 1em;
-    width: 19em; }
-    #su-wrapper .su-form p {
-      font-family: 'Roboto', cursive;
-      font-size: 23px; }
-    #su-wrapper .su-form .signup-heading {
-      display: block;
-      font-size: 4.25em;
-      margin: 1em 0 0 -.45em; }
-    #su-wrapper .su-form .signup-venmo-heading {
-      display: block;
-      width: 15em;
-      font-size: 4.25em;
-      margin: 1em 0 0 -.45em; }
-    #su-wrapper .su-form .signup-subheading {
-      display: block;
-      font-size: 3.25em;
-      margin: 1em 0 0 -.45em; }
-    #su-wrapper .su-form input {
-      width: 10.85em;
-      font-size: 4.5em;
-      margin: .5em 0 1em -.45em; }
-    #su-wrapper .su-form .su-submit {
-      margin-left: 2.5em;
-      margin-right: auto;
-      margin-top: 1em;
-      height: 3em;
-      width: 11em;
-      font-family: 'Andale Mono';
-      font-size: 2.75em;
-      border: none;
-      border-radius: 3%;
-      background: #C43F33;
-      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
-    #su-wrapper .su-form h4 {
-      font-family: 'Roboto', cursive;
-      font-size: 14px;
-      color: #B5B2C2; }
-    #su-wrapper .su-form p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 2em; }
 
 .bill-user-main {
   max-width: 100%;
