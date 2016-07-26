@@ -63,7 +63,7 @@ $http({
         jQuery( ".house-name-input" ).val("");
         jQuery( ".house-location-input" ).val("");
         jQuery( ".house-rent-input" ).val("");
-        
+
       }; // end submitForm click event
 
       $http({
@@ -114,7 +114,7 @@ $http({
 }]);
 
 //OPTIONS POP OUT
-mainApp.controller( "optionsController", [ "$scope", function( $scope ) {
+mainApp.controller( "optionsController", [ "$scope", "$timeout", function( $scope, $timeout ) {
 //Close pannel
 $(window).ready(function () {
 
@@ -125,8 +125,17 @@ $(window).ready(function () {
     console.log( "Hello" );
     $( ".options" ).slideToggle();
 
+    // thank you, http://www.w3schools.com/angular/tryit.asp?filename=try_ng_services_timeout, for help with the timeout service!!!
+    $timeout( function() {
+      $( ".options" ).slideToggle();
+    }, 3500 );
+
     // thank you http://www.electrictoolbox.com/jquery-scroll-bottom/ for your help
     // $( "html, body" ).animate( { scrollTop: $(document).width() }, 'slow' );
     // return false;
-  }); // end ".user-avatar" click event
+  }); // end cog click event
+
+  jQuery( ".nav-element" ).click( function() {
+    jQuery( ".options" ).slideToggle();
+  }) // end .nav-element click event
 }]);
