@@ -370,29 +370,21 @@ body {
     .profile-edit-main fieldset input {
       width: 10.85em;
       font-size: 4.5em; }
-  .profile-edit-main .payments {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    margin: 3.25em 0 13.5em 10%; }
-  .profile-edit-main .payment-options {
-    font-size: 4.25em; }
-  .profile-edit-main .venmo,
-  .profile-edit-main .android-pay {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline-block;
-    margin: 0 1em 0 4.5em; }
-  .profile-edit-main .venmo {
-    width: 18em;
-    margin: 3.75em 0 1em 5.5em;
-    cursor: pointer; }
-  .profile-edit-main .android-pay {
-    width: 10.5em;
-    margin: 1.5em 0 1em 11.5em;
-    cursor: pointer; }
+  .profile-edit-main .save {
+    margin-top: 79em;
+    margin-left: 18em;
+    height: 8em;
+    width: 24em;
+    border: none;
+    border-radius: 3%;
+    background: #85DDA2;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+    .profile-edit-main .save p {
+      font-family: 'Roboto',sans-serif;
+      font-size: 4.2em;
+      color: black; }
 
 .chore-user-main {
   max-width: 100%;

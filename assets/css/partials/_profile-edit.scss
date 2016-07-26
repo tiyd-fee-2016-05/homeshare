@@ -97,38 +97,57 @@
     }
   } // end fieldset
 
-  .payments {
-    @include span( 12 of 12 );
-    margin: 3.25em 0 13.5em 10%;
+  .save{
+  margin-top: 79em;
+  margin-left: 18em;
+  height: 5em;
+  width: 26em;
+  border: none;
+  border-radius: 3%;
+  background: #85DDA2;
+  -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  p{
+  font-family: 'Roboto',sans-serif;
+  font-size: 4.2em;
+  color: black;
   }
 
-  .payment-options {
-    font-size: 4.25em;
-  }
-
-  .venmo,
-  .android-pay {
-    @include span( 6 of 12 );
-    display: inline-block;
-    // text-align: center;
-    // width: 17em;
-    margin: 0 1em 0 4.5em;
-  }
-
-  .venmo {
-    width: 18em;
-    margin: 3.75em 0 1em 5.5em;
-    cursor: pointer;
-  }
-
-  .android-pay {
-    width: 10.5em;
-    margin: 1.5em 0 1em 11.5em;
-    cursor: pointer;
-  }
+  //
+  // .payments {
+  //   @include span( 12 of 12 );
+  //   margin: 3.25em 0 13.5em 10%;
+  // }
+  //
+  // .payment-options {
+  //   font-size: 4.25em;
+  // }
+  //
+  // .venmo,
+  // .android-pay {
+  //   @include span( 6 of 12 );
+  //   display: inline-block;
+  //   // text-align: center;
+  //   // width: 17em;
+  //   margin: 0 1em 0 4.5em;
+  // }
+  //
+  // .venmo {
+  //   width: 18em;
+  //   margin: 3.75em 0 1em 5.5em;
+  //   cursor: pointer;
+  // }
+  //
+  // .android-pay {
+  //   width: 10.5em;
+  //   margin: 1.5em 0 1em 11.5em;
+  //   cursor: pointer;
+  // }
 
   // .payments {
   //   margin: 0 0 3em 10%;
   // }
 
 } // end .personal-profile-main
+}
