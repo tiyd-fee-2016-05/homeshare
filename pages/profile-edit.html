@@ -9,18 +9,18 @@
     <!-- will be right side of a 3 column centered grid...will display level? -->
     <span class="right-level fa fa-arrow-right" aria-hidden="true" ng-click="nextIcon()"></span>
     <!-- edit user name and location of group -->
-    <fieldset>
+    <fieldset ng-controller="HomeController">
       <!-- <legend>Edit Profile</legend> -->
       <label class="edit-name">
         <h2 class="name-heading">Name</h2>
         <input type="text" name="user-name" placeholder="username">
       </label>
       <label class="edit-location">
-        <h2 class="location-heading">Group Location</h2>
+        <h2 class="location-heading">{{user.email}}</h2>
         <input type="text" name="group-location" placeholder="location">
       </label>
       <label class="venmo-account">
-        <h2 class="venmo-username">Venmo Username</h2>
+        <h2 class="venmo-username">{{userToken}}</h2>
         <input type="text" name="group-location" placeholder="username (optional)">
       </label>
     </fieldset>

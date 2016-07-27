@@ -1,14 +1,15 @@
-mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $http) {
+mainApp.controller( "ControllerChores", [ "$scope", "$http", "$rootScope", function( $scope, $http, $rootScope ) {
 
-  $scope.totalChores;
+  // $scope.totalChores;
 
   $http({
-    url: 'https://46522539.ngrok.io/homes/1/chores',
+
+    url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
     method: 'GET',
-    headers: {'Authorization':'maria@example.com'}
+    headers: {"Authorization": $scope.user_token }
   }).success( function(data) {
     $scope.totalChores = data.chores.incomplete;
-    console.log( $scope.totalChores );
+
   }); // end GET GET success
 
   $scope.chores = [
@@ -74,9 +75,9 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", function( $scope, $
     $scope.totalChores.splice( $scope.totalChores.indexOf( chore ), 1 );
 
     $http({
-      url: 'https://46522539.ngrok.io/homes/1/chores/' + clickedChoreId + '/mark_complete',
+      url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores/' + clickedChoreId + '/mark_complete',
       method: 'POST',
-      headers: {'Authorization':'maria@example.com'},
+      headers: {"Authorization":$scope.user_token},
       data: $scope.form
     }).success(function(data){
       $scope.data = data.data;

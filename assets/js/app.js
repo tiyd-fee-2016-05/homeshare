@@ -1,6 +1,10 @@
 var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"  ] );
 // $httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
 
+
+
+
+
 mainApp.config( function($routeProvider) {
 
   $routeProvider
@@ -10,7 +14,8 @@ mainApp.config( function($routeProvider) {
     })
 
   .when( "/landing", {
-    templateUrl: "pages/landing.html"
+    templateUrl: "pages/landing.html",
+    controller: "LoginCtrl"
   })
   .when( "/login", {
     templateUrl: "pages/login.html"
@@ -30,7 +35,7 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/main", {
     templateUrl: "pages/main.html",
-    controller: "ControllerChores"
+    controller: "ControllerChores",
   })
   .when( "/user", {
     templateUrl: "pages/user.html"

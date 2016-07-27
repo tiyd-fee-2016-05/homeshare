@@ -3,7 +3,7 @@
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 
-
+var text = "\"$scope.user_token\"";
   $scope.submitForm = function() {
           // console.log($scope.choreName);
           $scope.form = {
@@ -13,9 +13,9 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
           };
           console.log($scope.form);
     $http({
-      url: 'https://46522539.ngrok.io/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
+      url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
       method: 'POST',
-      headers: {'Authorization':'maria@example.com'},
+      headers: {"Authorization":text},
       data: $scope.form
     }).success(function(data){
       $scope.data = data.data;
@@ -23,15 +23,15 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
 
     });
 };
-$http({
-  url: 'https://46522539.ngrok.io/homes/1/chores',
-  method: 'GET',
-  headers: {'Authorization': 'maria@example.com'}
-}).success(function(data){
-  $scope.totalChores = data;
-  console.log($scope.totalChores);
-
-});
+// $http({
+//   url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
+//   method: 'GET',
+//   headers: {"Authorization":$scope.user_token}
+// }).success(function(data){
+//   $scope.totalChores = data;
+//   console.log($scope.totalChores);
+//
+// });
     }]);
 
     //HOUSEHOLD SETUP CONTROLLER
@@ -48,10 +48,10 @@ $http({
 
 
         $http({
-          url: 'https://46522539.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          url: 'https://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
           data: $scope.form,
-          headers: {'Authorization': 'maria@example.com'}
+          headers: {"Authorization":$scope.user_token}
         }).success(function(data){
           $scope.data = data.data;
           console.log($scope.data);
@@ -60,9 +60,9 @@ $http({
       };
 
       $http({
-        url: 'https://46522539.ngrok.io/homes/',
+        url: 'https://tiy-homeshare.herokuapp.com/homes/',
         method: 'GET',
-        headers: {'Authorization': 'maria@example.com'}
+        headers: {"Authorization":$scope.user_token}
       }).success(function(data){
         $scope.home_id = data.data;
         console.log($scope.home_id);
@@ -78,7 +78,7 @@ mainApp.controller( "optionsController", [ "$scope", function( $scope ) {
 //Close pannel
 $(window).ready(function () {
 
-   $(".options").hide()
+   $(".options").hide();
  });
 //Accordion menu
   $( ".fa-cog" ).click( function() {
@@ -99,9 +99,9 @@ mainApp.controller('drpdwnCtrl',['$scope','$http' , function ($scope, $http) {
             $scope.fillChoreList = function () {
                 $http({
                     method: 'POST',
-                    url: 'https://46522539.ngrok.io/homes/1/chores',
+                    url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
                     data: $scope.ChoreList,
-                    headers: {'Authorization':'maria@example.com'}
+                    headers: {"Authorization":$scope.user_token}
                 }).success(function (result) {
                     $scope.ChoreList = result.chores.incomplete;
                     console.log($scope.ChoreList);
