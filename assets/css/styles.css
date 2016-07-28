@@ -380,11 +380,62 @@ body {
     background: #85DDA2;
     -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    text-align: center; }
     .profile-edit-main .save p {
       font-family: 'Roboto',sans-serif;
       font-size: 4.2em;
       color: black; }
+    .profile-edit-main .save #pgbar-container {
+      text-align: center;
+      width: 100%; }
+    .profile-edit-main .save .progress {
+      background-color: rgba(0, 17, 255, 0.31);
+      width: 55em;
+      height: 3em;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      margin: 0 auto; }
+    .profile-edit-main .save .progress, .profile-edit-main .save .status {
+      border-radius: 10px; }
+    .profile-edit-main .save .status {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 1em gold;
+      background-color: rgba(0, 17, 255, 0.31);
+      z-index: 2;
+      -webkit-transition: all 1.2s linear;
+      -moz-transition: all 1.2s linear;
+      -o-transition: all 1.2s linear;
+      transition: all 1.2s linear; }
+    .profile-edit-main .save .none .status {
+      width: 0%; }
+    .profile-edit-main .save .ten .status {
+      width: 10%; }
+    .profile-edit-main .save .twenty .status {
+      width: 20%; }
+    .profile-edit-main .save .thirty .status {
+      width: 30%; }
+    .profile-edit-main .save .forty .status {
+      width: 40%; }
+    .profile-edit-main .save .fifty .status {
+      width: 50%; }
+    .profile-edit-main .save .sixty .status {
+      width: 60%; }
+    .profile-edit-main .save .seventy .status {
+      width: 70%; }
+    .profile-edit-main .save .eighty .status {
+      width: 80%; }
+    .profile-edit-main .save .ninty .status {
+      width: 90%; }
+    .profile-edit-main .save .one-hundred .status {
+      width: 100%; }
+    .profile-edit-main .save .ninty .status, .profile-edit-main .save .one-hundred .status {
+      box-shadow: inset 0 0 1em #fcfcfc;
+      background-color: #1985a1; }
 
 .chore-user-main {
   max-width: 100%;
@@ -824,6 +875,58 @@ body {
     length: 25em;
     color: gray;
     height: .3em; }
+  .main-wrapper #pgbar-container {
+    text-align: center;
+    width: 100%; }
+  .main-wrapper .progress {
+    background-color: rgba(0, 17, 255, 0.31);
+    width: 55em;
+    height: 3em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto; }
+  .main-wrapper .progress, .main-wrapper .status {
+    border-radius: 10px; }
+  .main-wrapper .status {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 1em gold;
+    background-color: rgba(0, 17, 255, 0.31);
+    z-index: 2;
+    -webkit-transition: all 1.2s linear;
+    -moz-transition: all 1.2s linear;
+    -o-transition: all 1.2s linear;
+    transition: all 1.2s linear; }
+  .main-wrapper .none .status {
+    width: 0%; }
+  .main-wrapper .one .status {
+    width: 1%; }
+  .main-wrapper .ten .status {
+    width: 10%; }
+  .main-wrapper .twenty .status {
+    width: 20%; }
+  .main-wrapper .thirty .status {
+    width: 30%; }
+  .main-wrapper .forty .status {
+    width: 40%; }
+  .main-wrapper .fifty .status {
+    width: 50%; }
+  .main-wrapper .sixty .status {
+    width: 60%; }
+  .main-wrapper .seventy .status {
+    width: 70%; }
+  .main-wrapper .eighty .status {
+    width: 80%; }
+  .main-wrapper .ninty .status {
+    width: 90%; }
+  .main-wrapper .one-hundred .status {
+    width: 100%; }
+  .main-wrapper .ninty .status, .main-wrapper .one-hundred .status {
+    box-shadow: inset 0 0 1em #fcfcfc;
+    background-color: #1985a1; }
   .main-wrapper .btn-menu {
     width: 100%;
     float: left;

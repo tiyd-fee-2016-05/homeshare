@@ -68,8 +68,9 @@ mainApp.config( function($routeProvider) {
   });
 }); // end mainApp.config
 
-$( function() {
-    $( "#progressbar" ).progressbar({
-      value: 37
-    });
-  } );
+$(function(){
+  setTimeout(function(e){
+    $(".progress").removeClass("none");
+    $(".progress").addClass("thirty");
+  }, 1000);
+});

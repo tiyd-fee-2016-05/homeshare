@@ -110,3 +110,19 @@ mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($root
             //Calling the function to load the data on pageload
             $scope.fillChoreList();
         }]);
+
+
+        //XP BAR CONTROLLER
+
+        mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
+
+            $http({
+              url: 'http://f6ed491e.ngrok.io/users/24',
+              method: 'GET',
+              headers: {"Authorization": "f2ad6619-eaf6-49e1-862a-a7dc1d6b2af8"},
+            }).success(function(data){
+              $scope.xp = data.user.housemate.total_exp;
+              console.log($scope.xp);
+
+            });
+          }]);
