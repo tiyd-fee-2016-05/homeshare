@@ -3,11 +3,8 @@
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 
-<<<<<<< HEAD
 
-=======
 // var text = "$scope.user_token";
->>>>>>> origin/gh-pages
   $scope.submitForm = function() {
     // console.log($scope.choreName);
     $scope.form = {
@@ -17,11 +14,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     };
     console.log($scope.form);
     $http({
-<<<<<<< HEAD
-      url: 'http://f6ed491e.ngrok.io/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
-=======
       url: 'http://f6ed491e.ngrok.io/users/me/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
->>>>>>> origin/gh-pages
       method: 'POST',
       headers: {"Authorization": $scope.user_token},
       data: $scope.form
