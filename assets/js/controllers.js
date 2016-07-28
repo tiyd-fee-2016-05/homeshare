@@ -3,7 +3,7 @@
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 
-var text = "\"$scope.user_token\"";
+// var text = "$scope.user_token";
   $scope.submitForm = function() {
     // console.log($scope.choreName);
     $scope.form = {
@@ -13,7 +13,7 @@ var text = "\"$scope.user_token\"";
     };
     console.log($scope.form);
     $http({
-      url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
+      url: 'http://f6ed491e.ngrok.io/users/me/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
       method: 'POST',
       headers: {"Authorization":text},
       data: $scope.form
@@ -36,10 +36,8 @@ $http({
   console.log($scope.totalChores);
 
 });
-
-};
 // $http({
-//   url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
+//   url: 'http://f6ed491e.ngrok.io/users/me/homes/1/chores',
 //   method: 'GET',
 //   headers: {"Authorization":$scope.user_token}
 // }).success(function(data){
@@ -64,7 +62,7 @@ $http({
         console.log($scope.form);
 
         $http({
-          url: 'https://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          url: 'http://f6ed491e.ngrok.io/users/me/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
           data: $scope.form,
           headers: {"Authorization":$scope.user_token}
@@ -81,7 +79,7 @@ $http({
       }; // end submitForm click event
 
       $http({
-        url: 'https://tiy-homeshare.herokuapp.com/homes/',
+        url: 'http://f6ed491e.ngrok.io/users/me/homes/',
         method: 'GET',
         headers: {"Authorization":$scope.user_token}
       }).success(function(data){
@@ -129,7 +127,7 @@ mainApp.controller('drpdwnCtrl',['$scope','$http' , function ($scope, $http) {
             $scope.fillChoreList = function () {
                 $http({
                     method: 'POST',
-                    url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
+                    url: 'http://f6ed491e.ngrok.io/users/me/homes/1/chores',
                     data: $scope.ChoreList,
                     headers: {"Authorization":$scope.user_token}
                 }).success(function (result) {

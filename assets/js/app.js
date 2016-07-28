@@ -1,10 +1,6 @@
 var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"  ] );
 // $httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
 
-
-
-
-
 mainApp.config( function($routeProvider) {
 
   $routeProvider

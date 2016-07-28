@@ -24,7 +24,7 @@ mainApp.controller( "ControllerShopping", [ "$scope", "$http", function( $scope,
     $http({
       // url: 'https://46522539.ngrok.io/homes/1/list/items/' + clickedItemId + '/purchase',
       url: 'https://46522539.ngrok.io/homes/1/list/items/2/purchase', // this one works!!!!!!!!
-      // url: 'https://tiy-homeshare.herokuapp.com/homes/1/list/items/' + clickedItemId + '/purchase', // this works too...they all should work b/c the problem was on the back end!!!
+      // url: 'http://f6ed491e.ngrok.io/users/me/homes/1/list/items/' + clickedItemId + '/purchase', // this works too...they all should work b/c the problem was on the back end!!!
       method: "POST",
       headers: { "Authorization": "maria@example.com" }
     }) // end $http POST request

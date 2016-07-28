@@ -1,4 +1,21 @@
-mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
+mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $http ) {
+
+  $scope.user_id;
+
+  $( window ).load(function() {
+
+    console.log( JSON.parse(localStorage.getItem( "user_token")) + " is a " + typeof localStorage.getItem( "user_token") );
+    $http({
+      url: 'http://f6ed491e.ngrok.io/users/me',
+      method: 'GET',
+      headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
+    }).success( function(data) {
+      console.log( data.user.housemate.id );
+      $scope.user_id = data.user.housemate.id;
+      // $scope.totalChores = data.chores.incomplete;
+    }); // end GET GET success
+  }); // end on load event
+
 
   // used to aid in drop down of chore list on profile-edit.html.  Initially set to false so list will not display on load.
   $scope.showChores = false;
@@ -125,11 +142,27 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
   }; // end nextIcon()
 
   $scope.sendProfile = function() {
-    console.log( $scope.currentAvatar + ", " + $scope.name + ", " + $scope.location + ", " + $scope.venmo );
-
+    console.log( $scope.currentAvatar + ", " + $scope.name + ", " + $scope.location + ", " + $scope.venmoName );
+    console.log( "User ID: " + $scope.user_id );
     jQuery( ".profile-name-input" ).val("");
     jQuery( ".profile-location-input" ).val("");
     jQuery( ".profile-venmo-input" ).val("");
+
+    // $http({
+    //     method: "PUT",
+    //     url:    "http://f6ed491e.ngrok.io/users/" + $scope.user_id,
+    //     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
+    //     data: {
+    //         avatar:    $scope.currentAvatar,
+    //         venmo_username: $scope.name
+    //     }
+    // }).then(function(response) {
+    //     console.log( "Success!!!" + response );
+    //     // localStorage.setItem("user_token", JSON.stringify(response.data.authentication.token_info.unique_token));
+    //     // localStorage.setItem("user_id", JSON.stringify(response.data.authentication.token_info.uni) )
+    // }, function() {
+    //     alert("Something went wrong!"); // fixme: be better
+    // });
 
   } // end sendProfile click event
 
