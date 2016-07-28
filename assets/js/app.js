@@ -49,7 +49,6 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/chore-user", {
     templateUrl: "pages/chore-user.html",
-    controller: "ControllerChores"
   })
   .when( "/bill-admin", {
     templateUrl: "pages/bill-admin.html"

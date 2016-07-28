@@ -1,7 +1,7 @@
 <main class="shop-user-main" >
   <section class="section-main">
     <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
-    <div class="center-avatar">
+    <div ng-controller="avatardisplay" class="center-avatar">
       <img class="user-avatar" src="assets/images/santa-claus.png" alt="user-avatar">
     </div>
   </section><!-- end .section-main -->
@@ -15,12 +15,12 @@
       <li><h2 class="item-heading">Item</h2></li>
       <li><h2 class="checkbox-heading">Complete</h2></li>
     </ul>
-    <ul class="shopping-list" ng-repeat="item in totalShoppingList">
+    <ul class="shopping-list" ng-repeat="items in totalShoppingList">
       <li>
-        <h2 class="qty">{{item.item_xp}}</h2>
-        <h2 class="shopping-item">{{item.title}}</h2>
-        <input class="item-checkbox" type="checkbox" ng-click="removeItem( item )">
-        <h2 class="shopping-item">{{item.description}}</h2>
+        <h2 class="qty">{{items.item_xp}}</h2>
+        <h2 class="shopping-item">{{items.title}}</h2>
+        <input class="item-checkbox" type="checkbox" ng-click="removeItem( items )">
+        <h2 class="shopping-item">{{items.description}}</h2>
       </li>
       <!-- <li>
         <h2 class="qty">10</h2>

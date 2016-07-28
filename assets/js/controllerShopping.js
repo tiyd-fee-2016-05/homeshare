@@ -3,30 +3,30 @@ mainApp.controller( "ControllerShopping", [ "$scope", "$http", function( $scope,
   $scope.totalShoppingList;
 
   $http({
-    url: "https://46522539.ngrok.io/homes/1/list/items",
+    url: "http://f6ed491e.ngrok.io/homes/1/list/items",
     method: "GET",
-    headers: { "Authorization": "maria@example.com" }
+    headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   })// end $http GET request
   .success( function( data ) {
     $scope.totalShoppingList = data.items.unpurchased_items;
     console.log( $scope.totalShoppingList );
   }); // end .success
 
-  $scope.removeItem = function( item ) {
+  $scope.removeItem = function( items ) {
     // item.stopPropagation();
-    var clickedItem = $scope.totalShoppingList.indexOf( item );
+    var clickedItem = $scope.totalShoppingList.indexOf( items );
     var clickedItemId = $scope.totalShoppingList[clickedItem].id;
     console.log( clickedItem );
     console.log( clickedItemId );
 
-    // $scope.totalShoppingList.splice( clickedItem, 1 );
+    $scope.totalShoppingList.splice( clickedItem, 1 );
 
     $http({
       // url: 'https://46522539.ngrok.io/homes/1/list/items/' + clickedItemId + '/purchase',
-      url: 'https://46522539.ngrok.io/homes/1/list/items/2/purchase', // this one works!!!!!!!!
+      url: 'http://f6ed491e.ngrok.io/homes/1/list/items/' + clickedItemId + '/purchase', // this one works!!!!!!!!
       // url: 'http://f6ed491e.ngrok.io/users/me/homes/1/list/items/' + clickedItemId + '/purchase', // this works too...they all should work b/c the problem was on the back end!!!
       method: "POST",
-      headers: { "Authorization": "maria@example.com" }
+      headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
     }) // end $http POST request
     .success( function( data ) {
       $scope.data = data.data;

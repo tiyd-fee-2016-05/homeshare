@@ -1,6 +1,6 @@
 mainApp.controller('HomeController', ['$scope', '$http', '$location', 'User', '$rootScope', function($rootScope, $scope, $http, $location, User) {
 
-  $scope.user_token = User.getToken();
+  // $scope.user_token = User.getToken();
 
     if (!$scope.user_token) {
         $location.path("/signup");

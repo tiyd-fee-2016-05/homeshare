@@ -1,12 +1,11 @@
 mainApp.controller( "ControllerChores", [ "$scope", "$http", "$rootScope", function( $scope, $http, $rootScope ) {
 
-  $scope.totalChores;
+  // $scope.totalChores;
 
   $http({
-
-    url: 'http://f6ed491e.ngrok.io/users/me',
+    url: 'http://f6ed491e.ngrok.io/homes/1/chores',
     method: 'GET',
-    headers: {"Authorization": localStorage.getItem( "user_token" ) }
+    headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   }).success( function(data) {
     $scope.totalChores = data.chores.incomplete;
     console.log($scope.totalChores);
@@ -66,18 +65,18 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", "$rootScope", funct
   ];
 
 
-  $scope.removeChore = function( chore ) {
-    var clickedChore = $scope.totalChores.indexOf( chore );
+  $scope.removeChore = function( chores ) {
+    var clickedChore = $scope.totalChores.indexOf( chores );
     var clickedChoreId = $scope.totalChores[clickedChore].id;
-    console.log( $scope.totalChores.indexOf( chore ) );
+    console.log( $scope.totalChores.indexOf( chores) );
     console.log( $scope.totalChores[clickedChore].id );
-    $scope.chores.splice( $scope.totalChores.indexOf( chore ), 1 );
-    $scope.totalChores.splice( $scope.totalChores.indexOf( chore ), 1 );
+    $scope.chores.splice( $scope.totalChores.indexOf( chores ), 1 );
+    $scope.totalChores.splice( $scope.totalChores.indexOf( chores ), 1 );
 
     $http({
-      url: 'http://f6ed491e.ngrok.io/users/me/homes/1/chores/' + clickedChoreId + '/mark_complete',
+      url: 'http://f6ed491e.ngrok.io/homes/1/chores/' + clickedChoreId + '/mark_complete',
       method: 'POST',
-      headers: {"Authorization":$scope.user_token},
+      headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
       // data: $scope.form
     }).success(function(data){
       $scope.data = data.data;
