@@ -86,7 +86,6 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
   // current avatar.  Will be used to display the appropriate avatar in profile-edit.html.  Will reference $scope.avatars particular index.
   $scope.currentAvatar = $scope.avatars[0];
 
-  console.log( $scope.avatars[0] );
 
   // will be used to keep track of left AND right clicks and will be the index of the $scope.avatars
   var avatarClick = 0;
@@ -120,7 +119,6 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
    else {
      avatarClick++;
      $scope.currentAvatar = $scope.avatars[avatarClick];
-     console.log( $scope.currentAvatar );
    }
 
    console.log( "Click: " + avatarClick );
