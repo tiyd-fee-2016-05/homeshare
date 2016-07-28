@@ -10,14 +10,15 @@ mainApp.config( function($routeProvider) {
     })
 
   .when( "/landing", {
-    templateUrl: "pages/landing.html"
+    templateUrl: "pages/landing.html",
+    controller: "LoginCtrl"
   })
   .when( "/login", {
     templateUrl: "pages/login.html"
   })
   .when( "/signup", {
     templateUrl: "pages/signup.html",
-    controller: "signupController"
+    controller: "RegisterController"
   })
   .when( "/profile-edit", {
     templateUrl: "pages/profile-edit.html",
@@ -30,7 +31,7 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/main", {
     templateUrl: "pages/main.html",
-    controller: "ControllerChores"
+    controller: "ControllerChores",
   })
   .when( "/user", {
     templateUrl: "pages/user.html"
@@ -39,7 +40,8 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/shop-admin.html"
   })
   .when( "/shop-user", {
-    templateUrl: "pages/shop-user.html"
+    templateUrl: "pages/shop-user.html",
+    controller: "ControllerShopping"
   })
   .when( "/chore-admin", {
     templateUrl: "pages/chore-admin.html",

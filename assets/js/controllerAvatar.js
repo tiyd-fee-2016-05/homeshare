@@ -1,4 +1,21 @@
-mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
+mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $http ) {
+
+  $scope.user_id;
+
+  $( window ).load(function() {
+
+    console.log( JSON.parse(localStorage.getItem( "user_token")) + " is a " + typeof localStorage.getItem( "user_token") );
+    $http({
+      url: 'http://f6ed491e.ngrok.io/users/me',
+      method: 'GET',
+      headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
+    }).success( function(data) {
+      console.log( data.user.housemate.id );
+      $scope.user_id = data.user.housemate.id;
+      // $scope.totalChores = data.chores.incomplete;
+    }); // end GET GET success
+  }); // end on load event
+
 
   // used to aid in drop down of chore list on profile-edit.html.  Initially set to false so list will not display on load.
   $scope.showChores = false;
@@ -14,86 +31,78 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
 
   // list of all avatars available
   $scope.avatars = [
-"assets/images/avatars/avatar-1.png",
-"assets/images/avatars/avatar-2.png",
-"assets/images/avatars/avatar.png",
-"assets/images/avatars/boy-1.png",
-"assets/images/avatars/boy-2.png",
-"assets/images/avatars/boy-3.png",
-"assets/images/avatars/boy-4.png",
-"assets/images/avatars/boy-5.png",
-"assets/images/avatars/boy.png",
-"assets/images/avatars/catwoman.png",
-"assets/images/avatars/construction.png",
-"assets/images/avatars/cyclops.png",
-"assets/images/avatars/dragon.png",
-"assets/images/avatars/elf-1.png",
-"assets/images/avatars/elf.png",
-"assets/images/avatars/fairy.png",
-"assets/images/avatars/goblin.png",
-"assets/images/avatars/heisenberg.png",
-"assets/images/avatars/hindu-1.png",
-"assets/images/avatars/hindu.png",
-"assets/images/avatars/hood.png",
-"assets/images/avatars/japanese.png",
-"assets/images/avatars/king.png",
-"assets/images/avatars/knight.png",
-"assets/images/avatars/knight2.png",
-"assets/images/avatars/kung-fu.png",
-"assets/images/avatars/little-red-riding-hood.png",
-"assets/images/avatars/man-1.png",
-"assets/images/avatars/man-2.png",
-"assets/images/avatars/man-3.png",
-"assets/images/avatars/man-4.png",
-"assets/images/avatars/man-5.png",
-"assets/images/avatars/man.png",
-"assets/images/avatars/napoleon.png",
-"assets/images/avatars/prince.png",
-"assets/images/avatars/princess.png",
-"assets/images/avatars/punk-1.png",
-"assets/images/avatars/punk.png",
-"assets/images/avatars/queen.png",
-"assets/images/avatars/robocop.png",
-"assets/images/avatars/samurai.png",
-"assets/images/avatars/santa-claus.png",
-"assets/images/avatars/unicorn.png",
-"assets/images/avatars/vampire.png",
-"assets/images/avatars/viking.png",
-"assets/images/avatars/wizard.png",
-"assets/images/avatars/woman-1.png",
-"assets/images/avatars/woman-2.png",
-"assets/images/avatars/woman-3.png",
-"assets/images/avatars/woman-4.png",
-"assets/images/avatars/woman-5.png",
-"assets/images/avatars/woman-6.png",
-"assets/images/avatars/woman-7.png",
-"assets/images/avatars/woman-8.png",
-"assets/images/avatars/woman-9.png",
-"assets/images/avatars/woman-10.png",
-"assets/images/avatars/woman-11.png",
-"assets/images/avatars/woman-12.png",
-"assets/images/avatars/woman-13.png",
-"assets/images/avatars/woman-14.png",
-"assets/images/avatars/woman-15.png",
-"assets/images/avatars/woman-16.png",
-"assets/images/avatars/woman-17.png",
-"assets/images/avatars/woman-18.png",
-"assets/images/avatars/woman-19.png",
-"assets/images/avatars/woman.png",
-"assets/images/avatars/wood-cutter.png"
-
-
-
-
-
-
-
+    "assets/images/avatars/avatar-1.png",
+    "assets/images/avatars/avatar-2.png",
+    "assets/images/avatars/avatar.png",
+    "assets/images/avatars/boy-1.png",
+    "assets/images/avatars/boy-2.png",
+    "assets/images/avatars/boy-3.png",
+    "assets/images/avatars/boy-4.png",
+    "assets/images/avatars/boy-5.png",
+    "assets/images/avatars/boy.png",
+    "assets/images/avatars/catwoman.png",
+    "assets/images/avatars/construction.png",
+    "assets/images/avatars/cyclops.png",
+    "assets/images/avatars/dragon.png",
+    "assets/images/avatars/elf-1.png",
+    "assets/images/avatars/elf.png",
+    "assets/images/avatars/fairy.png",
+    "assets/images/avatars/goblin.png",
+    "assets/images/avatars/heisenberg.png",
+    "assets/images/avatars/hindu-1.png",
+    "assets/images/avatars/hindu.png",
+    "assets/images/avatars/hood.png",
+    "assets/images/avatars/japanese.png",
+    "assets/images/avatars/king.png",
+    "assets/images/avatars/knight.png",
+    "assets/images/avatars/knight2.png",
+    "assets/images/avatars/kung-fu.png",
+    "assets/images/avatars/little-red-riding-hood.png",
+    "assets/images/avatars/man-1.png",
+    "assets/images/avatars/man-2.png",
+    "assets/images/avatars/man-3.png",
+    "assets/images/avatars/man-4.png",
+    "assets/images/avatars/man-5.png",
+    "assets/images/avatars/man.png",
+    "assets/images/avatars/napoleon.png",
+    "assets/images/avatars/prince.png",
+    "assets/images/avatars/princess.png",
+    "assets/images/avatars/punk-1.png",
+    "assets/images/avatars/punk.png",
+    "assets/images/avatars/queen.png",
+    "assets/images/avatars/robocop.png",
+    "assets/images/avatars/samurai.png",
+    "assets/images/avatars/santa-claus.png",
+    "assets/images/avatars/unicorn.png",
+    "assets/images/avatars/vampire.png",
+    "assets/images/avatars/viking.png",
+    "assets/images/avatars/wizard.png",
+    "assets/images/avatars/woman-1.png",
+    "assets/images/avatars/woman-2.png",
+    "assets/images/avatars/woman-3.png",
+    "assets/images/avatars/woman-4.png",
+    "assets/images/avatars/woman-5.png",
+    "assets/images/avatars/woman-6.png",
+    "assets/images/avatars/woman-7.png",
+    "assets/images/avatars/woman-8.png",
+    "assets/images/avatars/woman-9.png",
+    "assets/images/avatars/woman-10.png",
+    "assets/images/avatars/woman-11.png",
+    "assets/images/avatars/woman-12.png",
+    "assets/images/avatars/woman-13.png",
+    "assets/images/avatars/woman-14.png",
+    "assets/images/avatars/woman-15.png",
+    "assets/images/avatars/woman-16.png",
+    "assets/images/avatars/woman-17.png",
+    "assets/images/avatars/woman-18.png",
+    "assets/images/avatars/woman-19.png",
+    "assets/images/avatars/woman.png",
+    "assets/images/avatars/wood-cutter.png"
   ];
 
   // current avatar.  Will be used to display the appropriate avatar in profile-edit.html.  Will reference $scope.avatars particular index.
   $scope.currentAvatar = $scope.avatars[0];
 
-  console.log( $scope.avatars[0] );
 
   // will be used to keep track of left AND right clicks and will be the index of the $scope.avatars
   var avatarClick = 0;
@@ -104,10 +113,11 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
    avatarClick--;
    $scope.currentAvatar = $scope.avatars[avatarClick];
    console.log( $scope.currentAvatar );
+   console.log( $scope.avatars.length );
 
    if( avatarClick < 0 ) {
-     avatarClick = 8;
-     $scope.currentAvatar = $scope.avatars[8];
+     avatarClick = $scope.avatars.length - 1;
+     $scope.currentAvatar = $scope.avatars[avatarClick];
      console.log( $scope.currentAvatar );
    }
 
@@ -126,11 +136,35 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
    else {
      avatarClick++;
      $scope.currentAvatar = $scope.avatars[avatarClick];
-     console.log( $scope.currentAvatar );
    }
 
    console.log( "Click: " + avatarClick );
   }; // end nextIcon()
+
+  $scope.sendProfile = function() {
+    console.log( $scope.currentAvatar + ", " + $scope.name + ", " + $scope.location + ", " + $scope.venmoName );
+    console.log( "User ID: " + $scope.user_id );
+    jQuery( ".profile-name-input" ).val("");
+    jQuery( ".profile-location-input" ).val("");
+    jQuery( ".profile-venmo-input" ).val("");
+
+    // $http({
+    //     method: "PUT",
+    //     url:    "http://f6ed491e.ngrok.io/users/" + $scope.user_id,
+    //     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
+    //     data: {
+    //         avatar:    $scope.currentAvatar,
+    //         venmo_username: $scope.name
+    //     }
+    // }).then(function(response) {
+    //     console.log( "Success!!!" + response );
+    //     // localStorage.setItem("user_token", JSON.stringify(response.data.authentication.token_info.unique_token));
+    //     // localStorage.setItem("user_id", JSON.stringify(response.data.authentication.token_info.uni) )
+    // }, function() {
+    //     alert("Something went wrong!"); // fixme: be better
+    // });
+
+  } // end sendProfile click event
 
   /****************************************************************************************
     jQuery functions
@@ -148,6 +182,5 @@ mainApp.controller( "ControllerAvatar", [ "$scope", function( $scope ) {
   $( ".fa-sort-asc" ).click( function() {
     $( ".chores-bg-color" ).slideUp();
   }); // end .fa-sort-asc click event
-
 
 }]); // end ControllerAvatar

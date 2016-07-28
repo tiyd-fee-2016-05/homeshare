@@ -9,24 +9,44 @@
     <!-- will be right side of a 3 column centered grid...will display level? -->
     <span class="right-level fa fa-arrow-right" aria-hidden="true" ng-click="nextIcon()"></span>
     <!-- edit user name and location of group -->
-    <fieldset>
+    <fieldset ng-controller="HomeController">
       <!-- <legend>Edit Profile</legend> -->
       <label class="edit-name">
         <h2 class="name-heading">Name</h2>
-        <input type="text" name="user-name" placeholder="username">
+        <input class="profile-name-input" type="text" name="user-name" placeholder="username" ng-model="name">
       </label>
       <label class="edit-location">
-        <h2 class="location-heading">Group Location</h2>
+        <h2 class="location-heading">{{user.email}}</h2>
         <input type="text" name="group-location" placeholder="location">
       </label>
       <label class="venmo-account">
-        <h2 class="venmo-username">Venmo Username</h2>
-        <input type="text" name="group-location" placeholder="username (optional)">
+        <h2 class="venmo-username">{{userToken}}</h2>
+        <input type="text" name="group-location" placeholder="username (optional)" ng-model="venmoName">
       </label>
     </fieldset>
     <div class="save">
       <!-- <h2 class="payment-options">Payment Options</h2> -->
-      <button class="profile-save" type="submit"><p>Save Changes</p></button>
+      <button class="profile-save" type="submit" ng-click="sendProfile()"><p>Save Changes</p></button>
     </div>
   </section>
 </main>
+
+<div class="btn-menu">
+
+  <div class="chores">
+    <a href="#/chore-user"><img src="assets/images/chores/liquid-soap.png"></a>
+  </div>
+
+  <div class="household">
+    <a href="#/main"><img src="assets/images/misc/house.png"></a>
+  </div>
+
+  <div class="shopping-list">
+    <a href="#/shop-user"><img src="assets/images/misc/cart.png"></a>
+  </div>
+
+  <div class="bills">
+    <img src="assets/images/misc/payment.png">
+  </div>
+
+</div>

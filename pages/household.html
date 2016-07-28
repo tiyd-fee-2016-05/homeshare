@@ -2,13 +2,30 @@
   <h1 class="hh-header">Household Setup</h1>
   <img class="background" src="assets/images/misc/castle.png">
   <form class="hh-form" ng-submit="submitForm()">
-    <p>Name:</p> <input style="font-family: Arial; font-size:20px" name="name" ng-model="hhName" type="text"></input>
-    <p>City:</p> <input style="font-family: Arial; font-size:20px" name="desc" ng-model="hhDesc" type="text"></input>
-    <p>Rent Amount:</p> <input style="font-family: Arial; font-size:20px" ng-model="hhRent" type="number"></input>
+    <p>Name:</p><input class="house-name-input" style="font-family: Arial; font-size:20px" name="name" ng-model="hhName" type="text"></input>
+    <p>City:</p><input class="house-location-input" style="font-family: Arial; font-size:20px" name="desc" ng-model="hhDesc" type="text"></input>
+    <p>Rent Amount:</p> <input class="house-rent-input" style="font-family: Arial; font-size:20px" ng-model="hhRent" type="number"></input>
     <!-- Notes: <input type="text"></input> -->
-    <button class="hh-submit" type="submit"><p>CREATE HOUSEHOLD!</p></button>
+    <button ng-click="submit(place)" class="hh-submit" type="submit"><p>CREATE HOUSEHOLD!</p></button>
   </form>
+</div>
 
+<div class="btn-menu">
 
+  <div class="chores">
+    <a href="#/chore-user"><img src="assets/images/chores/liquid-soap.png"></a>
+  </div>
+
+  <div class="household">
+    <a href="#/main"><img src="assets/images/misc/house.png"></a>
+  </div>
+
+  <div class="shopping-list">
+    <a href="#/shop-user"><img src="assets/images/misc/cart.png"></a>
+  </div>
+
+  <div class="bills">
+    <img src="assets/images/misc/payment.png">
+  </div>
 
 </div>
