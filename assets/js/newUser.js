@@ -1,4 +1,4 @@
-mainApp.controller('RegisterController', ['$scope', '$http', '$location', 'User', function($scope, $http, $location, User) {
+mainApp.controller('RegisterController', ['$scope', '$rootScope', '$http', '$location', 'User', function($rootScope, $scope, $http, $location, User) {
     if (User.isLoggedIn()) {
         $location.path("/");
     }

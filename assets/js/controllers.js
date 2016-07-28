@@ -3,7 +3,7 @@
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 
-var text = "\"$scope.user_token\"";
+
   $scope.submitForm = function() {
           // console.log($scope.choreName);
           $scope.form = {
@@ -15,7 +15,7 @@ var text = "\"$scope.user_token\"";
     $http({
       url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
       method: 'POST',
-      headers: {"Authorization":text},
+      headers: {"Authorization": $scope.user_token},
       data: $scope.form
     }).success(function(data){
       $scope.data = data.data;
@@ -36,7 +36,7 @@ var text = "\"$scope.user_token\"";
 
     //HOUSEHOLD SETUP CONTROLLER
 
-    mainApp.controller("hhController", ['$scope', '$http', function($scope, $http){
+    mainApp.controller("hhController", ['$rootScope','$scope', '$http', function($rootScope, $scope, $http){
       $scope.submitForm = function() {
               // console.log($scope.choreName);
               $scope.form = {
@@ -93,7 +93,7 @@ $(window).ready(function () {
 
 //DROPDOWN MENU THAT POPULATES CHORES list
 //Thanks very much, https://aspdotnetcodehelp.wordpress.com/2015/08/08/how-to-populate-dropdownlist-from-database-using-angularjs-ng-options-attribute/
-mainApp.controller('drpdwnCtrl',['$scope','$http' , function ($scope, $http) {
+mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($rootScope, $scope, $http) {
             $scope.ChoreList = null;
             //Declaring the function to load data from database
             $scope.fillChoreList = function () {

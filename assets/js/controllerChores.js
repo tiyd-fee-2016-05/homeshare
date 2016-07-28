@@ -6,10 +6,10 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", "$rootScope", funct
 
     url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
     method: 'GET',
-    headers: {"Authorization": $scope.user_token }
+    headers: {"Authorization": "user_token" }
   }).success( function(data) {
     $scope.totalChores = data.chores.incomplete;
-
+    console.log($scope.totalChores);
   }); // end GET GET success
 
   $scope.chores = [
@@ -77,7 +77,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", "$rootScope", funct
     $http({
       url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores/' + clickedChoreId + '/mark_complete',
       method: 'POST',
-      headers: {"Authorization":$scope.user_token},
+      headers: {"Authorization": "token"},
       data: $scope.form
     }).success(function(data){
       $scope.data = data.data;

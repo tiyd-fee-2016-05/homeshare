@@ -67,3 +67,9 @@ mainApp.config( function($routeProvider) {
     redirectTo: "/landing"
   });
 }); // end mainApp.config
+
+$( function() {
+    $( "#progressbar" ).progressbar({
+      value: 37
+    });
+  } );
