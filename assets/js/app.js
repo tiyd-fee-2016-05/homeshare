@@ -67,10 +67,3 @@ mainApp.config( function($routeProvider) {
     redirectTo: "/landing"
   });
 }); // end mainApp.config
-
-$(function(){
-  setTimeout(function(e){
-    $(".progress").removeClass("none");
-    $(".progress").addClass("thirty");
-  }, 1000);
-});

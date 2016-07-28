@@ -10,7 +10,7 @@ mainApp.controller('HomeController', ['$scope', '$http', '$location', 'User', '$
 
     $http({
         method:  "GET",
-        url:     "https://tiy-homeshare.herokuapp.com/users",
+        url:     "http://f6ed491e.ngrok.io/users",
         headers: {"Authorization": $scope.user_token}
     }).then(function(response) {
         $scope.user = response.data;

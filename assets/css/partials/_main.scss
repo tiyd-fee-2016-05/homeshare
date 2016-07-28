@@ -237,6 +237,7 @@ container: 100%,
 
   .main-section-chores {
 
+
     @include span( 12 of 12 );
     background-color: $background;
     padding-bottom: 13.5em;
@@ -250,12 +251,16 @@ container: 100%,
       color: $text;
     }
 
+
+
     .main-chores-headings {
       font-family: 'Roboto', sans-serif;
       color: $text;
       @include span( 12 of 12 );
       font-size: 2.7em;
       font-weight: 400;
+
+
 
       li {
         @include span( 3 of 12 );
@@ -281,6 +286,9 @@ container: 100%,
 
 
     .main-chore-list {
+
+
+
 
       color: $text;
 
@@ -355,7 +363,7 @@ container: 100%,
       font-family: 'Roboto', sans-serif;
       font-size: 5.5em;
       font-weight: 400;
-      margin: 1.25em 0 1.5em 0;
+      margin: 1.25em 0 1.5em -2em;
       color: $text;
     }
 

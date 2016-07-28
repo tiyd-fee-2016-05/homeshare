@@ -13,7 +13,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
           };
           console.log($scope.form);
     $http({
-      url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
+      url: 'http://f6ed491e.ngrok.io/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
       method: 'POST',
       headers: {"Authorization": $scope.user_token},
       data: $scope.form
@@ -24,7 +24,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     });
 };
 // $http({
-//   url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
+//   url: 'http://f6ed491e.ngrok.io/homes/1/chores',
 //   method: 'GET',
 //   headers: {"Authorization":$scope.user_token}
 // }).success(function(data){
@@ -48,7 +48,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
 
 
         $http({
-          url: 'https://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          url: 'http://f6ed491e.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
           data: $scope.form,
           headers: {"Authorization":$scope.user_token}
@@ -60,7 +60,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
       };
 
       $http({
-        url: 'https://tiy-homeshare.herokuapp.com/homes/',
+        url: 'http://f6ed491e.ngrok.io/homes/',
         method: 'GET',
         headers: {"Authorization":$scope.user_token}
       }).success(function(data){
@@ -99,7 +99,7 @@ mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($root
             $scope.fillChoreList = function () {
                 $http({
                     method: 'POST',
-                    url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
+                    url: 'http://f6ed491e.ngrok.io/homes/1/chores',
                     data: $scope.ChoreList,
                     headers: {"Authorization":$scope.user_token}
                 }).success(function (result) {
@@ -114,15 +114,20 @@ mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($root
 
         //XP BAR CONTROLLER
 
-        mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
-
-            $http({
-              url: 'http://f6ed491e.ngrok.io/users/24',
-              method: 'GET',
-              headers: {"Authorization": "f2ad6619-eaf6-49e1-862a-a7dc1d6b2af8"},
-            }).success(function(data){
-              $scope.xp = data.user.housemate.total_exp;
-              console.log($scope.xp);
-
-            });
-          }]);
+        // mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
+        //
+        //     $http({
+        //       url: 'http://f6ed491e.ngrok.io/users/24',
+        //       method: 'GET',
+        //       headers: {"Authorization": ""},
+        //     }).success(function(data){
+        //       $scope.xp = data.user.housemate.total_exp;
+        //       console.log(data.user.housemate.total_exp);
+        //       $(function(){
+        //         setTimeout(function(e){
+        //           $(".progress").removeClass("none");
+        //           $(".progress").addClass("thirty");
+        //         }, 1000);
+        //       });
+        //     });
+        //   }]);
