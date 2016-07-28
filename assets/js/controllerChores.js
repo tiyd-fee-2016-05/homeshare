@@ -9,7 +9,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", "$rootScope", funct
     headers: {"Authorization": localStorage.getItem( "user_token" ) }
   }).success( function(data) {
     $scope.totalChores = data.chores.incomplete;
-
+    console.log($scope.totalChores);
   }); // end GET GET success
 
   $scope.chores = [

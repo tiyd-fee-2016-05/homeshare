@@ -7,10 +7,13 @@
         <img class="main-user-avatar" src="../assets/images/santa-claus.png" alt="user-avatar">
       </div>
     </section><!-- end .section-main -->
-
-    <!-- chore section of page...will include user name and chores unordered list -->
+    <div ng-controller="xpBar" id="pgbar-container">
+      <br />
+      <div class='progress'><span class='status'></span></div>
+    </div>    <!-- chore section of page...will include user name and chores unordered list -->
     <section class="main-section-chores">
-      <h1 class="main-username">House Feed</h1>
+      <h1 class="main-username">Recent Chores</h1>
+      <a href="#/chore-user"><i style="font-size: 6em; position: absolute; margin: -1.9em 8em 0 8.9em;" class="fa fa-list-ul" aria-hidden="true"></i></a>
       <ul class="main-chores-headings">
         <li><h2 class="main-type-heading">Chore</h2></li>
         <li><h2 class="main-points-heading">Points</h2></li>
@@ -29,6 +32,7 @@
   </main>
   <section class="main-section-shopping-list">
     <h1 class="main-username">Shopping List</h1>
+    <a href="#/shop-user"><i style="font-size: 6em; position: absolute; margin: -2.3em 8em 0 8.4em;" class="fa fa-list-ul" aria-hidden="true"></i></a>
     <ul class="main-shopping-headings">
       <li><h2 class="main-qty-heading">Qty</h2></li>
       <li><h2 class="main-item-heading">Item Name</h2></li>

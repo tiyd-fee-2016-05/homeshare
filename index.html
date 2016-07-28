@@ -14,7 +14,7 @@
     <header>
       <span class="fa fa-cog" aria-hidden="true"></span>
       <nav>
-        <ul class="options">
+        <ul ng-controller="optionsController" class="options">
           <!-- <li><a href="#/group">group profile</a></li>
           <li><a href="#/user">user profile</a></li> -->
           <li><a href="#/profile-edit" class="nav-element">edit profile</a></li>
@@ -30,11 +30,25 @@
     </div>
 
   </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBsklrYvMLAtvn3WCJdejChAIWuqficuDo",
+      authDomain: "homeshare-334e9.firebaseapp.com",
+      databaseURL: "https://homeshare-334e9.firebaseio.com",
+      storageBucket: "homeshare-334e9.appspot.com",
+    };
+    firebase.initializeApp(config);
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/controllerAvatar.js"></script>
     <script src="assets/js/newUser.js"></script>

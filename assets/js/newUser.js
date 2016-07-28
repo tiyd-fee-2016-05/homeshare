@@ -1,3 +1,4 @@
+
 mainApp.controller('RegisterController', ['$scope', '$http', '$location', 'User', function($scope, $http, $location, User) {
 
     $scope.register = function() {
