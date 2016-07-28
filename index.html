@@ -17,41 +17,18 @@
         <ul ng-controller="optionsController" class="options">
           <!-- <li><a href="#/group">group profile</a></li>
           <li><a href="#/user">user profile</a></li> -->
-          <li><a href="#/profile-edit">edit profile</a></li>
+          <li><a href="#/profile-edit" class="nav-element">edit profile</a></li>
           <!-- <li><a href="#/chore-user">user chores</a></li> -->
-          <li><a href="#/shop-user">shopping list</a></li>
-          <li><a href="#/chore-admin">add a chore</a></li>
+          <li><a href="#/shop-user" class="nav-element">shopping list</a></li>
+          <li><a href="#/chore-admin" class="nav-element">add a chore</a></li>
         </ul>
       </nav>
     </header>
-
 
     <div>
       <ng-view></ng-view>
     </div>
 
-    <div class="btn-menu">
-    <!-- <div class="profile">
-      <img src="assets/images/avatars/robocop.png">
-    </div> -->
-
-    <div class="chores">
-      <a href="#/chore-user"><img src="assets/images/chores/broom.png"></a>
-    </div>
-
-    <div class="household">
-      <a href="#/main"><img src="assets/images/misc/house.png"></a>
-    </div>
-
-    <div class="shopping-list">
-      <a href="#/shop-user"><img src="assets/images/misc/cart.png"></a>
-    </div>
-
-    <div class="bills">
-      <img src="assets/images/misc/dollar-bill.png">
-    </div>
-
-    </div>
   </div>
 
 
@@ -80,7 +57,8 @@
     <script src="assets/js/controllerChores.js"></script>
     <script src="assets/js/controllerGroup.js"></script>
     <script src="assets/js/controllers.js"></script>
+    <script src="assets/js/controllerSignup.js"></script>
+    <script src="assets/js/controllerShopping.js"></script>
     <script src="assets/js/loginController.js"></script>
-
   </body>
 </html>

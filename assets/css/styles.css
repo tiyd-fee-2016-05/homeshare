@@ -525,7 +525,7 @@ body {
         margin: 0.05em 0 0 .65em;
         cursor: pointer; }
       .chore-user-main .section-chores .chore-list .chore-description {
-        margin: 0 0 0 7%;
+        margin: 0 0 0 6.75%;
         text-transform: capitalize; }
 
 .shop-user-main {
@@ -649,16 +649,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 13.8em;
+    font-size: 10.8em;
     color: #1985A1;
     text-align: center; }
   #ca-wrapper .bg {
-    display: block;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30em;
-    height: 61em;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 2em;
+    height: 65em;
     opacity: .35; }
   #ca-wrapper .ca-form {
     width: 32.20339%;
@@ -680,7 +681,7 @@ body {
     #ca-wrapper .ca-form .ca-submit {
       margin-left: 11.3em;
       margin-right: auto;
-      margin-top: 1em;
+      margin-top: 3.5em;
       height: 11em;
       width: 40em;
       border: none;
@@ -1364,5 +1365,91 @@ body {
       #su-wrapper .su-form .su-submit h4 {
         font-size: 2.4em;
         font-family: 'Roboto', sans-serif; }
+
+.bill-user-main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #EDEFF7;
+  color: #1985A1;
+  margin-top: -2em; }
+  .bill-user-main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .bill-user-main .page-heading {
+    text-align: center;
+    font-size: 5.5em;
+    font-weight: 400;
+    margin: 1.25em 0 1em 0; }
+  .bill-user-main .bill-headings .user-heading,
+  .bill-user-main .bill-headings .descrip-heading,
+  .bill-user-main .bill-headings .amount-heading,
+  .bill-user-main .bill-headings .paid-heading {
+    display: inline-block;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 0 0 2em 0; }
+  .bill-user-main .bill-headings .user-heading {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 0.75em; }
+  .bill-user-main .bill-headings .descrip-heading {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: .5em; }
+  .bill-user-main .bill-headings .amount-heading {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: .5em; }
+  .bill-user-main .bill-headings .paid-heading {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 1.65em; }
+  .bill-user-main .bills {
+    margin: 2em 0 0 .35em; }
+    .bill-user-main .bills li {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 7em; }
+    .bill-user-main .bills li:last-child {
+      margin-bottom: 23em; }
+    .bill-user-main .bills img,
+    .bill-user-main .bills span {
+      display: inline-block;
+      font-size: 4.5em; }
+    .bill-user-main .bills img {
+      width: 15.25424%;
+      float: left;
+      margin-right: 1.69492%;
+      width: 2.75em;
+      margin-left: .15em; }
+    .bill-user-main .bills span {
+      margin-top: 1em; }
+    .bill-user-main .bills .bill-descrip {
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-left: .25em; }
+    .bill-user-main .bills .bill-amount {
+      width: 15.25424%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-left: .75em; }
+    .bill-user-main .bills .fa-check-circle-o {
+      width: 15.25424%;
+      float: left;
+      margin-right: 1.69492%;
+      font-size: 7em;
+      margin: .4em 0 0 1em; }
 
 /*# sourceMappingURL=styles.css.map */

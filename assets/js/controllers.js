@@ -3,28 +3,50 @@
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 
+<<<<<<< HEAD
 
+=======
+// var text = "$scope.user_token";
+>>>>>>> origin/gh-pages
   $scope.submitForm = function() {
-          // console.log($scope.choreName);
-          $scope.form = {
-            'name': $scope.choreName,
-            'description': $scope.choreDesc,
-            'chore_xp': $scope.chore_xp
-          };
-          console.log($scope.form);
+    // console.log($scope.choreName);
+    $scope.form = {
+      'name': $scope.choreName,
+      'description': $scope.choreDesc,
+      'chore_xp': $scope.chore_xp
+    };
+    console.log($scope.form);
     $http({
+<<<<<<< HEAD
       url: 'http://f6ed491e.ngrok.io/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
+=======
+      url: 'http://f6ed491e.ngrok.io/users/me/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&value=' + $scope.chore_xp ,
+>>>>>>> origin/gh-pages
       method: 'POST',
       headers: {"Authorization": $scope.user_token},
       data: $scope.form
     }).success(function(data){
       $scope.data = data.data;
       console.log($scope.form);
-
     });
-};
+
+    jQuery( ".chore-name-input" ).val("");
+    jQuery( ".chore-area-input" ).val("");
+    jQuery( ".chore-points-input" ).val("");
+
+  }; // end submitForm click event
+$http({
+  url: 'https://46522539.ngrok.io/homes/1/chores',
+  method: 'GET',
+  headers: {'Authorization': 'maria@example.com'}
+}).success(function(data){
+  $scope.totalChores = data;
+  console.log($scope.totalChores);
+
+});
 // $http({
-//   url: 'http://f6ed491e.ngrok.io/homes/1/chores',
+
+//   url: 'http://f6ed491e.ngrok.io/users/me/homes/1/chores',
 //   method: 'GET',
 //   headers: {"Authorization":$scope.user_token}
 // }).success(function(data){
@@ -32,23 +54,24 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
 //   console.log($scope.totalChores);
 //
 // });
+
     }]);
 
     //HOUSEHOLD SETUP CONTROLLER
 
     mainApp.controller("hhController", ['$rootScope','$scope', '$http', function($rootScope, $scope, $http){
       $scope.submitForm = function() {
-              // console.log($scope.choreName);
-              $scope.form = {
-                "name": $scope.hhName,
-                "city": $scope.hhDesc,
-                "value": $scope.hhRent
-              };
-              console.log($scope.form);
 
+        // console.log($scope.choreName);
+        $scope.form = {
+          "name": $scope.hhName,
+          "city": $scope.hhDesc,
+          "value": $scope.hhRent
+        };
+        console.log($scope.form);
 
         $http({
-          url: 'http://f6ed491e.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
+          url: 'http://f6ed491e.ngrok.io/users/me/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
           data: $scope.form,
           headers: {"Authorization":$scope.user_token}
@@ -57,10 +80,15 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
           console.log($scope.data);
 
         });
-      };
+
+        jQuery( ".house-name-input" ).val("");
+        jQuery( ".house-location-input" ).val("");
+        jQuery( ".house-rent-input" ).val("");
+
+      }; // end submitForm click event
 
       $http({
-        url: 'http://f6ed491e.ngrok.io/homes/',
+        url: 'http://f6ed491e.ngrok.io/users/me/homes/',
         method: 'GET',
         headers: {"Authorization":$scope.user_token}
       }).success(function(data){
@@ -74,7 +102,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
 
 
 //OPTIONS POP OUT
-mainApp.controller( "optionsController", [ "$scope", function( $scope ) {
+mainApp.controller( "optionsController", [ "$scope", "$timeout", function( $scope, $timeout ) {
 //Close pannel
 $(window).ready(function () {
 
@@ -85,10 +113,19 @@ $(window).ready(function () {
     console.log( "Hello" );
     $( ".options" ).slideToggle();
 
+    // thank you, http://www.w3schools.com/angular/tryit.asp?filename=try_ng_services_timeout, for help with the timeout service!!!
+    $timeout( function() {
+      $( ".options" ).slideToggle();
+    }, 3500 );
+
     // thank you http://www.electrictoolbox.com/jquery-scroll-bottom/ for your help
     // $( "html, body" ).animate( { scrollTop: $(document).width() }, 'slow' );
     // return false;
-  }); // end ".user-avatar" click event
+  }); // end cog click event
+
+  jQuery( ".nav-element" ).click( function() {
+    jQuery( ".options" ).slideToggle();
+  }) // end .nav-element click event
 }]);
 
 //DROPDOWN MENU THAT POPULATES CHORES list
@@ -99,7 +136,7 @@ mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($root
             $scope.fillChoreList = function () {
                 $http({
                     method: 'POST',
-                    url: 'http://f6ed491e.ngrok.io/homes/1/chores',
+                    url: 'http://f6ed491e.ngrok.io/users/me/homes/1/chores',
                     data: $scope.ChoreList,
                     headers: {"Authorization":$scope.user_token}
                 }).success(function (result) {

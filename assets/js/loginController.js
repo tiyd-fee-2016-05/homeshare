@@ -3,7 +3,8 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
     //     $location.path("/");
     // }
     // var rootUrl= "http://6e62d5d1.ngrok.io/";
-    var rootUrl= "http://f6ed491e.ngrok.io/";
+
+    var rootUrl= "http://f6ed491e.ngrok.io/users/me/";
 
 
     $scope.loginUser = function() {

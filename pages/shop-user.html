@@ -15,8 +15,14 @@
       <li><h2 class="item-heading">Item</h2></li>
       <li><h2 class="checkbox-heading">Complete</h2></li>
     </ul>
-    <ul class="shopping-list">
+    <ul class="shopping-list" ng-repeat="item in totalShoppingList">
       <li>
+        <h2 class="qty">{{item.item_xp}}</h2>
+        <h2 class="shopping-item">{{item.title}}</h2>
+        <input class="item-checkbox" type="checkbox" ng-click="removeItem( item )">
+        <h2 class="shopping-item">{{item.description}}</h2>
+      </li>
+      <!-- <li>
         <h2 class="qty">10</h2>
         <h2 class="shopping-item">Yoplait Raspberry</h2>
         <input class="item-checkbox" type="checkbox" ng-model="checkboxModel.value2" ng-true-value="'YES'" ng-false-value="'NO'">
@@ -45,12 +51,27 @@
         <h2 class="qty">10</h2>
         <h2 class="shopping-item">Yoplait Raspberry</h2>
         <input class="item-checkbox" type="checkbox" ng-model="checkboxModel.value2" ng-true-value="'YES'" ng-false-value="'NO'">
-      </li>
-      <li>
-        <h2 class="qty">10</h2>
-        <h2 class="shopping-item">Yoplait Raspberry</h2>
-        <input class="item-checkbox" type="checkbox" ng-model="checkboxModel.value2" ng-true-value="'YES'" ng-false-value="'NO'">
-      </li>
+      </li> -->
     </ul>
   </section><!-- end .section-chores -->
 </main>
+
+<div class="btn-menu">
+
+  <div class="chores">
+    <a href="#/chore-user"><img src="assets/images/chores/liquid-soap.png"></a>
+  </div>
+
+  <div class="household">
+    <a href="#/main"><img src="assets/images/misc/house.png"></a>
+  </div>
+
+  <div class="shopping-list">
+    <a href="#/shop-user"><img src="assets/images/misc/cart.png"></a>
+  </div>
+
+  <div class="bills">
+    <img src="assets/images/misc/payment.png">
+  </div>
+
+</div>
