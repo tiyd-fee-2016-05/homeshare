@@ -11,14 +11,11 @@
   </head>
   <body ng-app="mainApp">
     <div id="index-wrapper">
-    <header>
+    <header class="landing-header">
       <span class="fa fa-cog" aria-hidden="true"></span>
       <nav>
         <ul ng-controller="optionsController" class="options">
-          <!-- <li><a href="#/group">group profile</a></li>
-          <li><a href="#/user">user profile</a></li> -->
           <li><a href="#/profile-edit" class="nav-element">edit profile</a></li>
-          <!-- <li><a href="#/chore-user">user chores</a></li> -->
           <li><a href="#/shop-user" class="nav-element">shopping list</a></li>
           <li><a href="#/chore-admin" class="nav-element">add a chore</a></li>
           <li><a ng-click="logout()" href="#/">Logout</a></li>

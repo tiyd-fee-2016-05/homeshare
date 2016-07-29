@@ -6,6 +6,7 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
 
     var rootUrl= "http://f6ed491e.ngrok.io/users/me/";
 
+    $( ".landing-header" ).css( "visibility", "hidden" );
 
     $scope.loginUser = function() {
       console.log("Submitted");
