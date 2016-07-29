@@ -4,7 +4,7 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
     // }
     // var rootUrl= "http://6e62d5d1.ngrok.io/";
 
-    var rootUrl= "http://f6ed491e.ngrok.io/users/me/";
+    var rootUrl= "https://tiy-homeshare.herokuapp.com/users/me/";
 
     $( ".landing-header" ).css( "visibility", "hidden" );
 
@@ -12,7 +12,7 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
       console.log("Submitted");
         $http({
             method: "POST",
-            url:   "http://f6ed491e.ngrok.io/users/me",
+            url:   "https://tiy-homeshare.herokuapp.com/users/me",
             // data: {
             //     email:$rootScope.email,
             //     password:$rootScope.password,

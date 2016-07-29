@@ -5,7 +5,7 @@ mainApp.controller('RegisterController', ['$scope', '$http', '$location', 'User'
       console.log( JSON.stringify($scope.user.email) + ", " + JSON.stringify($scope.user.password) );
         $http({
             method: "POST",
-            url:    "http://f6ed491e.ngrok.io/api/register",
+            url:    "https://tiy-homeshare.herokuapp.com/api/register",
             data:
             {
 
