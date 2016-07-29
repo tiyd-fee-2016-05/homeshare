@@ -1,0 +1,30 @@
+<div ng-app="mainApp"  id="sa-wrapper">
+  <h1 class="sa-header">Add chore</h1>
+  <img class="bg" src="assets/images/chores/vacuum-cleaner.png">
+  <form class="sa-form" ng-submit="submitForm()">
+    <h2>Type:</h2> <input class="sa-name-input" style="font-family: Arial;"  ng-model="choreName" type="text"></input>
+    <h2>Area:</h2> <input class="sa-area-input" style="font-family: Arial;"  ng-model="choreDesc" type="text"></input>
+    <h2>Points:</h2> <input  class="sa-points-input" style="font-family: Arial;" ng-model="chore_xp" type="number"></input>
+    <button class="sa-submit" type="submit"><p>Submit</p></button>
+  </form>
+</div>
+
+<div class="btn-menu">
+
+  <div class="chores">
+    <a href="#/chore-user"><img src="assets/images/chores/liquid-soap.png"></a>
+  </div>
+
+  <div class="household">
+    <a href="#/main"><img src="assets/images/misc/house.png"></a>
+  </div>
+
+  <div class="shopping-list">
+    <a href="#/shop-user"><img src="assets/images/misc/cart.png"></a>
+  </div>
+
+  <div class="bills">
+    <a href="#/bill-user"><img src="assets/images/misc/payment.png"></a>
+  </div>
+
+</div>

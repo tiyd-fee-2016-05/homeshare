@@ -16,7 +16,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     $http({
       url: 'http://f6ed491e.ngrok.io/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chore_xp ,
       method: 'POST',
-      headers: {"Authorization": "ca273073-87e0-4f3e-97e8-6ef8f8c8c111"},
+      headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) },
       data: $scope.form
     }).success(function(data){
       $scope.data = data.data;
@@ -31,7 +31,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
 $http({
   url: 'http://f6ed491e.ngrok.io/homes/1/chores',
   method: 'GET',
-  headers: {'Authorization': "ca273073-87e0-4f3e-97e8-6ef8f8c8c111"}
+  headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
 }).success(function(data){
   $scope.totalChores = data;
   console.log($scope.totalChores);
@@ -67,7 +67,7 @@ $http({
           url: 'http://f6ed491e.ngrok.io/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
           data: $scope.form,
-          headers: {"Authorization":$scope.user_token}
+          headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
         }).success(function(data){
           $scope.data = data.data;
           console.log($scope.data);
@@ -83,7 +83,7 @@ $http({
       $http({
         url: 'http://f6ed491e.ngrok.io/homes/',
         method: 'GET',
-        headers: {"Authorization":$scope.user_token}
+        headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
       }).success(function(data){
         $scope.home_id = data.data;
         console.log($scope.home_id);
@@ -118,7 +118,7 @@ $(window).ready(function () {
 
   jQuery( ".nav-element" ).click( function() {
     jQuery( ".options" ).slideToggle();
-  }) // end .nav-element click event
+  }); // end .nav-element click event
 }]);
 
 //DROPDOWN MENU THAT POPULATES CHORES list
@@ -131,7 +131,7 @@ mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($root
                     method: 'POST',
                     url: 'http://f6ed491e.ngrok.io/homes/1/chores',
                     data: $scope.ChoreList,
-                    headers: {"Authorization":$scope.user_token}
+                    headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
                 }).success(function (result) {
                     $scope.ChoreList = result.chores.incomplete;
                     console.log($scope.ChoreList);
@@ -163,22 +163,22 @@ $( window ).load(function() {
   }]);
 
 
-        //XP BAR CONTROLLER
+        // XP BAR CONTROLLER
 
-        // mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
-        //
-        //     $http({
-        //       url: 'http://f6ed491e.ngrok.io/users/24',
-        //       method: 'GET',
-        //       headers: {"Authorization": ""},
-        //     }).success(function(data){
-        //       $scope.xp = data.user.housemate.total_exp;
-        //       console.log(data.user.housemate.total_exp);
-        //       $(function(){
-        //         setTimeout(function(e){
-        //           $(".progress").removeClass("none");
-        //           $(".progress").addClass("thirty");
-        //         }, 1000);
-        //       });
-        //     });
-        //   }]);
+        mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
+
+            $http({
+              url: 'http://f6ed491e.ngrok.io/users',
+              method: 'GET',
+              headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
+            }).success(function(data){
+              $scope.xp = data.user.total_exp;
+              console.log(data.user.total_exp);
+              $(function(){
+                setTimeout(function(e){
+                  $(".progress").removeClass("none");
+                  $(".progress").addClass("thirty");
+                }, 1000);
+              });
+            });
+          }]);

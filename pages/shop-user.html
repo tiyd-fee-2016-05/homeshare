@@ -1,8 +1,8 @@
 <main class="shop-user-main" >
   <section class="section-main">
     <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
-    <div ng-controller="avatardisplay" class="center-avatar">
-      <img class="user-avatar" src="assets/images/santa-claus.png" alt="user-avatar">
+    <div  class="center-avatar">
+      <img ng-controller="avatardisplay" class="user-avatar" src={{avatar}} alt="user-avatar">
     </div>
   </section><!-- end .section-main -->
 
@@ -10,6 +10,8 @@
   <section class="section-shopping-list">
     <h1 class="username">Username</h1>
     <h1 class="username2">Shopping List</h1>
+    <i class="fa fa-plus-square" aria-hidden="true"></i>
+
     <ul class="shopping-headings">
       <li><h2 class="qty-heading">Qty</h2></li>
       <li><h2 class="item-heading">Item</h2></li>
@@ -71,7 +73,7 @@
   </div>
 
   <div class="bills">
-    <img src="assets/images/misc/payment.png">
+    <a href="#/bill-user"><img src="assets/images/misc/payment.png"></a>
   </div>
 
 </div>
