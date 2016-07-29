@@ -106,11 +106,6 @@ $(window).ready(function () {
     console.log( "Hello" );
     $( ".options" ).slideToggle();
 
-    // thank you, http://www.w3schools.com/angular/tryit.asp?filename=try_ng_services_timeout, for help with the timeout service!!!
-    $timeout( function() {
-      $( ".options" ).slideToggle();
-    }, 3500 );
-
     // thank you http://www.electrictoolbox.com/jquery-scroll-bottom/ for your help
     // $( "html, body" ).animate( { scrollTop: $(document).width() }, 'slow' );
     // return false;
