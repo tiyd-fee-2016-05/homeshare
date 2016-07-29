@@ -10,7 +10,7 @@ mainApp.service('User', ['$location', function($location) {
             $location.path("/main");
         },
 
-        logOut: function() {
+            logOut : function() {
             storage.removeItem("user_token");
             $location.path("/landing");
         }
