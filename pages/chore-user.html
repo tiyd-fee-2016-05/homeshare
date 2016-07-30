@@ -22,13 +22,13 @@
       <li><h2 class="points-heading">Points</h2></li>
       <li><h2 class="confirm-heading">Complete?</h2></li>
     </ul>
-    <ul class="chore-list" ng-repeat="chore in totalChores">
+    <ul class="chore-list" ng-repeat="chores in totalChores">
       <li>
-        <!-- <img class="chore-icon" src={{chores[totalChores.indexOf(chores)].ChoreIcon}} alt="Picture of chore"> -->
-        <h2 class="chore-name">{{chore.name}}</h2>
-        <h2 class="chore-value">{{chore.chore_xp}}</h2>
-        <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>
-        <h2 class="chore-description">{{chore.description}}</h2>
+        <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chores)]}}' alt="Picture of chore">
+        <h2 class="chore-name">{{chores.name}}</h2>
+        <h2 class="chore-value">{{chores.chore_xp}}</h2>
+        <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chores )"></span>
+        <h2 class="chore-description">{{chores.description}}</h2>
       </li>
     </ul>
   </section><!-- end .section-chores -->

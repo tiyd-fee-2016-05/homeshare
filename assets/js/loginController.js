@@ -3,8 +3,8 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
     //     $location.path("/");
     // }
     // var rootUrl= "http://6e62d5d1.ngrok.io/";
-
-    var rootUrl= "https://tiy-homeshare.herokuapp.com/users/me/";
+    // var rootUrl= "http://tiy-homeshare.herokuapp.com/users/me/"; // Erik's
+    var rootUrl= "https://tiy-homeshare.herokuapp.com/users/me/"; // Travis'
 
     $( ".landing-header" ).css( "visibility", "hidden" );
 
@@ -12,7 +12,13 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
       console.log("Submitted");
         $http({
             method: "POST",
-            url:   "https://tiy-homeshare.herokuapp.com/users/me",
+            // url:   "http://tiy-homeshare.herokuapp.com/users/sign_in", // Erik's?
+            data: {
+                email: $rootScope.email,
+                password: "password",
+            },
+            // url:   "http://f6ed491e.ngrok.io/users/me",
+            url:   "https://tiy-homeshare.herokuapp.com/users/me", // Travis'?
             // data: {
             //     email:$rootScope.email,
             //     password:$rootScope.password,
@@ -31,14 +37,12 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
         $location.path("/landing");      };
   }]);
 
-      //       console.log(response.data.authentication.token_info.unique_token);
-      //       console.log(response.data.email);
+      // console.log(response.data.authentication.token_info.unique_token);
+      // console.log(response.data.email);
       // $rootScope.username= response.data.username
       // $rootScope.token = response.data.authentication.token_info.unique_token
       // $rootScope.email= response.data.email
-
-
-//     $rootScope.logout = function() {
-//         User.logOut();
+      // $rootScope.logout = function() {
+      // User.logOut();
 //     };
 // }]);
