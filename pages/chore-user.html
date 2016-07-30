@@ -15,7 +15,7 @@
     <h1 class="username">Username Chores</h1>
     <ul class="chore-list" ng-repeat="chores in totalChores">
       <li>
-        <img class="chore-icon" src={{chores[totalChores.indexOf(chores)].ChoreIcon}} alt="Picture of chore">
+        <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chores)]}}' alt="Picture of chore">
         <h2 class="chore-name">{{chores.name}}</h2>
         <h2 class="chore-value">{{chores.chore_xp}}</h2>
         <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chores )"></span>

@@ -6,7 +6,7 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
 
     console.log( JSON.parse(localStorage.getItem( "user_token")) + " is a " + typeof localStorage.getItem( "user_token") );
     $http({
-      url: 'http://f6ed491e.ngrok.io/users/me',
+      url: 'http://tiy-homeshare.herokuapp.com/users/me',
       method: 'GET',
       headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
     }).success( function(data) {
@@ -153,7 +153,7 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
 
     $http({
         method: "PUT",
-        url:    "http://f6ed491e.ngrok.io/users/" + $scope.user_id,
+        url:    "http://tiy-homeshare.herokuapp.com/users/" + $scope.user_id,
         headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
         data: {
             avatar:    $scope.currentAvatar,
