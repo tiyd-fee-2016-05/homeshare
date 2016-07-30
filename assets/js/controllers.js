@@ -15,7 +15,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     console.log($scope.form);
     $http({
       // url: 'http://tiy-homeshare.herokuapp.com/homes/16/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chore_xp , // Erik's
-      url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chore_xp , // Travis'
+      url: 'https://tiy-homeshare.herokuapp.com/homes/16/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chore_xp , // Travis'
       method: 'POST',
       headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
       data: $scope.form
@@ -31,7 +31,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
   }; // end submitForm click event
 $http({
   // url: 'http://tiy-homeshare.herokuapp.com/homes/16/chores', // Erik's
-  url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores', // Travis'
+  url: 'https://tiy-homeshare.herokuapp.com/homes/16/chores', // Travis'
   method: 'GET',
   headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   }) // end request
@@ -124,7 +124,7 @@ mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($root
       $http({
           method: 'POST',
           // url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores', // Erik's
-          url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores', // Travis'
+          url: 'https://tiy-homeshare.herokuapp.com/homes/16/chores', // Travis'
           data: $scope.ChoreList,
           headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
       }).success(function (result) {

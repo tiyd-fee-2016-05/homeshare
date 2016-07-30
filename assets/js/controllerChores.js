@@ -101,7 +101,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
         $scope.choreIcons.push( $scope.chores[1].ChoreIcon);
       }
 
-      else if( $scope.totalChores[i].name.match( /dish/gi ) ) {
+      else if( $scope.totalChores[i].name.match( /dish/gi ) || $scope.totalChores[i].description.match( /dish/gi )) {
         $scope.choreIcons.push( $scope.chores[2].ChoreIcon );
       }
 
