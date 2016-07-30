@@ -144,15 +144,13 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
     } // end for loop
   }); // end GET GET success
 
-  $scope.removeChore = function( chores ) {
-    var clickedChore = $scope.totalChores.indexOf( chores );
-
-    $scope.removeChore = function( chore ) {
+    $scope.removeChore = function( chores ) {
+      var clickedChore = $scope.totalChores.indexOf( chores );
       var clickedChoreId = $scope.totalChores[clickedChore].id;
-      console.log( $scope.totalChores.indexOf( chore) );
+      console.log( $scope.totalChores.indexOf( chores) );
       console.log( $scope.totalChores[clickedChore].id );
-      $scope.chores.splice( $scope.totalChores.indexOf( chore ), 1 );
-      $scope.totalChores.splice( $scope.totalChores.indexOf( chore ), 1 );
+      $scope.chores.splice( $scope.totalChores.indexOf( chores ), 1 );
+      $scope.totalChores.splice( $scope.totalChores.indexOf( chores ), 1 );
 
       $http({
         url: 'http://tiy-homeshare.herokuapp.com/homes/' + 16 + '/chores/' + clickedChoreId + '/mark_complete', // Erik's
@@ -165,5 +163,4 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
         console.log($scope.form);
       });
     }; // end removeChore()
-  };
 }]); // end ControllerChores

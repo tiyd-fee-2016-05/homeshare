@@ -22,7 +22,7 @@
       <li><h2 class="points-heading">Points</h2></li>
       <li><h2 class="confirm-heading">Complete?</h2></li>
     </ul>
-    <ul class="chore-list" ng-repeat="chore in totalChores">
+    <ul class="chore-list" ng-repeat="chores in totalChores">
       <li>
         <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chores)]}}' alt="Picture of chore">
         <h2 class="chore-name">{{chores.name}}</h2>
