@@ -66,14 +66,14 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
       }
     ]; // end $scope.chores
 
-  $http({
-    url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores',
-    method: 'GET',
-    headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
-  }).success( function(data) {
-    $scope.totalChores = data.chores.incomplete;
-    console.log($scope.totalChores);
-  }); // end GET GET success
+  // $http({
+  //   url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores',
+  //   method: 'GET',
+  //   headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
+  // }).success( function(data) {
+  //   $scope.totalChores = data.chores.incomplete;
+  //   console.log($scope.totalChores);
+  // }); // end GET GET success
 
   $http({
     url: 'http://tiy-homeshare.herokuapp.com/homes/16/chores',
@@ -83,7 +83,6 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
     $scope.totalChores = data.chores.incomplete;
     // $scope.totalChoresName = data.chores.incomplete.name;
     console.log($scope.totalChores);
-
     console.log( $scope.totalChores[0] );
 
     for( var i = 0; i < $scope.totalChores.length; i++ ) {
@@ -166,4 +165,5 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
         console.log($scope.form);
       });
     }; // end removeChore()
+  };
 }]); // end ControllerChores
