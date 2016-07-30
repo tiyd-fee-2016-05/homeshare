@@ -3,7 +3,8 @@ mainApp.controller( "ControllerShopping", [ "$scope", "$http", function( $scope,
   $scope.totalShoppingList;
 
   $http({
-    url: "http://tiy-homeshare.herokuapp.com/homes/16/list/items",
+    // url: "http://tiy-homeshare.herokuapp.com/homes/16/list/items", // this is Erik's
+    url: "https://tiy-homeshare.herokuapp.com/homes/15/list/items", // this is Travis'
     method: "GET",
     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   })// end $http GET request
@@ -23,8 +24,12 @@ mainApp.controller( "ControllerShopping", [ "$scope", "$http", function( $scope,
 
     $http({
       // url: 'https://46522539.ngrok.io/homes/1/list/items/' + clickedItemId + '/purchase',
-      url: 'http://tiy-homeshare.herokuapp.com/homes/16/list/items/' + clickedItemId + '/purchase', // this one works!!!!!!!!
+      // url: 'http://tiy-homeshare.herokuapp.com/homes/16/list/items/' + clickedItemId + '/purchase', // this one works!!!!!!!!...Erik's
       // url: 'http://tiy-homeshare.herokuapp.com/users/me/homes/1/list/items/' + clickedItemId + '/purchase', // this works too...they all should work b/c the problem was on the back end!!!
+
+      // url: 'https://46522539.ngrok.io/homes/15/list/items/' + clickedItemId + '/purchase',
+      url: 'https://tiy-homeshare.herokuapp.com/homes/15/list/items/' + clickedItemId + '/purchase', // this one works!!!!!!!!...Travis'
+      // url: 'https://tiy-homeshare.herokuapp.com/users/me/homes/15/list/items/' + clickedItemId + '/purchase', // this works too...they all should work b/c the problem was on the back end!!!
       method: "POST",
       headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
     }) // end $http POST request

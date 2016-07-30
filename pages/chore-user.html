@@ -4,6 +4,7 @@
     <div ng-controller="avatardisplay" class="center-avatar">
       <img class="user-avatar" src="{{avatar}}" alt="user-avatar">
     </div>
+
   </section><!-- end .section-main -->
   <!-- <div ng-controller="drpdwnCtrl">
       <select ng-model="drpdpwnvalue" ng-repeat="chore in ChoreList">
@@ -11,9 +12,17 @@
       </select>
   </div> -->
   <!-- chore section of page...will include user name and chores unordered list -->
+
+  <div class="ca-add"><a href="#/chore-admin"><img src="assets/images/misc/add.png"></a></div>
+
   <section ng-controller="ControllerChores" class="section-chores">
     <h1 class="username">Username Chores</h1>
-    <ul class="chore-list" ng-repeat="chores in totalChores">
+    <ul class="chores-headings">
+      <li><h2 class="type-heading">Chore</h2></li>
+      <li><h2 class="points-heading">Points</h2></li>
+      <li><h2 class="confirm-heading">Complete?</h2></li>
+    </ul>
+    <ul class="chore-list" ng-repeat="chore in totalChores">
       <li>
         <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chores)]}}' alt="Picture of chore">
         <h2 class="chore-name">{{chores.name}}</h2>
@@ -35,7 +44,7 @@
     <a href="#/main"><img src="assets/images/misc/house.png"></a>
   </div>
 
-<div class="shopping-list"> 
+<div class="shopping-list">
     <a href="#/shop-user"><img src="assets/images/misc/cart.png"></a>
   </div>
 

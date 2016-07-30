@@ -1,4 +1,4 @@
-mainApp.controller('HomeController', ['$scope', '$http', '$location', 'User', '$rootScope', function($rootScope, $scope, $http, $location, User) {
+mainApp.controller('HomeController', ['$scope', '$http', '$location', 'User',  '$rootScope', function($rootScope, $scope, $http, $location, User) {
 
   // $scope.user_token = User.getToken();
 
@@ -6,11 +6,10 @@ mainApp.controller('HomeController', ['$scope', '$http', '$location', 'User', '$
         $location.path("/signup");
     }
 
-
-
     $http({
         method:  "GET",
-        url:     "http://tiy-homeshare.herokuapp.com/users/me",
+        // url:     "http://tiy-homeshare.herokuapp.com/users/me", // Erik's?
+        url:     "https://tiy-homeshare.herokuapp.com/users/me", // Travis'?
         headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
     }).then(function(response) {
         $scope.user = response.data;
