@@ -9,11 +9,12 @@
     </section><!-- end .section-main -->
     <div  id="pgbar-container">
       <br />
-      <div class='progress'><span class='twenty status'></span></div>
+      <!-- <div ng-controller="xpBar" class='progress'><span class='{{xp}} status'></span></div> -->
     </div>    <!-- chore section of page...will include user name and chores unordered list -->
     <section  ng-controller="ControllerChores" class="main-section-chores">
       <h1 class="main-username">Recent Chores</h1>
       <a href="#/chore-user"><i style="font-size: 6em; position: absolute; margin: -1.9em 8em 0 8.9em;" class="fa fa-list-ul" aria-hidden="true"></i></a>
+      <progress ng-controller="xpBar" value="{{xp}}" max="2000"></progress>
       <ul class="main-chores-headings">
         <li><h2 class="main-type-heading">Chore</h2></li>
         <li><h2 class="main-points-heading">Points</h2></li>
