@@ -179,21 +179,21 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
         //   }]);
 
         // XP BAR CONTROLLER
-        //
-        // mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
-        //
-        //     $http({
-        //       url: 'https://tiy-homeshare.herokuapp.com/users',
-        //       method: 'GET',
-        //       headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
-        //     }).success(function(data){
-        //       $scope.xp = data.user.total_exp;
-        //       console.log(data.user.total_exp);
-        //       $(function(){
-        //         setTimeout(function(e){
-        //           $(".progress").removeClass("none");
-        //           $(".progress").addClass("thirty");
-        //         }, 1000);
-        //       });
-        //     });
-        //   }]);
+
+        mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
+
+            $http({
+              url: 'https://tiy-homeshare.herokuapp.com/users/me',
+              method: 'GET',
+              headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
+            }).success(function(data){
+              $scope.xp = data.user.total_exp;
+              console.log($scope.xp);
+              // $(function(){
+              //
+              //     $( "#progressbar" ).progressbar({
+              //         value: $scope.xp
+              //     });
+              // });
+            });
+        }]);

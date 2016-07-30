@@ -26,10 +26,23 @@ container: 100%,
 //   margin-top: 10em;
 //   position: absolute;
 // }
+progress {
 
+  background-color: #f3f3f3;
+  border: 0;
+  height: 6em;
+  border-radius: 9px;
+  width: 56em;
+  margin-left: 5em;
+
+  }
 * {
     box-sizing: border-box;
 }
+
+//XP BAR USING .progressbar
+
+
 
 //Divider bar
 .divider{
