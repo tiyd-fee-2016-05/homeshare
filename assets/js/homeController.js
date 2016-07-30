@@ -1,4 +1,4 @@
-mainApp.controller('HomeController', ['$scope', '$http', '$location', 'User', '$rootScope', function($rootScope, $scope, $http, $location, User) {
+mainApp.controller('HomeController', ['$scope', '$http', '$location', 'User',  '$rootScope', function($rootScope, $scope, $http, $location, User) {
 
   // $scope.user_token = User.getToken();
 

@@ -1,9 +1,9 @@
-mainApp.controller( "ControllerChores", [ "$scope", "$http", "$rootScope", function( $scope, $http, $rootScope ) {
+mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, $http ) {
 
   // $scope.totalChores;
 
   $http({
-    url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
+    url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores',
     method: 'GET',
     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   }).success( function(data) {
@@ -65,16 +65,16 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http", "$rootScope", funct
   ];
 
 
-  $scope.removeChore = function( chores ) {
-    var clickedChore = $scope.totalChores.indexOf( chores );
+  $scope.removeChore = function( chore ) {
+    var clickedChore = $scope.totalChores.indexOf( chore );
     var clickedChoreId = $scope.totalChores[clickedChore].id;
-    console.log( $scope.totalChores.indexOf( chores) );
+    console.log( $scope.totalChores.indexOf( chore) );
     console.log( $scope.totalChores[clickedChore].id );
-    $scope.chores.splice( $scope.totalChores.indexOf( chores ), 1 );
-    $scope.totalChores.splice( $scope.totalChores.indexOf( chores ), 1 );
+    $scope.chores.splice( $scope.totalChores.indexOf( chore ), 1 );
+    $scope.totalChores.splice( $scope.totalChores.indexOf( chore ), 1 );
 
     $http({
-      url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores/' + clickedChoreId + '/mark_complete',
+      url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores/' + clickedChoreId + '/mark_complete',
       method: 'POST',
       headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
       // data: $scope.form

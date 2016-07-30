@@ -20,7 +20,9 @@ body {
   position: absolute;
   width: 8em; }
   .options li {
-    background: #A0C1D1; }
+    background: #A0C1D1;
+    line-height: 2;
+    padding-left: 1em; }
   .options a {
     text-decoration: none;
     color: #3B4051; }
@@ -448,6 +450,37 @@ body {
     content: " ";
     display: block;
     clear: both; }
+  .chore-user-main .ca-add img {
+    position: relative;
+    height: 6em;
+    float: left;
+    top: 25em;
+    left: 2em; }
+  .chore-user-main .chores-headings {
+    font-family: 'Roboto', sans-serif;
+    color: #1985A1;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2.7em;
+    font-weight: 400; }
+    .chore-user-main .chores-headings li {
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%;
+      text-align: center;
+      margin: 1em 0 1em -1em; }
+    .chore-user-main .chores-headings .type-heading {
+      margin-left: 5.5em; }
+    .chore-user-main .chores-headings .points-heading {
+      width: 40.67797%;
+      float: left;
+      margin-right: 1.69492%;
+      width: 8em;
+      margin-left: 5em; }
+    .chore-user-main .chores-headings .confirm-heading {
+      margin: 0 0 0 8em; }
   .chore-user-main .section-main {
     width: 100%;
     float: left;
@@ -1132,7 +1165,8 @@ body {
           width: 4.5em;
           margin-right: .75em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-name {
-          margin-left: 1em; }
+          margin-left: 2em;
+          text-transform: capitalize; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-value {
           width: 15.25424%;
           float: left;

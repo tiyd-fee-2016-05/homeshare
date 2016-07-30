@@ -31,7 +31,6 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/main", {
     templateUrl: "pages/main.html",
-    controller: "ControllerChores",
   })
   .when( "/user", {
     templateUrl: "pages/user.html"

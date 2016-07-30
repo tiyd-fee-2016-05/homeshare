@@ -322,7 +322,8 @@ container: 100%,
       }
 
       .main-chore-name {
-        margin-left: 1em;
+        margin-left: 2em;
+        text-transform: capitalize;
       }
 
       .main-chore-value {
@@ -341,6 +342,7 @@ container: 100%,
 
       .main-chore-description {
         margin: 0 0 0 15%;
+        text-transform: capitalize;
         // background: red;
       }
       }

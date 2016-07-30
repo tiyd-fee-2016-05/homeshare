@@ -7,11 +7,11 @@
         <img class="main-user-avatar" src="{{avatar}}" alt="user-avatar">
       </div>
     </section><!-- end .section-main -->
-    <div ng-controller="xpBar" id="pgbar-container">
+    <div  id="pgbar-container">
       <br />
       <div class='progress'><span class='twenty status'></span></div>
     </div>    <!-- chore section of page...will include user name and chores unordered list -->
-    <section class="main-section-chores">
+    <section  ng-controller="ControllerChores" class="main-section-chores">
       <h1 class="main-username">Recent Chores</h1>
       <a href="#/chore-user"><i style="font-size: 6em; position: absolute; margin: -1.9em 8em 0 8.9em;" class="fa fa-list-ul" aria-hidden="true"></i></a>
       <ul class="main-chores-headings">
@@ -19,9 +19,9 @@
         <li><h2 class="main-points-heading">Points</h2></li>
         <li><h2 class="main-confirm-heading">Complete?</h2></li>
       </ul>
-      <ul class="main-chore-list"  ng-repeat="chore in totalChores | orderBy: 'created_at':true | limitTo:3">
+      <ul  class="main-chore-list"  ng-repeat="chore in totalChores | orderBy: 'created_at':true | limitTo:3">
         <li>
-          <img class="main-chore-icon" src={{chores[totalChores.indexOf(chore)].ChoreIcon}} alt="Picture of chore">
+          <!-- <img class="main-chore-icon" src={{chores[totalChores.indexOf(chores)].ChoreIcon}} alt="Picture of chore"> -->
           <h2 class="main-chore-name">{{chore.name}}</h2>
           <h2 class="main-chore-value">{{chore.chore_xp}}</h2>
           <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>

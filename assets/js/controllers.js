@@ -14,7 +14,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     };
     console.log($scope.form);
     $http({
-      url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chore_xp ,
+      url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chore_xp ,
       method: 'POST',
       headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) },
       data: $scope.form
@@ -29,7 +29,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
 
   }; // end submitForm click event
 $http({
-  url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
+  url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores',
   method: 'GET',
   headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
 }).success(function(data){
@@ -37,16 +37,7 @@ $http({
   console.log($scope.totalChores);
 
 });
-// $http({
 
-//   url: 'https://tiy-homeshare.herokuapp.com/users/me/homes/1/chores',
-//   method: 'GET',
-//   headers: {"Authorization":$scope.user_token}
-// }).success(function(data){
-//   $scope.totalChores = data;
-//   console.log($scope.totalChores);
-//
-// });
 
     }]);
 
@@ -124,7 +115,7 @@ mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($root
             $scope.fillChoreList = function () {
                 $http({
                     method: 'POST',
-                    url: 'https://tiy-homeshare.herokuapp.com/homes/1/chores',
+                    url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores',
                     data: $scope.ChoreList,
                     headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
                 }).success(function (result) {
@@ -159,7 +150,7 @@ $( window ).load(function() {
 
 
         // XP BAR CONTROLLER
-
+        //
         // mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
         //
         //     $http({
