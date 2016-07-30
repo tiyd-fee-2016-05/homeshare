@@ -3,33 +3,46 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
     //     $location.path("/");
     // }
     // var rootUrl= "http://6e62d5d1.ngrok.io/";
+    // var rootUrl= "http://tiy-homeshare.herokuapp.com/users/me/"; // Erik's
+    var rootUrl= "https://tiy-homeshare.herokuapp.com/users/me/"; // Travis'
 
-    var rootUrl= "http://f6ed491e.ngrok.io/users/me/";
-
+    $( ".landing-header" ).css( "visibility", "hidden" );
 
     $scope.loginUser = function() {
       console.log("Submitted");
         $http({
             method: "POST",
-            url:   rootUrl + "login",
+            // url:   "http://tiy-homeshare.herokuapp.com/users/sign_in", // Erik's?
             data: {
-                email:$rootScope.email,
-                password:"password",
-            }
+                email: $rootScope.email,
+                password: "password",
+            },
+            // url:   "http://f6ed491e.ngrok.io/users/me",
+            url:   "https://tiy-homeshare.herokuapp.com/users/me", // Travis'?
+            // data: {
+            //     email:$rootScope.email,
+            //     password:$rootScope.password,
+            // },
+            headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
         }).then(function(response) {
             // TODO: store and respect expiration time??
-            User.logIn(response.data.authentication.token_info.unique_token);
-            console.log(response.data.authentication.token_info.unique_token);
-            console.log(response.data.email);
-      $rootScope.username= response.data.username
-      $rootScope.token = response.data.authentication.token_info.unique_token
-      $rootScope.email= response.data.email
-        }, function() {
-            alert("Something went wrong!");
-        });
-    };
+            User.logIn(JSON.parse(localStorage.getItem( "user_token")));
+          }, function() {
+              alert("Something went wrong!");
+          });
+      };
 
-    $rootScope.logout = function() {
-        User.logOut();
-    };
-}]);
+        $scope.logout = function() {
+        storage.removeItem("user_token");
+        $location.path("/landing");      };
+  }]);
+
+      // console.log(response.data.authentication.token_info.unique_token);
+      // console.log(response.data.email);
+      // $rootScope.username= response.data.username
+      // $rootScope.token = response.data.authentication.token_info.unique_token
+      // $rootScope.email= response.data.email
+      // $rootScope.logout = function() {
+      // User.logOut();
+//     };
+// }]);

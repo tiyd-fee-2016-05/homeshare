@@ -1,26 +1,28 @@
-<main class="shop-user-main" >
+<main ng-controller="ControllerShopping" class="shop-user-main" >
   <section class="section-main">
     <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
-    <div class="center-avatar">
-      <img class="user-avatar" src="assets/images/santa-claus.png" alt="user-avatar">
+    <div ng-controller="avatardisplay" class="center-avatar">
+      <img  class="user-avatar" src={{avatar}} alt="user-avatar">
     </div>
   </section><!-- end .section-main -->
+  <div class="sa-add"><a href="#/shop-admin"><img src="assets/images/misc/add.png"></a></div>
 
   <!-- chore section of page...will include user name and chores unordered list -->
   <section class="section-shopping-list">
     <h1 class="username">Username</h1>
     <h1 class="username2">Shopping List</h1>
+
     <ul class="shopping-headings">
       <li><h2 class="qty-heading">Qty</h2></li>
       <li><h2 class="item-heading">Item</h2></li>
       <li><h2 class="checkbox-heading">Complete</h2></li>
     </ul>
-    <ul class="shopping-list" ng-repeat="item in totalShoppingList">
+    <ul class="shopping-list" ng-repeat="items in totalShoppingList">
       <li>
-        <h2 class="qty">{{item.item_xp}}</h2>
-        <h2 class="shopping-item">{{item.title}}</h2>
-        <input class="item-checkbox" type="checkbox" ng-click="removeItem( item )">
-        <h2 class="shopping-item">{{item.description}}</h2>
+        <h2 class="qty">{{items.item_xp}}</h2>
+        <h2 class="shopping-item">{{items.title}}</h2>
+        <input class="item-checkbox" type="checkbox" ng-click="removeItem( items )">
+        <h2 class="shopping-item">{{items.description}}</h2>
       </li>
       <!-- <li>
         <h2 class="qty">10</h2>
@@ -71,7 +73,7 @@
   </div>
 
   <div class="bills">
-    <img src="assets/images/misc/payment.png">
+    <a href="#/bill-user"><img src="assets/images/misc/payment.png"></a>
   </div>
 
 </div>

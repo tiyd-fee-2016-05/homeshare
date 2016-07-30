@@ -1,25 +1,34 @@
 <main class="chore-user-main">
   <section class="section-main">
     <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
-    <div class="center-avatar">
-      <img class="user-avatar" src="assets/images/santa-claus.png" alt="user-avatar">
+    <div ng-controller="avatardisplay" class="center-avatar">
+      <img class="user-avatar" src="{{avatar}}" alt="user-avatar">
     </div>
+
   </section><!-- end .section-main -->
-  <div ng-controller="drpdwnCtrl">
+  <!-- <div ng-controller="drpdwnCtrl">
       <select ng-model="drpdpwnvalue" ng-repeat="chore in ChoreList">
           <option value="" label="Select a chore"></option>
       </select>
-  </div>
+  </div> -->
   <!-- chore section of page...will include user name and chores unordered list -->
-  <section class="section-chores">
+
+  <div class="ca-add"><a href="#/chore-admin"><img src="assets/images/misc/add.png"></a></div>
+
+  <section ng-controller="ControllerChores" class="section-chores">
     <h1 class="username">Username Chores</h1>
-    <ul class="chore-list" ng-repeat="chore in totalChores">
+    <ul class="chores-headings">
+      <li><h2 class="type-heading">Chore</h2></li>
+      <li><h2 class="points-heading">Points</h2></li>
+      <li><h2 class="confirm-heading">Complete?</h2></li>
+    </ul>
+    <ul class="chore-list" ng-repeat="chores in totalChores">
       <li>
-        <img class="chore-icon" src={{chores[totalChores.indexOf(chore)].ChoreIcon}} alt="Picture of chore">
-        <h2 class="chore-name">{{chore.name}}</h2>
-        <h2 class="chore-value">{{chore.chore_xp}}</h2>
-        <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>
-        <h2 class="chore-description">{{chore.description}}</h2>
+        <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chores)]}}' alt="Picture of chore">
+        <h2 class="chore-name">{{chores.name}}</h2>
+        <h2 class="chore-value">{{chores.chore_xp}}</h2>
+        <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chores )"></span>
+        <h2 class="chore-description">{{chores.description}}</h2>
       </li>
     </ul>
   </section><!-- end .section-chores -->
@@ -35,12 +44,12 @@
     <a href="#/main"><img src="assets/images/misc/house.png"></a>
   </div>
 
-  <div class="shopping-list">
+<div class="shopping-list">
     <a href="#/shop-user"><img src="assets/images/misc/cart.png"></a>
   </div>
 
   <div class="bills">
-    <img src="assets/images/misc/payment.png">
+    <a href="#/bill-user"><img src="assets/images/misc/payment.png"></a>
   </div>
 
 </div>

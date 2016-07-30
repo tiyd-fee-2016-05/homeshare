@@ -6,7 +6,8 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
 
     console.log( JSON.parse(localStorage.getItem( "user_token")) + " is a " + typeof localStorage.getItem( "user_token") );
     $http({
-      url: 'http://f6ed491e.ngrok.io/users/me',
+      url: 'http://tiy-homeshare.herokuapp.com/users/me', // Erik's
+      url: 'https://tiy-homeshare.herokuapp.com/users/me', // Travis'
       method: 'GET',
       headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
     }).success( function(data) {
@@ -15,7 +16,6 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
       // $scope.totalChores = data.chores.incomplete;
     }); // end GET GET success
   }); // end on load event
-
 
   // used to aid in drop down of chore list on profile-edit.html.  Initially set to false so list will not display on load.
   $scope.showChores = false;
@@ -103,7 +103,6 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
   // current avatar.  Will be used to display the appropriate avatar in profile-edit.html.  Will reference $scope.avatars particular index.
   $scope.currentAvatar = $scope.avatars[0];
 
-
   // will be used to keep track of left AND right clicks and will be the index of the $scope.avatars
   var avatarClick = 0;
 
@@ -148,21 +147,22 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
     jQuery( ".profile-location-input" ).val("");
     jQuery( ".profile-venmo-input" ).val("");
 
-    // $http({
-    //     method: "PUT",
-    //     url:    "http://f6ed491e.ngrok.io/users/" + $scope.user_id,
-    //     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
-    //     data: {
-    //         avatar:    $scope.currentAvatar,
-    //         venmo_username: $scope.name
-    //     }
-    // }).then(function(response) {
-    //     console.log( "Success!!!" + response );
-    //     // localStorage.setItem("user_token", JSON.stringify(response.data.authentication.token_info.unique_token));
-    //     // localStorage.setItem("user_id", JSON.stringify(response.data.authentication.token_info.uni) )
-    // }, function() {
-    //     alert("Something went wrong!"); // fixme: be better
-    // });
+    $http({
+        method: "PUT",
+        url:    "http://tiy-homeshare.herokuapp.com/users/" + $scope.user_id, // Erik's
+        url:    "https://tiy-homeshare.herokuapp.com/users/" + $scope.user_id, // Travis'
+        headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
+        data: {
+            avatar:    $scope.currentAvatar,
+            venmo_username: $scope.name
+        }
+    }).then(function(response) {
+        console.log( "Success!!!" + response );
+        // localStorage.setItem("user_token", JSON.stringify(response.data.authentication.token_info.unique_token));
+        // localStorage.setItem("user_id", JSON.stringify(response.data.authentication.token_info.uni) )
+    }, function() {
+        alert("Something went wrong!"); // fixme: be better
+    });
 
   } // end sendProfile click event
 

@@ -6,12 +6,12 @@ columns: 12,
 container: 100%,
 );
 
-#ca-wrapper{
+#sa-wrapper{
 @include container;
 @include span(12 of 12);
 
 
-.ca-header{
+.sa-header{
   @include span(12 of 12);
   margin-left: auto;
   margin-right: auto;
@@ -29,7 +29,7 @@ container: 100%,
   height: 65em;
   opacity: .35;
 }
-.ca-form{
+.sa-form{
   @include span(4 of 12);
   display: block;
   position: absolute;
@@ -50,7 +50,7 @@ container: 100%,
     font-size: 3em;
     padding-bottom: 5px;
   }
-  .ca-submit{
+  .sa-submit{
     margin-left: 11.3em;
     margin-right: auto;
     margin-top: 3.5em;

@@ -5,8 +5,9 @@
     container: 100%
   );
 
-.shop-user-main {
 
+
+.shop-user-main {
   @include container;
   box-sizing: border-box;
   background-color: $background;
@@ -19,6 +20,15 @@
     color: $color-user-text;
     // margin: 0 0 0 10%;
     margin-top: 2em;
+
+    .sa-add{
+      img{
+        float: right;
+        position: relative;
+        height: 6em;
+        margin-top: -7.5em;
+      }
+    }
 
     .center-avatar {
       @include span( 12 of 12 );
@@ -36,6 +46,7 @@
     @include span( 12 of 12 );
     background-color: $background;
     overflow: auto;
+
 
     .username,
     .username2 {

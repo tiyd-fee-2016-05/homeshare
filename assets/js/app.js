@@ -31,7 +31,6 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/main", {
     templateUrl: "pages/main.html",
-    controller: "ControllerChores",
   })
   .when( "/user", {
     templateUrl: "pages/user.html"
@@ -41,7 +40,6 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/shop-user", {
     templateUrl: "pages/shop-user.html",
-    controller: "ControllerShopping"
   })
   .when( "/chore-admin", {
     templateUrl: "pages/chore-admin.html",
@@ -49,7 +47,6 @@ mainApp.config( function($routeProvider) {
   })
   .when( "/chore-user", {
     templateUrl: "pages/chore-user.html",
-    controller: "ControllerChores"
   })
   .when( "/bill-admin", {
     templateUrl: "pages/bill-admin.html"
