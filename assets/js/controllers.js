@@ -67,7 +67,7 @@ $http({
           url: 'http://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent ,
           method: 'POST',
           data: $scope.form,
-          headers: {"Authorization":$scope.user_token}
+          headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
         }).success(function(data){
           $scope.data = data.data;
           console.log($scope.data);
@@ -83,7 +83,7 @@ $http({
       $http({
         url: 'http://tiy-homeshare.herokuapp.com/homes/',
         method: 'GET',
-        headers: {"Authorization":$scope.user_token}
+        headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
       }).success(function(data){
         $scope.home_id = data.data;
         console.log($scope.home_id);
@@ -113,7 +113,7 @@ $(window).ready(function () {
 
   jQuery( ".nav-element" ).click( function() {
     jQuery( ".options" ).slideToggle();
-  }) // end .nav-element click event
+  }); // end .nav-element click event
 }]);
 
 //DROPDOWN MENU THAT POPULATES CHORES list
@@ -126,7 +126,7 @@ mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($root
                     method: 'POST',
                     url: 'http://tiy-homeshare.herokuapp.com/homes/1/chores',
                     data: $scope.ChoreList,
-                    headers: {"Authorization":$scope.user_token}
+                    headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
                 }).success(function (result) {
                     $scope.ChoreList = result.chores.incomplete;
                     console.log($scope.ChoreList);
@@ -158,6 +158,7 @@ $( window ).load(function() {
   }]);
 
 
+
         //XP BAR CONTROLLER
 
         // mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
@@ -177,3 +178,23 @@ $( window ).load(function() {
         //       });
         //     });
         //   }]);
+
+        // XP BAR CONTROLLER
+
+        mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
+
+            $http({
+              url: 'http://f6ed491e.ngrok.io/users',
+              method: 'GET',
+              headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
+            }).success(function(data){
+              $scope.xp = data.user.total_exp;
+              console.log(data.user.total_exp);
+              $(function(){
+                setTimeout(function(e){
+                  $(".progress").removeClass("none");
+                  $(".progress").addClass("thirty");
+                }, 1000);
+              });
+            });
+          }]);
