@@ -10,7 +10,7 @@ mainApp.controller("shopAdminController", ['$scope', '$http', function($scope, $
     };
     console.log($scope.form);
     $http({
-      url: 'https://tiy-homeshare.herokuapp.com/homes/15/list/items?title=' + $scope.itemName + '&item_xp=' + $scope.item_xp ,
+      url: 'https://tiy-homeshare.herokuapp.com/homes/18/list/items?title=' + $scope.itemName + '&item_xp=' + $scope.item_xp ,
       method: 'POST',
       headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) },
       data: $scope.form
@@ -25,7 +25,7 @@ mainApp.controller("shopAdminController", ['$scope', '$http', function($scope, $
 
   }; // end submitForm click event
 $http({
-  url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores',
+  url: 'https://tiy-homeshare.herokuapp.com/homes/18/chores',
   method: 'GET',
   headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
 }).success(function(data){
