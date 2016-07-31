@@ -160,7 +160,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
         // data: $scope.form
       }).success(function(data){
         $scope.data = data.data;
-        console.log($scope.form);
+        console.log($scope.data);
       });
     }; // end removeChore()
 }]); // end ControllerChores
