@@ -25,7 +25,7 @@ mainApp.controller("shopAdminController", ['$scope', '$http', function($scope, $
 
   }; // end submitForm click event
 $http({
-  url: 'https://tiy-homeshare.herokuapp.com/homes/15/chores',
+  url: 'https://tiy-homeshare.herokuapp.com/homes/16/list/items',
   method: 'GET',
   headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
 }).success(function(data){

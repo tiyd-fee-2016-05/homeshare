@@ -463,7 +463,7 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    font-size: 2.7em;
+    font-size: 3.5em;
     font-weight: 400; }
     .chore-user-main .chores-headings li {
       width: 23.72881%;
@@ -472,7 +472,7 @@ body {
       text-align: center;
       margin: 1em 0 1em -1em; }
     .chore-user-main .chores-headings .type-heading {
-      margin-left: 5.5em; }
+      margin-left: 5.85em; }
     .chore-user-main .chores-headings .points-heading {
       width: 40.67797%;
       float: left;
@@ -480,7 +480,7 @@ body {
       width: 8em;
       margin-left: 5em; }
     .chore-user-main .chores-headings .confirm-heading {
-      margin: 0 0 0 8em; }
+      margin: 0 0 0 7.75em; }
   .chore-user-main .section-main {
     width: 100%;
     float: left;
@@ -510,7 +510,7 @@ body {
       text-align: center;
       font-size: 5.5em;
       font-weight: 400;
-      margin: 1.25em 0 1em 0;
+      margin: 1.25em 0 1em 7%;
       color: #1985A1; }
     .chore-user-main .section-chores .chore-list {
       color: #1985A1; }
@@ -539,26 +539,27 @@ body {
         width: 23.72881%;
         float: left;
         margin-right: 1.69492%;
-        width: 4.5em;
-        margin-right: .75em;
+        width: 7.85em;
         padding: .8em .3em; }
       .chore-user-main .section-chores .chore-list .chore-name {
-        margin-left: 1em;
+        margin-left: .55em;
         text-transform: capitalize; }
       .chore-user-main .section-chores .chore-list .chore-value {
         width: 15.25424%;
         float: left;
         margin-right: 1.69492%;
-        margin-left: 1.5em; }
+        position: relative;
+        top: .85em;
+        left: 1.15em; }
       .chore-user-main .section-chores .chore-list .fa-check-circle-o {
         width: 6.77966%;
         float: left;
         margin-right: 1.69492%;
         font-size: 5.5em;
-        margin: 0.05em 0 0 .65em;
+        margin: .45em 0 0 1.73em;
         cursor: pointer; }
       .chore-user-main .section-chores .chore-list .chore-description {
-        margin: 0 0 0 6.75%;
+        margin: 0 0 0 .55em;
         text-transform: capitalize; }
 
 .shop-user-main {
@@ -582,10 +583,11 @@ body {
     color: #f0f0f5;
     margin-top: 2em; }
     .shop-user-main .section-main .sa-add img {
-      float: right;
       position: relative;
       height: 6em;
-      margin-top: -7.5em; }
+      float: left;
+      top: 24em;
+      left: 2em; }
     .shop-user-main .section-main .center-avatar {
       width: 100%;
       float: left;
@@ -908,7 +910,30 @@ body {
     content: " ";
     display: block;
     clear: both; }
+  .main-wrapper progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5em; }
+  .main-wrapper progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
+  .main-wrapper progress[value]::-webkit-progress-value {
+    background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #09c, #f33);
+    border-radius: 2px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    -webkit-animation: animate-stripes 5s linear infinite;
+    animation: animate-stripes 5s linear infinite; }
+@-webkit-keyframes animate-stripes {
+  100% {
+    background-position: -100px 0px; } }
+@keyframes animate-stripes {
+  100% {
+    background-position: -100px 0px; } }
   .main-wrapper progress {
+    -webkit-appearance: progress-bar;
     background-color: #f3f3f3;
     border: 0;
     height: 6em;
@@ -1123,7 +1148,7 @@ body {
         float: left;
         margin-left: 0;
         margin-right: 0;
-        font-size: 2.7em;
+        font-size: 3.5em;
         font-weight: 400; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings li {
           width: 23.72881%;
@@ -1132,17 +1157,23 @@ body {
           text-align: center;
           margin: 1em 0 1em 0; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings .main-type-heading {
-          margin-left: 5.5em; }
+          margin-left: 4.85em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings .main-points-heading {
           width: 40.67797%;
           float: left;
           margin-right: 1.69492%;
           width: 8em;
-          margin-left: 5em; }
+          margin-left: 2.9em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings .main-confirm-heading {
-          margin: 0 0 0 6em; }
+          margin: 0 0 0 4.65em; }
       .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list {
         color: #1985A1; }
+        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .chore-icon {
+          width: 23.72881%;
+          float: left;
+          margin-right: 1.69492%;
+          width: 8.5em;
+          padding: .8em .3em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list li {
           width: 100%;
           float: left;
@@ -1165,30 +1196,24 @@ body {
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-value,
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-description {
           font-size: 4em; }
-        .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-icon {
-          width: 23.72881%;
-          float: left;
-          margin-right: 1.69492%;
-          width: 4.5em;
-          margin-right: .75em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-name {
-          margin-left: 2em;
+          margin-left: .65em;
           text-transform: capitalize; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-value {
           width: 15.25424%;
           float: left;
           margin-right: 1.69492%;
-          margin-left: 1.5em;
+          margin-left: 1.25em;
           padding-top: .4em; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .fa-check-circle-o {
           width: 6.77966%;
           float: left;
           margin-right: 1.69492%;
           font-size: 5.5em;
-          margin: 0.05em 0 0 .65em;
+          margin: 0.05em 0 0 .85em;
           cursor: pointer; }
         .main-wrapper .main-chore-user-main .main-section-chores .main-chore-list .main-chore-description {
-          margin: 0 0 0 15%;
+          margin: 0 0 0 .65em;
           text-transform: capitalize; }
   .main-wrapper .main-section-shopping-list {
     width: 100%;
