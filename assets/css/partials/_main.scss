@@ -264,8 +264,6 @@ progress {
       color: $text;
     }
 
-
-
     .main-chores-headings {
       font-family: 'Roboto', sans-serif;
       color: $text;
@@ -300,8 +298,11 @@ progress {
 
     .main-chore-list {
 
-
-
+      .chore-icon {
+        @include span( 3 of 12 );
+        width: 8.5em;
+        padding: .8em .3em;
+      }
 
       color: $text;
 
@@ -328,14 +329,8 @@ progress {
         font-size: 4em;
       }
 
-      .main-chore-icon {
-        @include span( 3 of 12 );
-        width: 4.5em;
-        margin-right: .75em;
-      }
-
       .main-chore-name {
-        margin-left: 2em;
+        margin-left: 1em;
         text-transform: capitalize;
       }
 
@@ -354,7 +349,7 @@ progress {
       }
 
       .main-chore-description {
-        margin: 0 0 0 15%;
+        margin: 0 0 0 6.5%;
         text-transform: capitalize;
         // background: red;
       }
