@@ -264,13 +264,11 @@ progress {
       color: $text;
     }
 
-
-
     .main-chores-headings {
       font-family: 'Roboto', sans-serif;
       color: $text;
       @include span( 12 of 12 );
-      font-size: 2.7em;
+      font-size: 3.5em;
       font-weight: 400;
 
 
@@ -283,25 +281,28 @@ progress {
 
 
       .main-type-heading {
-        margin-left: 5.5em;
+        margin-left: 4.85em;
       }
 
       .main-points-heading {
         @include span( 5 of 12 );
         width: 8em;
-        margin-left: 5em;
+        margin-left: 2.9em;
       }
 
       .main-confirm-heading {
-        margin: 0 0 0 6em;
+        margin: 0 0 0 4.65em;
       }
     } // end .chores-headings
 
 
     .main-chore-list {
 
-
-
+      .chore-icon {
+        @include span( 3 of 12 );
+        width: 8.5em;
+        padding: .8em .3em;
+      }
 
       color: $text;
 
@@ -328,33 +329,27 @@ progress {
         font-size: 4em;
       }
 
-      .main-chore-icon {
-        @include span( 3 of 12 );
-        width: 4.5em;
-        margin-right: .75em;
-      }
-
       .main-chore-name {
-        margin-left: 2em;
+        margin-left: .65em;
         text-transform: capitalize;
       }
 
       .main-chore-value {
         @include span( 2 of 12 );
-        margin-left: 1.5em;
+        margin-left: 1.25em;
         padding-top:.4em;
       }
 
       .fa-check-circle-o {
         @include span( 1 of 12 );
         font-size: 5.5em;
-        margin: 0.05em 0 0 .65em;
+        margin: 0.05em 0 0 .85em;
         cursor: pointer;
         // background: blue;
       }
 
       .main-chore-description {
-        margin: 0 0 0 15%;
+        margin: 0 0 0 .65em;
         text-transform: capitalize;
         // background: red;
       }
