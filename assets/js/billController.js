@@ -6,7 +6,6 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
     $scope.form = {
       'name': $scope.billName,
       'amount': $scope.billAmount,
-      'user_avatar': $scope.avatar
     };
     console.log($scope.form);
     $http({

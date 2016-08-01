@@ -157,6 +157,8 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
         }
     }).then(function(response) {
         console.log( "Success!!!" + response );
+        console.log( response );
+        localStorage.setItem( "user_avatar", JSON.stringify( $scope.currentAvatar ) );
         // localStorage.setItem("user_token", JSON.stringify(response.data.authentication.token_info.unique_token));
         // localStorage.setItem("user_id", JSON.stringify(response.data.authentication.token_info.uni) )
     }, function() {
