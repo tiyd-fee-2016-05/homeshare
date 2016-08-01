@@ -454,8 +454,8 @@ body {
     position: relative;
     height: 6em;
     float: left;
-    top: 25em;
-    left: 2em; }
+    top: 38em;
+    left: -36em; }
   .chore-user-main .chores-headings {
     font-family: 'Roboto', sans-serif;
     color: #1985A1;
@@ -562,6 +562,13 @@ body {
         margin: 0 0 0 .55em;
         text-transform: capitalize; }
 
+.sa-add img {
+  position: relative;
+  height: 6em;
+  float: left;
+  top: 24em;
+  left: 2em; }
+
 .shop-user-main {
   max-width: 100%;
   margin-left: auto;
@@ -582,12 +589,6 @@ body {
     background-color: #EDEFF7;
     color: #f0f0f5;
     margin-top: 2em; }
-    .shop-user-main .section-main .sa-add img {
-      position: relative;
-      height: 6em;
-      float: left;
-      top: 24em;
-      left: 2em; }
     .shop-user-main .section-main .center-avatar {
       width: 100%;
       float: left;

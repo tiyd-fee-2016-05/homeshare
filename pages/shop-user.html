@@ -1,15 +1,16 @@
 <main ng-controller="ControllerShopping" class="shop-user-main" >
   <section class="section-main">
     <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
-    <div ng-controller="avatardisplay" class="center-avatar">
+    <div ng-init="load()" ng-controller="avatardisplay" class="center-avatar">
       <img  class="user-avatar" src={{avatar}} alt="user-avatar">
     </div>
   </section><!-- end .section-main -->
-  <div class="sa-add"><a href="#/shop-admin"><img src="assets/images/misc/add.png"></a></div>
 
   <!-- chore section of page...will include user name and chores unordered list -->
   <section class="section-shopping-list">
-    <h1 class="username">Username</h1>
+    <div class="sa-add"><a href="#/shop-admin"><img src="assets/images/misc/add.png"></a></div>
+
+    <h1 ng-controller="homeName" class="username">{{homeName}}</h1>
     <h1 class="username2">Shopping List</h1>
 
     <ul class="shopping-headings">

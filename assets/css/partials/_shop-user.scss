@@ -5,7 +5,15 @@
     container: 100%
   );
 
-
+  .sa-add{
+    img{
+      position: relative;
+      height: 6em;
+      float: left;
+      top: 24em;
+      left: 2em;
+    }
+  }
 
 .shop-user-main {
   @include container;
@@ -21,15 +29,7 @@
     // margin: 0 0 0 10%;
     margin-top: 2em;
 
-    .sa-add{
-      img{
-        position: relative;
-        height: 6em;
-        float: left;
-        top: 24em;
-        left: 2em;
-      }
-    }
+
 
     .center-avatar {
       @include span( 12 of 12 );

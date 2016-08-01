@@ -3,13 +3,13 @@
     <!-- will be left side of a 3 column centered grid...will display #of chores done? -->
     <span class="left-chores fa fa-arrow-left" aria-hidden="true" ng-click="previousIcon()"></span>
     <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
-    <span class="center-avatar">
+    <span ng-init="load()" class="center-avatar">
       <img class="user-avatar" src={{currentAvatar}} alt="user-avatar">
     </span>
     <!-- will be right side of a 3 column centered grid...will display level? -->
     <span class="right-level fa fa-arrow-right" aria-hidden="true" ng-click="nextIcon()"></span>
     <!-- edit user name and location of group -->
-    
+
     <fieldset>
       <!-- <legend>Edit Profile</legend> -->
       <label class="edit-name">
