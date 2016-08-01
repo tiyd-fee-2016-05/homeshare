@@ -450,21 +450,6 @@ body {
     content: " ";
     display: block;
     clear: both; }
-  .chore-user-main .dropDown select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    display: inline-flex;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3.7em;
-    border: none;
-    width: 9em;
-    left: 4em;
-    top: 6.6em;
-    background: rgba(160, 193, 209, 0.36); }
-  .chore-user-main .dropDown option {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em; }
   .chore-user-main .ca-add img {
     position: relative;
     height: 6em;
@@ -696,6 +681,24 @@ body {
     content: " ";
     display: block;
     clear: both; }
+  #ca-wrapper .dropDown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-flex;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.7em;
+    border: none;
+    width: 8em;
+    left: 4em;
+    top: 8.6em;
+    background: rgba(160, 193, 209, 0.36);
+    height: 2em;
+    z-index: 99999;
+    padding: 7px; }
+  #ca-wrapper .dropDown option {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em; }
   #ca-wrapper .ca-header {
     width: 100%;
     float: left;
@@ -734,7 +737,7 @@ body {
       font-size: 3em;
       padding-bottom: 5px; }
     #ca-wrapper .ca-form .ca-submit {
-      margin-left: 11.3em;
+      margin-left: 19.3em;
       margin-right: auto;
       margin-top: 3.5em;
       height: 11em;

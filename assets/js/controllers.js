@@ -1,5 +1,7 @@
-
+//*************************************************************************
 //CHORE ADMIN CONTROLLER
+//*************************************************************************
+
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 
@@ -48,8 +50,10 @@ $http({
 //
 // });
 }]); // not sure what this is for
-
+//*************************************************************************
     //HOUSEHOLD SETUP CONTROLLER
+//*************************************************************************
+
 
     mainApp.controller("hhController", ['$scope', '$http', function($scope, $http){
       $scope.submitForm = function() {
@@ -89,7 +93,10 @@ $http({
       }); // end success
   }]); // end hhController
 
-//OPTIONS POP OUT
+//*************************************************************************
+        //OPTIONS POP OUT
+//*************************************************************************
+
 mainApp.controller( "optionsController", [ "$scope", "$timeout", function( $scope, $timeout ) {
 //Close pannel
 $(window).ready(function () {
@@ -111,7 +118,10 @@ $(window).ready(function () {
   }); // end .nav-element click event
 }]); // end optionsController
 
+//*************************************************************************
 //DROPDOWN MENU THAT POPULATES CHORES list
+//*************************************************************************
+
 //Thanks very much, https://aspdotnetcodehelp.wordpress.com/2015/08/08/how-to-populate-dropdownlist-from-database-using-angularjs-ng-options-attribute/
 mainApp.controller('drpdwnCtrl',['$scope','$http' , function ( $scope, $http) {
   // $scope.ChoreList = null;
@@ -130,10 +140,25 @@ mainApp.controller('drpdwnCtrl',['$scope','$http' , function ( $scope, $http) {
   };
   // Calling the function to load the data on pageload
   $scope.fillChoreList();
+
+//POST CHORE BACK TO CHORE LIST
+// $scope.repostChore = function(){
+//   $http({
+//     url: 'https://tiy-homeshare.herokuapp.com/homes/26/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chorePoints , // Travis'
+//     method: 'POST',
+//     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
+//     data: $scope.form
+//   }).success(function(data){
+//     $scope.quickAdd = data.data;
+//     console.log($scope.quickAdd);
+//   });
+// };
+// $scope.repostChore();
 }]); // end drpdwnCtrl
 
-
+//*************************************************************************
 // AVATAR DISPLAY MAIN MENU CONTROLLER
+//*************************************************************************
 mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($rootScope, $scope, $http) {
 
   $( window ).load(function() {
@@ -152,28 +177,10 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
 }]); // end avatardisplay
 
 
-
-        //XP BAR CONTROLLER
-
-        // mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
-        //
-        //     $http({
-        //       url: 'http://tiy-homeshare.herokuapp.com/users/24',
-        //       method: 'GET',
-        //       headers: {"Authorization": ""},
-        //     }).success(function(data){
-        //       $scope.xp = data.user.housemate.total_exp;
-        //       console.log(data.user.housemate.total_exp);
-        //       $(function(){
-        //         setTimeout(function(e){
-        //           $(".progress").removeClass("none");
-        //           $(".progress").addClass("thirty");
-        //         }, 1000);
-        //       });
-        //     });
-        //   }]);
-
+//*************************************************************************
         // XP BAR CONTROLLER
+//*************************************************************************
+
 
         mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
 
@@ -199,8 +206,10 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
 
 
 
-
+//*************************************************************************
 // House Name Display
+//*************************************************************************
+
         mainApp.controller("homeName", ['$scope', '$http', function($scope, $http){
 
             $http({
