@@ -8,8 +8,8 @@ mainApp.controller('HomeController', ['$scope', '$http', '$location', 'User',  '
 
     $http({
         method:  "GET",
-        // url:     "http://tiy-homeshare.herokuapp.com/users/me", // Erik's?
-        url:     "https://tiy-homeshare.herokuapp.com/users/me", // Travis'?
+        // url:     "http://093009e2.ngrok.io/users/me", // Erik's?
+        url:     "http://093009e2.ngrok.io/users/me", // Travis'?
         headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
     }).then(function(response) {
         $scope.user = response.data;
