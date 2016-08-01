@@ -1,17 +1,17 @@
 <main class="chore-user-main">
   <section class="section-main">
     <!-- main avatar on page of user...will be enclosed in a status circle and positioned in center -->
-    <div ng-controller="avatardisplay" class="center-avatar">
+    <div ng-init="load()" ng-controller="avatardisplay" class="center-avatar">
       <img class="user-avatar" src="{{avatar}}" alt="user-avatar">
     </div>
 
-    
+
   <!-- chore section of page...will include user name and chores unordered list -->
 
   <div class="ca-add"><a href="#/chore-admin"><img src="assets/images/misc/add.png"></a></div>
 
   <section ng-controller="ControllerChores" class="section-chores">
-    <h1 class="username">Username Chores</h1>
+    <h1 ng-controller="homeName" class="username">{{homeName}} Chores</h1>
     <ul class="chores-headings">
       <li><h2 class="type-heading">Chore</h2></li>
       <li><h2 class="points-heading">Points</h2></li>
