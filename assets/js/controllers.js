@@ -1,5 +1,7 @@
-
+//*************************************************************************
 //CHORE ADMIN CONTROLLER
+//*************************************************************************
+
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 
@@ -14,7 +16,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
     };
     console.log($scope.form);
     $http({
-      url: 'https://tiy-homeshare.herokuapp.com/homes/16/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chore_xp , // Travis'
+      url: 'https://tiy-homeshare.herokuapp.com/homes/26/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chore_xp , // Travis'
       method: 'POST',
       headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
       data: $scope.form
@@ -29,7 +31,7 @@ mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, 
 
   }; // end submitForm click event
 $http({
-  url: 'https://tiy-homeshare.herokuapp.com/homes/16/chores', // Travis'
+  url: 'https://tiy-homeshare.herokuapp.com/homes/26/chores', // Travis'
   method: 'GET',
   headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   }) // end request
@@ -48,28 +50,30 @@ $http({
 //
 // });
 }]); // not sure what this is for
-
+//*************************************************************************
     //HOUSEHOLD SETUP CONTROLLER
+//*************************************************************************
 
-    mainApp.controller("hhController", ['$rootScope','$scope', '$http', function($rootScope, $scope, $http){
+
+    mainApp.controller("hhController", ['$scope', '$http', function($scope, $http){
       $scope.submitForm = function() {
 
         // console.log($scope.choreName);
         $scope.form = {
           "name": $scope.hhName,
-          "city": $scope.hhDesc,
+          "city": $scope.hhCity,
           "value": $scope.hhRent
         };
         console.log($scope.form);
 
         $http({
-          url: 'https://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&description=' + $scope.hhDesc + '&rent=' + $scope.hhRent , // Travis'
+          url: 'https://tiy-homeshare.herokuapp.com/homes?name=' + $scope.hhName + '&city=' + $scope.hhCity + '&rent=' + $scope.hhRent , // Travis'
           method: 'POST',
           data: $scope.form,
           headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
         }).success(function(data){
-          $scope.data = data.data;
-          console.log($scope.data);
+          $scope.homes = data.homes.all_homes[0];
+          console.log($scope.homes[$scope.homes.length -1]);
 
         });
 
@@ -84,12 +88,15 @@ $http({
         method: 'GET',
         headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
       }).success(function(data){
-        $scope.home_id = data.data;
+        $scope.home_id = data.homes.all_homes.id;
         console.log($scope.home_id);
       }); // end success
   }]); // end hhController
 
-//OPTIONS POP OUT
+//*************************************************************************
+        //OPTIONS POP OUT
+//*************************************************************************
+
 mainApp.controller( "optionsController", [ "$scope", "$timeout", function( $scope, $timeout ) {
 //Close pannel
 $(window).ready(function () {
@@ -111,28 +118,47 @@ $(window).ready(function () {
   }); // end .nav-element click event
 }]); // end optionsController
 
+//*************************************************************************
 //DROPDOWN MENU THAT POPULATES CHORES list
+//*************************************************************************
+
 //Thanks very much, https://aspdotnetcodehelp.wordpress.com/2015/08/08/how-to-populate-dropdownlist-from-database-using-angularjs-ng-options-attribute/
-mainApp.controller('drpdwnCtrl',['$rootScope','$scope','$http' , function ($rootScope, $scope, $http) {
+mainApp.controller('drpdwnCtrl',['$scope','$http' , function ( $scope, $http) {
   // $scope.ChoreList = null;
   //Declaring the function to load data from database
   $scope.fillChoreList = function () {
       $http({
-          method: 'POST',
-          url: 'https://tiy-homeshare.herokuapp.com/homes/16/chores', // Travis'
+          method: 'GET',
+          url: 'https://tiy-homeshare.herokuapp.com/homes/26/completed_chores', // Travis'
           // data: $scope.ChoreList,
           headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
       }).success(function (result) {
-          $scope.completeChoreList = result.chores.incomplete;
-          console.log($scope.ChoreList);
+          $scope.completeChoreList = result.chores.completed;
+          $scope.chorePoints = result.chores.completed.chore_xp;
+          console.log($scope.completeChoreList);
       });
   };
   // Calling the function to load the data on pageload
   $scope.fillChoreList();
+
+//POST CHORE BACK TO CHORE LIST
+// $scope.repostChore = function(){
+//   $http({
+//     url: 'https://tiy-homeshare.herokuapp.com/homes/26/chores?name=' + $scope.choreName + '&description=' + $scope.choreDesc + '&chore_xp=' + $scope.chorePoints , // Travis'
+//     method: 'POST',
+//     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
+//     data: $scope.form
+//   }).success(function(data){
+//     $scope.quickAdd = data.data;
+//     console.log($scope.quickAdd);
+//   });
+// };
+// $scope.repostChore();
 }]); // end drpdwnCtrl
 
-
+//*************************************************************************
 // AVATAR DISPLAY MAIN MENU CONTROLLER
+//*************************************************************************
 mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($rootScope, $scope, $http) {
 
   $( window ).load(function() {
@@ -151,28 +177,10 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
 }]); // end avatardisplay
 
 
-
-        //XP BAR CONTROLLER
-
-        // mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
-        //
-        //     $http({
-        //       url: 'http://tiy-homeshare.herokuapp.com/users/24',
-        //       method: 'GET',
-        //       headers: {"Authorization": ""},
-        //     }).success(function(data){
-        //       $scope.xp = data.user.housemate.total_exp;
-        //       console.log(data.user.housemate.total_exp);
-        //       $(function(){
-        //         setTimeout(function(e){
-        //           $(".progress").removeClass("none");
-        //           $(".progress").addClass("thirty");
-        //         }, 1000);
-        //       });
-        //     });
-        //   }]);
-
+//*************************************************************************
         // XP BAR CONTROLLER
+//*************************************************************************
+
 
         mainApp.controller("xpBar", ['$scope', '$http', function($scope, $http){
 
@@ -182,7 +190,7 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
               headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
             }).success(function(data){
               $scope.xp = data.user.total_exp;
-              $scope.percent = data.user.user_percent;
+              $scope.percent = data.user.homes_percent;
               console.log($scope.xp);
               console.log($scope.percent);
 
@@ -192,5 +200,26 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
               //         value: $scope.xp
               //     });
               // });
+            });
+        }]);
+
+
+
+
+//*************************************************************************
+// House Name Display
+//*************************************************************************
+
+        mainApp.controller("homeName", ['$scope', '$http', function($scope, $http){
+
+            $http({
+              url: 'https://tiy-homeshare.herokuapp.com/homes/26',
+              method: 'GET',
+              headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
+            }).success(function(data){
+              $scope.homeName = data.home.info.name;
+              console.log($scope.homeName);
+
+
             });
         }]);
