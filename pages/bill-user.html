@@ -1,4 +1,4 @@
-<main class="bill-user-main">
+<main ng-controller="billingController" class="bill-user-main">
   <h1 class="page-heading">Bills</h1>
   <!-- heading for bills -->
   <div class="bill-headings">
@@ -7,49 +7,15 @@
     <h2 class="amount-heading">Amount</h2>
     <h2 class="paid-heading">Paid</h2>
   </div><!-- end heading for bills -->
-  <ul class="bills">
+  <ul ng-repeat="bills in allBills" class="bills">
     <li>
-      <img src="assets/images/avatars/boy-2.png" alt="user-avatar">
-      <span class="bill-descrip">Cable</span>
-      <span class="bill-amount">$150</span>
+      <div ng-init="load()" class="center-avatar">
+        <img class="user-avatar" src="{{avatar}}" alt="user-avatar">
+      </div>      <span class="bill-descrip">{{bills.name}}</span>
+      <span class="bill-amount">{{bills.amount}}</span>
       <span class="fa fa-check-circle-o" aria-hidden="true"></span>
     </li>
-    <li>
-      <img src="assets/images/avatars/boy-2.png" alt="user-avatar">
-      <span class="bill-descrip">Cable</span>
-      <span class="bill-amount">$150</span>
-      <span class="fa fa-check-circle-o" aria-hidden="true"></span>
-    </li>
-    <li>
-      <img src="assets/images/avatars/boy-2.png" alt="user-avatar">
-      <span class="bill-descrip">Cable</span>
-      <span class="bill-amount">$150</span>
-      <span class="fa fa-check-circle-o" aria-hidden="true"></span>
-    </li>
-    <li>
-      <img src="assets/images/avatars/boy-2.png" alt="user-avatar">
-      <span class="bill-descrip">Cable</span>
-      <span class="bill-amount">$150</span>
-      <span class="fa fa-check-circle-o" aria-hidden="true"></span>
-    </li>
-    <li>
-      <img src="assets/images/avatars/boy-2.png" alt="user-avatar">
-      <span class="bill-descrip">Cable</span>
-      <span class="bill-amount">$150</span>
-      <span class="fa fa-check-circle-o" aria-hidden="true"></span>
-    </li>
-    <li>
-      <img src="assets/images/avatars/boy-2.png" alt="user-avatar">
-      <span class="bill-descrip">Cable</span>
-      <span class="bill-amount">$150</span>
-      <span class="fa fa-check-circle-o" aria-hidden="true"></span>
-    </li>
-    <li>
-      <img src="assets/images/avatars/boy-2.png" alt="user-avatar">
-      <span class="bill-descrip">Cable</span>
-      <span class="bill-amount">$150</span>
-      <span class="fa fa-check-circle-o" aria-hidden="true"></span>
-    </li>
+
   </ul><!-- end unordered list of bills -->
 </main>
 

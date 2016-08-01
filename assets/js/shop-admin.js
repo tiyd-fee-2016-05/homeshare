@@ -10,7 +10,7 @@ mainApp.controller("shopAdminController", ['$scope', '$http', function($scope, $
     };
     console.log($scope.form);
     $http({
-      url: 'http://093009e2.ngrok.io/homes/15/list/items?title=' + $scope.itemName + '&item_xp=' + $scope.item_xp ,
+      url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/list/items?title=' + $scope.itemName + '&item_xp=' + $scope.item_xp ,
       method: 'POST',
       headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) },
       data: $scope.form
@@ -25,7 +25,7 @@ mainApp.controller("shopAdminController", ['$scope', '$http', function($scope, $
 
   }; // end submitForm click event
 $http({
-  url: 'http://093009e2.ngrok.io/homes/6/list/items',
+  url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/list/items',
   method: 'GET',
   headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
 }).success(function(data){

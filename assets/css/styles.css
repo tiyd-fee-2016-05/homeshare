@@ -635,7 +635,7 @@ body {
         float: left;
         margin-right: 1.69492%;
         width: 8em;
-        margin-left: -32%; }
+        margin-left: -64%; }
       .shop-user-main .section-shopping-list .shopping-headings .checkbox-heading {
         margin: 0 0 0 77%; }
     .shop-user-main .section-shopping-list .shopping-list {
@@ -648,7 +648,7 @@ body {
         margin-right: 0;
         margin-bottom: 3em; }
       .shop-user-main .section-shopping-list .shopping-list li:last-child {
-        padding-bottom: 15em; }
+        padding-bottom: 2em; }
       .shop-user-main .section-shopping-list .shopping-list li:nth-child(odd) {
         background: rgba(160, 193, 209, 0.18); }
       .shop-user-main .section-shopping-list .shopping-list .qty,
@@ -663,7 +663,7 @@ body {
         margin: .45em 2em 0 1.25em; }
       .shop-user-main .section-shopping-list .shopping-list .shopping-item {
         width: 8em;
-        margin: .45em 1.5em 0 -3.5em; }
+        margin: .45em -1.5em 0 -2.5em; }
       .shop-user-main .section-shopping-list .shopping-list .item-checkbox {
         height: 5em;
         width: 5em;
@@ -1159,7 +1159,9 @@ body {
         font-size: 5.5em;
         font-weight: 400;
         margin: 1.25em 0 1em 0;
-        color: #1985A1; }
+        color: #1985A1;
+        width: 10em;
+        margin-left: 1em; }
       .main-wrapper .main-chore-user-main .main-section-chores .main-chores-headings {
         font-family: 'Roboto', sans-serif;
         color: #1985A1;

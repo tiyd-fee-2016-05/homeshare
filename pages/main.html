@@ -31,7 +31,7 @@
       </ul>
     </section><!-- end .section-chores -->
   </main>
-  <section class="main-section-shopping-list">
+  <section ng-controller="ControllerShopping" class="main-section-shopping-list">
     <h1 class="main-username">Shopping List</h1>
     <a href="#/shop-user"><i style="font-size: 6em; position: absolute; margin: -2.3em 8em 0 8.4em;" class="fa fa-list-ul" aria-hidden="true"></i></a>
     <ul class="main-shopping-headings">
@@ -39,13 +39,14 @@
       <li><h2 class="main-item-heading">Item Name</h2></li>
       <li><h2 class="main-checkbox-heading">Complete?</h2></li>
     </ul>
-    <ul class="main-shopping-list">
+    <ul class="main-shopping-list" ng-repeat="items in totalShoppingList ">
       <li>
-        <h2 class="main-qty">10</h2>
-        <h2 class="main-shopping-item">Yoplait Raspberry</h2>
-        <input class="main-item-checkbox" type="checkbox" ng-model="checkboxModel.value2" ng-true-value="'YES'" ng-false-value="'NO'">
+        <h2 class="main-qty">{{items.title}}</h2>
+        <h2 class="main-shopping-item">{{items.description}}</h2>
+        <input class="item-checkbox" type="checkbox" ng-click="removeItem( items )">
+        <!-- <h2 class="shopping-item">{{items.description}}</h2> -->
       </li>
-    </ul>
+      </ul>
   </section><!-- end .section-chores -->
 </div>
 

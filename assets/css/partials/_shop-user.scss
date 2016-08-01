@@ -82,7 +82,7 @@
       .item-heading {
         @include span( 5 of 12 );
         width: 8em;
-        margin-left: -32%;
+        margin-left: -64%;
       }
 
       .checkbox-heading {
@@ -101,7 +101,7 @@
       }
 
       li:last-child {
-        padding-bottom: 15em;
+        padding-bottom: 2em;
       }
       li:nth-child(odd){
         background: rgba(160,193,209,0.18);
@@ -123,7 +123,7 @@
 
       .shopping-item {
         width: 8em;
-        margin: .45em 1.5em 0 -3.5em;
+        margin: .45em -1.5em 0 -2.5em;
       }
 
       .item-checkbox {

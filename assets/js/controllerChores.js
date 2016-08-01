@@ -67,7 +67,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
     ]; // end $scope.chores
 
   // $http({
-  //   url: 'http://093009e2.ngrok.io/homes/15/chores',
+  //   url: 'http://tiy-homeshare.herokuapp.com/homes/15/chores',
   //   method: 'GET',
   //   headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   // }).success( function(data) {
@@ -76,7 +76,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
   // }); // end GET GET success
 
   $http({
-    url: 'http://093009e2.ngrok.io/homes/6/chores',
+    url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/chores',
     method: 'GET',
     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   }).success( function(data) {
@@ -153,8 +153,8 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
       $scope.totalChores.splice( $scope.totalChores.indexOf( chores ), 1 );
 
       $http({
-        url: 'http://093009e2.ngrok.io/homes/' + 6 + '/chores/' + clickedChoreId + '/mark_complete', // Erik's
-        // url: 'http://093009e2.ngrok.io/homes/15/chores/' + clickedChoreId + '/mark_complete', // Travis'
+        url: 'http://tiy-homeshare.herokuapp.com/homes/'  + JSON.parse(localStorage.getItem( "home_id")) +  '/chores/' + clickedChoreId + '/mark_complete', // Erik's
+        // url: 'http://tiy-homeshare.herokuapp.com/homes/15/chores/' + clickedChoreId + '/mark_complete', // Travis'
         method: 'POST',
         headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
         // data: $scope.form

@@ -3,8 +3,8 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
     //     $location.path("/");
     // }
     // var rootUrl= "http://6e62d5d1.ngrok.io/";
-    // var rootUrl= "http://093009e2.ngrok.io/users/me/"; // Erik's
-    var rootUrl= "http://093009e2.ngrok.io/users/me/"; // Travis'
+    // var rootUrl= "http://tiy-homeshare.herokuapp.com/users/me/"; // Erik's
+    var rootUrl= "http://tiy-homeshare.herokuapp.com/users/me/"; // Travis'
 
     $( ".landing-header" ).css( "visibility", "hidden" );
 
@@ -12,13 +12,13 @@ mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'U
       console.log("Submitted");
         $http({
             method: "POST",
-            // url:   "http://093009e2.ngrok.io/users/sign_in", // Erik's?
+            // url:   "http://tiy-homeshare.herokuapp.com/users/sign_in", // Erik's?
             data: {
                 email: $rootScope.email,
                 password: "password",
             },
             // url:   "http://f6ed491e.ngrok.io/users/me",
-            url:   "http://093009e2.ngrok.io/users/me", // Travis'?
+            url:   "http://tiy-homeshare.herokuapp.com/users/me", // Travis'?
             // data: {
             //     email:$rootScope.email,
             //     password:$rootScope.password,
