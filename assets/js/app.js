@@ -26,11 +26,10 @@ mainApp.config( function($routeProvider) {
 
   })
   .when( "/household", {
-    templateUrl: "pages/household.html",
-    controller: "hhController"
+    templateUrl: "pages/household.html"
   })
   .when( "/main", {
-    templateUrl: "pages/main.html",
+    templateUrl: "pages/main.html"
   })
   .when( "/user", {
     templateUrl: "pages/user.html"
@@ -39,14 +38,14 @@ mainApp.config( function($routeProvider) {
     templateUrl: "pages/shop-admin.html"
   })
   .when( "/shop-user", {
-    templateUrl: "pages/shop-user.html",
+    templateUrl: "pages/shop-user.html"
   })
   .when( "/chore-admin", {
     templateUrl: "pages/chore-admin.html",
     controller: "choreAdminController"
   })
   .when( "/chore-user", {
-    templateUrl: "pages/chore-user.html",
+    templateUrl: "pages/chore-user.html"
   })
   .when( "/bill-admin", {
     templateUrl: "pages/bill-admin.html"

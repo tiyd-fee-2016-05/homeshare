@@ -12,7 +12,7 @@
       <!-- <div ng-controller="xpBar" class='progress'><span class='{{xp}} status'></span></div> -->
     </div>    <!-- chore section of page...will include user name and chores unordered list -->
     <section  ng-controller="ControllerChores" class="main-section-chores">
-      <h1 class="main-username">Recent Chores</h1>
+      <h1 ng-controller="homeName" class="main-username">{{homeName}}</h1>
       <a href="#/chore-user"><i style="font-size: 6em; position: absolute; margin: -1.9em 8em 0 8.9em;" class="fa fa-list-ul" aria-hidden="true"></i></a>
       <progress ng-controller="xpBar" value="{{percent}}" max="100"></progress>
       <ul class="main-chores-headings">
