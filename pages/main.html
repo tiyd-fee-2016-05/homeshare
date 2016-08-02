@@ -27,7 +27,8 @@
       </ul>
       <ul  class="main-chore-list"  ng-repeat="chore in totalChores | orderBy: 'created_at':true | limitTo:3">
         <li>
-          <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chore)]}}' alt="Picture of chore">
+          <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chores)]}}' alt="Picture of chore">
+
           <h2 class="main-chore-name">{{chore.name}}</h2>
           <h2 class="main-chore-value">{{chore.chore_xp}}</h2>
           <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>
