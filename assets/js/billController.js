@@ -6,6 +6,10 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
     $scope.clickedBill = JSON.parse(localStorage.getItem( "clicked_bill" ) );
   });
 
+  angular.element(document).ready( function() {
+    jQuery( ".ba-name-input" ).focus();
+  });
+
   $scope.submitForm = function() {
     // console.log($scope.choreName);
     $scope.form = {
@@ -26,8 +30,13 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
     jQuery( ".ba-name-input" ).val("");
     jQuery( ".ba-area-input" ).val("");
     jQuery( ".ba-points-input" ).val("");
+    jQuery( ".chore-name-input" ).focus();
 
   }; // end submitForm click event
+
+
+
+  // payment parameters: 
 
 $http({
   url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/bills', // Travis'

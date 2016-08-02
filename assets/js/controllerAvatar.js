@@ -2,6 +2,10 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
 
   $scope.user_id;
 
+  angular.element(document).ready( function() {
+    jQuery( ".profi-name-input" ).focus();
+  });
+
   $( window ).load(function() {
 
     console.log( JSON.parse(localStorage.getItem( "user_token")) + " is a " + typeof localStorage.getItem( "user_token") );
@@ -141,19 +145,21 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
     jQuery( ".profile-name-input" ).val("");
     jQuery( ".profile-location-input" ).val("");
     jQuery( ".profile-venmo-input" ).val("");
+    console.log( $scope.paypalEmail );
 
     $http({
         method: "PUT",
-        url:    "http://tiy-homeshare.herokuapp.com/users/" + $scope.user_id, // Erik's
         url:    "http://tiy-homeshare.herokuapp.com/users/" + $scope.user_id, // Travis'
         headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
         data: {
             avatar:    $scope.currentAvatar,
-            venmo_username: $scope.name
+            venmo_username: $scope.venmoName,
+            paypal: $scope.paypalEmail
         }
     }).then(function(response) {
         console.log( "Success!!!" + response );
         console.log( response );
+        console.log( $scope.paypalEmail );
         localStorage.setItem( "user_avatar", JSON.stringify( $scope.currentAvatar ) );
         // localStorage.setItem("user_token", JSON.stringify(response.data.authentication.token_info.unique_token));
         // localStorage.setItem("user_id", JSON.stringify(response.data.authentication.token_info.uni) )

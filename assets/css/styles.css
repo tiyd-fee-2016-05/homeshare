@@ -360,18 +360,20 @@ body {
     .profile-edit-main fieldset .edit-name {
       margin: 1em 0 1em -.75em; }
     .profile-edit-main fieldset .edit-location {
-      margin: .5em 0 1.75em -.75em; }
+      margin: .5em 0 1.75em -.25em; }
     .profile-edit-main fieldset .venmo-account {
-      margin: .5em 0 1.5em -.75em; }
+      margin: .5em 0 1.5em -.25em; }
     .profile-edit-main fieldset .name-heading,
     .profile-edit-main fieldset .location-heading,
-    .profile-edit-main fieldset .venmo-username {
+    .profile-edit-main fieldset .venmo-username,
+    .profile-edit-main fieldset .username-heading {
       display: block;
       font-size: 4.25em;
       margin: 1em 0 .75em 0; }
     .profile-edit-main fieldset input {
       width: 10.85em;
-      font-size: 4.5em; }
+      font-size: 4.5em;
+      outline-color: #1985A1; }
   .profile-edit-main .save {
     margin-top: 79em;
     margin-left: 18em;
