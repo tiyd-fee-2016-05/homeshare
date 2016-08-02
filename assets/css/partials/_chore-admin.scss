@@ -16,7 +16,7 @@ container: 100%,
     -moz-appearance: none;
     // appearance:none;
     display: inline-flex;
-    position: relative;
+    position: absolute;
     font-family: 'Roboto', sans-serif;
     font-size: 3.7em;
     border: none;
@@ -58,7 +58,7 @@ container: 100%,
   @include span(4 of 12);
   display: block;
   position: absolute;
-  margin-top: 34em;
+  margin-top: 33em;
   margin-left: 4em;
   margin-right: auto;
   // padding-left: 2em;
@@ -76,21 +76,38 @@ container: 100%,
     padding-bottom: 5px;
   }
   .ca-submit{
-    margin-left: 19.3em;
+    margin-left: 38.3em;
     margin-right: auto;
-    margin-top: 3.5em;
+    margin-top: 5.5em;
     height: 11em;
     width: 40em;
     border: none;
     border-radius: 3%;
     background: #85DDA2;
     -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    position: absolute;
   }
   p{
     font-family: 'Roboto';
     font-size: 7em;
+  }
+}
+
+.cu-menu{
+  font-family: 'Roboto';
+  height: 11em;
+  width: 36em;
+  border: none;
+  border-radius: 3%;
+  background: #85DDA2;
+  -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+  margin-top: 5.5em;
+  p{
+    text-decoration-style: none;
   }
 }
 
