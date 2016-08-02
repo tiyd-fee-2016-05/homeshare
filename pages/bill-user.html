@@ -9,11 +9,13 @@
   </div><!-- end heading for bills -->
   <ul ng-repeat="bills in allBills" class="bills">
     <li ng-click="sendPayment( bills )">
-      <div ng-init="load()" class="center-avatar">
-        <img class="user-avatar" src={{bills.user_avatar}} alt="user-avatar">
-      </div>      <span class="bill-descrip">{{bills.name}}</span>
-      <span class="bill-amount">{{bills.amount}}</span>
-      <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+      <a href="#/bill-info">
+        <div ng-init="load()" class="center-avatar">
+          <img class="user-avatar" src={{bills.user_avatar}} alt="user-avatar">
+        </div><span class="bill-descrip">{{bills.name}}</span>
+        <span class="bill-amount">{{bills.amount}}</span>
+        <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+      </a>
     </li>
 
   </ul><!-- end unordered list of bills -->

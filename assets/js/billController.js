@@ -3,7 +3,7 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
   $scope.clickedBill;
 
   angular.element( document ).ready( function() {
-    jQuery( ".ba-name-input" ).focus();
+    $scope.clickedBill = JSON.parse(localStorage.getItem( "clicked_bill" ) );
   });
 
   $scope.submitForm = function() {
@@ -41,8 +41,8 @@ $http({
 
 
   $scope.sendPayment = function( bills ) {
-    $scope.clickedBill = bills;
-    console.log( $scope.clickedBill );
+    localStorage.setItem("clicked_bill", JSON.stringify( bills ));
+    console.log( bills );
   } // end sendPayment click event
 
 }]); // end billingController

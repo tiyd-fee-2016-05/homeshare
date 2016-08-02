@@ -1,0 +1,9 @@
+<main class="bill-info-main">
+  <h1>Bill<br/>Details</h1>
+  <ul ng-controller="billingController">
+    <li><img class="user-avatar" src={{clickedBill.user_avatar}} alt="user-avatar"></li>
+    <li><h2 class="bill-descrip">{{clickedBill.name}}</h2></li>
+    <li><h2 class="bill-amount">{{clickedBill.amount}}</h2></li>
+  </ul>
+  <button>Pay Now</button>
+</main>
