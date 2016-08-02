@@ -26,15 +26,44 @@ container: 100%,
 //   margin-top: 10em;
 //   position: absolute;
 // }
-progress[value] {
+// progress[value] {
   /* Reset the default appearance */
-  -webkit-appearance: none;
-   appearance: none;
+//   -webkit-appearance: none;
+//    appearance: none;
+//
+//   width: 100%;
+//   height: 5em;
+//   @-webkit-keyframes animate-stripes {
+//      100% { background-position: -100px 0px; }
+//   }
+//
+//   @keyframes animate-stripes {
+//      100% { background-position: -100px 0px; }
+//   }
+// }
 
-  width: 100%;
-  height: 5em;
+.divider-bar-2{
+  height: 1em;
+  width: 95%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 3em;
+  margin-bottom: -3em;
+  margin-left: 1.4em;
+  border-radius: 100%;
 }
 
+
+.percent{
+  position: absolute;
+  color: #212121;
+  font-family: 'Roboto';
+  font-size: 4em;
+  margin-top: -1.16em;
+  margin-left: 30%;
+  font-weight: 600;
+
+}
 progress[value]::-webkit-progress-bar {
   background-color: #eee;
   border-radius: 2px;
@@ -53,9 +82,10 @@ progress[value]::-webkit-progress-value {
 
     border-radius: 2px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
-    -webkit-animation: animate-stripes 5s linear infinite;
-            animation: animate-stripes 5s linear infinite;
+
+
 }
+
 
 @-webkit-keyframes animate-stripes {
    100% { background-position: -100px 0px; }
@@ -66,6 +96,7 @@ progress[value]::-webkit-progress-value {
 }
 
 
+
 progress {
   -webkit-appearance: progress-bar;
   background-color: #f3f3f3;
@@ -74,6 +105,8 @@ progress {
   border-radius: 9px;
   width: 56em;
   margin-left: 5em;
+  -webkit-animation: animate-stripes 5s linear infinite;
+          animation: animate-stripes 5s linear infinite;
 
   }
 * {
@@ -94,7 +127,7 @@ progress {
 
 #pgbar-container {
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 .progress {
   background-color: rgba(0, 17, 255, 0.31);
@@ -300,11 +333,26 @@ progress {
       text-align: center;
       font-size: 5.5em;
       font-weight: 400;
-      margin: 1.25em 0 1em 0;
+      margin: 0.25em 0 0em 0;
       color: #1985A1;
       width: 10em;
       margin-left: 1em;
     }
+
+    .divider-bar{
+      height: 1em;
+      width: 100%;
+      position: relative;
+      background: rgba(0, 0, 0, 0.1);
+      margin-top: 7em;
+      margin-bottom: -3em;
+      margin-left: 5.4em;
+      border-radius: 100%;
+    }
+
+
+
+
 
     .main-chores-headings {
       font-family: 'Roboto', sans-serif;
@@ -313,12 +361,21 @@ progress {
       font-size: 3.5em;
       font-weight: 400;
 
-
+      h1{
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 400;
+        margin: 1.25em 0em -1em 0em;
+        color: #1985A1;
+        width: 8em;
+        margin-left: 1em;
+        position: relative;
+      }
 
       li {
         @include span( 3 of 12 );
         text-align: center;
-        margin: 1em 0 1em 0;
+        margin: 3em 0 1em 0;
       }
 
 

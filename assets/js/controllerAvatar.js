@@ -149,6 +149,7 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
 
     $http({
         method: "PUT",
+
         url:    "http://tiy-homeshare.herokuapp.com/users/" + $scope.user_id, // Travis'
         headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
         data: {

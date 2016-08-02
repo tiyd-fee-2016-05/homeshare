@@ -12,17 +12,23 @@
       <!-- <div ng-controller="xpBar" class='progress'><span class='{{xp}} status'></span></div> -->
     </div>    <!-- chore section of page...will include user name and chores unordered list -->
     <section  ng-controller="ControllerChores" class="main-section-chores">
-      <h1 ng-controller="homeName" class="main-username">{{homeName}} Recent Chores</h1>
-      <a href="#/chore-user"><i style="font-size: 6em; position: absolute; margin: -1.9em 8em 0 8.9em;" class="fa fa-list-ul" aria-hidden="true"></i></a>
-      <progress ng-controller="xpBar" value="{{percent}}" max="100"></progress>
+      <h1 ng-controller="homeName" class="main-username">{{homeName}}</h1>
+      <a href="#/chore-user"><i style="font-size: 6em; position: absolute; margin: 3.2em 8em 0 8.9em;" class="fa fa-list-ul" aria-hidden="true"></i></a>
+      <div ng-controller="xpBar">
+      <progress value="{{percent}}" max="100"></progress>
+      <h1 class="percent">{{percent}}% to next level!</h1>
+    </div>
+    <div class="divider-bar"></div>
       <ul class="main-chores-headings">
+        <h1 class="chore-header"> Recent Chores</h1>
         <li><h2 class="main-type-heading">Chore</h2></li>
         <li><h2 class="main-points-heading">Points</h2></li>
         <li><h2 class="main-confirm-heading">Complete</h2></li>
       </ul>
       <ul  class="main-chore-list"  ng-repeat="chore in totalChores | orderBy: 'created_at':true | limitTo:3">
         <li>
-          <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chore)]}}' alt="Picture of chore">
+          <img class="chore-icon" src='{{choreIcons[totalChores.indexOf(chores)]}}' alt="Picture of chore">
+
           <h2 class="main-chore-name">{{chore.name}}</h2>
           <h2 class="main-chore-value">{{chore.chore_xp}}</h2>
           <span class="fa fa-check-circle-o" aria-hidden="true" ng-click="removeChore( chore )"></span>
@@ -31,6 +37,7 @@
       </ul>
     </section><!-- end .section-chores -->
   </main>
+  <div class="divider-bar-2"></div>
   <section ng-controller="ControllerShopping" class="main-section-shopping-list">
     <h1 class="main-username">Shopping List</h1>
     <a href="#/shop-user"><i style="font-size: 6em; position: absolute; margin: -2.3em 8em 0 8.4em;" class="fa fa-list-ul" aria-hidden="true"></i></a>

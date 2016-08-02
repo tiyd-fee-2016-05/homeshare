@@ -216,7 +216,6 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
 //*************************************************************************
 
         mainApp.controller("homeName", ['$scope', '$http', function($scope, $http){
-
             $http({
               url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) ,
               method: 'GET',
@@ -228,3 +227,21 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
 
             });
         }]);
+
+
+
+
+//*************************************************************************
+// New Housemate Invite
+//*************************************************************************
+mainApp.controller("emailInvite", ['$scope', '$http', function($scope, $http){
+  $scope.sendEmail = (function() {
+    $http({
+      url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/invite?friend_email=' + $scope.inviteFriend   ,
+      method: 'POST',
+      headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
+    }).success(function(data){
+      console.log($scope.inviteFriend);
+  });
+    });
+}]);

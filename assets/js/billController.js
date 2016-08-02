@@ -14,7 +14,9 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
     // console.log($scope.choreName);
     $scope.form = {
       'name': $scope.billName,
-      'amount': $scope.billAmount,
+      'amount': $scope.billAmount
+
+
     };
     console.log($scope.form);
     $http({
@@ -36,7 +38,7 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
 
 
 
-  // payment parameters: 
+  // payment parameters:
 
 $http({
   url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/bills', // Travis'
