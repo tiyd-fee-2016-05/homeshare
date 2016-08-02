@@ -52,6 +52,9 @@ mainApp.config( function($routeProvider) {
   .when( "/bill-user", {
     templateUrl: "pages/bill-user.html"
   })
+  .when( "/bill-info", {
+    templateUrl: "pages/bill-info.html"
+  })
   .when( "/calendar", {
     templateUrl: "pages/calendar.html"
   })

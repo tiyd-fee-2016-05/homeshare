@@ -5,8 +5,11 @@
 
 mainApp.controller("choreAdminController", ['$scope', '$http', function($scope, $http){
 
+  angular.element(document).ready( function() {
+    jQuery( ".chore-name-input" ).focus();
+  });
 
-// var text = "$scope.user_token";
+  // var text = "$scope.user_token";
   $scope.submitForm = function() {
     // console.log($scope.choreName);
     $scope.form = {

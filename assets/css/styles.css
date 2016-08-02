@@ -385,18 +385,20 @@ body {
     .profile-edit-main fieldset .edit-name {
       margin: 1em 0 1em -.75em; }
     .profile-edit-main fieldset .edit-location {
-      margin: .5em 0 1.75em -.75em; }
+      margin: .5em 0 1.75em -.25em; }
     .profile-edit-main fieldset .venmo-account {
-      margin: .5em 0 1.5em -.75em; }
+      margin: .5em 0 1.5em -.25em; }
     .profile-edit-main fieldset .name-heading,
     .profile-edit-main fieldset .location-heading,
-    .profile-edit-main fieldset .venmo-username {
+    .profile-edit-main fieldset .venmo-username,
+    .profile-edit-main fieldset .username-heading {
       display: block;
       font-size: 4.25em;
       margin: 1em 0 .75em 0; }
     .profile-edit-main fieldset input {
       width: 10.85em;
-      font-size: 4.5em; }
+      font-size: 4.5em;
+      outline-color: #1985A1; }
   .profile-edit-main .save {
     margin-top: 79em;
     margin-left: 18em;
@@ -755,29 +757,29 @@ body {
     margin-left: 4em;
     margin-right: auto; }
     #ca-wrapper .ca-form h2 {
-      font-size: 7em;
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Roboto', sans-serif;
+      font-size: 5em; }
     #ca-wrapper .ca-form input {
-      width: 18em;
-      height: 2em;
-      font-size: 3em;
-      padding-bottom: 5px; }
-    #ca-wrapper .ca-form .ca-submit {
-      margin-left: 38.3em;
-      margin-right: auto;
-      margin-top: 5.5em;
-      height: 11em;
-      width: 40em;
-      border: none;
-      border-radius: 3%;
-      background: #85DDA2;
-      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      position: absolute; }
-    #ca-wrapper .ca-form p {
-      font-family: 'Roboto';
-      font-size: 7em; }
+      width: 12.9em;
+      font-size: 4.25em;
+      margin-bottom: .45em;
+      outline-color: #1985A1; }
+  #ca-wrapper .ca-submit {
+    margin-left: 19.3em;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 8em;
+    height: 11em;
+    width: 40em;
+    border: none;
+    border-radius: 3%;
+    background: #85DDA2;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+  #ca-wrapper p {
+    font-family: 'Roboto';
+    font-size: 7em; }
   #ca-wrapper .cu-menu {
     font-family: 'Roboto';
     height: 11em;
@@ -1582,7 +1584,8 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 7em; }
+      margin-bottom: 7em;
+      cursor: pointer; }
     .bill-user-main .bills li:last-child {
       margin-bottom: 23em; }
     .bill-user-main .bills img,
@@ -1678,5 +1681,129 @@ body {
     #sa-wrapper .sa-form p {
       font-family: 'Roboto';
       font-size: 7em; }
+
+#sa-wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  #sa-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  #sa-wrapper .ba-header {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin: -.07em auto 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 10em;
+    color: #1985A1;
+    text-align: center; }
+  #sa-wrapper .bg {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 2em;
+    height: 65em;
+    opacity: .35; }
+  #sa-wrapper .ba-form {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    margin: 10em auto 0 3em; }
+    #sa-wrapper .ba-form h2 {
+      font-size: 6.25em;
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: .15em; }
+    #sa-wrapper .ba-form input {
+      width: 12.9em;
+      font-size: 4.25em;
+      margin-bottom: .45em;
+      outline-color: #1985A1; }
+    #sa-wrapper .ba-form .ba-submit {
+      margin-left: 19.3em;
+      margin-right: auto;
+      margin-top: 3.5em;
+      height: 11em;
+      width: 40em;
+      border: none;
+      border-radius: 3%;
+      background: #85DDA2;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+    #sa-wrapper .ba-form p {
+      font-family: 'Roboto';
+      font-size: 7em; }
+
+.bill-info-main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  .bill-info-main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .bill-info-main h1 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin: .15em auto 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 10em;
+    color: #1985A1;
+    text-align: center; }
+  .bill-info-main li {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; }
+  .bill-info-main .user-avatar {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    width: 13em;
+    margin: 10em 0 0 3.25em; }
+  .bill-info-main .bill-descrip {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    width: 8em;
+    font-size: 3em;
+    margin-left: 1.5em;
+    text-transform: uppercase; }
+  .bill-info-main .bill-amount {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 3em;
+    margin-left: 2em; }
+  .bill-info-main button {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    width: 7em;
+    margin-left: 2.75em;
+    font-size: 5em;
+    margin-top: 3.5em;
+    border: none;
+    border-radius: 3%;
+    background: #85DDA2;
+    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
 
 /*# sourceMappingURL=styles.css.map */

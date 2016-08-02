@@ -63,6 +63,7 @@
       li {
         @include span( 12 of 12 );
         margin-bottom: 7em;
+        cursor: pointer;
       }
 
       li:last-child {

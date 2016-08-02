@@ -67,11 +67,7 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
     ]; // end $scope.chores
 
   // $http({
-<<<<<<< HEAD
-  //   url: 'http://tiy-homeshare.herokuapp.com/homes/15/chores',
-=======
-  //   url: 'https://tiy-homeshare.herokuapp.com/homes/18/chores',
->>>>>>> erik
+
   //   method: 'GET',
   //   headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   // }).success( function(data) {

@@ -13,9 +13,8 @@
     <fieldset>
       <!-- <legend>Edit Profile</legend> -->
       <label class="edit-name">
-        <h2 class="name-heading">Email</h2>
-
-        <input class="profile-name-input" type="text" name="user-name"  ng-model="name">
+        <h2 class="name-heading">Paypal Email</h2>
+        <input class="profile-name-input" type="text" name="user-name"  ng-model="paypalEmail">
       </label>
       <!-- <label class="edit-location">
         <h2 class="location-heading">Email:</h2>
@@ -25,7 +24,10 @@
         <h2 class="venmo-username">{{userToken}}</h2>
         <input type="text" name="group-location" placeholder="username (optional)">
       </label> -->
-        <input type="text" name="group-location" placeholder="username (optional)" ng-model="venmoName">
+      </label>
+      <label class="edit-name">
+        <h2 class="username-heading">Username</h2>
+        <input class="venmo-name" type="text" name="group-location" placeholder="username" ng-model="venmoName">
       </label>
       <div ng-controller="emailInvite" class="invite">
       <h1>To invite a new housemate, enter their email address below:</h1>
@@ -37,7 +39,7 @@
 
     <div class="save">
       <!-- <h2 class="payment-options">Payment Options</h2> -->
-      <a href="#/main"><button class="profile-save" type="submit" ng-click="sendProfile()"><p>Save Changes</p></button></a>
+      <button class="profile-save" type="submit" ng-click="sendProfile()"><p>Save Changes</p></button>
     </div>
   </section>
 </main>

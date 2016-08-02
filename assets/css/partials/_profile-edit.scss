@@ -110,16 +110,17 @@
     }
 
     .edit-location {
-      margin: .5em 0 1.75em -.75em;
+      margin: .5em 0 1.75em -.25em;
     }
 
     .venmo-account {
-      margin: .5em 0 1.5em -.75em;
+      margin: .5em 0 1.5em -.25em;
     }
 
     .name-heading,
     .location-heading,
-    .venmo-username {
+    .venmo-username,
+    .username-heading {
       display: block;
       font-size: 4.25em;
       margin: 1em 0 .75em 0;
@@ -128,6 +129,7 @@
     input {
       width: 10.85em;
       font-size: 4.5em;
+      outline-color: $text;
     }
   } // end fieldset
 
