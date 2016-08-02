@@ -18,7 +18,9 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
 
 
     };
+
     console.log($scope.form);
+    
     $http({
       url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/bills?name=' + $scope.billName + '&amount=' + $scope.billAmount, // Travis'
       method: 'POST',

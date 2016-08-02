@@ -13,7 +13,8 @@
         <div ng-init="load()" class="center-avatar">
           <img class="user-avatar" src={{bills.user_avatar}} alt="user-avatar">
         </div><span class="bill-descrip">{{bills.name}}</span>
-        <span class="bill-amount">{{bills.amount}}</span>
+        <span class="bill-amount">{{bills.amount | currency}}</span>
+        <span class="fa fa-usd" aria-hidden="true"></span>
         <span class="fa fa-check-circle-o" aria-hidden="true"></span>
       </a>
     </li>

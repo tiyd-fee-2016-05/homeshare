@@ -175,7 +175,9 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   }).success( function(data) {
     $scope.avatar = data.user.housemate.avatar;
+    localStorage.setItem("home_id", JSON.stringify(data.user.homes[0].home_id));
     console.log( data );
+    console.log( data.user.homes[0].home_id );
     // $scope.totalChores = data.chores.incomplete;
     }); // end GET GET success
   }); // end on load event
@@ -217,12 +219,12 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
 
         mainApp.controller("homeName", ['$scope', '$http', function($scope, $http){
             $http({
-              url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) ,
+              url: 'https://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) ,
               method: 'GET',
               headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
             }).success(function(data){
               $scope.homeName = data.home.info.name;
-              console.log($scope.homeName);
+              console.log(data);
 
 
             });
