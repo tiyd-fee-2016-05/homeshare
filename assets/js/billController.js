@@ -1,5 +1,6 @@
 mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope, $http ) {
 
+  $scope.clickedBill;
 
   $scope.submitForm = function() {
     // console.log($scope.choreName);
@@ -23,17 +24,21 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
     jQuery( ".ba-points-input" ).val("");
 
   }; // end submitForm click event
+
 $http({
   url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/bills', // Travis'
   method: 'GET',
   headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   }) // end request
   .success(function(data){
-  $scope.allBills = data.bills.all_bills;
-  console.log($scope.allBills);
-
-  });
-
+    $scope.allBills = data.bills.all_bills;
+    console.log($scope.allBills);
+  }); // end success
 
 
-}]);
+  $scope.sendPayment = function( bills ) {
+    $scope.clickedBill = bills;
+    console.log( $scope.clickedBill );
+  } // end sendPayment click event
+
+}]); // end billingController

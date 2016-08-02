@@ -8,7 +8,7 @@
     <h2 class="paid-heading">Paid</h2>
   </div><!-- end heading for bills -->
   <ul ng-repeat="bills in allBills" class="bills">
-    <li>
+    <li ng-click="sendPayment( bills )">
       <div ng-init="load()" class="center-avatar">
         <img class="user-avatar" src={{bills.user_avatar}} alt="user-avatar">
       </div>      <span class="bill-descrip">{{bills.name}}</span>

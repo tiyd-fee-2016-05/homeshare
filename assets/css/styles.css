@@ -1513,7 +1513,8 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 7em; }
+      margin-bottom: 7em;
+      cursor: pointer; }
     .bill-user-main .bills li:last-child {
       margin-bottom: 23em; }
     .bill-user-main .bills img,
