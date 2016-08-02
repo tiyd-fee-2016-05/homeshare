@@ -27,7 +27,14 @@
       </label> -->
         <input type="text" name="group-location" placeholder="username (optional)" ng-model="venmoName">
       </label>
+      <div ng-controller="emailInvite" class="invite">
+      <h1>To invite a new housemate, enter their email address below:</h1>
+        <input ng-model="inviteFriend" type"text" name="home-invite" placeholder="email">
+        <button class="emai-invite" type="submit" ng-click="sendEmail()"><p>Invite!</p></button>
+      </div>
     </fieldset>
+
+
     <div class="save">
       <!-- <h2 class="payment-options">Payment Options</h2> -->
       <a href="#/main"><button class="profile-save" type="submit" ng-click="sendProfile()"><p>Save Changes</p></button></a>
