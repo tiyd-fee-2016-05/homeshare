@@ -1,0 +1,68 @@
+@import "../../../bower_components/susy/sass/susy";
+
+
+$susy: (
+columns: 12,
+container: 100%,
+);
+
+#sa-wrapper {
+
+  @include container;
+  @include span( 12 of 12 );
+
+  .ba-header {
+    @include span( 12 of 12 );
+    margin: -.07em auto 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 10em;
+    color: $text;
+    text-align: center;
+  }
+
+  .bg {
+    @include span( 12 of 12 );
+    text-align: center;
+    margin-top: 2em;
+    height: 65em;
+    opacity: .35;
+  }
+
+  .ba-form {
+    @include span(4 of 12);
+    margin: 10em auto 0 3em;
+
+    h2 {
+      font-size: 6.25em;
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: .15em;
+    }
+
+    input {
+      width: 12.9em;
+      font-size: 4.25em;
+      margin-bottom: .45em;
+      outline-color: $text;
+    }
+
+    .ba-submit {
+      margin-left: 19.3em;
+      margin-right: auto;
+      margin-top: 3.5em;
+      height: 11em;
+      width: 40em;
+      border: none;
+      border-radius: 3%;
+      background: #85DDA2;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    }
+
+    p {
+      font-family: 'Roboto';
+      font-size: 7em;
+    }
+  }
+
+} // end sa-wrapper

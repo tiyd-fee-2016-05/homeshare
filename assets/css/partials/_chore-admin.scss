@@ -10,88 +10,77 @@ container: 100%,
 @include container;
 @include span(12 of 12);
 
-.dropDown{
-  select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    // appearance:none;
-    display: inline-flex;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3.7em;
-    border: none;
-    width: 8em;
-    left: 4em;
-    top: 8.6em;
-    background: rgba(160, 193, 209, 0.36);
-    height: 2em;
-    z-index: 99999;
-    padding: 7px;
-  }
-  option{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-  }
-}
+  .dropDown{
 
+    select{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      // appearance:none;
+      display: inline-flex;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+      font-size: 3.7em;
+      border: none;
+      width: 8em;
+      left: 4em;
+      top: 6.5em;
+      background: rgba(160, 193, 209, 0.36);
+      height: 2em;
+      z-index: 99999;
+      padding: 7px;
+    }
 
+    option{
+      font-family: 'Roboto', sans-serif;
+      font-size: 2em;
+    }
+  } // end dropDown
 
-.ca-header{
-  @include span(12 of 12);
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 10.8em;
-  color: $text;
-  text-align: center;
-}
-.bg{
-  @include span( 12 of 12 );
-  text-align: center;
-  // left: 25%;
-  // margin-right: auto;
-  margin-top: 2em;
-  height: 65em;
-  opacity: .35;
-}
-.ca-form{
-  @include span(4 of 12);
-  display: block;
-  position: absolute;
-  margin-top: 34em;
-  margin-left: 4em;
-  margin-right: auto;
-  // padding-left: 2em;
-  // width: 6em;
-
-  h2{
-    font-size: 7em;
-    font-family: 'Roboto', sans-serif;
+  .ca-header{
+    @include span(12 of 12);
+    margin: -.8em auto 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 10em;
+    color: $text;
+    text-align: center;
   }
 
-  input{
-    width: 18em;
-    height: 2em;
-    font-size: 3em;
-    padding-bottom: 5px;
+  .ca-form{
+    @include span(4 of 12);
+    margin: 16.75em auto 0 3em;
+
+    h2{
+      font-size: 6.25em;
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: .15em;
+    }
+
+    input{
+      width: 12.9em;
+      font-size: 4.25em;
+      margin-bottom: .45em;
+      outline-color: $text;
+    }
+
+    .ca-submit{
+      margin-left: 19.3em;
+      margin-right: auto;
+      margin-top: 2em;
+      margin-bottom: 8em;
+      height: 11em;
+      width: 40em;
+      border: none;
+      border-radius: 3%;
+      background: #85DDA2;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+    }
+
+    p{
+      font-family: 'Roboto';
+      font-size: 7em;
+    }
   }
-  .ca-submit{
-    margin-left: 19.3em;
-    margin-right: auto;
-    margin-top: 3.5em;
-    height: 11em;
-    width: 40em;
-    border: none;
-    border-radius: 3%;
-    background: #85DDA2;
-    -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-  }
-  p{
-    font-family: 'Roboto';
-    font-size: 7em;
-  }
-}
 
 }

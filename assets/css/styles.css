@@ -692,7 +692,7 @@ body {
     border: none;
     width: 8em;
     left: 4em;
-    top: 8.6em;
+    top: 6.5em;
     background: rgba(160, 193, 209, 0.36);
     height: 2em;
     z-index: 99999;
@@ -705,42 +705,30 @@ body {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -.8em auto 0;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 10.8em;
+    font-size: 10em;
     color: #1985A1;
     text-align: center; }
-  #ca-wrapper .bg {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-    margin-top: 2em;
-    height: 65em;
-    opacity: .35; }
   #ca-wrapper .ca-form {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
-    display: block;
-    position: absolute;
-    margin-top: 34em;
-    margin-left: 4em;
-    margin-right: auto; }
+    margin: 16.75em auto 0 3em; }
     #ca-wrapper .ca-form h2 {
-      font-size: 7em;
-      font-family: 'Roboto', sans-serif; }
+      font-size: 6.25em;
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: .15em; }
     #ca-wrapper .ca-form input {
-      width: 18em;
-      height: 2em;
-      font-size: 3em;
-      padding-bottom: 5px; }
+      width: 12.9em;
+      font-size: 4.25em;
+      margin-bottom: .45em;
+      outline-color: #1985A1; }
     #ca-wrapper .ca-form .ca-submit {
       margin-left: 19.3em;
       margin-right: auto;
-      margin-top: 3.5em;
+      margin-top: 2em;
+      margin-bottom: 8em;
       height: 11em;
       width: 40em;
       border: none;
@@ -1608,6 +1596,67 @@ body {
       -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
       box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
     #sa-wrapper .sa-form p {
+      font-family: 'Roboto';
+      font-size: 7em; }
+
+#sa-wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  #sa-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  #sa-wrapper .ba-header {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin: -.07em auto 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 10em;
+    color: #1985A1;
+    text-align: center; }
+  #sa-wrapper .bg {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 2em;
+    height: 65em;
+    opacity: .35; }
+  #sa-wrapper .ba-form {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    margin: 10em auto 0 3em; }
+    #sa-wrapper .ba-form h2 {
+      font-size: 6.25em;
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: .15em; }
+    #sa-wrapper .ba-form input {
+      width: 12.9em;
+      font-size: 4.25em;
+      margin-bottom: .45em;
+      outline-color: #1985A1; }
+    #sa-wrapper .ba-form .ba-submit {
+      margin-left: 19.3em;
+      margin-right: auto;
+      margin-top: 3.5em;
+      height: 11em;
+      width: 40em;
+      border: none;
+      border-radius: 3%;
+      background: #85DDA2;
+      -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75); }
+    #sa-wrapper .ba-form p {
       font-family: 'Roboto';
       font-size: 7em; }
 

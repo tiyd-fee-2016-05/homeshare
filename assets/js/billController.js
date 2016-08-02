@@ -2,6 +2,10 @@ mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope,
 
   $scope.clickedBill;
 
+  angular.element( document ).ready( function() {
+    jQuery( ".ba-name-input" ).focus();
+  });
+
   $scope.submitForm = function() {
     // console.log($scope.choreName);
     $scope.form = {
