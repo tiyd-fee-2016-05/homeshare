@@ -1,14 +1,14 @@
+// main module for the entire app
 var mainApp = angular.module( "mainApp", ["ngRoute", "ngAnimate"  ] );
-// $httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
 
-mainApp.config( function($routeProvider) {
+// configure angular routing paths
+mainApp.config( function( $routeProvider ) {
 
   $routeProvider
 
-    .when( "/group", {
-      templateUrl: "pages/group.html"
-    })
-
+  .when( "/group", {
+    templateUrl: "pages/group.html"
+  })
   .when( "/landing", {
     templateUrl: "pages/landing.html",
     controller: "LoginCtrl"
@@ -23,7 +23,6 @@ mainApp.config( function($routeProvider) {
   .when( "/profile-edit", {
     templateUrl: "pages/profile-edit.html",
     controller: "ControllerAvatar"
-
   })
   .when( "/household", {
     templateUrl: "pages/household.html"
