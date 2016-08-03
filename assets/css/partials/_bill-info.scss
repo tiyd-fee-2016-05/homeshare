@@ -25,9 +25,9 @@ container: 100%,
 
   .user-avatar {
     @include span( 4 of 12 );
-    width: 13em;
+    width: 20em;
     text-align: center;
-    margin: 10em 0 0 24.5em;
+    margin: 6em 0 0 20.75em;
   }
 
   .bill-descrip {
@@ -35,7 +35,7 @@ container: 100%,
     // width: 8em;
     font-size: 6em;
     text-align: center;
-    margin-top: 1.8em;
+    margin-top: 1em;
     text-transform: uppercase;
   }
 
@@ -51,9 +51,9 @@ container: 100%,
     text-align: center;
     color: $color-user-highlights2;
     width: 6.5em;
-    margin-left: 2.25em;
-    font-size: 5.5em;
-    margin-top: 2.5em;
+    margin-left: 2.5em;
+    font-size: 5.2em;
+    margin-top: 1.5em;
     border: none;
     border-radius: 3%;
     background: #85DDA2;
