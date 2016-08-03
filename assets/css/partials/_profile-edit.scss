@@ -126,18 +126,26 @@
       margin: 0 0 .75em 0;
     }
 
+    .name-heading {
+      margin-top: 1.5em;
+    }
+
     input {
       width: 10.85em;
       font-size: 4.5em;
       outline-color: $text;
     }
+
+    .profile-name-input {
+      margin-bottom: 1.25em;
+    }
   } // end fieldset
 
-  .save{
-  margin-top: 79em;
-  margin-left: 18em;
-  height: 5em;
-  width: 26em;
+  .profile-save{
+  margin-top: 17em;
+  margin-left: 20.5em;
+  height: 12em;
+  width: 45em;
   border: none;
   border-radius: 3%;
   background: #85DDA2;
@@ -148,8 +156,8 @@
 
   p{
   font-family: 'Roboto',sans-serif;
-  font-size: 4.2em;
-  color: black;
+  font-size: 6em;
+  color: $color-user-highlights2;
   }
 
 

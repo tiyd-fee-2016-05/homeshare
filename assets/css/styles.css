@@ -395,15 +395,19 @@ body {
       display: block;
       font-size: 4.25em;
       margin: 0 0 .75em 0; }
+    .profile-edit-main fieldset .name-heading {
+      margin-top: 1.5em; }
     .profile-edit-main fieldset input {
       width: 10.85em;
       font-size: 4.5em;
       outline-color: #1985A1; }
-  .profile-edit-main .save {
-    margin-top: 79em;
-    margin-left: 18em;
-    height: 5em;
-    width: 26em;
+    .profile-edit-main fieldset .profile-name-input {
+      margin-bottom: 1.25em; }
+  .profile-edit-main .profile-save {
+    margin-top: 17em;
+    margin-left: 20.5em;
+    height: 12em;
+    width: 45em;
     border: none;
     border-radius: 3%;
     background: #85DDA2;
@@ -411,14 +415,14 @@ body {
     -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     text-align: center; }
-    .profile-edit-main .save p {
+    .profile-edit-main .profile-save p {
       font-family: 'Roboto',sans-serif;
-      font-size: 4.2em;
-      color: black; }
-    .profile-edit-main .save #pgbar-container {
+      font-size: 6em;
+      color: #3B4051; }
+    .profile-edit-main .profile-save #pgbar-container {
       text-align: center;
       width: 100%; }
-    .profile-edit-main .save .progress {
+    .profile-edit-main .profile-save .progress {
       background-color: rgba(0, 17, 255, 0.31);
       width: 55em;
       height: 3em;
@@ -426,9 +430,9 @@ body {
       z-index: 1;
       overflow: hidden;
       margin: 0 auto; }
-    .profile-edit-main .save .progress, .profile-edit-main .save .status {
+    .profile-edit-main .profile-save .progress, .profile-edit-main .profile-save .status {
       border-radius: 10px; }
-    .profile-edit-main .save .status {
+    .profile-edit-main .profile-save .status {
       position: absolute;
       left: 0;
       top: 0;
@@ -440,29 +444,29 @@ body {
       -moz-transition: all 1.2s linear;
       -o-transition: all 1.2s linear;
       transition: all 1.2s linear; }
-    .profile-edit-main .save .none .status {
+    .profile-edit-main .profile-save .none .status {
       width: 0%; }
-    .profile-edit-main .save .ten .status {
+    .profile-edit-main .profile-save .ten .status {
       width: 10%; }
-    .profile-edit-main .save .twenty .status {
+    .profile-edit-main .profile-save .twenty .status {
       width: 20%; }
-    .profile-edit-main .save .thirty .status {
+    .profile-edit-main .profile-save .thirty .status {
       width: 30%; }
-    .profile-edit-main .save .forty .status {
+    .profile-edit-main .profile-save .forty .status {
       width: 40%; }
-    .profile-edit-main .save .fifty .status {
+    .profile-edit-main .profile-save .fifty .status {
       width: 50%; }
-    .profile-edit-main .save .sixty .status {
+    .profile-edit-main .profile-save .sixty .status {
       width: 60%; }
-    .profile-edit-main .save .seventy .status {
+    .profile-edit-main .profile-save .seventy .status {
       width: 70%; }
-    .profile-edit-main .save .eighty .status {
+    .profile-edit-main .profile-save .eighty .status {
       width: 80%; }
-    .profile-edit-main .save .ninty .status {
+    .profile-edit-main .profile-save .ninty .status {
       width: 90%; }
-    .profile-edit-main .save .one-hundred .status {
+    .profile-edit-main .profile-save .one-hundred .status {
       width: 100%; }
-    .profile-edit-main .save .ninty .status, .profile-edit-main .save .one-hundred .status {
+    .profile-edit-main .profile-save .ninty .status, .profile-edit-main .profile-save .one-hundred .status {
       box-shadow: inset 0 0 1em #fcfcfc;
       background-color: #1985a1; }
 
@@ -520,7 +524,7 @@ body {
       width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: -4em 6.5% 0 32.35%; }
+      margin: .4em 6.5% 0 32.35%; }
       .chore-user-main .section-main .center-avatar .user-avatar {
         width: 22em;
         border-radius: 50%; }
@@ -1548,7 +1552,7 @@ body {
     text-align: center;
     font-size: 5.5em;
     font-weight: 400;
-    margin: 1.25em 0 2.15em 0; }
+    margin: .75em 0 2.15em 0; }
   .bill-user-main .bill-headings .user-heading,
   .bill-user-main .bill-headings .descrip-heading,
   .bill-user-main .bill-headings .amount-heading,
