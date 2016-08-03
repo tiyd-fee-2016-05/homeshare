@@ -394,7 +394,7 @@ body {
     .profile-edit-main fieldset .username-heading {
       display: block;
       font-size: 4.25em;
-      margin: 1em 0 .75em 0; }
+      margin: 0 0 .75em 0; }
     .profile-edit-main fieldset input {
       width: 10.85em;
       font-size: 4.5em;

@@ -58,4 +58,16 @@ $http({
     console.log( bills );
   } // end sendPayment click event
 
+
+$scope.payBill = (function (){
+  $http({
+    url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/bills/' + JSON.parse(localStorage.getItem( "clicked_bill")).id + '/pay' , // Travis'
+    method: 'POST',
+    headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
+    }) // end request
+    .success(function(data){
+
+      console.log(data);
+    }); // end success
+});
 }]); // end billingController
