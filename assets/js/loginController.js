@@ -31,7 +31,7 @@ mainApp.controller('LoginCtrl', ['$scope', '$http', '$location', 'User', functio
 
         $scope.logout = function() {
         storage.removeItem("user_token");
-        $location.path("#/landing");      };
+        $location.path("/landing");      };
   }]);
 
       // console.log(response.data.authentication.token_info.unique_token);

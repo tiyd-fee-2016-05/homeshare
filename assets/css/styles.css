@@ -405,9 +405,9 @@ body {
     .profile-edit-main fieldset .profile-name-input {
       margin-bottom: 1.25em; }
   .profile-edit-main .save {
-    margin-top: 76em;
+    margin-top: 74em;
     margin-left: 17em;
-    height: 7em;
+    height: 8em;
     width: 26em;
     border: none;
     border-radius: 3%;
@@ -416,14 +416,6 @@ body {
     -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     text-align: center; }
-    .profile-edit-main .save p {
-      font-family: 'Roboto',sans-serif;
-      font-size: 5.2em;
-      color: black;
-      position: absolute;
-      padding-top: .3em;
-      margin-top: -4.2em;
-      margin-left: -3.5em; }
   .profile-edit-main .profile-save {
     margin-top: 17em;
     margin-left: 20.5em;
@@ -436,56 +428,64 @@ body {
     -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     text-align: center; }
-    .profile-edit-main .profile-save #pgbar-container {
-      text-align: center;
-      width: 100%; }
-    .profile-edit-main .profile-save .progress {
-      background-color: rgba(0, 17, 255, 0.31);
-      width: 55em;
-      height: 3em;
-      position: relative;
-      z-index: 1;
-      overflow: hidden;
-      margin: 0 auto; }
-    .profile-edit-main .profile-save .progress, .profile-edit-main .profile-save .status {
-      border-radius: 10px; }
-    .profile-edit-main .profile-save .status {
+    .profile-edit-main .profile-save p {
+      font-family: 'Roboto',sans-serif;
+      font-size: 5.2em;
+      color: black;
       position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      box-shadow: inset 0 0 1em gold;
-      background-color: rgba(0, 17, 255, 0.31);
-      z-index: 2;
-      -webkit-transition: all 1.2s linear;
-      -moz-transition: all 1.2s linear;
-      -o-transition: all 1.2s linear;
-      transition: all 1.2s linear; }
-    .profile-edit-main .profile-save .none .status {
-      width: 0%; }
-    .profile-edit-main .profile-save .ten .status {
-      width: 10%; }
-    .profile-edit-main .profile-save .twenty .status {
-      width: 20%; }
-    .profile-edit-main .profile-save .thirty .status {
-      width: 30%; }
-    .profile-edit-main .profile-save .forty .status {
-      width: 40%; }
-    .profile-edit-main .profile-save .fifty .status {
-      width: 50%; }
-    .profile-edit-main .profile-save .sixty .status {
-      width: 60%; }
-    .profile-edit-main .profile-save .seventy .status {
-      width: 70%; }
-    .profile-edit-main .profile-save .eighty .status {
-      width: 80%; }
-    .profile-edit-main .profile-save .ninty .status {
-      width: 90%; }
-    .profile-edit-main .profile-save .one-hundred .status {
-      width: 100%; }
-    .profile-edit-main .profile-save .ninty .status, .profile-edit-main .profile-save .one-hundred .status {
-      box-shadow: inset 0 0 1em #fcfcfc;
-      background-color: #1985a1; }
+      padding-top: .3em;
+      margin-top: -.89em;
+      margin-left: 1em; }
+  .profile-edit-main #pgbar-container {
+    text-align: center;
+    width: 100%; }
+  .profile-edit-main .progress {
+    background-color: rgba(0, 17, 255, 0.31);
+    width: 55em;
+    height: 3em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto; }
+  .profile-edit-main .progress, .profile-edit-main .status {
+    border-radius: 10px; }
+  .profile-edit-main .status {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 1em gold;
+    background-color: rgba(0, 17, 255, 0.31);
+    z-index: 2;
+    -webkit-transition: all 1.2s linear;
+    -moz-transition: all 1.2s linear;
+    -o-transition: all 1.2s linear;
+    transition: all 1.2s linear; }
+  .profile-edit-main .none .status {
+    width: 0%; }
+  .profile-edit-main .ten .status {
+    width: 10%; }
+  .profile-edit-main .twenty .status {
+    width: 20%; }
+  .profile-edit-main .thirty .status {
+    width: 30%; }
+  .profile-edit-main .forty .status {
+    width: 40%; }
+  .profile-edit-main .fifty .status {
+    width: 50%; }
+  .profile-edit-main .sixty .status {
+    width: 60%; }
+  .profile-edit-main .seventy .status {
+    width: 70%; }
+  .profile-edit-main .eighty .status {
+    width: 80%; }
+  .profile-edit-main .ninty .status {
+    width: 90%; }
+  .profile-edit-main .one-hundred .status {
+    width: 100%; }
+  .profile-edit-main .ninty .status, .profile-edit-main .one-hundred .status {
+    box-shadow: inset 0 0 1em #fcfcfc;
+    background-color: #1985a1; }
 
 .chore-user-main {
   max-width: 100%;
@@ -614,7 +614,7 @@ body {
   position: relative;
   height: 6em;
   float: left;
-  top: 24em;
+  top: 21em;
   left: 2em; }
 
 .shop-user-main {
@@ -685,7 +685,7 @@ body {
         width: 8em;
         margin-left: -64%; }
       .shop-user-main .section-shopping-list .shopping-headings .checkbox-heading {
-        margin: 0 0 0 77%; }
+        margin: 0 0 0 62%; }
     .shop-user-main .section-shopping-list .shopping-list {
       color: #1985A1;
       padding-bottom: 25.5em; }
@@ -779,7 +779,8 @@ body {
     margin-right: auto; }
     #ca-wrapper .ca-form h2 {
       font-family: 'Roboto', sans-serif;
-      font-size: 5em; }
+      font-size: 6.25em;
+      padding-bottom: .1em; }
     #ca-wrapper .ca-form input {
       width: 12.9em;
       font-size: 4.25em;
@@ -802,7 +803,7 @@ body {
   #ca-wrapper p {
     font-family: 'Roboto';
     font-size: 7em;
-    padding-top: .2em; }
+    padding-top: .3em; }
   #ca-wrapper .cu-menu {
     font-family: 'Roboto';
     height: 11em;
@@ -956,12 +957,14 @@ body {
     display: block;
     position: absolute;
     margin-top: 24em;
-    margin-left: 10em;
+    margin-left: 9em;
     margin-right: auto; }
     #hhwrapper .hh-form h2 {
-      font-size: 4.6em;
+      font-size: 6.25em;
       font-family: 'Roboto', sans-serif;
-      width: 8em; }
+      width: 8em;
+      padding-bottom: .25em;
+      padding-top: .3em; }
     #hhwrapper .hh-form input {
       width: 15em;
       height: 2em;
@@ -971,7 +974,7 @@ body {
       margin-left: 11.3em;
       margin-right: auto;
       margin-top: 3.5em;
-      height: 11em;
+      height: 14em;
       width: 40em;
       border: none;
       border-radius: 3%;
@@ -1697,12 +1700,13 @@ body {
     margin-right: 1.69492%;
     display: block;
     position: absolute;
-    margin-top: 34em;
+    margin-top: 25em;
     margin-left: 4em;
     margin-right: auto; }
     #sa-wrapper .sa-form h2 {
-      font-size: 7em;
-      font-family: 'Roboto', sans-serif; }
+      font-size: 6.25em;
+      font-family: 'Roboto', sans-serif;
+      padding: .2em 0 0.1em 0; }
     #sa-wrapper .sa-form input {
       width: 18em;
       height: 2em;
@@ -1710,7 +1714,7 @@ body {
       padding-bottom: 5px;
       outline-color: #1985A1; }
     #sa-wrapper .sa-form .sa-submit {
-      margin-left: 11.3em;
+      margin-left: 19.3em;
       margin-right: auto;
       margin-top: 3.5em;
       height: 11em;
@@ -1773,7 +1777,7 @@ body {
     #sa-wrapper .ba-form .ba-submit {
       margin-left: 19.3em;
       margin-right: auto;
-      margin-top: 3.5em;
+      margin-top: 1.5em;
       height: 11em;
       width: 40em;
       border: none;
