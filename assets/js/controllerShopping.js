@@ -23,6 +23,8 @@ mainApp.controller( "ControllerShopping", [ "$scope", "$http", function( $scope,
 
     jQuery( ".sa-name-input" ).val("");
     jQuery( ".sa-area-input" ).val("");
+    jQuery( ".sa-points-input" ).val("");
+
 
   }; // end submitForm click event
 

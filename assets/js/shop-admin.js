@@ -7,6 +7,7 @@ mainApp.controller("shopAdminController", ['$scope', '$http', function($scope, $
     $scope.form = {
       'qty': $scope.itemQty,
       'item': $scope.itemName,
+      'item_xp' :$scope.itemXp
     };
     console.log($scope.form);
     $http({

@@ -143,7 +143,7 @@
   } // end fieldset
 
   .save{
-    margin-top: 69em;
+    margin-top: 76em;
     margin-left: 17em;
     height: 7em;
     width: 26em;
@@ -159,8 +159,11 @@
     font-family: 'Roboto',sans-serif;
     font-size: 5.2em;
     color: black;
+    position: absolute;
     padding-top: .3em;
-  }
+    margin-top: -4.2em;
+    margin-left: -3.5em;
+}
 }
   .profile-save{
   margin-top: 17em;
@@ -175,11 +178,11 @@
   box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
   text-align: center;
 
-  p{
-  font-family: 'Roboto',sans-serif;
-  font-size: 6em;
-  color: $color-user-highlights2;
-  }
+  // p{
+  // font-family: 'Roboto',sans-serif;
+  // font-size: 6em;
+  // color: $color-user-highlights2;
+  // }
 
 
   #pgbar-container {

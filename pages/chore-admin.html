@@ -1,9 +1,9 @@
 <div ng-controller="choreAdminController" ng-app="mainApp"  id="ca-wrapper">
-  <div class="dropDown" ng-controller="drpdwnCtrl">
+  <!-- <div class="dropDown" ng-controller="drpdwnCtrl">
      <select  ng-options="chores.name + ' ' + chores.description + '-' + chores.chore_xp + ' points' for chores in completeChoreList" ng-model="selectedChores">
        <option value="" label=" ▼ Recent Chores"></option>
     </select>
-  </div>
+  </div> -->
   <h1 class="ca-header">Add chore</h1>
   <form class="ca-form" ng-submit="submitForm()">
     <h2>Type:</h2> <input class="chore-name-input" style="font-family: Arial;"  ng-model="choreName" type="text"></input>

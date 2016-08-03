@@ -6,9 +6,9 @@
   <img  class="landing-bg" src="assets/images/misc/home.png">
 
 <form ng-controller="LoginCtrl" ng-submit="loginUser()" class="login">
-  <p>User-Name:</p><input name="landing_user" style="font-family: Arial; font-size:25px" type="text" / ng-model="username"></input>
-  <p>Password:</p><input name="landing_password" style="font-family: Arial; font-size:25px" type="password" / ng-model="password"></input>
-<button class="landing-submit"><p>Login</p></button>
+  <p>User-Name:</p><input class="landing_user" name="landing_user" style="font-family: Arial;" type="text" / ng-model="email"></input>
+  <p>Password:</p><input class="landing_pass" name="landing_password" style="font-family: Arial;" type="password" / ng-model="password"></input>
+<button ng-model="$window" class="landing-submit"><p>Login</p></button>
   <div class="register">
     <h2>New user?</h2>
 
