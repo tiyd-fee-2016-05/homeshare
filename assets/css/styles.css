@@ -1707,7 +1707,8 @@ body {
       width: 18em;
       height: 2em;
       font-size: 3em;
-      padding-bottom: 5px; }
+      padding-bottom: 5px;
+      outline-color: #1985A1; }
     #sa-wrapper .sa-form .sa-submit {
       margin-left: 11.3em;
       margin-right: auto;

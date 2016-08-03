@@ -1,14 +1,18 @@
 mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $http ) {
 
+  // global variable
   $scope.user_id;
 
+  // for profile-edit.html...will place cursor focus in first input field
   angular.element(document).ready( function() {
     jQuery( ".profile-name-input" ).focus();
   });
 
-  $( window ).load(function() {
+  // when page load, will make GET request to obtain user's id
+  $( window ).load( function() {
 
     console.log( JSON.parse(localStorage.getItem( "user_token")) + " is a " + typeof localStorage.getItem( "user_token") );
+
     $http({
       url: 'http://tiy-homeshare.herokuapp.com/users/me', // Travis'
       method: 'GET',
@@ -139,24 +143,27 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
    console.log( "Click: " + avatarClick );
   }; // end nextIcon()
 
+  // for profile-edit.html...will PUT user preferences to db and clear input field...will then store user avatar in localStorage
   $scope.sendProfile = function() {
+
     console.log( $scope.currentAvatar + ", " + $scope.name + ", " + $scope.location + ", " + $scope.venmoName );
     console.log( "User ID: " + $scope.user_id );
+
     jQuery( ".profile-name-input" ).val("");
     jQuery( ".profile-location-input" ).val("");
     jQuery( ".profile-venmo-input" ).val("");
+    jQuery( ".profile-name-input" ).focus();
     console.log( $scope.paypalEmail );
 
     $http({
-        method: "PUT",
-
-        url:    "http://tiy-homeshare.herokuapp.com/users/" + $scope.user_id, // Travis'
-        headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
-        data: {
-            avatar:    $scope.currentAvatar,
-            venmo_username: $scope.venmoName,
-            paypal: $scope.paypalEmail
-        }
+      method: "PUT",
+      url:    "http://tiy-homeshare.herokuapp.com/users/" + $scope.user_id, // Travis'
+      headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
+      data: {
+          avatar:    $scope.currentAvatar,
+          venmo_username: $scope.venmoName,
+          paypal: $scope.paypalEmail
+      }
     }).then(function(response) {
         console.log( "Success!!!" + response );
         console.log( response );
@@ -174,17 +181,21 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
     jQuery functions
   ****************************************************************************************/
 
+  // for profile-edit.html...click event for left arrow
   $( ".left-chores" ).click( function() {
     console.log( "Houston, we have liftoff!" );
     $( ".chores-bg-color" ).slideToggle();
 
-    // thank you http://www.electrictoolbox.com/jquery-scroll-bottom/ for your help
+    /*
+      thank you http://www.electrictoolbox.com/jquery-scroll-bottom/ for your help
+      will scroll page up if data is below fold
+    */
     $( "html, body" ).animate( { scrollTop: $(document).height() }, 'slow' );
     return false;
   }); // end .left-chores click event
 
+  // for profile-edit.html...click event for right arrow
   $( ".fa-sort-asc" ).click( function() {
     $( ".chores-bg-color" ).slideUp();
   }); // end .fa-sort-asc click event
-
 }]); // end ControllerAvatar

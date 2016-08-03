@@ -1,7 +1,13 @@
 mainApp.controller( "ControllerShopping", [ "$scope", "$http", function( $scope, $http ) {
 
+  // global variable
   $scope.totalShoppingList;
 
+  angular.element( document ).ready( function() {
+    jQuery( ".sa-name-input" ).focus();
+  });
+
+  // for shop-admin.html...will POST item to shopping list and then clear the input fields
   $scope.submitForm = function() {
     // console.log($scope.choreName);
     $scope.form = {
@@ -24,7 +30,7 @@ mainApp.controller( "ControllerShopping", [ "$scope", "$http", function( $scope,
     jQuery( ".sa-name-input" ).val("");
     jQuery( ".sa-area-input" ).val("");
     jQuery( ".sa-points-input" ).val("");
-
+    jQuery( ".sa-name-input" ).focus();
 
   }; // end submitForm click event
 

@@ -1,5 +1,6 @@
 mainApp.controller( "billingController", [ "$scope", "$http", "$location", function( $scope, $http, $location ) {
 
+  // global variables
   $scope.allBills;
   $scope.clickedBill;
   // $scope.paidBills = [ true, false, true ]; // for testing only
