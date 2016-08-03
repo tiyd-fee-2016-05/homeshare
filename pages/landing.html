@@ -1,13 +1,13 @@
-<div class="landing-wrapper">
+<div  class="landing-wrapper">
 
   <h1 class="header">HOMESHARE</h1>
 
 
   <img  class="landing-bg" src="assets/images/misc/home.png">
 
-<form ng-submit="loginUser()" class="login">
-  <p>User-Name:</p><input name="landing_user" style="font-family: Arial; font-size:25px" type="text" / ng-model="form.username"></input>
-  <p>Password:</p><input name="landing_password" style="font-family: Arial; font-size:25px" type="password" / ng-model="form.password"></input>
+<form ng-controller="LoginCtrl" ng-submit="loginUser()" class="login">
+  <p>User-Name:</p><input name="landing_user" style="font-family: Arial; font-size:25px" type="text" / ng-model="username"></input>
+  <p>Password:</p><input name="landing_password" style="font-family: Arial; font-size:25px" type="password" / ng-model="password"></input>
 <button class="landing-submit"><p>Login</p></button>
   <div class="register">
     <h2>New user?</h2>

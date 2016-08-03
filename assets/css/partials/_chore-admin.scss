@@ -84,23 +84,25 @@ container: 100%,
   }
 
     .ca-submit{
-      margin-left: 19.3em;
       margin-right: auto;
-      margin-top: 2em;
-      margin-bottom: 8em;
+      margin-top: 3.7em;
+      margin-bottom: 7em;
+      margin-left: 18em;
       height: 11em;
       width: 40em;
       border: none;
       border-radius: 3%;
       background: #85DDA2;
       -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow:    0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-      box-shadow:         0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
+      position: absolute;
 
     }
     p{
       font-family: 'Roboto';
       font-size: 7em;
+      padding-top: .2em;
     }
 
 
@@ -115,7 +117,9 @@ container: 100%,
   -webkit-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
-  margin-top: 5.5em;
+  margin-top: 3.5em;
+  margin-left: 43em;
+  position: absolute;
   p{
     text-decoration-style: none;
   }

@@ -1,15 +1,14 @@
 mainApp.controller('RegisterController', ['$scope', '$http', '$location', 'User', function($scope, $http, $location, User) {
 
     $scope.register = function() {
-      console.log( JSON.stringify($scope.user.email) + ", " + JSON.stringify($scope.user.password) );
+      console.log( $scope.user.email + ", " + $scope.user.password );
         $http({
             method: "POST",
-            // url:    "http://tiy-homeshare.herokuapp.com/api/register", // this is Erik's
-            url:    "http://tiy-homeshare.herokuapp.com/api/register", // this is Travis'
+            url:    "https://tiy-homeshare.herokuapp.com/api/register", // this is Travis'
             data:
             {
-                "email":    JSON.stringify($scope.user.email),
-                "password": JSON.stringify($scope.user.password)
+                "email":    $scope.user.email,
+                "password": $scope.user.password
             }
         }).then(function(response) {
           console.log( response );

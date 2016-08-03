@@ -64,7 +64,7 @@ mainApp.controller( "ControllerShopping", [ "$scope", "$http", function( $scope,
     .success( function( data ) {
       $scope.data = data.data;
       console.log( data );
-    })
-  } // end removeItem click event
+    });
+  }; // end removeItem click event
 
 }]); // end ControllerShopping

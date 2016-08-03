@@ -1,31 +1,25 @@
-mainApp.controller('LoginCtrl', ['$scope', '$rootScope','$http', '$location', 'User', function($scope, $rootScope, $http, $location, User) {
+mainApp.controller('LoginCtrl', ['$scope', '$http', '$location', 'User', function($scope, $http, $location, User) {
     // if (User.isLoggedIn()) {
     //     $location.path("/");
     // }
     // var rootUrl= "http://6e62d5d1.ngrok.io/";
     // var rootUrl= "http://tiy-homeshare.herokuapp.com/users/me/"; // Erik's
-    var rootUrl= "http://tiy-homeshare.herokuapp.com/users/me/"; // Travis'
+    // var rootUrl= "http://tiy-homeshare.herokuapp.com/users/me/"; // Travis'
 
-    $( ".landing-header" ).css( "visibility", "hidden" );
 
     $scope.loginUser = function() {
       console.log("Submitted");
         $http({
             method: "POST",
-            // url:   "http://tiy-homeshare.herokuapp.com/users/sign_in", // Erik's?
+            url:   "http://tiy-homeshare.herokuapp.com/api/login", // Erik's?
             data: {
-                email: $rootScope.email,
-                password: "password",
+                email: $scope.email,
+                password: $scope.password,
             },
-            // url:   "http://f6ed491e.ngrok.io/users/me",
-            url:   "http://tiy-homeshare.herokuapp.com/users/me", // Travis'?
-            // data: {
-            //     email:$rootScope.email,
-            //     password:$rootScope.password,
-            // },
-            headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
+            headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) },
         }).then(function(response) {
             // TODO: store and respect expiration time??
+             $location.path("/main");
             User.logIn(JSON.parse(localStorage.getItem( "user_token")));
           }, function() {
               alert("Something went wrong!");

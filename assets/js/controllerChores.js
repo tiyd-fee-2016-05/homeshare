@@ -76,8 +76,8 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
   // }); // end GET GET success
 
   $http({
-    url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/chores',
-    method: 'GET',
+    url: "http://tiy-homeshare.herokuapp.com/homes/" + JSON.parse(localStorage.getItem( "home_id")) + "/chores",
+    method: "GET",
     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
   }).success( function(data) {
     $scope.totalChores = data.chores.incomplete;
@@ -153,8 +153,8 @@ mainApp.controller( "ControllerChores", [ "$scope", "$http",  function( $scope, 
       $scope.totalChores.splice( $scope.totalChores.indexOf( chores ), 1 );
 
       $http({
-        url: 'http://tiy-homeshare.herokuapp.com/homes/'  + JSON.parse(localStorage.getItem( "home_id")) +  '/chores/' + clickedChoreId + '/mark_complete', // Erik's
-        method: 'POST',
+        url: "http://tiy-homeshare.herokuapp.com/homes/"  + JSON.parse(localStorage.getItem( "home_id")) +  "/chores/" + clickedChoreId + "/mark_complete", // Erik's
+        method: "POST",
         headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
         // data: $scope.form
       }).success(function(data){

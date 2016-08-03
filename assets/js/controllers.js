@@ -217,12 +217,12 @@ mainApp.controller('avatardisplay',['$rootScope','$scope','$http' , function ($r
 
         mainApp.controller("homeName", ['$scope', '$http', function($scope, $http){
             $http({
-              url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) ,
+              url: "http://tiy-homeshare.herokuapp.com/homes/" + JSON.parse(localStorage.getItem( "home_id")) ,
               method: 'GET',
               headers: {Authorization: JSON.parse(localStorage.getItem( "user_token")) }
             }).success(function(data){
               $scope.homeName = data.home.info.name;
-              console.log($scope.homeName);
+              console.log(data);
 
 
             });
