@@ -14,8 +14,8 @@
           <img class="user-avatar" src={{bills.user_avatar}} alt="user-avatar">
         </div><span class="bill-descrip">{{bills.name}}</span>
         <span class="bill-amount">{{bills.amount | currency}}</span>
-        <span class="fa fa-usd" aria-hidden="true" ng-show="!paid()"></span>
-        <span class="fa fa-check-circle-o" aria-hidden="true" ng-show="paid()"></span>
+        <span class="fa fa-usd" aria-hidden="true" ng-show="!paid( bills )"></span>
+        <span ng-click="changeIcon( bills )" class="fa fa-check-circle-o" aria-hidden="true" ng-show="paid( bills )"></span>
       </a>
     </li>
 

@@ -1,17 +1,30 @@
 mainApp.controller( "billingController", [ "$scope", "$http",  function( $scope, $http ) {
 
+  $scope.allBills;
   $scope.clickedBill;
+  $scope.paidBills = [ true, false, true ];
 
   angular.element( document ).ready( function() {
     $scope.clickedBill = JSON.parse(localStorage.getItem( "clicked_bill" ) );
   });
 
+  // puts focus in first input box when page loads
   angular.element(document).ready( function() {
     jQuery( ".ba-name-input" ).focus();
   });
 
-  $scope.paid = function() {
-    return false;
+  $http({
+    url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/bills/paid', // Travis'
+    method: 'GET',
+    headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
+    }) // end request
+    .success( function( data ){
+      console.log( data );
+    }); // end success
+
+  // function to switch between dollar sign for unpaid and check mark for paid
+  $scope.paid = function( bill ) {
+    return $scope.paidBills[$scope.allBills.indexOf( bill )];
   }
 
   $scope.submitForm = function() {
@@ -61,14 +74,13 @@ $http({
   } // end sendPayment click event
 
 
-$scope.payBill = (function (){
+$scope.payBill = ( function(){
   $http({
     url: 'http://tiy-homeshare.herokuapp.com/homes/' + JSON.parse(localStorage.getItem( "home_id")) + '/bills/' + JSON.parse(localStorage.getItem( "clicked_bill")).id + '/pay' , // Travis'
     method: 'POST',
     headers: {"Authorization": JSON.parse(localStorage.getItem( "user_token" )) }
     }) // end request
     .success(function(data){
-
       console.log(data);
     }); // end success
 });
