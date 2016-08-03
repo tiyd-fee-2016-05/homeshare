@@ -1548,7 +1548,7 @@ body {
     text-align: center;
     font-size: 5.5em;
     font-weight: 400;
-    margin: 1.25em 0 1em 0; }
+    margin: 1.25em 0 2.15em 0; }
   .bill-user-main .bill-headings .user-heading,
   .bill-user-main .bill-headings .descrip-heading,
   .bill-user-main .bill-headings .amount-heading,
@@ -1556,7 +1556,7 @@ body {
     display: inline-block;
     font-size: 4em;
     font-weight: 400;
-    margin: 0 0 2em 0; }
+    margin: 0 0 5.5em 0; }
   .bill-user-main .bill-headings .user-heading {
     width: 15.25424%;
     float: left;
@@ -1566,12 +1566,12 @@ body {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
-    margin-left: .5em; }
+    margin-left: 1.9em; }
   .bill-user-main .bill-headings .amount-heading {
     width: 15.25424%;
     float: left;
     margin-right: 1.69492%;
-    margin-left: .5em; }
+    margin-left: -.9em; }
   .bill-user-main .bill-headings .paid-heading {
     width: 15.25424%;
     float: left;
@@ -1584,7 +1584,7 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 7em;
+      margin-top: -16em;
       cursor: pointer; }
     .bill-user-main .bills li:last-child {
       margin-bottom: 23em; }
@@ -1600,21 +1600,35 @@ body {
       margin-left: .15em; }
     .bill-user-main .bills span {
       margin-top: 1em; }
+    .bill-user-main .bills .bill-descrip,
+    .bill-user-main .bills .bill-amount {
+      font-size: 3.85em;
+      color: #1985A1; }
     .bill-user-main .bills .bill-descrip {
       width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin-left: .25em; }
+      width: 6em;
+      margin-left: .15em; }
     .bill-user-main .bills .bill-amount {
       width: 15.25424%;
       float: left;
       margin-right: 1.69492%;
-      margin-left: .75em; }
+      margin-left: -1.3em; }
+    .bill-user-main .bills .fa-usd {
+      width: 15.25424%;
+      float: left;
+      margin-right: 1.69492%;
+      font-size: 5.25em;
+      color: #1985A1;
+      position: absolute;
+      margin: .5em 0 0 1.55em; }
     .bill-user-main .bills .fa-check-circle-o {
       width: 15.25424%;
       float: left;
       margin-right: 1.69492%;
       font-size: 7em;
+      color: #1985A1;
       margin: .4em 0 0 1em; }
 
 #sa-wrapper {
