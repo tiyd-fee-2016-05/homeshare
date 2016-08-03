@@ -3,7 +3,7 @@ mainApp.controller( "ControllerAvatar", [ "$scope", "$http", function( $scope, $
   $scope.user_id;
 
   angular.element(document).ready( function() {
-    jQuery( ".profi-name-input" ).focus();
+    jQuery( ".profile-name-input" ).focus();
   });
 
   $( window ).load(function() {

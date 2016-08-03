@@ -396,6 +396,8 @@ body {
       display: block;
       font-size: 4.25em;
       margin: 0 0 .75em 0; }
+    .profile-edit-main fieldset .name-heading {
+      margin-top: 1.5em; }
     .profile-edit-main fieldset input {
       width: 10.85em;
       font-size: 4.5em;
@@ -405,6 +407,14 @@ body {
     margin-left: 17em;
     height: 7em;
     width: 26em;
+  }
+    .profile-edit-main fieldset .profile-name-input {
+      margin-bottom: 1.25em; }
+  .profile-edit-main .profile-save {
+    margin-top: 17em;
+    margin-left: 20.5em;
+    height: 12em;
+    width: 45em;
     border: none;
     border-radius: 3%;
     background: #85DDA2;
@@ -412,15 +422,16 @@ body {
     -moz-box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 18px 22px 0px rgba(50, 50, 50, 0.75);
     text-align: center; }
-    .profile-edit-main .save p {
+    .profile-edit-main .profile-save p {
       font-family: 'Roboto',sans-serif;
       font-size: 5.2em;
       color: black;
       padding-top: .3em; }
     .profile-edit-main .save #pgbar-container {
+
       text-align: center;
       width: 100%; }
-    .profile-edit-main .save .progress {
+    .profile-edit-main .profile-save .progress {
       background-color: rgba(0, 17, 255, 0.31);
       width: 55em;
       height: 3em;
@@ -428,9 +439,9 @@ body {
       z-index: 1;
       overflow: hidden;
       margin: 0 auto; }
-    .profile-edit-main .save .progress, .profile-edit-main .save .status {
+    .profile-edit-main .profile-save .progress, .profile-edit-main .profile-save .status {
       border-radius: 10px; }
-    .profile-edit-main .save .status {
+    .profile-edit-main .profile-save .status {
       position: absolute;
       left: 0;
       top: 0;
@@ -442,29 +453,29 @@ body {
       -moz-transition: all 1.2s linear;
       -o-transition: all 1.2s linear;
       transition: all 1.2s linear; }
-    .profile-edit-main .save .none .status {
+    .profile-edit-main .profile-save .none .status {
       width: 0%; }
-    .profile-edit-main .save .ten .status {
+    .profile-edit-main .profile-save .ten .status {
       width: 10%; }
-    .profile-edit-main .save .twenty .status {
+    .profile-edit-main .profile-save .twenty .status {
       width: 20%; }
-    .profile-edit-main .save .thirty .status {
+    .profile-edit-main .profile-save .thirty .status {
       width: 30%; }
-    .profile-edit-main .save .forty .status {
+    .profile-edit-main .profile-save .forty .status {
       width: 40%; }
-    .profile-edit-main .save .fifty .status {
+    .profile-edit-main .profile-save .fifty .status {
       width: 50%; }
-    .profile-edit-main .save .sixty .status {
+    .profile-edit-main .profile-save .sixty .status {
       width: 60%; }
-    .profile-edit-main .save .seventy .status {
+    .profile-edit-main .profile-save .seventy .status {
       width: 70%; }
-    .profile-edit-main .save .eighty .status {
+    .profile-edit-main .profile-save .eighty .status {
       width: 80%; }
-    .profile-edit-main .save .ninty .status {
+    .profile-edit-main .profile-save .ninty .status {
       width: 90%; }
-    .profile-edit-main .save .one-hundred .status {
+    .profile-edit-main .profile-save .one-hundred .status {
       width: 100%; }
-    .profile-edit-main .save .ninty .status, .profile-edit-main .save .one-hundred .status {
+    .profile-edit-main .profile-save .ninty .status, .profile-edit-main .profile-save .one-hundred .status {
       box-shadow: inset 0 0 1em #fcfcfc;
       background-color: #1985a1; }
 
@@ -522,7 +533,7 @@ body {
       width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin: -4em 6.5% 0 32.35%; }
+      margin: .4em 6.5% 0 32.35%; }
       .chore-user-main .section-main .center-avatar .user-avatar {
         width: 22em;
         border-radius: 50%; }
@@ -1557,7 +1568,7 @@ body {
     text-align: center;
     font-size: 5.5em;
     font-weight: 400;
-    margin: 1.25em 0 1em 0; }
+    margin: .75em 0 2.15em 0; }
   .bill-user-main .bill-headings .user-heading,
   .bill-user-main .bill-headings .descrip-heading,
   .bill-user-main .bill-headings .amount-heading,
@@ -1565,7 +1576,7 @@ body {
     display: inline-block;
     font-size: 4em;
     font-weight: 400;
-    margin: 0 0 2em 0; }
+    margin: 0 0 5.5em 0; }
   .bill-user-main .bill-headings .user-heading {
     width: 15.25424%;
     float: left;
@@ -1575,12 +1586,12 @@ body {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
-    margin-left: .5em; }
+    margin-left: 1.9em; }
   .bill-user-main .bill-headings .amount-heading {
     width: 15.25424%;
     float: left;
     margin-right: 1.69492%;
-    margin-left: .5em; }
+    margin-left: -.9em; }
   .bill-user-main .bill-headings .paid-heading {
     width: 15.25424%;
     float: left;
@@ -1593,7 +1604,7 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 7em;
+      margin-top: -16em;
       cursor: pointer; }
     .bill-user-main .bills li:last-child {
       margin-bottom: 23em; }
@@ -1609,21 +1620,35 @@ body {
       margin-left: .15em; }
     .bill-user-main .bills span {
       margin-top: 1em; }
+    .bill-user-main .bills .bill-descrip,
+    .bill-user-main .bills .bill-amount {
+      font-size: 3.85em;
+      color: #1985A1; }
     .bill-user-main .bills .bill-descrip {
       width: 23.72881%;
       float: left;
       margin-right: 1.69492%;
-      margin-left: .25em; }
+      width: 6em;
+      margin-left: .15em; }
     .bill-user-main .bills .bill-amount {
       width: 15.25424%;
       float: left;
       margin-right: 1.69492%;
-      margin-left: .75em; }
+      margin-left: -1.3em; }
+    .bill-user-main .bills .fa-usd {
+      width: 15.25424%;
+      float: left;
+      margin-right: 1.69492%;
+      font-size: 5.25em;
+      color: #1985A1;
+      position: absolute;
+      margin: .5em 0 0 1.55em; }
     .bill-user-main .bills .fa-check-circle-o {
       width: 15.25424%;
       float: left;
       margin-right: 1.69492%;
       font-size: 7em;
+      color: #1985A1;
       margin: .4em 0 0 1em; }
 
 #sa-wrapper {
@@ -1775,39 +1800,44 @@ body {
     color: #1985A1;
     text-align: center; }
   .bill-info-main li {
-    display: inline-block;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    color: #1985A1; }
   .bill-info-main .user-avatar {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
     width: 13em;
-    margin: 10em 0 0 3.25em; }
+    text-align: center;
+    margin: 10em 0 0 24.5em; }
   .bill-info-main .bill-descrip {
-    width: 32.20339%;
+    width: 100%;
     float: left;
-    margin-right: 1.69492%;
-    width: 8em;
-    font-size: 3em;
-    margin-left: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 6em;
+    text-align: center;
+    margin-top: 1.8em;
     text-transform: uppercase; }
   .bill-info-main .bill-amount {
-    width: 15.25424%;
+    width: 100%;
     float: left;
-    margin-right: 1.69492%;
-    font-size: 3em;
-    margin-left: 2em; }
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: .75em;
+    font-size: 6em; }
   .bill-info-main button {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
-    width: 7em;
-    margin-left: 2.75em;
-    font-size: 5em;
-    margin-top: 3.5em;
+    color: #3B4051;
+    width: 6.5em;
+    margin-left: 2.25em;
+    font-size: 5.5em;
+    margin-top: 2.5em;
     border: none;
     border-radius: 3%;
     background: #85DDA2;
